@@ -293,3 +293,44 @@ dict(
   limits='These channels were found through YouTube search, so they are findable channels, not every small channel. Plenty of small channels get almost no views.',
 ),
 ]
+
+# ---- added 10-20 (redesign) ----
+# One big number per study: the focal point at the top of the page and on its card. (number, label) - same claim-check numbers as above.
+HERO = {
+    'how-much-youtube-pays': ('$6.19', 'what a typical long video paid per 1,000 views'),
+    'best-faceless-youtube-niches': ('43×', 'more views for true crime than finance on small channels'),
+    'how-long-should-a-youtube-video-be': ('67%', 'of channels got more views on their longer videos'),
+    'how-often-should-you-post-on-youtube': ('3.4×', 'more weekly views posting 4–7 times a week vs under once'),
+    'best-time-to-post-on-youtube': ('7%', 'between the best and worst day to post'),
+    'why-youtube-videos-go-viral': ('74%', 'of viral videos made a different promise'),
+    'what-makes-a-youtube-thumbnail-work': ('33%', 'of viral thumbnails had a bigger face. Most didn’t.'),
+    'youtube-script-study': ('170', 'words a minute, viral and normal scripts alike'),
+    'youtube-shorts-vs-long-form': ('0.30×', 'the views of a long video, for a typical short'),
+    'does-4k-get-more-views': ('54%', 'a coin flip: how often the higher-res video won'),
+    'is-youtube-killing-small-channels': ('42.7%', 'of their subscriber count: views on a small channel’s typical video'),
+}
+# Videos from the channel (public, long form). Used on the home page and as the related video on each study.
+VIDEOS = {
+    '-yjJiFWtMuE': 'How to Go Viral on YouTube Like MrBeast, Explained in 241 Seconds',
+    '51CAI9eVN-c': 'Alex Hormozi’s YouTube Growth Formula Explained in 269 Seconds',
+    'PODXGb9PZqU': 'I Got 7 Million Views and Only Made $500',
+    'bRTBtRSjQeM': 'If I Had to Beat Phone Addiction, I’d Start With This One Setting',
+    'Bu772QWU8Fo': 'Door to Door Solar Sales: 2 Years, $12K Months, Then I Quit',
+    'eJ2nVltoKXg': 'The Free AI Clipping Tool Nobody Talks About',
+    'JYJjR1GVZv8': 'I Quit Every Business I Started… Here’s What I Learned',
+    'rtmxNqZMxRg': 'How to Build an App Without Coding (400 Hours of Mistakes)',
+}
+HOME_VIDEOS = ['-yjJiFWtMuE', '51CAI9eVN-c', 'PODXGb9PZqU', 'Bu772QWU8Fo', 'eJ2nVltoKXg', 'JYJjR1GVZv8']
+RELATED = {   # study -> the most relevant video on the channel (its own video goes in the study's 'video' once public)
+    'how-much-youtube-pays': 'PODXGb9PZqU', 'youtube-shorts-vs-long-form': 'PODXGb9PZqU', 'why-youtube-videos-go-viral': '-yjJiFWtMuE',
+    'what-makes-a-youtube-thumbnail-work': '51CAI9eVN-c', 'youtube-script-study': '-yjJiFWtMuE', 'best-faceless-youtube-niches': '-yjJiFWtMuE',
+    'how-long-should-a-youtube-video-be': '51CAI9eVN-c', 'how-often-should-you-post-on-youtube': '51CAI9eVN-c', 'best-time-to-post-on-youtube': '51CAI9eVN-c',
+    'does-4k-get-more-views': '-yjJiFWtMuE', 'is-youtube-killing-small-channels': '51CAI9eVN-c',
+}
+SOCIALS = [  # (name, url, icon file, brand color)
+    ('YouTube', 'https://www.youtube.com/@theelijahwestbrook', 'youtube', '#FF0000'),
+    ('TikTok', 'https://www.tiktok.com/@theelijahwestbrook', 'tiktok', '#000000'),
+    ('Instagram', 'https://www.instagram.com/theelijahwestbrook/', 'instagram', '#E4405F'),
+    ('Twitch', 'https://www.twitch.tv/elift', 'twitch', '#9146FF'),
+    ('Kick', 'https://kick.com/eliftforlife', 'kick', '#53FC18'),
+]
