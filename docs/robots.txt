@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://elijahwestbrook.com/sitemap.xml
