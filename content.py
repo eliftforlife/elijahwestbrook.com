@@ -83,7 +83,7 @@ dict(
   limits='Channels were found through YouTube search, so they’re findable channels, not every channel. A median hides a wide spread, and some niches have only 9 to 14 channels.',
 ),
 dict(
-  slug='how-long-should-a-youtube-video-be', date='2026-10-20', tag='YouTube', video=None,
+  slug='how-long-should-a-youtube-video-be', date='2026-10-20', tag='YouTube', video='tlAJsXDpybQ',
   title='How Long Should a YouTube Video Be? 111,322 Videos Compared Within Their Own Channels',
   short='Longer videos won in 2 out of 3 channels, but only by about a fifth.',
   desc='How long a YouTube video should be, from 111,322 videos on 3,421 channels compared with their own channel: videos under 8 minutes did worst, 30–60 minutes did best.',
@@ -109,7 +109,7 @@ dict(
   limits='This shows what longer videos have in common, not proof that adding minutes causes views. Longer videos may also be better ideas.',
 ),
 dict(
-  slug='how-often-should-you-post-on-youtube', date='2026-10-20', tag='YouTube', video=None,
+  slug='how-often-should-you-post-on-youtube', date='2026-10-20', tag='YouTube', video='tlAJsXDpybQ',
   title='How Often Should You Post on YouTube? 1,664 Channels and 42,629 Uploads',
   short='Each video gets fewer views when you post more, but your week adds up to more.',
   desc='How often to post on YouTube, from 1,664 active channels: posting more gets fewer views per video but more total views per week, and waiting longer between uploads doesn’t help a video.',
@@ -133,7 +133,7 @@ dict(
   limits='The cross-channel part is a comparison, not an experiment. Channels that post more may differ in other ways, so this shows a pattern, not proof that posting more causes more views.',
 ),
 dict(
-  slug='best-time-to-post-on-youtube', date='2026-10-20', tag='YouTube', video=None,
+  slug='best-time-to-post-on-youtube', date='2026-10-20', tag='YouTube', video='tlAJsXDpybQ',
   title='The Best Time to Post on YouTube (24,918 Uploads Say It Barely Matters)',
   short='The best day beat the worst by about 7%. The hour made no real difference.',
   desc='The best day and time to post on YouTube from 24,918 uploads compared with their own channel: Monday and the weekend do a few percent better, and the hour barely matters.',
@@ -231,7 +231,7 @@ dict(
   limits='Auto-captions add small errors. Scripts were compared within channels, so the patterns describe what changes inside a creator’s own work.',
 ),
 dict(
-  slug='youtube-shorts-vs-long-form', date='2026-10-20', tag='YouTube', video=None,
+  slug='youtube-shorts-vs-long-form', date='2026-10-20', tag='YouTube', video='tlAJsXDpybQ',
   title='YouTube Shorts vs Long Videos: 586 Channels That Post Both',
   short='The typical short got a third of the views of the same channel’s long video.',
   desc='586 channels that post both YouTube Shorts and long videos: the typical short got 0.30× the views of a long video, Shorts won on only 22% of channels, and paid 39× less per view.',
@@ -254,7 +254,7 @@ dict(
   limits='Most of these channels are long-video channels that also post shorts. Shorts-first channels may see the opposite.',
 ),
 dict(
-  slug='does-4k-get-more-views', date='2026-10-20', tag='YouTube', video=None,
+  slug='does-4k-get-more-views', date='2026-10-20', tag='YouTube', video='tlAJsXDpybQ',
   title='Does 4K Get More Views on YouTube? 693 Pairs From the Same Channels',
   short='No. The higher-resolution video won 54% of the time: a coin flip.',
   desc='Does 4K, 60 fps or HDR get more views on YouTube? In 693 viral vs normal pairs from the same channels, video quality made no difference.',
@@ -272,7 +272,7 @@ dict(
   limits='This measures what was uploaded, not how viewers watched it. Image quality can still matter for brand deals or a channel built around visuals.',
 ),
 dict(
-  slug='is-youtube-killing-small-channels', date='2026-10-20', tag='YouTube', video=None,
+  slug='is-youtube-killing-small-channels', date='2026-10-20', tag='YouTube', video='tlAJsXDpybQ',
   title='Is YouTube Killing Small Channels? What the Data Says',
   short='A small channel’s videos reach a much bigger share of its subscribers than a big channel’s.',
   desc='Small YouTube channels (1K–10K subscribers) got views equal to 42.7% of their subscribers per video, versus 7.2% for channels over 1M, and breakouts were twice as common.',
@@ -311,6 +311,7 @@ HERO = {
 }
 # Videos from the channel (public, long form). Used on the home page and as the related video on each study.
 VIDEOS = {
+    'tlAJsXDpybQ': 'How to Get More Views on YouTube (138,645 Videos Analyzed)',
     '-yjJiFWtMuE': 'How to Go Viral on YouTube Like MrBeast, Explained in 241 Seconds',
     '51CAI9eVN-c': 'Alex Hormozi’s YouTube Growth Formula Explained in 269 Seconds',
     'PODXGb9PZqU': 'I Got 7 Million Views and Only Made $500',
@@ -320,7 +321,8 @@ VIDEOS = {
     'JYJjR1GVZv8': 'I Quit Every Business I Started… Here’s What I Learned',
     'rtmxNqZMxRg': 'How to Build an App Without Coding (400 Hours of Mistakes)',
 }
-HOME_VIDEOS = ['-yjJiFWtMuE', '51CAI9eVN-c', 'PODXGb9PZqU', 'Bu772QWU8Fo', 'eJ2nVltoKXg', 'JYJjR1GVZv8']
+FEATURE_NOTE = 'Everything 138,645 videos say about getting views: length, posting time, how often to post, Shorts and more, in one video.'
+HOME_VIDEOS = ['tlAJsXDpybQ', '-yjJiFWtMuE', '51CAI9eVN-c', 'PODXGb9PZqU', 'Bu772QWU8Fo', 'eJ2nVltoKXg', 'JYJjR1GVZv8']
 RELATED = {   # study -> the most relevant video on the channel (its own video goes in the study's 'video' once public)
     'how-much-youtube-pays': 'PODXGb9PZqU', 'youtube-shorts-vs-long-form': 'PODXGb9PZqU', 'why-youtube-videos-go-viral': '-yjJiFWtMuE',
     'what-makes-a-youtube-thumbnail-work': '51CAI9eVN-c', 'youtube-script-study': '-yjJiFWtMuE', 'best-faceless-youtube-niches': '-yjJiFWtMuE',

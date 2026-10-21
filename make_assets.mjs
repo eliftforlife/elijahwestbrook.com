@@ -2,8 +2,8 @@
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 const pw = require('C:/Users/elift/Desktop/Eliftforlife youtube/14 failed businesses video/editor/main/node_modules/playwright');
-const F = `@font-face{font-family:I;font-weight:900;src:url('file:///C:/Users/elift/Desktop/Eliftforlife%20youtube/stream/overlay/fonts/inter-latin-900-normal.woff2')}
-@font-face{font-family:I;font-weight:700;src:url('file:///C:/Users/elift/Desktop/Eliftforlife%20youtube/stream/overlay/fonts/inter-latin-700-normal.woff2')}`;
+const F = `@font-face{font-family:I;font-weight:900;src:url('file:///C:/Users/elift/Desktop/Eliftforlife%20youtube/1%20Elijah%20Westbrook/Stream/overlay/fonts/inter-latin-900-normal.woff2')}
+@font-face{font-family:I;font-weight:700;src:url('file:///C:/Users/elift/Desktop/Eliftforlife%20youtube/1%20Elijah%20Westbrook/Stream/overlay/fonts/inter-latin-700-normal.woff2')}`;
 const b = await pw.chromium.launch({ args: ['--allow-file-access-from-files'] });
 const p = await b.newPage({ viewport: { width: 512, height: 512 } });
 await p.setContent(`<style>${F}html,body{margin:0;background:transparent}div{width:512px;height:512px;border-radius:50%;background:#111;color:#fff;font:900 300px I;display:flex;align-items:center;justify-content:center;letter-spacing:-.02em}</style><div>E</div>`);

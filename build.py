@@ -4,7 +4,7 @@
 # Motion lives in assets/site.js (scroll reveals, growing bars, counting numbers, reading progress, click-to-load YouTube). All of it
 # switches off for people who ask their device for reduced motion, and the page reads fine without JavaScript.
 import os, re, json, shutil, html, datetime
-from content import SITE, STUDIES, HERO, VIDEOS, HOME_VIDEOS, RELATED, SOCIALS
+from content import SITE, STUDIES, HERO, VIDEOS, HOME_VIDEOS, RELATED, SOCIALS, FEATURE_NOTE
 OUT = 'docs'; TODAY = datetime.date.today().isoformat(); V = datetime.datetime.now().strftime('%Y%m%d%H%M')   # V busts the browser cache on css/js
 E = lambda s: html.escape(s, quote=True)
 ICON = {n: re.search(r' d="([^"]+)"', open(f'assets/icons/{n}.svg', encoding='utf-8').read()).group(1) for n in ('youtube', 'tiktok', 'instagram', 'twitch', 'kick')}
@@ -171,7 +171,7 @@ def build():
 <section class="stats"><div class="reveal"><b>{count('138,645')}</b><span>YouTube videos studied</span></div><div class="reveal" style="--d:80ms"><b>{count(str(len(STUDIES)))}</b><span>free studies so far</span></div><div class="reveal" style="--d:160ms"><b>$0</b><span>to read any of it</span></div></section>
 <section class="list"><div class="head reveal"><h2>The studies</h2><a href="/studies/">See all {ARROW}</a></div><div class="cards">{''.join(card(s, i) for i, s in enumerate(STUDIES[:6]))}</div></section>
 <section class="videos" id="videos"><div class="head reveal"><h2>Watch the videos</h2><a href="{SITE['youtube']}" rel="noopener">YouTube channel {ARROW}</a></div>
-<div class="feature reveal">{yt(HOME_VIDEOS[0], big=True)}<div><p class="kick">Start here</p><h3>{E(VIDEOS[HOME_VIDEOS[0]])}</h3><p>The patterns behind the most viewed videos on YouTube, in four minutes.</p><a class="btn red" href="{SUB}" rel="noopener">{svg('youtube')} Subscribe</a></div></div>
+<div class="feature reveal">{yt(HOME_VIDEOS[0], big=True)}<div><p class="kick">Start here</p><h3>{E(VIDEOS[HOME_VIDEOS[0]])}</h3><p>{E(FEATURE_NOTE)}</p><a class="btn red" href="{SUB}" rel="noopener">{svg('youtube')} Subscribe</a></div></div>
 <div class="vgrid">{''.join(vcard(v, i) for i, v in enumerate(HOME_VIDEOS[1:]))}</div></section>
 <section class="list"><div class="head reveal"><h2>More studies</h2></div><div class="cards">{''.join(card(s, i) for i, s in enumerate(STUDIES[6:]))}</div></section>
 <section class="about reveal"><img src="/assets/me-400.webp" alt="Elijah Westbrook" width="160" height="160" loading="lazy"><div><p class="kick">Who’s behind this</p><h2>I’m Elijah.</h2>
