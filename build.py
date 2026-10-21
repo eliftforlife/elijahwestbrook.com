@@ -65,6 +65,7 @@ def page(path, title, desc, body, kind='website', ld=None, active='', cls=''):
 {header(active)}
 {body}
 {footer()}
+<!-- Cloudflare Web Analytics (cookieless) --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{{"token": "e488413071014869a231f3793b8c958b"}}'></script>
 </body>
 </html>
 '''
