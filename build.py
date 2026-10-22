@@ -22,6 +22,22 @@ def header(active=''):
 <nav class="sheet">{nav}<a href="mailto:{SITE['email']}">Contact</a></nav>
 <div class="progress"><i></i></div></header>'''
 
+
+# Search-result titles and descriptions (10-21 SEO audit): Google cuts titles near 60 chars and descriptions near 160, so long ones get a
+# shorter search version that still starts with the searched phrase. The on-page headline keeps the full title.
+SEO = {
+ 'best-faceless-youtube-niches': ('Best Faceless YouTube Niches: 572 Small Channels Ranked', '572 small faceless YouTube channels ranked by niche. True crime, military history and nostalgia get the most views per video; finance gets the fewest.'),
+ 'how-long-should-a-youtube-video-be': ('How Long Should a YouTube Video Be? 111,322 Videos Compared', 'How long a YouTube video should be, from 111,322 videos on 3,421 channels: videos under 8 minutes did worst, 30-60 minutes did best.'),
+ 'how-often-should-you-post-on-youtube': ('How Often Should You Post on YouTube? 1,664 Channels', 'How often to post on YouTube, from 1,664 channels: posting more gets fewer views per video but more total views per week.'),
+ 'best-time-to-post-on-youtube': ('Best Time to Post on YouTube: 24,918 Uploads Compared', 'The best day and time to post on YouTube from 24,918 uploads: Monday and weekends do a few percent better, and the hour barely matters.'),
+ 'why-youtube-videos-go-viral': ('Why YouTube Videos Go Viral: 1,019 Outliers Studied', 'Why YouTube videos go viral, from 1,019 viral vs normal videos on the same channels: in 74% of pairs the viral one made a different promise.'),
+ 'what-makes-a-youtube-thumbnail-work': ('What Makes a YouTube Thumbnail Work? 2,038 Analyzed', '2,038 YouTube thumbnails compared within the same channels: viral ones weren’t brighter or bigger-faced. They showed the promise, not the title.'),
+ 'youtube-script-study': ('YouTube Script Study: 1,888 Viral vs Normal Scripts', '949 viral and 939 normal YouTube scripts from 294 channels: same pace, same sentence length, same openings. Viral videos were simply longer.'),
+ 'how-much-youtube-pays': ('How Much Does YouTube Pay? 82 Creators’ Real RPMs', 'How much YouTube pays per 1,000 views from 82 creators’ real RPMs: $6.19 for a typical long video, $0.16 for Shorts, $11.74 for finance.'),
+ 'youtube-shorts-vs-long-form': ('YouTube Shorts vs Long Videos: 586 Channels That Post Both', '586 channels that post both: a typical Short got 0.30x the views of a long video, won on only 22% of channels, and paid 39x less per view.'),
+ 'does-4k-get-more-views': ('Does 4K Get More Views on YouTube? 693 Video Pairs', 'Does 4K, 60 fps or HDR get more views on YouTube? In 693 viral vs normal pairs from the same channels, video quality made no difference.'),
+ 'is-youtube-killing-small-channels': ('Is YouTube Killing Small Channels? What the Data Says', 'Small channels (1K-10K subscribers) got views equal to 42.7% of their subscribers per video, vs 7.2% for channels over 1M. Breakouts were twice as common.'),
+}
 def short_title(s): return re.split(r'[?:(]', s['title'])[0].strip().rstrip('.') + ('?' if '?' in s['title'].split(':')[0] else '')
 
 def footer():
@@ -154,7 +170,8 @@ def study(s):
           {'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in s['faq']]},
           {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [{'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': SITE['url'] + '/'},
            {'@type': 'ListItem', 'position': 2, 'name': 'Studies', 'item': SITE['url'] + '/studies/'}, {'@type': 'ListItem', 'position': 3, 'name': s['title'], 'item': SITE['url'] + path}]}]
-    page(path, s['title'], s['desc'], body, 'article', ld, 'Studies', 'reading')
+    st, sd = SEO.get(s['slug'], (s['title'], s['desc']))
+    page(path, st, sd, body, 'article', ld, 'Studies', 'reading')
 
 def build():
     os.makedirs(OUT, exist_ok=True)
@@ -184,10 +201,12 @@ def build():
           {'@context': 'https://schema.org', '@type': 'Person', 'name': SITE['name'], 'url': SITE['url'], 'image': SITE['url'] + '/assets/me-400.webp', 'email': 'mailto:' + SITE['email'],
            'sameAs': [u for _, u, _, _ in SOCIALS]}]
     page('/', f'{SITE["name"]}: {SITE["tagline"]}', 'Free data studies on YouTube, ads, outreach and business: what YouTube pays, the best time to post, how long videos should be, and more.', home, ld=ld, cls='homepage')
-    page('/studies/', 'Data Studies | ' + SITE['name'], 'Every study: what YouTube pays, the best faceless niches, video length, posting frequency and time, viral videos, thumbnails, scripts, Shorts and 4K.',
+    page('/studies/', 'YouTube Data Studies by Elijah Westbrook', 'Every study: what YouTube pays, the best faceless niches, video length, posting frequency and time, viral videos, thumbnails, scripts, Shorts and 4K.',
          f'''<main class="index"><section class="shero"><p class="crumbs"><a href="/">Home</a> <span>/</span> Studies</p><h1>The studies</h1>
 <p class="lead">Every one is free. Each page has the short answer, the chart, what it means for you, and exactly how I got the numbers.</p></section>
-<div class="cards">{"".join(card(s, i) for i, s in enumerate(STUDIES))}</div></main>''', active='Studies')
+<div class="cards">{"".join(card(s, i) for i, s in enumerate(STUDIES))}</div></main>''', active='Studies',
+         ld=[{'@context': 'https://schema.org', '@type': 'CollectionPage', 'name': 'YouTube Data Studies', 'url': SITE['url'] + '/studies/',
+              'hasPart': [{'@type': 'Article', 'headline': x['title'], 'url': SITE['url'] + '/studies/' + x['slug'] + '/'} for x in STUDIES]}])
     socs = ''.join(f'<a class="soc" href="{u}" rel="noopener" style="--b:{c}">{svg(i)}<span>{n}</span></a>' for n, u, i, c in SOCIALS)
     about = f'''<main class="study about-page"><section class="shero"><p class="crumbs"><a href="/">Home</a> <span>/</span> About</p>
 <div class="who"><img src="/assets/me-400.webp" alt="Elijah Westbrook" width="120" height="120"><div><h1>About me</h1><p class="lead">I’m Elijah Westbrook. I study what works, then test it on myself in public.</p></div></div></section>
@@ -195,7 +214,7 @@ def build():
 <p>Along the way I noticed most advice is a guess dressed up as a rule. So now I pull the data first: hundreds of thousands of videos, ads and posts. Then I write up what held up and what didn’t, and try it on my own channel.</p></section>
 <section class="sec reveal"><h2>How the studies work</h2><p>Wherever I can, I compare things inside the same channel or creator, so a big channel never gets compared with a small one. Every page says how the numbers were collected and what they can’t prove. I only publish summaries and charts, never anyone’s raw posts.</p></section>
 <section class="sec reveal"><h2>Get in touch</h2><p>Business, press or a study idea: <a href="mailto:{SITE['email']}">{SITE['email']}</a>.</p><div class="socs big">{socs}</div></section></main>'''
-    page('/about/', 'About | ' + SITE['name'], 'Elijah Westbrook runs free data studies on YouTube, ads, outreach and business, then tests them on his own channel.', about, active='About',
+    page('/about/', 'About Elijah Westbrook: Free YouTube Data Studies', 'Elijah Westbrook runs free data studies on YouTube, ads, outreach and business, then tests them on his own channel.', about, active='About',
          ld=[{'@context': 'https://schema.org', '@type': 'ProfilePage', 'mainEntity': {'@type': 'Person', 'name': SITE['name'], 'url': SITE['url'], 'image': SITE['url'] + '/assets/me-400.webp', 'sameAs': [u for _, u, _, _ in SOCIALS]}}])
     page('/404.html', 'Not found | ' + SITE['name'], 'Page not found.', f'<main class="study"><section class="shero"><h1>That page doesn’t exist.</h1><p><a class="btn" href="/studies/">See all the studies {ARROW}</a></p></section></main>')
     urls = ['/', '/studies/', '/about/'] + [f'/studies/{s["slug"]}/' for s in STUDIES]
