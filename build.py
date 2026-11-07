@@ -189,8 +189,7 @@ def build():
     nauto = sum(t['verdict'] == 'auto' for t in AT); nhum = sum(t['verdict'] in ('human', 'rare') for t in AT)
     bars = ''.join(f'<i style="--h:{max(4, t["pfull"] + t["passist"] // 2)}%;--d:{k * 12}ms"></i>' for k, t in enumerate(sorted(AT, key=lambda t: -(t['pfull'] + t['passist'] / 2))))
     ticker = ''.join(f'<span><b>{t["pfull"]}%</b> of {t["n"]} videos had AI {E(t["name"][0].lower() + t["name"][1:])} on its own</span>' for t in sorted([t for t in AT if t['n'] >= 25], key=lambda t: -t['pfull'])[:10])
-    areas = ''.join(f'''<a class="acard reveal" href="/ai-automation/{AU.SLUG[a["id"]]}/">{ART.art(a["id"], a["tasks"])}<b>{E(a["name"])}</b><span>{sum(t["verdict"] == "auto" for t in a["tasks"])} of {len(a["tasks"])} tasks AI runs alone</span>
-<span class="mini">{"".join(f'<i class="{AU.VERD[t["verdict"]][1]}"></i>' for t in a["tasks"])}</span></a>''' for a in AU.D['areas'])
+    areas = ''.join(f'''<a class="acard reveal" href="/ai-automation/{AU.SLUG[a["id"]]}/"><b>{E(a["name"])}</b><span>{sum(t["verdict"] == "auto" for t in a["tasks"])} of {len(a["tasks"])} tasks AI runs alone</span>{ART.art(a["id"], a["tasks"])}</a>''' for a in AU.D['areas'])
     import workflows as WFM
     WFCARDS = ''.join(f'<a class="wcard reveal" href="/workflows/{w["slug"]}/">{WFM.BADGE(w)}<b>{E(w["title"])}</b><span>{E(w.get("outcome", ""))[:150]}</span><em>Free workflow {ARROW}</em></a>' for w in WFM.W[:4])
     home = f'''<main class="home">

@@ -304,3 +304,10 @@ details.method > summary h2 { display: inline; } details.method > summary::after
 }
 .acard .art g[fill] { opacity: .75; }
 @media (max-width: 720px) { .atabs.sort button { font-size: 11px; } }
+/* 11-07: area cards = title + one compact chart (no icon, no squares) */
+.acard { min-height: 0; justify-content: flex-start; gap: 4px; padding: 24px 24px 0; background: #0b0b0b; }
+.acard::after { display: none; }
+.acard .art { position: static; width: calc(100% + 48px); height: 96px; margin: 18px -24px 0; display: block; z-index: auto; }
+.acard:hover .art { transform: none; } .acard:hover { box-shadow: inset 0 0 0 1px #fff; background: #111; }
+.acard b { font-size: 17px; } .acard > span { color: #a8a8a8; font-size: 13.5px; }
+.aphoto { height: clamp(110px, 16vw, 180px); background: #0b0b0b; padding-top: 12px; }
