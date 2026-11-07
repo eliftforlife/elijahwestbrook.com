@@ -270,3 +270,37 @@ p a, .answer a, .sec a { color: #fff; text-decoration-color: #fff; text-decorati
 .wcard:hover { box-shadow: inset 0 0 0 1px #fff; }
 @media (max-width: 720px) { .wcards, .wpricing, .wmaint { grid-template-columns: minmax(0, 1fr); } }
 .wflink a { display: inline-block; margin-top: 6px; color: #22c55e !important; font-weight: 600; text-decoration: none !important; } .wflink a:hover { text-decoration: underline !important; }
+
+/* 11-07: code-drawn art replaces the stock photos (study bars + a line drawing per business area) */
+.acard::before { display: none; }
+.acard .art { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -2; transition: transform 1.2s cubic-bezier(.2,.8,.2,1); }
+.acard .art .glyph { transition: stroke-opacity .4s; stroke-opacity: .85; }
+.acard:hover .art { transform: scale(1.04); } .acard:hover .art .glyph { stroke-opacity: 1; }
+.aphoto { height: clamp(220px, 32vw, 400px); background: radial-gradient(120% 100% at 80% 0%, #1d1d1d 0%, #0a0a0a 60%); filter: none; overflow: hidden; }
+.aphoto .art { display: block; width: 100%; height: 100%; }
+.home .wcards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+/* 11-07: tighter, phone-first task list (Elijah: "tighter, more mobile friendly, less fluff") */
+.lede1 { font-size: clamp(17px, 2vw, 20px); color: #cfcfcf; margin: 16px 0 0; max-width: 46ch; } .lede1 b { color: #fff; }
+.aistudy .shero { padding-bottom: 0; }
+.achart.tight { margin-top: 24px; }
+.achart.tight .alegend { margin-bottom: 10px; gap: 6px 16px; font-size: 12px; }
+.achart.tight .ar summary { padding: 9px 0; gap: 16px; grid-template-columns: minmax(0, 34%) minmax(0, 1fr) 58px; }
+.achart.tight .an { font-size: 14.5px; font-weight: 500; line-height: 1.25; }
+.achart.tight .vt { font-size: 11px; margin-top: 1px; }
+.achart.tight .ab { height: 12px; }
+.achart.tight .ac { font-size: 18px; } .achart.tight .ac small { font-size: 10px; }
+.achart.tight .agh { margin-top: 28px; font-size: 16px; padding-bottom: 8px; }
+.aphoto { height: clamp(150px, 22vw, 260px); margin-top: 20px; }
+details.method > summary { list-style: none; cursor: pointer; } details.method > summary::-webkit-details-marker { display: none; }
+details.method > summary h2 { display: inline; } details.method > summary::after { content: " +"; color: #8f8f8f; font-size: 22px; }
+@media (max-width: 720px) {
+  .achart.tight .ar summary { grid-template-columns: minmax(0, 1fr) 46px; gap: 4px 10px; padding: 8px 0; }
+  .achart.tight .ar .ab { grid-column: 1 / -1; grid-row: 2; height: 6px; }
+  .achart.tight .an { font-size: 14px; } .achart.tight .vt { display: none; }
+  .achart.tight .ac { font-size: 16px; }
+  .atabs { gap: 14px; } .atabs button { font-size: 11px; padding: 10px 0 9px; }
+  .acard .art .glyph { stroke-width: 3.2; }
+}
+.acard .art g[fill] { opacity: .75; }
+@media (max-width: 720px) { .atabs.sort button { font-size: 11px; } }

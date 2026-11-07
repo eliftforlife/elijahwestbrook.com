@@ -1,6 +1,7 @@
 # The AI automation study (11-07): /ai-automation/ (every business task on one chart) + one page per business category.
 # Data: data/automation.json, made by "1 Elijah Westbrook/Videos/ai automation study/aggregate.py". Called from build.py after the main pages.
 import json, os, html
+import art as ART
 E = lambda s: html.escape(str(s), quote=True)
 D = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', 'automation.json'), encoding='utf-8'))
 VERD = {'auto': ('AI runs it', 'v-auto'), 'assist': ('AI drafts, you check', 'v-assist'), 'human': ('Keep it human', 'v-human'), 'rare': ('Almost nobody automates it', 'v-rare')}
@@ -46,9 +47,9 @@ def row(t, area, open_=False):
            + (f'<p><b>Videos that show it:</b></p><ul>{ex}</ul>' if ex else '')
            + (f'<p class="wflink"><a href="/workflows/{WF[t["id"]][0]}/">Free workflow: {E(WF[t["id"]][1])} →</a></p>' if t['id'] in WF else '') + '</div>')
     return (f'<details class="ar {cls}" data-area="{area}" data-n="{t["n"]}" data-full="{t["pfull"]}" data-auto="{t["pfull"] + t["passist"] / 2:.0f}"{" open" if open_ else ""}>'
-            f'<summary><span class="an">{E(t["name"])}<small class="vt">{lab}</small></span>{bar(t)}<span class="ac">{t["n"]}<small>videos</small></span></summary>{det}</details>')
+            f'<summary><span class="an">{E(t["name"])}<small class="vt">{lab} · {t["n"]} videos</small></span>{bar(t)}<span class="ac">{t["pfull"]}%<small>alone</small></span></summary>{det}</details>')
 
-LEGEND = '<p class="alegend"><span><i class="f"></i>AI runs it alone</span><span><i class="a"></i>AI drafts, a person checks</span><span><i class="h"></i>Video says keep it human</span></p>'
+LEGEND = '<p class="alegend"><span><i class="f"></i>AI alone</span><span><i class="a"></i>AI + a person checks</span><span><i class="h"></i>Keep human</span></p>'
 
 def offer(arrow=''):
     if not OFFER: return ''
@@ -62,27 +63,27 @@ def build(page, ARROW, author):
     tabs = '<div class="atabs" role="group" aria-label="Category"><button class="on" data-a="">All</button>' + ''.join(f'<button data-a="{a["id"]}">{E(a["name"])}</button>' for a in areas) + '</div>'
     sorts = '<div class="atabs sort" role="group" aria-label="Sort"><button class="on" data-s="list">By category</button><button data-s="auto">Most automated</button><button data-s="n">Most videos</button></div>'
     chart = ''.join(f'<h3 class="agh" data-area="{a["id"]}"><a href="/ai-automation/{SLUG[a["id"]]}/">{E(a["name"])} {ARROW}</a></h3>' + ''.join(row(t, a['id']) for t in a['tasks']) for a in areas)
-    cards = ''.join(f'''<a class="acard reveal" href="/ai-automation/{SLUG[a["id"]]}/" style="--img:url(/assets/areas/{a["id"]}.webp)"><b>{E(a["name"])}</b><span>{sum(t["verdict"] == "auto" for t in a["tasks"])} of {len(a["tasks"])} tasks AI runs alone</span>
+    cards = ''.join(f'''<a class="acard reveal" href="/ai-automation/{SLUG[a["id"]]}/">{ART.art(a["id"], a["tasks"])}<b>{E(a["name"])}</b><span>{sum(t["verdict"] == "auto" for t in a["tasks"])} of {len(a["tasks"])} tasks AI runs alone</span>
 <span class="mini">{"".join(f'<i class="{VERD[t["verdict"]][1]}" title="{E(t["name"])}"></i>' for t in a["tasks"])}</span></a>''' for a in areas)
     lst = lambda ts: ''.join(f'<li><b>{E(t["name"])}</b><span>{t["pfull"]}% of {t["n"]} videos had AI run it alone</span></li>' for t in ts)
     lsth = lambda ts: ''.join(f'<li><b>{E(t["name"])}</b><span>{"only " + str(t["n"]) + " videos try it" if t["verdict"] == "rare" else str(t["phuman"]) + "% of " + str(t["n"]) + " videos say keep it human"}</span></li>' for t in ts)
     body = f'''<main class="study aistudy">
 <section class="shero"><p class="crumbs"><a href="/">Home</a> <span>/</span> AI automation</p>
-<h1>What AI can automate in a business</h1>
-<div class="bigstat"><div class="v">{nv["auto"]} of {len(tasks)}</div><p>business tasks AI already runs on its own in the videos. {nv["assist"]} more need a person to check the work, and {nv["human"] + nv["rare"]} are still done by people.</p></div>
-<p class="byline">From {D["relevant"]:,} YouTube videos about AI automation ({k(D["views"])} views, {D["channels"]:,} channels), read one by one.</p></section>
-<div class="answer reveal"><b>The short answer</b><p>{ANSWER}</p></div>
+<h1>What AI can automate</h1>
+<p class="lede1">AI runs <b>{nv["auto"]} of {len(tasks)}</b> business tasks on its own, from {D["relevant"]:,} AI automation videos. Tap a task for the tools and a free workflow.</p></section>
+<section class="achart tight" id="chart">{LEGEND}{tabs}{sorts}<div class="arows" id="arows">{chart}</div></section>
 {offer(ARROW)}
-<section class="achart" id="chart"><h2>Every business task, ranked</h2>{LEGEND}{tabs}{sorts}<div class="arows" id="arows">{chart}</div>
-<p class="note">Tap any task to see the tools and the videos that show it. A task needs 5 or more videos before it gets a verdict.</p></section>
-<section class="sec two reveal"><div><h2>What AI runs on its own</h2><ol class="alist">{lst(top_auto)}</ol></div><div><h2>What’s still human</h2><ol class="alist">{lsth(top_human)}</ol></div></section>
 <section class="list"><div class="head reveal"><h2>By business area</h2></div><div class="acards">{cards}</div></section>
-<section class="sec method reveal" id="method"><h2>How I did it</h2><p>{METHOD}</p><h3>The limits</h3><p>{LIMITS}</p></section>
+<section class="sec two reveal"><div><h2>What AI runs on its own</h2><ol class="alist">{lst(top_auto)}</ol></div><div><h2>What’s still human</h2><ol class="alist">{lsth(top_human)}</ol></div></section>
+<section class="sec reveal"><h2>The short answer</h2><p>{ANSWER}</p></section>
+<details class="sec method reveal" id="method"><summary><h2>How we did it</h2></summary><p>{METHOD}</p><h3>The limits</h3><p>{LIMITS}</p></details>
 <section class="faq"><h2 class="reveal">Questions</h2>{"".join(f'<details class="reveal"><summary>{E(q)}<i></i></summary><p>{E(a)}</p></details>' for q, a in FAQ)}</section>
 {author()}</main>'''
     ld = [{'@context': 'https://schema.org', '@type': 'Article', 'headline': 'What AI can automate in a business', 'datePublished': DATE, 'dateModified': DATE,
            'author': {'@type': 'Person', 'name': 'Elijah Westbrook'}, 'mainEntityOfPage': 'https://elijahwestbrook.com/ai-automation/'},
-          {'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in FAQ]}]
+          {'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in FAQ]},
+          {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [{'@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://elijahwestbrook.com/'}, {'@type': 'ListItem', 'position': 2, 'name': 'AI automation', 'item': 'https://elijahwestbrook.com/ai-automation/'}]},
+          {'@context': 'https://schema.org', '@type': 'Dataset', 'name': 'What AI can automate in a business', 'description': f'{len(tasks)} business tasks scored from {D["relevant"]:,} YouTube videos about AI automation', 'creator': {'@type': 'Person', 'name': 'Elijah Westbrook'}, 'dateModified': DATE, 'url': 'https://elijahwestbrook.com/ai-automation/'}]
     page('/ai-automation/', f'AI Automation: What It Can Do in a Business ({D["relevant"]:,} Videos)', f'Every business task ranked by how much AI runs it, from {D["relevant"]:,} AI automation videos: what AI does alone, what needs a person, what stays human.', body, 'article', ld, 'AI automation', 'reading aipage')
     for i, a in enumerate(areas):
         ts = a['tasks']; na = sum(t['verdict'] == 'auto' for t in ts)
@@ -98,9 +99,9 @@ def build(page, ARROW, author):
         body = f'''<main class="study aistudy">
 <section class="shero"><p class="crumbs"><a href="/">Home</a> <span>/</span> <a href="/ai-automation/">AI automation</a></p>
 <h1>{E(TITLES[a["id"]][1])}</h1>
-<div class="aphoto" style="--img:url(/assets/areas/{a["id"]}.webp)" role="img" aria-label="{E(a["name"])}"></div>
-<div class="bigstat"><div class="v">{na} of {len(ts)}</div><p>{E(a["name"].lower())} tasks AI runs on its own, from {a["n"]:,} videos.</p></div></section>
-<section class="achart">{LEGEND}<div class="arows">{"".join(row(t, a["id"]) for t in sorted(ts, key=lambda t: -(t["pfull"] + t["passist"] / 2)))}</div></section>
+<p class="lede1">AI runs <b>{na} of {len(ts)}</b> {E(a["name"].lower())} tasks on its own, from {a["n"]:,} videos.</p>
+<div class="aphoto">{ART.art(a["id"], a["tasks"], "art big")}</div></section>
+<section class="achart tight">{LEGEND}<div class="arows">{"".join(row(t, a["id"]) for t in sorted(ts, key=lambda t: -(t["pfull"] + t["passist"] / 2)))}</div></section>
 {plat}{offer(ARROW)}
 <nav class="pn"><a class="reveal" href="/ai-automation/"><small>← All tasks</small><b>Every business task, ranked</b></a><a class="reveal" href="/ai-automation/{SLUG[nxt["id"]]}/"><small>Next →</small><b>{E(nxt["name"])}</b></a></nav>
 {author()}</main>'''
