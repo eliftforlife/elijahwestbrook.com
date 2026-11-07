@@ -20,7 +20,7 @@ def header(active=''):
     nav = ''.join(f'<a href="{u}"{" aria-current=page" if active == k else ""}>{k}</a>' for k, u in items)
     return f'''<header class="gh" style="--gh-logo-r: 50%;"><div class="gh-in"><a class="gh-brand" href="/"><img src="/assets/me-128.webp" alt="" width="24" height="24">{SITE['name']}</a>
 <nav class="gh-links" aria-label="Main">{nav}</nav>
-<div class="gh-r"><a class="gh-cta" href="{SUB}" rel="noopener">Subscribe{GH_CHEV}</a><button class="gh-menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="gh-sheet"><i></i><i></i></button></div></div>
+<div class="gh-r"><a class="gh-cta" href="/automate/">Get help{GH_CHEV}</a><button class="gh-menu" type="button" aria-label="Menu" aria-expanded="false" aria-controls="gh-sheet"><i></i><i></i></button></div></div>
 <nav class="gh-sheet" id="gh-sheet" aria-label="All pages"><div class="gh-sheet-in">{nav.replace('<a ', '<a class="gh-x" ')}<a class="gh-x" href="mailto:{SITE['email']}">Contact</a></div></nav>
 <div class="gh-progress"><i></i></div></header>'''
 
@@ -46,11 +46,11 @@ def footer():
     soc = ''.join(f'<a class="soc" href="{u}" rel="noopener" aria-label="{n}" style="--b:{c}">{svg(i)}<span>{n}</span></a>' for n, u, i, c in SOCIALS)
     studies = ''.join(f'<a href="/studies/{s["slug"]}/">{E(short_title(s))}</a>' for s in STUDIES[:6])
     return f'''<footer class="foot">
-<section class="cta reveal"><div><h2>Get the next study first.</h2><p>Every study turns into a video. Subscribe and you’ll see the data before anyone else.</p></div>
-<a class="btn red" href="{SUB}" rel="noopener">{svg('youtube')} Subscribe on YouTube</a></section>
+<section class="cta reveal"><div><h2>Get help from human professionals.</h2><p>Tell us what eats your time. A real person reads every application and replies with a plan and a price.</p></div>
+<a class="btn red" href="/automate/">Apply in 2 minutes {ARROW}</a></section>
 <div class="cols">
 <div class="me"><a class="brand" href="/"><img src="/assets/me-128.webp" alt="" width="40" height="40" loading="lazy"><span>{SITE['name']}</span></a>
-<p>{E(SITE['tagline'])} Free data on YouTube, ads, outreach and business.</p><div class="socs">{soc}</div></div>
+<p>{E(SITE['tagline'])} Free studies on AI automation, YouTube and business, and real help setting it up.</p><div class="socs">{soc}</div></div>
 <nav><b>Studies</b>{studies}<a href="/studies/">All studies →</a></nav>
 <nav><b>More</b><a href="/about/">About</a><a href="/#videos">Videos</a><a href="mailto:{SITE['email']}">{SITE['email']}</a></nav>
 </div><p class="fine">© {TODAY[:4]} {SITE['name']}. Studies use public data, summarized. Nothing here is financial advice.</p></footer>'''
@@ -82,7 +82,7 @@ def page(path, title, desc, body, kind='website', ld=None, active='', cls=''):
 {lds}
 </head>
 <body class="{cls}">
-<a class="gh-ribbon" href="https://mealmonster.app/?utm_source=elijahwestbrook&amp;utm_medium=sponsor_bar" rel="noopener">Sponsored by Meal Monster, the easy food tracker. <span>Learn more ›</span></a>
+<a class="gh-ribbon" href="/automate/">Want AI to run part of your business? Get help from a real person. <span>Apply ›</span></a>
 {header(active)}
 {body}
 {footer()}
@@ -184,28 +184,36 @@ def build():
         p = os.path.join(OUT, x); shutil.rmtree(p) if os.path.isdir(p) else os.remove(p)
     shutil.copytree('assets', os.path.join(OUT, 'assets'))
     for s in STUDIES: study(s)
-    ticker = ''.join(f'<span><b>{E(HERO[s["slug"]][0])}</b> {E(HERO[s["slug"]][1])}</span>' for s in STUDIES)
+    import automation as AU
+    AT = [t for a in AU.D['areas'] for t in a['tasks']]
+    nauto = sum(t['verdict'] == 'auto' for t in AT); nhum = sum(t['verdict'] in ('human', 'rare') for t in AT)
+    bars = ''.join(f'<i style="--h:{max(4, t["pfull"] + t["passist"] // 2)}%;--d:{k * 12}ms"></i>' for k, t in enumerate(sorted(AT, key=lambda t: -(t['pfull'] + t['passist'] / 2))))
+    ticker = ''.join(f'<span><b>{t["pfull"]}%</b> of {t["n"]} videos had AI {E(t["name"][0].lower() + t["name"][1:])} on its own</span>' for t in sorted([t for t in AT if t['n'] >= 25], key=lambda t: -t['pfull'])[:10])
+    areas = ''.join(f'''<a class="acard reveal" href="/ai-automation/{AU.SLUG[a["id"]]}/"><b>{E(a["name"])}</b><span>{sum(t["verdict"] == "auto" for t in a["tasks"])} of {len(a["tasks"])} tasks AI runs alone</span>
+<span class="mini">{"".join(f'<i class="{AU.VERD[t["verdict"]][1]}"></i>' for t in a["tasks"])}</span></a>''' for a in AU.D['areas'])
     home = f'''<main class="home">
-<section class="hero"><p class="kicker reveal">Free data studies</p>
-<h1><span class="w">I</span> <span class="w">study</span> <span class="w">what</span> <mark class="w">works.</mark></h1>
+<section class="hero"><div class="hero-bars" aria-hidden="true">{bars}</div><p class="kicker reveal">AI automation for real businesses</p>
+<h1><span class="w">Let</span> <span class="w">AI</span> <span class="w">run</span> <span class="w">the</span> <span class="w">busy</span> <mark class="w">work.</mark></h1>
 <p class="blurb reveal">{E(SITE['blurb'])}</p>
-<div class="ctas reveal"><a class="btn" href="/studies/">Read the studies {ARROW}</a><a class="btn ghost" href="{SUB}" rel="noopener">{svg('youtube')} Watch on YouTube</a></div></section>
+<div class="ctas reveal"><a class="btn" href="/ai-automation/">See what AI can automate {ARROW}</a><a class="btn ghost" href="/automate/">Get human help {ARROW}</a></div></section>
 <div class="ticker" aria-hidden="true"><div>{ticker}{ticker}</div></div>
-<section class="stats"><div class="reveal"><b>{count('138,645')}</b><span>YouTube videos studied</span></div><div class="reveal" style="--d:80ms"><b>{count(str(len(STUDIES)))}</b><span>free studies so far</span></div><div class="reveal" style="--d:160ms"><b>$0</b><span>to read any of it</span></div></section>
-<section class="list"><div class="head reveal"><h2>The studies</h2><a href="/studies/">See all {ARROW}</a></div><div class="cards">{''.join(card(s, i) for i, s in enumerate(STUDIES[:6]))}</div></section>
+<section class="stats"><div class="reveal"><b>{count(f"{AU.D['relevant']:,}")}</b><span>AI automation videos read</span></div><div class="reveal" style="--d:80ms"><b>{nauto} of {len(AT)}</b><span>business tasks AI runs on its own</span></div><div class="reveal" style="--d:160ms"><b>{nhum}</b><span>tasks that still need a person</span></div></section>
+{AU.offer(ARROW)}
+<section class="list"><div class="head reveal"><h2>What AI can automate</h2><a href="/ai-automation/">See every task {ARROW}</a></div><div class="acards">{areas}</div></section>
+<section class="list"><div class="head reveal"><h2>Free studies</h2><a href="/studies/">See all {ARROW}</a></div><div class="cards">{''.join(card(s, i) for i, s in enumerate(STUDIES[:6]))}</div></section>
 <section class="videos" id="videos"><div class="head reveal"><h2>Watch the videos</h2><a href="{SITE['youtube']}" rel="noopener">YouTube channel {ARROW}</a></div>
 <div class="feature reveal">{yt(HOME_VIDEOS[0], big=True)}<div><p class="kick">Start here</p><h3>{E(VIDEOS[HOME_VIDEOS[0]])}</h3><p>{E(FEATURE_NOTE)}</p><a class="btn red" href="{SUB}" rel="noopener">{svg('youtube')} Subscribe</a></div></div>
 <div class="vgrid">{''.join(vcard(v, i) for i, v in enumerate(HOME_VIDEOS[1:]))}</div></section>
 <section class="list"><div class="head reveal"><h2>More studies</h2></div><div class="cards">{''.join(card(s, i) for i, s in enumerate(STUDIES[6:]))}</div></section>
-<section class="about reveal"><img src="/assets/me-400.webp" alt="Elijah Westbrook" width="160" height="160" loading="lazy"><div><p class="kick">Who’s behind this</p><h2>I’m Elijah.</h2>
-<p>I’ve started and quit a lot of businesses. I did door-to-door solar sales for two years, and I built an app with AI without knowing how to code (<a href="{SITE['mealmonster']}" rel="noopener">Meal Monster</a>).</p>
-<p>Now I pull the data before I try anything, and I post what I find, including what flops. Right now I’m posting 1,800 shorts in 30 days.</p>
-<a class="more" href="/about/">More about me {ARROW}</a></div></section>
+<section class="about reveal"><div><p class="kick">Who’s behind this</p><h2>Real data, real people.</h2>
+<p>I’ve started and quit a lot of businesses, and I built an app with AI without knowing how to code (<a href="{SITE['mealmonster']}" rel="noopener">Meal Monster</a>). I run my own channels on AI automations every day.</p>
+<p>Before I recommend anything, I pull the data. Then a real person helps you set up only what actually works for your business.</p>
+<a class="more" href="/automate/">Get help from human professionals {ARROW}</a></div></section>
 </main>'''
     ld = [{'@context': 'https://schema.org', '@type': 'WebSite', 'name': SITE['name'], 'url': SITE['url']},
           {'@context': 'https://schema.org', '@type': 'Person', 'name': SITE['name'], 'url': SITE['url'], 'image': SITE['url'] + '/assets/me-400.webp', 'email': 'mailto:' + SITE['email'],
            'sameAs': [u for _, u, _, _ in SOCIALS]}]
-    page('/', f'{SITE["name"]}: {SITE["tagline"]}', 'Free data studies on YouTube, ads, outreach and business: what YouTube pays, the best time to post, how long videos should be, and more.', home, ld=ld, cls='homepage')
+    page('/', 'AI Automation for Your Business | Elijah Westbrook', f'What AI can really automate in a business, from {AU.D["relevant"]:,} AI automation videos, plus real people who set it up for you. Free chart, plan and price.', home, ld=ld, cls='homepage')
     page('/studies/', 'YouTube Data Studies by Elijah Westbrook', 'Every study: what YouTube pays, the best faceless niches, video length, posting frequency and time, viral videos, thumbnails, scripts, Shorts and 4K.',
          f'''<main class="index"><section class="shero"><p class="crumbs"><a href="/">Home</a> <span>/</span> Studies</p><h1>The studies</h1>
 <p class="lead">Every one is free. Each page has the short answer, the chart, what it means for you, and exactly how I got the numbers.</p></section>

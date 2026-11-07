@@ -191,3 +191,23 @@ p a, .answer a, .sec a { color: #fff; text-decoration-color: #fff; text-decorati
 @media (max-width: 720px) { .bigstat { flex-direction: column; align-items: flex-start; } .bigstat .v { white-space: normal; } }
 .bigstat { flex-direction: column; align-items: flex-start; gap: 10px; } .bigstat p { max-width: 640px; }
 .stats div { display: block !important; } .stats > div > span { display: block; }
+
+/* 11-07: home without the portrait. The hero background is the study itself: 100 bars, one per business task, as tall as how much AI runs it. */
+.hero::before { display: none; }
+.hero::after { background: linear-gradient(180deg, rgba(0,0,0,.2) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,.7) 70%, #000 100%); }
+.hero-bars { position: absolute; inset: 9% 3vw 0; z-index: -2; display: flex; align-items: flex-end; gap: clamp(2px, .35vw, 6px); opacity: .32; pointer-events: none; }
+.hero-bars i { flex: 1; height: var(--h); background: linear-gradient(180deg, #fff 0%, rgba(255,255,255,.55) 40%, rgba(255,255,255,.05) 100%); transform-origin: bottom; }
+@media (prefers-reduced-motion: no-preference) { .js .hero-bars i { animation: barup 1.4s cubic-bezier(.2,.8,.2,1) both; animation-delay: var(--d); } @keyframes barup { from { transform: scaleY(0); } } }
+.hero h1 { max-width: 14ch; }
+.home > .aoffer { max-width: 1224px; margin: 64px auto 0; }
+.aoffer { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 28px; align-items: center; }
+.aoffer-me { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; flex: none; }
+.home .acards { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.about { display: block; }
+@media (max-width: 720px) {
+  .aoffer { grid-template-columns: minmax(0, 1fr); gap: 16px; padding: 32px 24px; } .aoffer-me { width: 72px; height: 72px; }
+  .home .acards { grid-template-columns: minmax(0, 1fr); } .home > .aoffer { margin: 40px 16px 0; }
+}
+.acard .mini i.v-auto { background: #fff; } .acard .mini i.v-assist { background: #6b6b6b; } .acard .mini i.v-human { background: repeating-linear-gradient(135deg, #555 0 2px, #111 2px 4px); }
+.acard:hover .mini i.v-auto { background: #fff; }
+.stats b { white-space: nowrap; font-size: clamp(34px, 4.6vw, 68px); }

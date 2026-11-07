@@ -7,8 +7,8 @@ SITE = dict(
     name='Elijah Westbrook', url='https://elijahwestbrook.com', email='hello@elijahwestbrook.com',
     youtube='https://www.youtube.com/@theelijahwestbrook', tiktok='https://www.tiktok.com/@theelijahwestbrook',
     instagram='https://www.instagram.com/theelijahwestbrook/', mealmonster='https://mealmonster.app/',
-    tagline='I study what works.',
-    blurb='I pull real data on YouTube, ads, outreach and business, then test what I find on my own channel. Every study is free.',
+    tagline='AI automation that works.',
+    blurb='I read 2,000 AI automation videos to see what AI really runs on its own and what still needs a person. Use the free chart, or get a real person to set it up for your business.',
 )
 
 # timing: geometric mean of views / channel median per day and 3-hour block (ET), divided by the overall average -> "1.05 = 5% above average"

@@ -46,7 +46,7 @@ LEGEND = '<p class="alegend"><span><i class="f"></i>AI runs it alone</span><span
 
 def offer(arrow=''):
     if not OFFER: return ''
-    return f'<section class="aoffer reveal"><div><h2>{E(OFFER["title"])}</h2><p>{E(OFFER["text"])}</p></div><a class="btn red" href="{OFFER["url"]}" rel="noopener">{E(OFFER["cta"])} {arrow}</a></section>'
+    return f'<section class="aoffer reveal"><img class="aoffer-me" src="/assets/elijah-help.webp" alt="Elijah Westbrook" width="96" height="96" loading="lazy"><div><h2>{E(OFFER["title"])}</h2><p>{E(OFFER["text"])}</p></div><a class="btn red" href="{OFFER["url"]}" rel="noopener">{E(OFFER["cta"])} {arrow}</a></section>'
 
 def build(page, ARROW, author):
     areas = D['areas']; tasks = [t for a in areas for t in a['tasks']]
