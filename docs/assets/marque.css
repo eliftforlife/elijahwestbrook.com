@@ -395,3 +395,7 @@ html.js:not(.detailed) .adv { display: none !important; }
 @media (max-width: 720px) { .tcat { grid-template-columns: minmax(0, 1fr) auto; gap: 6px 12px; padding: 14px 0; } .tcat .vb { grid-column: 1 / -1; grid-row: 2; } .tcat small { grid-column: 1 / -1; } .tcat em { grid-row: 1; grid-column: 2; } }
 .ttab .c5 b.pu { font-size: 14px; }
 .ttab tr.dead { opacity: .45; }
+
+/* 11-07: score column */
+.ttab td.sc { min-width: 92px; } .ttab td.sc b { display: block; font-family: var(--wide); font-variation-settings: "wdth" 125; font-size: 22px; color: #fff; margin-bottom: 6px; }
+.ttab .src p.sbk { color: #d4d4d4; }
