@@ -54,10 +54,8 @@ LEGEND = '<p class="alegend"><span><i class="f"></i>AI alone</span><span><i clas
 
 def offer(arrow=''):
     if not OFFER: return ''
-    return (f'<section class="aoffer2 reveal"><div class="ao-who"><img src="/assets/elijah-help.webp" alt="Elijah Westbrook" width="120" height="120" loading="lazy"><div><b>Elijah Westbrook</b><span>Reads every application</span></div></div>'
-            f'<div class="ao-main"><h2>{E(OFFER["title"])}</h2><p>{E(OFFER["text"])}</p>'
-            '<ul><li>A real person reads it, not a bot</li><li>You get a plan and a price, no sales call needed</li><li>Rather do it yourself? The workflows are free</li></ul>'
-            f'<a class="ao-btn" href="{OFFER["url"]}">{E(OFFER["cta"])} {arrow}</a></div></section>')
+    return (f'<section class="aoffer3 reveal"><img src="/assets/elijah-help.webp" alt="Elijah Westbrook" width="72" height="72" loading="lazy">'
+            f'<h2>{E(OFFER["title"])}</h2><a class="ao-btn" href="{OFFER["url"]}">Apply {arrow}</a></section>')
 
 def build(page, ARROW, author):
     areas = D['areas']; tasks = [t for a in areas for t in a['tasks']]
