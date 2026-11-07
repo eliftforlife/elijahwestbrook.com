@@ -218,3 +218,25 @@ p a, .answer a, .sec a { color: #fff; text-decoration-color: #fff; text-decorati
 .acard:hover::before { filter: grayscale(0) brightness(.7); transform: scale(1.05); }
 .acard:hover { box-shadow: none; }
 .aphoto { height: clamp(220px, 34vw, 440px); margin: 28px 0 8px; background: var(--img) center / cover no-repeat; filter: grayscale(1) contrast(1.05); }
+/* tool comparison table (11-07) */
+.study.tools { max-width: 1320px; }
+.tools .shero h1 { max-width: 18ch; }
+.twrap { overflow-x: auto; margin-top: 18px; border-top: 1px solid #333; }
+.ttab { border-collapse: collapse; width: 100%; min-width: 1180px; font-size: 14px; }
+.ttab th, .ttab td { padding: 14px 8px; border-bottom: 1px solid #1f1f1f; text-align: center; vertical-align: middle; }
+.ttab thead th { font-family: var(--wide); font-variation-settings: "wdth" 112; text-transform: uppercase; font-size: 10.5px; letter-spacing: .06em; color: #8f8f8f; font-weight: 600; position: sticky; top: 0; background: #000; }
+.ttab thead th small { display: block; text-transform: none; letter-spacing: 0; font-weight: 400; }
+.ttab .rk { color: #8f8f8f; width: 32px; }
+.ttab .tn { text-align: left; min-width: 150px; } .ttab .tn a { color: #fff; font-weight: 600; font-size: 16px; text-decoration: none; } .ttab .tn a:hover { text-decoration: underline; }
+.ttab .tn small, .ttab .c5 small { display: block; color: #8f8f8f; font-size: 12px; font-weight: 400; margin-top: 3px; }
+.ttab .c5 b { font-family: var(--wide); font-variation-settings: "wdth" 125; font-size: 20px; color: #fff; }
+.ttab td.y { color: #fff; } .ttab td.n { color: #3a3a3a; } .ttab td.u { color: #8f8f8f; }
+.ttab tbody tr:hover { background: #0d0d0d; }
+.ttab .src { text-align: left; min-width: 90px; } .ttab .src summary { cursor: pointer; color: #bdbdbd; font-size: 12.5px; }
+.ttab .src p { font-size: 12.5px; color: #bdbdbd; max-width: 320px; margin: 8px 0 0; line-height: 1.45; } .ttab .src a { color: #fff; }
+.tsug { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 40px; margin: 64px 0; padding: 40px; background: #0d0d0d; }
+.tsug h2 { font-size: clamp(22px, 2.6vw, 32px); } .tsug p { color: #bdbdbd; }
+.tsug .aform { margin: 0; gap: 10px; } .tsug .fine { grid-column: 1 / -1; color: #8f8f8f; font-size: 13px; margin: 0; }
+.chk { display: flex; gap: 10px; align-items: center; color: #d4d4d4; font-size: 15px; }
+@media (max-width: 720px) { .tsug { grid-template-columns: minmax(0, 1fr); padding: 24px; } }
+.ttab td.y, .ttab td.n, .ttab td.u { font-size: 17px; line-height: 1; }
