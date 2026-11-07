@@ -189,7 +189,7 @@ def build():
     nauto = sum(t['verdict'] == 'auto' for t in AT); nhum = sum(t['verdict'] in ('human', 'rare') for t in AT)
     bars = ''.join(f'<i style="--h:{max(4, t["pfull"] + t["passist"] // 2)}%;--d:{k * 12}ms"></i>' for k, t in enumerate(sorted(AT, key=lambda t: -(t['pfull'] + t['passist'] / 2))))
     ticker = ''.join(f'<span><b>{t["pfull"]}%</b> of {t["n"]} videos had AI {E(t["name"][0].lower() + t["name"][1:])} on its own</span>' for t in sorted([t for t in AT if t['n'] >= 25], key=lambda t: -t['pfull'])[:10])
-    areas = ''.join(f'''<a class="acard reveal" href="/ai-automation/{AU.SLUG[a["id"]]}/"><b>{E(a["name"])}</b><span>{sum(t["verdict"] == "auto" for t in a["tasks"])} of {len(a["tasks"])} tasks AI runs alone</span>
+    areas = ''.join(f'''<a class="acard reveal" href="/ai-automation/{AU.SLUG[a["id"]]}/" style="--img:url(/assets/areas/{a["id"]}.webp)"><b>{E(a["name"])}</b><span>{sum(t["verdict"] == "auto" for t in a["tasks"])} of {len(a["tasks"])} tasks AI runs alone</span>
 <span class="mini">{"".join(f'<i class="{AU.VERD[t["verdict"]][1]}"></i>' for t in a["tasks"])}</span></a>''' for a in AU.D['areas'])
     home = f'''<main class="home">
 <section class="hero"><div class="hero-bars" aria-hidden="true">{bars}</div><p class="kicker reveal">AI automation for real businesses</p>

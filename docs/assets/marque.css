@@ -211,3 +211,10 @@ p a, .answer a, .sec a { color: #fff; text-decoration-color: #fff; text-decorati
 .acard .mini i.v-auto { background: #fff; } .acard .mini i.v-assist { background: #6b6b6b; } .acard .mini i.v-human { background: repeating-linear-gradient(135deg, #555 0 2px, #111 2px 4px); }
 .acard:hover .mini i.v-auto { background: #fff; }
 .stats b { white-space: nowrap; font-size: clamp(34px, 4.6vw, 68px); }
+/* 11-07: a photo behind every business area card (Unsplash, black and white until hover), Ferrari-tile style */
+.acard { position: relative; overflow: hidden; isolation: isolate; min-height: 300px; background: #0a0a0a; }
+.acard::before { content: ""; position: absolute; inset: 0; z-index: -2; background: var(--img) center / cover no-repeat; filter: grayscale(1) brightness(.62) contrast(1.05); transition: filter .6s, transform 1.2s cubic-bezier(.2,.8,.2,1); }
+.acard::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(0,0,0,0) 25%, rgba(0,0,0,.55) 60%, rgba(0,0,0,.92) 100%); }
+.acard:hover::before { filter: grayscale(0) brightness(.7); transform: scale(1.05); }
+.acard:hover { box-shadow: none; }
+.aphoto { height: clamp(220px, 34vw, 440px); margin: 28px 0 8px; background: var(--img) center / cover no-repeat; filter: grayscale(1) contrast(1.05); }

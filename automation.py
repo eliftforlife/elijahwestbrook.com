@@ -56,7 +56,7 @@ def build(page, ARROW, author):
     tabs = '<div class="atabs" role="group" aria-label="Category"><button class="on" data-a="">All</button>' + ''.join(f'<button data-a="{a["id"]}">{E(a["name"])}</button>' for a in areas) + '</div>'
     sorts = '<div class="atabs sort" role="group" aria-label="Sort"><button class="on" data-s="list">By category</button><button data-s="auto">Most automated</button><button data-s="n">Most videos</button></div>'
     chart = ''.join(f'<h3 class="agh" data-area="{a["id"]}"><a href="/ai-automation/{SLUG[a["id"]]}/">{E(a["name"])} {ARROW}</a></h3>' + ''.join(row(t, a['id']) for t in a['tasks']) for a in areas)
-    cards = ''.join(f'''<a class="acard reveal" href="/ai-automation/{SLUG[a["id"]]}/"><b>{E(a["name"])}</b><span>{sum(t["verdict"] == "auto" for t in a["tasks"])} of {len(a["tasks"])} tasks AI runs alone</span>
+    cards = ''.join(f'''<a class="acard reveal" href="/ai-automation/{SLUG[a["id"]]}/" style="--img:url(/assets/areas/{a["id"]}.webp)"><b>{E(a["name"])}</b><span>{sum(t["verdict"] == "auto" for t in a["tasks"])} of {len(a["tasks"])} tasks AI runs alone</span>
 <span class="mini">{"".join(f'<i class="{VERD[t["verdict"]][1]}" title="{E(t["name"])}"></i>' for t in a["tasks"])}</span></a>''' for a in areas)
     lst = lambda ts: ''.join(f'<li><b>{E(t["name"])}</b><span>{t["pfull"]}% of {t["n"]} videos had AI run it alone</span></li>' for t in ts)
     lsth = lambda ts: ''.join(f'<li><b>{E(t["name"])}</b><span>{"only " + str(t["n"]) + " videos try it" if t["verdict"] == "rare" else str(t["phuman"]) + "% of " + str(t["n"]) + " videos say keep it human"}</span></li>' for t in ts)
@@ -92,6 +92,7 @@ def build(page, ARROW, author):
         body = f'''<main class="study aistudy">
 <section class="shero"><p class="crumbs"><a href="/">Home</a> <span>/</span> <a href="/ai-automation/">AI automation</a></p>
 <h1>{E(TITLES[a["id"]][1])}</h1>
+<div class="aphoto" style="--img:url(/assets/areas/{a["id"]}.webp)" role="img" aria-label="{E(a["name"])}"></div>
 <div class="bigstat"><div class="v">{na} of {len(ts)}</div><p>{E(a["name"].lower())} tasks AI runs on its own, from {a["n"]:,} videos.</p></div></section>
 <section class="achart">{LEGEND}<div class="arows">{"".join(row(t, a["id"]) for t in sorted(ts, key=lambda t: -(t["pfull"] + t["passist"] / 2)))}</div></section>
 {plat}{offer(ARROW)}
