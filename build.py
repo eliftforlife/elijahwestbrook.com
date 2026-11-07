@@ -16,7 +16,7 @@ SUB = SITE['youtube'] + '?sub_confirmation=1'
 # phone menu. Styles/JS: assets/gh.css + gh.js (master copy in 0 HQ/Tools/site header/).
 GH_CHEV = '<svg viewBox="0 0 8 8" aria-hidden="true"><path d="M2.5 1 5.5 4 2.5 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 def header(active=''):
-    items = (('AI automation', '/ai-automation/'), ('Tools', '/tools/social-media-scheduler/'), ('Studies', '/studies/'), ('Videos', '/#videos'), ('About', '/about/'))
+    items = (('AI automation', '/ai-automation/'), ('Workflows', '/workflows/'), ('Tools', '/tools/social-media-scheduler/'), ('Studies', '/studies/'), ('Videos', '/#videos'), ('About', '/about/'))
     nav = ''.join(f'<a href="{u}"{" aria-current=page" if active == k else ""}>{k}</a>' for k, u in items)
     return f'''<header class="gh" style="--gh-logo-r: 50%;"><div class="gh-in"><a class="gh-brand" href="/"><img src="/assets/me-128.webp" alt="" width="24" height="24">{SITE['name']}</a>
 <nav class="gh-links" aria-label="Main">{nav}</nav>
@@ -230,7 +230,7 @@ def build():
     page('/about/', 'About Elijah Westbrook: Free YouTube Data Studies', 'Elijah Westbrook runs free data studies on YouTube, ads, outreach and business, then tests them on his own channel.', about, active='About',
          ld=[{'@context': 'https://schema.org', '@type': 'ProfilePage', 'mainEntity': {'@type': 'Person', 'name': SITE['name'], 'url': SITE['url'], 'image': SITE['url'] + '/assets/me-400.webp', 'sameAs': [u for _, u, _, _ in SOCIALS]}}])
     page('/404.html', 'Not found | ' + SITE['name'], 'Page not found.', f'<main class="study"><section class="shero"><h1>That page doesn’t exist.</h1><p><a class="btn" href="/studies/">See all the studies {ARROW}</a></p></section></main>')
-    import automation, tools; ai_urls = automation.build(page, ARROW, author) + tools.build(page, ARROW, author, automation.offer)
+    import automation, tools, workflows; ai_urls = automation.build(page, ARROW, author) + tools.build(page, ARROW, author, automation.offer) + workflows.build(page, ARROW, author, automation.offer)
     urls = ['/', '/studies/', '/about/'] + [f'/studies/{s["slug"]}/' for s in STUDIES] + ai_urls
     open(f'{OUT}/sitemap.xml', 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
         ''.join(f'<url><loc>{SITE["url"]}{u}</loc><lastmod>{TODAY}</lastmod></url>\n' for u in urls) + '</urlset>\n')

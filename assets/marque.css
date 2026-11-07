@@ -246,3 +246,27 @@ p a, .answer a, .sec a { color: #fff; text-decoration-color: #fff; text-decorati
 .ttab i.unk, .tlegend i.unk { font-style: normal; display: inline-grid; place-items: center; width: 18px; height: 18px; border-radius: 50%; border: 1.5px solid #eab308; color: #eab308; font-size: 11px; font-weight: 700; }
 .ttab tbody tr:hover i.dot { box-shadow: 0 0 0 4px rgba(34, 197, 94, .3); }
 .tlegend span { display: inline-flex; align-items: center; gap: 8px; margin-right: 20px; }
+/* workflow library (11-07) */
+.study.wf { max-width: 980px; }
+.wbadge { display: inline-block; font-family: var(--wide); font-variation-settings: "wdth" 112; text-transform: uppercase; font-size: 11px; letter-spacing: .08em; font-weight: 600; padding: 6px 12px; border-radius: 999px; margin-bottom: 14px; }
+.wbadge.u { border: 1px solid #eab308; color: #eab308; } .wbadge.t { background: #22c55e; color: #000; }
+.wmeta { display: flex; flex-wrap: wrap; gap: 28px; margin-top: 22px; } .wmeta span { color: #bdbdbd; font-size: 15px; } .wmeta b { display: block; font-family: var(--wide); font-variation-settings: "wdth" 112; text-transform: uppercase; font-size: 11px; letter-spacing: .08em; color: #8f8f8f; font-weight: 600; }
+.wcopy { margin: 16px 0; border: 1px solid #262626; background: #0b0b0b; }
+.wcopy-h { display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-bottom: 1px solid #262626; } .wcopy-h b { color: #fff; font-weight: 600; } .wcopy-h span { color: #8f8f8f; font-size: 13px; flex: 1; }
+.wcbtn { margin-left: auto; background: #fff; color: #000; border: 0; padding: 7px 14px; font: 600 12px/1 var(--wide); text-transform: uppercase; letter-spacing: .06em; cursor: pointer; border-radius: 999px; }
+.wcopy pre { margin: 0; padding: 16px; max-height: 340px; overflow: auto; white-space: pre-wrap; font: 13.5px/1.55 var(--mono); color: #d4d4d4; }
+.wtab { border-collapse: collapse; width: 100%; font-size: 15px; } .wtab th, .wtab td { text-align: left; padding: 12px 10px; border-bottom: 1px solid #1f1f1f; vertical-align: top; color: #d4d4d4; } .wtab thead th { color: #8f8f8f; font-size: 12px; font-weight: 500; } .wtab tbody th { color: #fff; }
+.wsetup, .wsteps { padding-left: 22px; } .wsetup li, .wsteps li { margin: 0 0 14px; color: #d4d4d4; }
+.wsetup em, .wmaint em { font-style: normal; color: #8f8f8f; font-size: 13px; margin-left: 8px; }
+.who { display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; padding: 2px 8px; margin-right: 10px; border-radius: 999px; } .who.you { background: #fff; color: #000; } .who.ai { border: 1px solid #555; color: #d4d4d4; }
+.wsteps b { color: #fff; } .wtool { display: inline-block; margin-left: 10px; color: #8f8f8f; font-size: 13px; } .wsteps p { margin: 4px 0 0; color: #bdbdbd; }
+.wmaint { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; } .wmaint h3 { font-size: 13px; letter-spacing: .06em; } .wmaint ul { padding-left: 18px; color: #d4d4d4; }
+.wex { padding-left: 18px; } .wex li { margin: 8px 0; } .wex a { color: #fff; } .wex span { display: block; color: #8f8f8f; font-size: 13px; }
+.wpricing { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; margin: 30px 0; } .wpricing > div { background: #0d0d0d; padding: 24px; } .wpricing p { color: #bdbdbd; margin: 0; font-size: 15px; }
+.wcards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px; }
+.wcard { display: flex; flex-direction: column; gap: 8px; padding: 30px; background: radial-gradient(120% 90% at 80% 0%, #222 0%, #0e0e0e 55%, #060606 100%); text-decoration: none; color: #fff; min-height: 260px; }
+.wcard .wbadge { align-self: flex-start; } .wcard b { font-family: var(--wide); font-variation-settings: "wdth" 125; text-transform: uppercase; font-weight: 600; font-size: 20px; line-height: 1.12; }
+.wcard span:not(.wbadge) { color: #a8a8a8; font-size: 15px; } .wcard em { margin-top: auto; font-style: normal; font-size: 12.5px; color: #fff; display: inline-flex; align-items: center; gap: 12px; text-transform: uppercase; letter-spacing: .06em; font-family: var(--wide); }
+.wcard:hover { box-shadow: inset 0 0 0 1px #fff; }
+@media (max-width: 720px) { .wcards, .wpricing, .wmaint { grid-template-columns: minmax(0, 1fr); } }
+.wflink a { display: inline-block; margin-top: 6px; color: #22c55e !important; font-weight: 600; text-decoration: none !important; } .wflink a:hover { text-decoration: underline !important; }

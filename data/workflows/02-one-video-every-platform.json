@@ -1,0 +1,401 @@
+{
+ "id": "02-one-video-every-platform",
+ "slug": "one-video-every-platform",
+ "title": "One Video, Every Platform",
+ "outcome": "Every time you finish one video, it is cut into clips and turned into ready-to-post text for each platform you use, checked, and scheduled, with you approving the first batches.",
+ "covers_tasks": [
+  "repurpose",
+  "clips",
+  "captions-subtitles",
+  "titles-hashtags",
+  "write-posts",
+  "schedule-posts",
+  "graphics"
+ ],
+ "doesnt_cover": "Making the original video, the platform logins and 2-factor codes, deciding which clips are on-brand for sensitive topics, replying to comments, paid ads, and rights to anyone else's footage. It will not copy other creators' content for you, and it can't promise reach or views.",
+ "status": "untested",
+ "price": "free",
+ "time_to_set_up": "About 3 to 5 hours the first time, plus 1 week of approving every batch.",
+ "difficulty": "medium",
+ "harness": [
+  {
+   "name": "Claude Code + scheduled tasks + a posting API (default)",
+   "best_for": "One owner. Drop a video in a folder and the AI transcribes, picks clips, writes text per platform, checks it and schedules it. A Claude Code recipe in the study used a posting tool's MCP connection and saved brand voice in a memory file.",
+   "runs_unattended": true,
+   "monthly_cost": "Claude paid plan (a recipe cites about $20/month to start) plus the posting tool (one recipe cites about $30/month, another a one-week free trial) and a clipping tool if you use one."
+  },
+  {
+   "name": "n8n + Google Sheets + a posting API",
+   "best_for": "Always-on runs. Several recipes read the next unposted row from a sheet, wrote captions per platform with OpenAI, posted through one API, then marked the row posted.",
+   "runs_unattended": true,
+   "monthly_cost": "varies (n8n has a free self-hosted option; posting API and AI fees extra). One recipe asked for $5 to $10 of OpenAI credit to start."
+  },
+  {
+   "name": "Make or Zapier + Google Sheets",
+   "best_for": "Visual builders. A Make recipe turned one YouTube video into posts for Instagram, LinkedIn, X and a YouTube title.",
+   "runs_unattended": true,
+   "monthly_cost": "varies by plan"
+  },
+  {
+   "name": "AI clipper app + native schedulers (by hand)",
+   "best_for": "Starting out: upload the video to an AI clipping tool, then paste the text into each platform's own scheduler.",
+   "runs_unattended": false,
+   "monthly_cost": "varies; clipping tools often give a few free clips then charge"
+  }
+ ],
+ "models": [
+  {
+   "step": "Transcription with word timestamps",
+   "model": "Whisper-style speech-to-text",
+   "why": "Clip cutting and captions both need exact word times."
+  },
+  {
+   "step": "Choosing clips",
+   "model": "A strong reasoning model (Claude or ChatGPT)",
+   "why": "Finding a complete, self-contained moment with a strong first line is a judgment task."
+  },
+  {
+   "step": "Titles, captions, hashtags per platform",
+   "model": "A strong writing model",
+   "why": "Each platform needs different wording; quality here is what people read."
+  },
+  {
+   "step": "QA review",
+   "model": "A fresh session of a strong model",
+   "why": "Independent check on facts, claims and clip boundaries."
+  },
+  {
+   "step": "Cutting, captions, reframing",
+   "model": "ffmpeg or an editor/clipping tool (CapCut, an AI clipper)",
+   "why": "Exact cuts are done by tools, not by a language model."
+  },
+  {
+   "step": "Sheet updates, file names, tagging",
+   "model": "A cheap, fast model",
+   "why": "Simple tasks."
+  }
+ ],
+ "interview_questions": [
+  "What kind of videos do you make (talks, tutorials, interviews, product demos) and about how long are they?",
+  "How often do you finish a new video, and where does it get saved?",
+  "Which platforms do you want posts for: YouTube, YouTube Shorts, TikTok, Instagram, Facebook, LinkedIn, X, others? Which are the top two?",
+  "How many clips per video do you want, and what length range for each?",
+  "Do you want captions burned into the clips? What style (big, small, brand color)?",
+  "What should every post point to: a website, a booking page, an app, a newsletter? Give the exact link and how each platform handles links.",
+  "Do your videos include other people, customers, music or footage you don't own? What are the rules for using them?",
+  "Which hashtags, tags or keywords do you already use, and which topics are banned?",
+  "What are the best times to post for your audience, if you know, and how many posts per day per platform is too many?",
+  "Who approves posts at first, and what should always need a human (testimonials, prices, health or legal claims)?"
+ ],
+ "setup": [
+  {
+   "who": "you",
+   "step": "List your platforms and make sure every account exists, is verified, and (for Instagram/Facebook) is a business or creator account linked to a Page.",
+   "time": "30 to 60 min"
+  },
+  {
+   "who": "ai",
+   "step": "Run the interview and write profile.md (voice, platforms, links, banned topics, approval rules). Create folders: inbox/, transcripts/, clips/, posts/, and files queue.csv, posts.csv, learnings.md.",
+   "time": "20 min"
+  },
+  {
+   "who": "you",
+   "step": "Sign up for a posting tool that supports your platforms, or decide to use each platform's own scheduler. Connect the accounts yourself (logins and 2-factor codes).",
+   "time": "30 min"
+  },
+  {
+   "who": "you",
+   "step": "Create API keys (transcription, AI model, posting tool). Store them in the credential store or a .env file, never in chat. Note the monthly limit on each.",
+   "time": "30 min"
+  },
+  {
+   "who": "ai",
+   "step": "Build the run: watch inbox/ for a new video, then steps 1 to 10 below. Run one video end to end with posting turned off.",
+   "time": "1 to 2 h"
+  },
+  {
+   "who": "you",
+   "step": "Review the clips and text from the test. Fix voice, clip length, caption style and banned words until you would post them yourself.",
+   "time": "30 min"
+  },
+  {
+   "who": "ai",
+   "step": "Create the schedule and the 48-hour/7-day results task. Start in 'approve everything' mode.",
+   "time": "20 min"
+  },
+  {
+   "who": "you",
+   "step": "Approve batches for one week. Move to 'approve only flagged items' after 5 clean batches in a row.",
+   "time": "10 min per video"
+  }
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "name": "New video arrives",
+   "tool": "Folder watch or a sheet row (status = new)",
+   "detail": "You drop the finished video, or a link, into inbox/ (or add a row). The run starts on a schedule or on the new file."
+  },
+  {
+   "n": 2,
+   "name": "Transcribe",
+   "tool": "Whisper-style speech-to-text",
+   "detail": "Saves a transcript with word timestamps. Flags audio too quiet or too noisy to use."
+  },
+  {
+   "n": 3,
+   "name": "Find the best clips",
+   "tool": "AI",
+   "detail": "Reads the transcript and picks complete moments of the length you set, each starting on a strong line and ending on a finished thought. Skips banned topics. Saves start/end times and a one-line reason."
+  },
+  {
+   "n": 4,
+   "name": "Cut and reframe",
+   "tool": "ffmpeg or clipping tool",
+   "detail": "Cuts each clip, reframes for vertical (9:16) with the speaker centered, and keeps a landscape copy for platforms that want it."
+  },
+  {
+   "n": 5,
+   "name": "Burn in captions",
+   "tool": "Editor/clipping tool or ffmpeg",
+   "detail": "Uses word timestamps for captions, keeps them out of the platform button zones, and checks they match the speech."
+  },
+  {
+   "n": 6,
+   "name": "Write text per platform",
+   "tool": "AI",
+   "detail": "For each clip and the full video: one search phrase, then a different title, caption and hashtag set per platform, in your voice, with the right link. Saves to posts.csv."
+  },
+  {
+   "n": 7,
+   "name": "Make extra posts (optional)",
+   "tool": "AI + graphic tool",
+   "detail": "Text-only posts for LinkedIn, X or a newsletter from the transcript, plus one simple quote graphic if you want it."
+  },
+  {
+   "n": 8,
+   "name": "Quality checks",
+   "tool": "Script + AI review",
+   "detail": "Runs the checks in section 7. Passing items become 'ready'; failing ones are fixed once, then held for you."
+  },
+  {
+   "n": 9,
+   "name": "Spread out and schedule",
+   "tool": "Posting tool or platform schedulers",
+   "detail": "Staggers posts: not all clips on the same day, not the same clip on every platform at the same minute. Respects your daily limits per platform. Marks each row 'scheduled', then 'posted' with the link."
+  },
+  {
+   "n": 10,
+   "name": "Measure and learn",
+   "tool": "Platform analytics + AI",
+   "detail": "At 48 hours and 7 days, pulls numbers per post, compares to your own recent median, and writes lessons to learnings.md. Step 3 and step 6 read it next time."
+  }
+ ],
+ "prompts": [
+  {
+   "name": "Clip picker",
+   "use": "Step 3. Runs on each transcript.",
+   "text": "You are a short-video editor. Below is a timestamped transcript of one video.\n\nBusiness profile and rules:\n{{profile}}\n\nLessons so far:\n{{learnings}}\n\nTranscript:\n{{transcript}}\n\nPick up to {{max_clips}} clips between {{min_seconds}} and {{max_seconds}} seconds. Each clip must: start on a strong first sentence (a claim, a question, a surprise or a number), make sense without the rest of the video, and end on a finished thought. Never cut in the middle of a sentence. Skip any moment that touches the banned topics or mentions private customer details.\n\nReturn JSON: a list of {\"start\":seconds,\"end\":seconds,\"hook_line\":\"the first sentence\",\"hook_type\":\"number|question|claim|story\",\"topic\":\"...\",\"why_it_works\":\"one sentence\",\"risk\":\"none|check claim|sensitive\"}. Order from strongest to weakest."
+  },
+  {
+   "name": "Platform text writer",
+   "use": "Step 6. Runs per clip and for the full video.",
+   "text": "Write posting text for this clip.\n\nProfile (voice, links, banned words):\n{{profile}}\n\nClip transcript:\n{{clip_text}}\n\nSearch phrase (one phrase a real person would search or follow): {{search_phrase}}\n\nReturn JSON with a separate entry for each of these platforms: {{platforms}}.\n- youtube: title under 70 characters containing the search phrase and promising only what the clip shows; description of 2 sentences plus the link; up to 3 hashtags.\n- tiktok: caption under 150 characters, conversational, 3 to 5 hashtags, no link in the caption if links aren't clickable.\n- instagram: first line works as a hook, 2 short lines, up to 5 hashtags, say 'link in bio' if that's how the profile says links work.\n- facebook: 1 to 2 plain sentences and the link, 0 to 2 hashtags.\n- linkedin: professional first line, 3 short paragraphs maximum, 0 to 3 hashtags.\n- x: under 270 characters, no more than 2 hashtags.\nThe text for each platform must be different, not copied. No fake urgency, no guaranteed results, no claim the clip doesn't back up. Also return alt_text (one sentence) and a file_name (lowercase, hyphens, contains the search phrase)."
+  },
+  {
+   "name": "Hashtag chooser",
+   "use": "Step 6, if you want a separate hashtag pass.",
+   "text": "Here are my past posts with their results:\n{{posts_with_results}}\n\nHere is the new clip's topic and search phrase: {{topic}} / {{search_phrase}}.\n\nSuggest hashtags per platform: 1 broad, 2 specific, and 1 about my niche or brand. Do not use a hashtag unrelated to the clip, banned, or misleading. Prefer ones that appear on my better-performing posts, but only say 'works for me' if at least 5 posts used it. Return JSON by platform."
+  },
+  {
+   "name": "Repurpose into text posts",
+   "use": "Step 7. Optional text-only content.",
+   "text": "From this transcript, write: (1) one LinkedIn post of 120 to 200 words, (2) one X post under 270 characters, (3) three one-line quote candidates. Use only what is said in the transcript; do not add facts or numbers. Voice and banned words come from the profile:\n{{profile}}\n\nTranscript:\n{{transcript}}"
+  },
+  {
+   "name": "Batch reviewer (fresh session)",
+   "use": "Step 8. Run in a new chat.",
+   "text": "You are a strict reviewer who did not write any of this.\n\nProfile and rules:\n{{profile}}\n\nOriginal transcript:\n{{transcript}}\n\nProposed clips with start/end times and posting text:\n{{batch}}\n\nCheck each item: (1) the clip begins and ends on a full sentence, (2) every claim in the text is supported by the clip, (3) the text differs across platforms, (4) the link and handle are correct, (5) no banned word or topic, (6) nothing private about a customer, (7) no testimonial, price, health, legal or financial claim unless the profile says it's approved. Return JSON: for each item {\"id\",\"decision\":\"pass|fix|hold_for_human\",\"problems\":[...],\"fixed_text\":\"...\"}. Use hold_for_human for anything in (6) or (7)."
+  },
+  {
+   "name": "Weekly learning review",
+   "use": "Step 10. After the 7-day checkpoint.",
+   "text": "Read posts.csv: each row is one post with platform, clip length, hook type, topic, post time, caption style, and 48h and 7d numbers (views, watch time or percent watched, likes, comments, shares, clicks if known).\n\nCompare within each platform only. For each tag, compare the median of posts with that tag to the median of all posts on that platform in the last 30 days. Only call it a pattern with at least 5 posts. Report: best platform for each clip type, hook types to use more or less, best length range, best posting windows. Propose ONE change for next week. Don't touch the profile rules. Write up to 5 lines to learnings.md, each with the date, evidence and change. With fewer than 10 posts on a platform, write 'not enough data' for it."
+  }
+ ],
+ "qa_checks": [
+  {
+   "check": "Clip starts and ends on a full sentence; no cut words; no jump in the middle of a word.",
+   "on_fail": "Adjust times by a fraction of a second and re-cut once; then hold."
+  },
+  {
+   "check": "Clip stands alone (a stranger understands it) and the first 3 seconds carry the hook.",
+   "on_fail": "Pick another moment or hold."
+  },
+  {
+   "check": "Captions match the audio, are readable on a phone and stay out of the platform button zones.",
+   "on_fail": "Re-render once; then hold."
+  },
+  {
+   "check": "Format per platform: aspect ratio, length limit, file size, resolution.",
+   "on_fail": "Re-export in the right format."
+  },
+  {
+   "check": "Every claim in the text is supported by the clip; no testimonial, price, health, legal or financial claim unless approved in the profile.",
+   "on_fail": "Hold for human."
+  },
+  {
+   "check": "Text differs across platforms, contains the search phrase where needed, uses the right link or 'link in bio' wording.",
+   "on_fail": "Rewrite once."
+  },
+  {
+   "check": "Banned words, topics and private customer details.",
+   "on_fail": "Hold for human. Never auto-post."
+  },
+  {
+   "check": "Rights: no third-party music, footage or faces without permission recorded in the profile.",
+   "on_fail": "Hold for human."
+  },
+  {
+   "check": "Duplicate and spacing check: not the same clip already posted, not more than your daily limit per platform, no two near-identical posts at the same time. Repeated near-identical posts across accounts risk being flagged as duplicate content.",
+   "on_fail": "Move to another slot or skip."
+  },
+  {
+   "check": "Hold-for-human rule: any failed check after one retry, any item marked sensitive, any account warning, or any spend over the limit stops that item and messages you.",
+   "on_fail": "Pause that item; other items continue."
+  }
+ ],
+ "learning_loop": {
+  "reads": "Per-post numbers from each platform (or the posting tool): views, watch time or percent watched, likes, comments, shares, clicks if tracked. Plus the tags saved with each post: platform, clip length, hook type, topic, caption style, post time.",
+  "when": "Fixed checkpoints per post: 48 hours and 7 days. One weekly review on the same day each week.",
+  "compares": "Each post to the median of the last 30 days on the same platform. Tag groups against the rest. It needs 5 or more posts per tag and 10 per platform before it calls anything a pattern.",
+  "adjusts": "On its own: how many clips to cut, preferred clip length, hook types and topics to pick first, hashtag sets, posting windows, and which platforms get the daily slots. One change per week.",
+  "guardrails": "One variable per week. It never changes your voice, banned list, links, approval rules or daily post limits. It never posts to a new platform on its own. Clicks and conversions count more than views when you track them. A post that gets a warning, strike or many negative comments pauses that topic and messages you. All changes are logged in learnings.md with evidence."
+ },
+ "maintenance": {
+  "daily": [
+   {
+    "task": "Drop in any new finished video and approve or reject the day's clips (week one: all)",
+    "minutes": 10
+   },
+   {
+    "task": "Read the run summary and any hold-for-human messages",
+    "minutes": 5
+   }
+  ],
+  "weekly": [
+   {
+    "task": "Read learnings.md and approve or undo the changes",
+    "minutes": 15
+   },
+   {
+    "task": "Spot-check 3 posted items on a phone on different platforms",
+    "minutes": 10
+   },
+   {
+    "task": "Reply to comments and messages (this workflow doesn't)",
+    "minutes": 15
+   }
+  ],
+  "monthly": [
+   {
+    "task": "Check billing, credits and limits on the posting, AI and clipping tools",
+    "minutes": 15
+   },
+   {
+    "task": "Reconnect social accounts and refresh any expiring tokens (Facebook/Instagram page tokens were said to expire and were regenerated monthly in one recipe)",
+    "minutes": 15
+   },
+   {
+    "task": "Review banned list, links and hashtags against what is actually working",
+    "minutes": 15
+   }
+  ]
+ },
+ "failure_points": [
+  {
+   "problem": "Poor source video gives poor clips and posts. Everything downstream is built on it.",
+   "fix": "Only feed it finished videos you are proud of; the QA step checks the clip stands alone."
+  },
+  {
+   "problem": "Posting fails from platform quotas or rate limits (for example TikTok or YouTube daily limits).",
+   "fix": "Stay under the limits in your profile; check the posting tool's failed-posts list; mark failed rows, don't retry in a loop."
+  },
+  {
+   "problem": "Expired social connections or page tokens.",
+   "fix": "Reconnect monthly and after any password change; the run messages you when a post fails for auth."
+  },
+  {
+   "problem": "Instagram can't take a direct file upload through some setups, or has format limits (one recipe used a workaround with a temporary image link).",
+   "fix": "Use a posting tool that supports the format, or schedule that platform by hand."
+  },
+  {
+   "problem": "A shared file isn't public, so the renderer can't read it.",
+   "fix": "Set the sharing permission the tool needs, or upload directly through its API."
+  },
+  {
+   "problem": "Sloppy JSON from the AI breaks the posting step.",
+   "fix": "Ask for JSON only and validate it before posting; send invalid output back for one fix."
+  },
+  {
+   "problem": "Wrong account IDs copied into the posting setup, so posts go to the wrong place.",
+   "fix": "Test with one private or draft post per platform first."
+  },
+  {
+   "problem": "Same content on every platform at the same time looks like spam and may be treated as duplicate content.",
+   "fix": "Stagger posts and write different text per platform; nothing guarantees it avoids duplicate detection."
+  },
+  {
+   "problem": "Clips cut mid-sentence or captions out of sync.",
+   "fix": "Use word timestamps, re-cut once, hold if still wrong."
+  },
+  {
+   "problem": "Unwarmed new accounts get flagged or banned (Instagram was called the most fragile in one recipe).",
+   "fix": "Use real accounts you already run; post by hand for the first days of a new account."
+  },
+  {
+   "problem": "Using other people's clips or music brings copyright risk.",
+   "fix": "Only use your own footage and licensed audio; the profile records what is allowed."
+  },
+  {
+   "problem": "A form or link that can publish to your accounts is open to anyone.",
+   "fix": "Put basic login on any web form that triggers posting."
+  }
+ ],
+ "evidence": {
+  "videos_used": 15,
+  "study_note": "Study task numbers (1,876 videos): repurposing 167 videos (37% run fully alone), clips 82 (54%), captions and subtitles 119 (48%), titles and hashtags 133 (18%), writing posts 241 (24%), scheduling posts 271 (73%), graphics 286 (48%). Top tools: ChatGPT, Claude, n8n, CapCut, Opus Clip. Cutting clips and scheduling are often fully automated; the wording of posts usually still gets a human read. 15 recipes were built from videos on this topic; several used a sheet + n8n/Make + a posting API, and one used Claude Code. Few had any learning from results. Income claims in clipping videos were not checked.",
+  "examples": [
+   {
+    "id": "BcfjIBd49C8",
+    "title": "I Built a 24/7 Viral Shorts Machine with No-Code (free n8n template)",
+    "channel": "Nate Herk | AI Automation",
+    "views": 383110
+   },
+   {
+    "id": "LFO4cP0KMwk",
+    "title": "The ULTIMATE Agent to Auto-Publish Content Daily - 9 Social Platforms in 1 | n8n",
+    "channel": "Ed Hill | AI Automation",
+    "views": 86787
+   },
+   {
+    "id": "Fnw1_YAYEAc",
+    "title": "Claude Code Runs My Social Media Now (Full Setup)",
+    "channel": "Zubair Trabzada | AI Workshop",
+    "views": 92178
+   },
+   {
+    "id": "CvQ3ARulOKE",
+    "title": "NEW AI Social Media Automation will save you HOURS *Fully Automated*",
+    "channel": "Dan Kieft",
+    "views": 79710
+   },
+   {
+    "id": "-PgsOwD4XZ8",
+    "title": "How to make $3,000/mo clipping with AI",
+    "channel": "Austin Armstrong",
+    "views": 27730
+   }
+  ]
+ }
+}

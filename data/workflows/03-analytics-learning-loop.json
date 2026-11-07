@@ -1,0 +1,357 @@
+{
+ "id": "03-analytics-learning-loop",
+ "slug": "analytics-learning-loop",
+ "title": "Weekly Analytics and Learning Loop",
+ "outcome": "Every week, your numbers from social, ads, website and sales are pulled into one report that says what did well, what did badly and why, and writes next week's changes (it makes the safe ones itself and asks you about the rest).",
+ "covers_tasks": [
+  "content-analytics",
+  "reports",
+  "ad-reporting",
+  "ad-optimize"
+ ],
+ "doesnt_cover": "It does not make the content, run the ads, answer customers or post anything. It does not spend money, change ad budgets or pause ads without your yes. It cannot read a platform you have not given it access to, and it cannot tell you WHY something worked when the sample is tiny.",
+ "status": "untested",
+ "price": "free",
+ "time_to_set_up": "About 3 to 5 hours the first time (most of it is giving read access to each platform). Then 15 to 20 minutes a week.",
+ "difficulty": "medium",
+ "harness": [
+  {
+   "name": "Claude Code or Claude Cowork with scheduled tasks and connectors",
+   "best_for": "Owners who want it to run itself weekly and read files, spreadsheets and connected apps. Cowork needs the desktop app and a paid plan (the study video says Pro at minimum). Used in the Shopify and creative-strategy recipes.",
+   "runs_unattended": true,
+   "monthly_cost": "Needs a paid Claude plan; price varies, check Anthropic's pricing page. The computer or app must be open when the task runs."
+  },
+  {
+   "name": "n8n (cloud or self-hosted) + Claude or OpenAI API",
+   "best_for": "Always-on, no computer needs to be left open. Pulls from APIs on a timer, writes to Google Sheets, emails the report.",
+   "runs_unattended": true,
+   "monthly_cost": "One study recipe showed $5/month for a hosted n8n and about 24 GBP/month for n8n Cloud. Model usage is extra and varies."
+  },
+  {
+   "name": "Make or Zapier + a Google Sheet",
+   "best_for": "Owners who do not want code. Pulls numbers into one sheet each week; the AI step writes the summary.",
+   "runs_unattended": true,
+   "monthly_cost": "Both have a free tier with limits; paid plans vary."
+  },
+  {
+   "name": "Manual: export CSVs and paste into ChatGPT or Claude",
+   "best_for": "Starting out, or platforms with no connector. Same prompts, you do the pulling.",
+   "runs_unattended": false,
+   "monthly_cost": "Free apps work; paid plan varies."
+  }
+ ],
+ "models": [
+  {
+   "step": "Pulling and cleaning numbers",
+   "model": "A cheap, fast model (a small Claude or OpenAI model) or no model at all, just the connector",
+   "why": "This is copy work. Do not pay for a strong model to move numbers."
+  },
+  {
+   "step": "Comparing and explaining what did well or badly",
+   "model": "The strongest model you have (Claude Opus or Sonnet class, or the best GPT)",
+   "why": "Judgment and caution about small samples matter here."
+  },
+  {
+   "step": "Writing next week's plan and the owner summary",
+   "model": "A strong model",
+   "why": "Needs to follow your profile.md rules and keep the voice plain."
+  },
+  {
+   "step": "Checking the report against the raw numbers",
+   "model": "A second, different model if you can",
+   "why": "A second opinion catches maths and made-up causes."
+  }
+ ],
+ "interview_questions": [
+  "Which places do you post or sell (YouTube, TikTok, Instagram, Facebook, email, website, shop, ads)? List every one, even small.",
+  "For each place, what is the ONE number you care about most (sales, leads, watch time, signups, bookings)?",
+  "Where do you look at the numbers today, and can you give read-only access (a viewer login, an export, or a connected app)?",
+  "How long after posting do you judge a post? (We suggest checkpoints at 48 hours and 7 days. Do you want different ones?)",
+  "What counts as a win and what counts as a miss for you? Give a real example of each.",
+  "Do you run paid ads? Which platform, what monthly spend, and what is the most you would ever let a tool change without asking you?",
+  "Which things should the AI be allowed to change by itself (next week's topics, post times, lengths, hooks) and which must ask you first (budgets, pricing, offers, anything public)?",
+  "Which day and time should the report land, and where (email, Slack, a doc, a Google Sheet)?",
+  "What have you already tried that did not work, so it does not suggest it again?",
+  "Who gets the report besides you (partner, team, VA)?"
+ ],
+ "setup": [
+  {
+   "who": "you",
+   "step": "Run the interview prompt and save the result as profile.md in a new folder called analytics-loop.",
+   "time": "20 min"
+  },
+  {
+   "who": "you",
+   "step": "Create a Google Sheet called Scoreboard with a tab per source (Social, Ads, Site, Sales) and one tab called Weekly. The AI will fill it; you only own the sheet.",
+   "time": "10 min"
+  },
+  {
+   "who": "you",
+   "step": "Give read-only access to each platform: a viewer role in YouTube Studio / Meta / TikTok, Google Analytics or a privacy-friendly analytics tool, your shop or payment dashboard, your ad account. Prefer the 'Ask for permission' or read-only setting on every connector. Never choose 'Always allow'.",
+   "time": "60-120 min"
+  },
+  {
+   "who": "you",
+   "step": "Store any API keys or logins in the tool's own credential screen or a password manager. Never paste them into chat.",
+   "time": "15 min"
+  },
+  {
+   "who": "ai",
+   "step": "Build the Scoreboard column layout, the folder (reports/, learnings.md, plan-next-week.md) and a test report from last week's numbers.",
+   "time": "15 min"
+  },
+  {
+   "who": "you",
+   "step": "Open the test report next to the real dashboards and check five numbers by hand. Fix anything that does not match before turning on the schedule.",
+   "time": "20 min"
+  },
+  {
+   "who": "ai",
+   "step": "Create the weekly scheduled task (Monday morning) and the 48-hour / 7-day post checks.",
+   "time": "10 min"
+  },
+  {
+   "who": "you",
+   "step": "Approve the first two reports by hand. Leave the self-made changes off until both are right.",
+   "time": "15 min each"
+  }
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "name": "Wake up",
+   "tool": "Scheduler (Claude scheduled task, n8n schedule, Make schedule)",
+   "detail": "Runs every Monday at the time you chose. Also runs a small daily check that looks for posts that just hit 48 hours or 7 days old."
+  },
+  {
+   "n": 2,
+   "name": "Pull the numbers",
+   "tool": "Connectors or APIs, or your exported CSVs",
+   "detail": "Social: views, watch time or average view duration, click rate, follows, shares, comments per post. Ads: spend, impressions, clicks, cost per result, results. Site: visits, top pages, where visitors came from, signups. Sales: orders or bookings, revenue, refunds. Save a raw copy in the Scoreboard sheet with the date pulled."
+  },
+  {
+   "n": 3,
+   "name": "Clean and check the data",
+   "tool": "Cheap model or script",
+   "detail": "Fill gaps with 'missing' (never zero), remove duplicates, check that each source covers the same seven days, and flag any number that moved more than 3x from last week as 'check the source'."
+  },
+  {
+   "n": 4,
+   "name": "Judge each post at fixed checkpoints",
+   "tool": "Strong model",
+   "detail": "Compare each post only with your own posts of the same type and platform, at the same age (48 hours, then 7 days). Label each: beat the usual, normal, or under the usual. Do not judge before the checkpoint."
+  },
+  {
+   "n": 5,
+   "name": "Compare ads",
+   "tool": "Strong model",
+   "detail": "Rank ads by your chosen number (cost per result or click rate). Only judge an ad once it has enough data (default: 1,000 impressions or the spend you set). Mark each: keep, watch, or propose to pause. Never act on it."
+  },
+  {
+   "n": 6,
+   "name": "Connect the dots",
+   "tool": "Strong model",
+   "detail": "Line up site visits and sales against posts and ads in the same week. Say what moved together. Write 'correlation, not proof' next to any link and say what a test would confirm it."
+  },
+  {
+   "n": 7,
+   "name": "Write the report",
+   "tool": "Strong model",
+   "detail": "One page: the week in three lines, the 3 best things and why (with evidence), the 3 weakest and why (with evidence), numbers vs last week and vs your 4-week average, and what we still do not know."
+  },
+  {
+   "n": 8,
+   "name": "Check the report",
+   "tool": "Second model or script",
+   "detail": "Every number in the report is checked against the Scoreboard sheet. Every 'because' must point to a number or say 'guess'."
+  },
+  {
+   "n": 9,
+   "name": "Write next week's changes",
+   "tool": "Strong model",
+   "detail": "Two lists. Safe changes it makes itself in plan-next-week.md (topics to repeat, hooks to try, lengths, posting times). Proposals that need your yes (ad pauses, budget moves, offer or price changes, new platforms). At most 3 changes in total so you can tell what worked."
+  },
+  {
+   "n": 10,
+   "name": "Log what changed",
+   "tool": "File write",
+   "detail": "Append to learnings.md: date, what was tried, what the numbers said, what changed, and which later checkpoint will test it."
+  },
+  {
+   "n": 11,
+   "name": "Deliver and wait for your yes",
+   "tool": "Email, Slack or doc",
+   "detail": "Send the report with a clear 'Approve / Skip / Ask me' line for each proposal. Approved ad changes are listed for you or a team member to make; the loop itself only reads."
+  }
+ ],
+ "prompts": [
+  {
+   "name": "Weekly numbers check",
+   "use": "Step 3. Run on the raw pull before any analysis.",
+   "text": "You are checking one week of business numbers before analysis. Input: the raw tables below (social, ads, site, sales) with the date range for each.\n\nDo this and nothing else:\n1. Confirm each table covers the same 7 days. List any that do not.\n2. List missing values. Write 'missing', never 0.\n3. List any number that is more than 3 times higher or lower than last week's. Say 'check the source' for each.\n4. List duplicates.\n5. Say 'CLEAN' if there are no problems, otherwise 'HOLD' and why.\nDo not explain results or give advice. Output a short checklist.\n\nTABLES:\n[paste or attach]"
+  },
+  {
+   "name": "Post checkpoint judge",
+   "use": "Step 4. Runs when a post reaches 48 hours or 7 days.",
+   "text": "Read profile.md. Here is one post with its numbers at {48 hours | 7 days}, plus my previous posts of the same type on the same platform at the same age.\n\nTell me in plain words:\n- Did this beat my usual, match it, or fall under it? Give the two numbers you compared.\n- If I have fewer than 5 comparable posts, say 'too few to judge' and stop.\n- Name ONE thing about the post that may explain it (hook, length, topic, time posted, thumbnail). Say 'my guess' if you cannot point to a number.\n- Do not use the word 'viral'. Do not promise anything.\n\nPOST AND HISTORY:\n[paste]"
+  },
+  {
+   "name": "Weekly report writer",
+   "use": "Step 7. Gives the one-page report.",
+   "text": "Read profile.md and learnings.md first. Using the Scoreboard data below, write my weekly report in plain words, at a level a busy owner can read in 3 minutes.\n\nSections: 1) The week in 3 lines. 2) Three things that did well, each with the number and what it was compared against. 3) Three things that did badly, same rule. 4) Money: ad spend, results, site visits, sales, versus last week and my 4-week average. 5) What we still do not know.\n\nRules: never say 'because' without pointing to a number or writing 'my guess'. Say 'too early to tell' when the sample is small. Do not repeat a fix already tried and logged as failed in learnings.md. No hype.\n\nDATA:\n[paste]"
+  },
+  {
+   "name": "Next-week changes with guardrails",
+   "use": "Step 9. Splits changes into 'I make it' and 'needs your yes'.",
+   "text": "From the report and learnings.md, propose at most 3 changes for next week. For each: what to change, the number that suggested it, the checkpoint where we will know if it worked, and a one-line way to undo it.\n\nSort into two lists:\nLIST A - safe, I will put it in plan-next-week.md myself: topics to repeat or drop, hook styles to try, post length, post times, caption wording.\nLIST B - needs the owner's yes: anything touching ad budgets, pausing or starting ads, prices, offers, discounts, new platforms, anything that is not reversible, and anything in profile.md under 'Needs human approval'.\n\nIf two changes would affect the same number, keep only one so we can tell what worked. If the data is thin, propose a test instead of a change."
+  },
+  {
+   "name": "Report fact checker",
+   "use": "Step 8. Run with a different model than the writer if you can.",
+   "text": "Here is a weekly report and the Scoreboard data it came from. Check every number in the report against the data. List each number as OK, WRONG (give the right one) or NOT IN DATA. Then list every sentence that claims a cause and mark it SUPPORTED (points to a number), GUESS or UNSUPPORTED. Output HOLD if anything is WRONG, NOT IN DATA or UNSUPPORTED, otherwise PASS."
+  }
+ ],
+ "qa_checks": [
+  {
+   "check": "Every number in the report matches the Scoreboard sheet (fact-check prompt returns PASS).",
+   "on_fail": "Hold the report, regenerate once, and if it still fails send the raw sheet to the owner with a note."
+  },
+  {
+   "check": "All sources cover the same seven days and none are missing.",
+   "on_fail": "Report anyway but put a clear 'Missing: [source]' line at the top. Never fill a gap with zero or a guess."
+  },
+  {
+   "check": "No post is judged before its 48-hour or 7-day mark, and none with fewer than 5 comparable posts.",
+   "on_fail": "Label it 'too early' or 'too few to judge'."
+  },
+  {
+   "check": "No more than 3 changes are proposed, and none repeats a logged failure.",
+   "on_fail": "Cut to the 3 with the strongest numbers behind them."
+  },
+  {
+   "check": "Nothing in LIST B was acted on by the AI.",
+   "on_fail": "Stop the loop, undo the change, and turn off autonomous steps until you review the setup."
+  },
+  {
+   "check": "HOLD FOR A HUMAN: a number moved more than 3x, a refund or complaint spike appears, ad spend exceeds your cap, or a platform sign-in has expired.",
+   "on_fail": "Send a short alert to the owner and skip the 'changes' step until they reply."
+  }
+ ],
+ "learning_loop": {
+  "reads": "Social platform analytics (per post), ad platform results, website analytics, and sales or bookings. Pulled weekly (Monday) plus a daily check for posts that just reached 48 hours or 7 days.",
+  "when": "Fixed checkpoints: 48 hours and 7 days per post, weekly for the whole business, and a monthly look at what the changes added up to. Never judge at random times.",
+  "compares": "Each post against your own posts of the same type, platform and age; this week against last week and against your 4-week average; ads against each other on one chosen number. Needs at least 5 comparable posts or the agreed ad data before it says anything.",
+  "adjusts": "On its own: next week's content plan file (topics to repeat or drop, hooks, lengths, posting times, caption wording) and learnings.md. With your yes only: ad pauses and budget moves, prices, offers, new platforms. Max 3 changes a week so you can tell what worked.",
+  "guardrails": "Read-only access to every platform. It cannot spend money, post, delete or change an ad. It never judges small samples. It keeps a written undo for every change. A change that did not help after its checkpoint is logged as failed and not repeated. If results drop two weeks in a row after a change, it proposes undoing it. You can switch off the self-made changes at any time and keep the reports."
+ },
+ "maintenance": {
+  "daily": [
+   {
+    "task": "Glance at the alert channel for HOLD messages (expired sign-ins, odd numbers).",
+    "minutes": "2"
+   }
+  ],
+  "weekly": [
+   {
+    "task": "Read the report and answer each proposal Approve / Skip / Ask me.",
+    "minutes": "10-15"
+   },
+   {
+    "task": "Make any approved ad or budget changes yourself in the ad platform.",
+    "minutes": "5-10"
+   },
+   {
+    "task": "Spot-check two numbers against the real dashboards.",
+    "minutes": "5"
+   }
+  ],
+  "monthly": [
+   {
+    "task": "Re-do any expired logins or tokens (Meta, Google and TikTok connections expire; reconnect when the alert says so).",
+    "minutes": "10-20"
+   },
+   {
+    "task": "Check the AI bill and any connector fees.",
+    "minutes": "5"
+   },
+   {
+    "task": "Read learnings.md: delete rules that no longer fit, and confirm the 'what we tried' list is right.",
+    "minutes": "15"
+   },
+   {
+    "task": "Review whether the single number you picked in the interview still matches your goal.",
+    "minutes": "10"
+   }
+  ]
+ },
+ "failure_points": [
+  {
+   "problem": "Platform sign-in or token expires and the pull silently returns nothing.",
+   "fix": "The data check marks that source 'missing' and sends an alert. Reconnect it. Never let a blank become a zero."
+  },
+  {
+   "problem": "Connector gives mixed or inconsistent results (a study recipe saw this with a campaign search).",
+   "fix": "Add the exact account or URL to profile.md, and have the fact-check step compare with an export once a month."
+  },
+  {
+   "problem": "The AI invents a reason for a result.",
+   "fix": "The 'because' rule: each cause needs a number or the word 'guess'. The checker prompt flags the rest."
+  },
+  {
+   "problem": "Choosing 'Always allow' on a connector lets the AI change live things (a study creator warned this can break a store).",
+   "fix": "Keep connectors read-only or 'Ask for permission'. Make this loop read-only."
+  },
+  {
+   "problem": "Too many changes at once, so you cannot tell what worked.",
+   "fix": "Cap at 3 changes and log each with its own checkpoint."
+  },
+  {
+   "problem": "Creative or posting volume falls behind spend and results drop (one ads recipe discussed this).",
+   "fix": "The report shows posts or creatives per week next to spend, so a gap shows up."
+  },
+  {
+   "problem": "Very big data sets are slow (a recipe capped one run at 3,000 reviews).",
+   "fix": "Limit each pull to the last 7 days or the last N items."
+  },
+  {
+   "problem": "The desktop app is closed when the scheduled task should run.",
+   "fix": "Leave the app open on schedule, or move to n8n or Make for always-on."
+  }
+ ],
+ "evidence": {
+  "videos_used": 14,
+  "study_note": "The study has 113 videos on 'Track what performs (analytics)': about 22% ran fully by themselves, 76% with a person in the loop, 2% needed a person. 'Build reports and dashboards': 218 videos, 36% fully automatic. 'Report on ad results': 10 videos, 50% automatic. 'Adjust budgets and pause losing ads': 29 videos, 45% fully automatic. Top tools across these tasks: Claude, ChatGPT, Gemini, Google Sheets, Gmail, n8n, Make, Slack. None of the recipes we read had an automated learning loop beyond a periodic review (one compared before and after a store change); most were summaries with a person deciding, so the loop in this workflow is our own design.",
+  "examples": [
+   {
+    "id": "2RddsxLvXJo",
+    "title": "Claude Now Runs My Shopify Store",
+    "channel": "Brendan Gillen",
+    "views": 31005
+   },
+   {
+    "id": "ReYEYoLsppk",
+    "title": "Claude Has Officially Changed Facebook Ads Forever (And Nobody's Talking About It)",
+    "channel": "Chase Chappell",
+    "views": 87943
+   },
+   {
+    "id": "UGiN8aVy2l8",
+    "title": "How I Use Claude Cowork as a Creative Strategist",
+    "channel": "Dara Denney",
+    "views": 108626
+   },
+   {
+    "id": "7SmNrxeF83Q",
+    "title": "ChatGPT's New Automation Features Are INSANE! (New ChatGPT Agents Revealed)",
+    "channel": "Rob The AI Guy",
+    "views": 31075
+   },
+   {
+    "id": "O6ukkzoQlD0",
+    "title": "How to Automate Your YouTube Channel with AI (n8n Workflow)",
+    "channel": "Website Learners",
+    "views": 56856
+   }
+  ]
+ }
+}

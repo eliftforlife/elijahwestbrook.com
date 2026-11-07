@@ -1,0 +1,422 @@
+{
+ "id": "01-faceless-channel-autopilot",
+ "slug": "faceless-channel-autopilot",
+ "title": "Faceless Channel Autopilot",
+ "outcome": "A faceless short-video channel gets new videos made, checked, scheduled and reviewed against their results every day, with you approving only what the checks flag.",
+ "covers_tasks": [
+  "content-ideas",
+  "scripts",
+  "voiceover",
+  "ai-avatar",
+  "edit-video",
+  "graphics",
+  "captions-subtitles",
+  "thumbnails",
+  "titles-hashtags",
+  "schedule-posts",
+  "content-analytics",
+  "quality-check"
+ ],
+ "doesnt_cover": "Choosing the niche and the channel's rules, creating and verifying the accounts, paying for tools, copyright and platform-policy decisions, monetization setup, and replying to comments. It also doesn't guarantee views. No video in the study showed a fully hands-off channel with a proven result.",
+ "status": "untested",
+ "price": "free",
+ "time_to_set_up": "About 4 to 8 hours the first time, spread over a weekend, plus a 1 to 2 week trial period with you approving every video.",
+ "difficulty": "hard",
+ "harness": [
+  {
+   "name": "Claude Code + scheduled tasks (default)",
+   "best_for": "One owner who wants the whole loop in plain files (profile.md, queue, learnings.md) and the AI doing the thinking, QA and learning.",
+   "runs_unattended": true,
+   "monthly_cost": "Claude paid plan (one recipe cites about $20/month to start) plus your voice, image/video and posting tools. Computer must be on, or use a cloud schedule."
+  },
+  {
+   "name": "n8n + Airtable/Google Sheets + a posting API",
+   "best_for": "Always-on runs on a server. The most complete automated build in the study used this, with button checkpoints so a human reviews between stages.",
+   "runs_unattended": true,
+   "monthly_cost": "varies (n8n has a free self-hosted option; posting API, voice and video tools are extra). One similar n8n build quoted a little over $2 per finished video in model fees."
+  },
+  {
+   "name": "Make or Zapier + Google Sheets",
+   "best_for": "People who prefer a visual builder over files.",
+   "runs_unattended": true,
+   "monthly_cost": "varies by plan and number of runs"
+  },
+  {
+   "name": "All-in-one video app (TubeGen, Higgsfield, HeyGen, Muse style) driven by hand",
+   "best_for": "Trying the idea before building automation. Most recipes were this: one click per stage.",
+   "runs_unattended": false,
+   "monthly_cost": "varies; most have a free tier with watermarks and short limits"
+  }
+ ],
+ "models": [
+  {
+   "step": "Idea research and ranking",
+   "model": "A strong reasoning model (Claude or ChatGPT)",
+   "why": "Judgment about what fits the niche and search demand matters more than speed."
+  },
+  {
+   "step": "Script writing and rewrite",
+   "model": "A strong writing model (Claude Sonnet class or better)",
+   "why": "The hook and pacing decide retention; cheap models write flat scripts."
+  },
+  {
+   "step": "QA review of script and captions",
+   "model": "A fresh session of a strong model",
+   "why": "A second read catches what the writer missed."
+  },
+  {
+   "step": "Voiceover",
+   "model": "ElevenLabs (used in 77 videos in the study), or a clone of your own voice",
+   "why": "Most-used voice tool in the study. Generate per paragraph for better expression."
+  },
+  {
+   "step": "Images and video clips",
+   "model": "An image model (Flux, Leonardo, Midjourney, GPT image) plus an image-to-video model (Kling, PixVerse, Higgsfield)",
+   "why": "Recipes used still images animated into 5 to 10 second clips."
+  },
+  {
+   "step": "Captions",
+   "model": "Whisper-style transcription for word timing",
+   "why": "Gives exact word timestamps for burned-in captions."
+  },
+  {
+   "step": "Labeling, tagging, sheet updates, weekly analytics math",
+   "model": "A cheap, fast model",
+   "why": "Simple tasks; saves cost."
+  }
+ ],
+ "interview_questions": [
+  "What is the channel about, and who exactly watches it? Name the niche in one sentence.",
+  "Which platforms will it post to (YouTube Shorts, TikTok, Instagram Reels, others), and are the accounts already created and verified?",
+  "Do you already have channels or videos you like in this niche? Give 3 links or names to learn from.",
+  "What video length and how many videos per day or week do you want?",
+  "Which voice do you want: a stock AI voice, a clone of your own voice, or none? Do you have permission to use that voice?",
+  "What look should the visuals have: stock footage, AI images, animated images, gameplay, whiteboard, text only?",
+  "Which topics, people, brands or claims are off limits (medical, legal, financial, politics, kids, copyrighted characters)?",
+  "How will the channel earn: ads, creator rewards, affiliate links, or sending people to your business? What is the link or call to action, if any?",
+  "How many videos can you personally approve each day during week one, and do you want to keep approving after that?",
+  "What is your monthly budget for voice, image, video and posting tools, and what is your hard stop on spend?"
+ ],
+ "setup": [
+  {
+   "who": "you",
+   "step": "Pick the niche and write 3 to 5 channel rules (topics, tone, never-do list) during the interview.",
+   "time": "30 min"
+  },
+  {
+   "who": "ai",
+   "step": "Run the interview and write profile.md; create the folders and files: ideas/, scripts/, audio/, visuals/, final/, queue.csv, posts.csv, learnings.md.",
+   "time": "20 min"
+  },
+  {
+   "who": "you",
+   "step": "Create the channel accounts, verify phone/email, set the brand name, picture and banner. Set each platform's audience and AI-content disclosure options.",
+   "time": "1 to 2 h"
+  },
+  {
+   "who": "you",
+   "step": "Sign up for the voice tool, image/video tool and the posting tool. Add payment and note the monthly limit. Create API keys and store them in the tool's credential store or a .env file, never in chat.",
+   "time": "1 h"
+  },
+  {
+   "who": "you",
+   "step": "Connect your social accounts to the posting tool (you do the logins and 2-factor codes).",
+   "time": "20 min"
+  },
+  {
+   "who": "ai",
+   "step": "Build the scripts or flow for the run loop (section 6) and run one test video end to end without posting.",
+   "time": "1 to 2 h"
+  },
+  {
+   "who": "you",
+   "step": "Watch the test video and its QA report. Fix voice, look and rules until you would post it yourself.",
+   "time": "45 min"
+  },
+  {
+   "who": "ai",
+   "step": "Create the daily scheduled task and the 48-hour/7-day review task. Start in 'approve everything' mode.",
+   "time": "20 min"
+  },
+  {
+   "who": "you",
+   "step": "Trial period: approve or reject each video for 1 to 2 weeks. Switch to 'approve only flagged videos' once 10 in a row pass your review.",
+   "time": "10 min a day"
+  }
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "name": "Find ideas",
+   "tool": "AI + trend source (YouTube search, Google Trends, reference channels)",
+   "detail": "Reads profile.md and learnings.md, looks at your reference channels and trends, and adds 10 scored ideas to ideas.csv. Drops anything on the never-do list or already used."
+  },
+  {
+   "n": 2,
+   "name": "Pick today's topics",
+   "tool": "AI",
+   "detail": "Chooses the top ideas for today's slots. Keeps about 80% proven topic types and 20% experiments (see learning loop)."
+  },
+  {
+   "n": 3,
+   "name": "Write the script",
+   "tool": "AI (strong writing model)",
+   "detail": "Writes a script with a first-line hook, short sentences, one idea per beat, and an end. Saves to scripts/<id>.md with its tags (hook type, length, topic)."
+  },
+  {
+   "n": 4,
+   "name": "Script check",
+   "tool": "AI (fresh session)",
+   "detail": "Scores the hook, facts and policy risk. Rewrites once if the hook is weak. Holds the video for you if a fact cannot be verified."
+  },
+  {
+   "n": 5,
+   "name": "Make the voiceover",
+   "tool": "Voice tool (ElevenLabs or similar)",
+   "detail": "Generates audio paragraph by paragraph, then joins it. Trims long pauses."
+  },
+  {
+   "n": 6,
+   "name": "Make visuals",
+   "tool": "Image model + image-to-video model, or stock footage",
+   "detail": "Splits the script into scenes, writes an image prompt per scene, generates images, animates them into short clips, and waits (polls) until every clip is finished."
+  },
+  {
+   "n": 7,
+   "name": "Assemble and caption",
+   "tool": "Editor (CapCut, ffmpeg or an editing API)",
+   "detail": "Lays clips over audio, burns in word-timed captions, adds music at low volume, exports vertical MP4."
+  },
+  {
+   "n": 8,
+   "name": "Write title, caption, hashtags",
+   "tool": "AI",
+   "detail": "One search phrase per video, then different text for each platform. Saves to queue.csv."
+  },
+  {
+   "n": 9,
+   "name": "Quality checks",
+   "tool": "Script (ffmpeg checks) + AI review",
+   "detail": "Runs the checks in section 7. Passing videos get status 'ready'. Failing ones get fixed once, then held for you."
+  },
+  {
+   "n": 10,
+   "name": "Schedule and post",
+   "tool": "Posting tool or platform schedulers",
+   "detail": "Posts ready videos at the chosen times. Marks the row 'posted' with the link. Never re-posts a row already marked posted. In approve-everything mode it waits for your OK."
+  },
+  {
+   "n": 11,
+   "name": "Measure and learn",
+   "tool": "Platform analytics + AI",
+   "detail": "At 48 hours and 7 days, pulls each video's numbers, compares to the channel's recent median, and writes lessons to learnings.md. Tomorrow's ideas and scripts read it."
+  }
+ ],
+ "prompts": [
+  {
+   "name": "Idea finder",
+   "use": "Step 1. Daily.",
+   "text": "You are the idea editor for a faceless short-video channel.\n\nChannel profile:\n{{profile}}\n\nWhat we learned so far (learnings.md):\n{{learnings}}\n\nIdeas already used (titles):\n{{used_ideas}}\n\nTrend and reference-channel notes from today:\n{{trend_notes}}\n\nGive me 10 new video ideas. For each give: working title, the single search phrase someone would type to find it, hook type (number, question, claim or story), target length in seconds, topic type, why it should work for THIS channel, and a risk flag (none, fact-check needed, policy risk). Skip anything on the never-do list. Return a CSV with those columns and nothing else."
+  },
+  {
+   "name": "Script writer",
+   "use": "Step 3. One run per chosen idea.",
+   "text": "Write a voiceover script for one short vertical video.\n\nChannel profile and voice rules:\n{{profile}}\n\nIdea:\n{{idea_row}}\n\nRules:\n- Target length: {{seconds}} seconds spoken aloud (about 2.5 words per second).\n- The first sentence is the hook. It must make a viewer curious or surprised within 3 seconds. No greeting, no channel name.\n- Short sentences. One idea. One fact or example per beat.\n- Do not state a statistic, date or name unless I gave it to you in the idea row or notes. Mark anything uncertain with [VERIFY].\n- End with a line that fits the call to action in the profile, or just end on the strongest point.\n- Never use anything on the never-say list.\n\nReturn: the spoken script as plain paragraphs, then a list of scene beats (one line each, what we should SEE), then the tags: hook type, length, topic."
+  },
+  {
+   "name": "Script reviewer (fresh session)",
+   "use": "Step 4. Run in a new chat so it has no memory of writing the script.",
+   "text": "You are a strict reviewer. You did not write this script.\n\nChannel profile and rules:\n{{profile}}\n\nScript:\n{{script}}\n\nScore from 1 to 10: (a) hook strength in the first 3 seconds, (b) clarity and pacing, (c) sounds human, not like a template, (d) matches channel voice. Then check: any claim that could be false, any [VERIFY] tags, anything on the never-do list, anything that breaks YouTube, TikTok or Instagram policy for misleading, harmful or reused content.\n\nAnswer in JSON: {\"scores\":{...},\"problems\":[...],\"rewrite_hook\":\"...\",\"decision\":\"pass|fix|hold_for_human\"}. Use hold_for_human for any unverifiable fact, any sensitive topic, or any score under 5."
+  },
+  {
+   "name": "Scene prompt maker",
+   "use": "Step 6. Turns scene beats into image and motion prompts.",
+   "text": "Turn these scene beats into image prompts and motion prompts for an image-to-video model.\n\nVisual style from the profile:\n{{style}}\n\nScene beats:\n{{beats}}\n\nFor each scene return: image_prompt (subject, setting, camera, lighting, style words from the profile, vertical 9:16), motion_prompt (one simple camera or subject move, 5 seconds), and on_screen_text (3 words or fewer, or none). Keep the same character and look across all scenes. Do not include real people, logos or copyrighted characters unless the profile allows it. Return JSON."
+  },
+  {
+   "name": "Title and caption writer",
+   "use": "Step 8. Per-platform text.",
+   "text": "Write the posting text for this video.\n\nProfile:\n{{profile}}\nScript:\n{{script}}\nSearch phrase: {{search_phrase}}\n\nReturn JSON with keys youtube_title (under 70 characters, contains the search phrase, promises only what the video shows), youtube_description (2 sentences, then 3 hashtags), tiktok_caption (under 150 characters, casual), instagram_caption (2 short lines plus up to 5 hashtags), alt_text, and pinned_comment. Each platform's text must be different. No fake urgency, no guaranteed results."
+  },
+  {
+   "name": "Weekly learning review",
+   "use": "Step 11. Runs after the 7-day checkpoint.",
+   "text": "You are the channel's analyst. Read posts.csv (every post with tags, post time, and the 48h and 7d numbers: views, average view duration or percent watched, swipe-away rate if available, likes, shares, followers gained).\n\nFor each tag (hook type, length, topic, post time) compare the median of posts with that tag to the median of all posts in the last 30 days. Only call something a pattern if at least 5 posts have that tag. List: what to do more of, what to do less of, and one experiment for next week (change ONE thing only). Do not change the niche, voice or rules in profile.md. Write 5 lines maximum to learnings.md, each with the date, the evidence (numbers and post count) and the change. If there are fewer than 10 posts, write 'not enough data' and change nothing."
+  }
+ ],
+ "qa_checks": [
+  {
+   "check": "Script review passes (average score 7 or higher, none under 5), no unresolved [VERIFY] tags.",
+   "on_fail": "Rewrite once. If still failing, hold for human."
+  },
+  {
+   "check": "Every number, name and date in the script matches a source you gave it.",
+   "on_fail": "Remove the claim or hold for human."
+  },
+  {
+   "check": "Never-do list and platform policy scan (misleading, harmful, kids' content, copyrighted characters, real-person likeness).",
+   "on_fail": "Hold for human. Never auto-fix a policy flag."
+  },
+  {
+   "check": "Audio: no silence over 1 second, no clipping, length within 5% of target, voice sounds the same across paragraphs.",
+   "on_fail": "Regenerate the bad paragraph once, then hold."
+  },
+  {
+   "check": "Video: no blank or black frames, no frozen clip, clip count matches script beats, no free-tool watermark.",
+   "on_fail": "Regenerate only the bad clip once, then hold."
+  },
+  {
+   "check": "Captions match the spoken words, sit inside the safe area (away from platform buttons and the bottom edge), and are readable on a phone.",
+   "on_fail": "Re-render captions; if still off, hold."
+  },
+  {
+   "check": "Exported file is vertical 1080x1920 MP4, within each platform's length limit.",
+   "on_fail": "Re-export."
+  },
+  {
+   "check": "Title and caption contain the search phrase, differ by platform, and promise nothing the video doesn't deliver.",
+   "on_fail": "Rewrite once."
+  },
+  {
+   "check": "Duplicate check: not the same topic as one posted in the last 14 days, and the row isn't already marked posted.",
+   "on_fail": "Skip the row."
+  },
+  {
+   "check": "Hold-for-human rule: any failed check after one retry, any sensitive topic (health, money advice, legal, politics, kids), any complaint, strike or warning on the account, or any spend over the daily limit stops the run and messages you.",
+   "on_fail": "Pause posting until you reply."
+  }
+ ],
+ "learning_loop": {
+  "reads": "Per-video views, average view duration or percent watched, swipe-away rate, shares and followers gained, from each platform's analytics (or the posting tool), plus the video's tags saved at creation: hook type, length, topic, post time.",
+  "when": "Fixed checkpoints per video: 48 hours and 7 days after posting. A weekly review on the same day each week looks across all posts.",
+  "compares": "Each video against the channel's own median for the last 30 days, and each tag group against the rest, on the same platform. It needs at least 5 posts per tag and 10 posts total before it draws a conclusion.",
+  "adjusts": "On its own: which topic types and hook types get more of next week's slots, preferred length, posting times, and the hook wording in the prompts. It queues one experiment at a time.",
+  "guardrails": "Changes only one variable per week. At most 20% of slots go to experiments. It never changes the niche, voice, never-do list, spend limits or platforms. It never deletes posts. A video that gets a policy warning, copyright claim or a very high swipe-away rate pauses that topic type and messages you. Every change is written to learnings.md with the evidence, so you can undo it."
+ },
+ "maintenance": {
+  "daily": [
+   {
+    "task": "Approve or reject the day's videos (week one: all; later: only flagged ones)",
+    "minutes": 10
+   },
+   {
+    "task": "Read the run summary and any hold-for-human messages",
+    "minutes": 5
+   }
+  ],
+  "weekly": [
+   {
+    "task": "Read learnings.md and approve or undo the changes it made",
+    "minutes": 15
+   },
+   {
+    "task": "Spot-check 3 posted videos on a phone for look, sound and captions",
+    "minutes": 10
+   },
+   {
+    "task": "Check comments and account notices (strikes, claims, warnings)",
+    "minutes": 10
+   }
+  ],
+  "monthly": [
+   {
+    "task": "Check billing, credits and spend against budget on every tool",
+    "minutes": 15
+   },
+   {
+    "task": "Reconnect social accounts and refresh any expiring tokens or logins (you enter 2-factor codes)",
+    "minutes": 15
+   },
+   {
+    "task": "Review the never-do list and channel rules against any platform policy changes",
+    "minutes": 20
+   }
+  ]
+ },
+ "failure_points": [
+  {
+   "problem": "A scene looks worse than the rest of the video (common in the recipes).",
+   "fix": "Regenerate only that scene; the QA step checks each clip."
+  },
+  {
+   "problem": "Weak hook. The most common reason a short fails.",
+   "fix": "The script reviewer rewrites the first line; the learning loop favors the hook types that win on your channel."
+  },
+  {
+   "problem": "Free tools add watermarks or limit length (HeyGen, D-ID, PixVerse free plans).",
+   "fix": "Use a paid plan or a tool without a watermark; QA fails any file with one."
+  },
+  {
+   "problem": "Voiceover sounds flat when the whole script is generated at once.",
+   "fix": "Generate per paragraph and join; trim pauses."
+  },
+  {
+   "problem": "Voice or avatar clone sounds bad from a poor or short sample.",
+   "fix": "Record a longer clean sample (one recipe advised at least 2 minutes of video for an avatar) or use a stock voice."
+  },
+  {
+   "problem": "Video and audio lengths don't match, or an image/video model hasn't finished.",
+   "fix": "Poll until every item says complete; match clip length to audio before assembly."
+  },
+  {
+   "problem": "Posting fails from quotas, rate limits or an expired account connection.",
+   "fix": "Check the posting tool's failed-posts list and reconnect the account. The run marks the row 'failed', not 'posted'."
+  },
+  {
+   "problem": "New or unverified accounts block thumbnails or automation until phone verification is done.",
+   "fix": "Verify every account by hand first."
+  },
+  {
+   "problem": "Wrong audience setting (for example 'made for kids') cuts reach and features.",
+   "fix": "Set it by hand at channel setup and re-check monthly."
+  },
+  {
+   "problem": "Copyright, reused-content or AI-disclosure problems (one creator reported a strike).",
+   "fix": "Use original or licensed media, follow each platform's AI-label rule, and hold anything borderline for human review."
+  },
+  {
+   "problem": "Wrong niche or low-demand topics.",
+   "fix": "Check a search phrase has real demand before scripting; the idea prompt asks for it."
+  },
+  {
+   "problem": "Nothing learned from results. Almost no recipe had a closed loop.",
+   "fix": "The 48h/7d review and learnings.md do it, with guardrails."
+  }
+ ],
+ "evidence": {
+  "videos_used": 15,
+  "study_note": "Study task numbers (1,876 videos): ideas 435 videos (17% run fully alone), scripts 331 (13%), voiceover 187 (66%), AI avatars 199 (68%), video editing 332 (36%), graphics 286 (48%), thumbnails 104 (24%), titles and hashtags 133 (18%), scheduling posts 271 (73%), content analytics 113 (22%). Top tools: ChatGPT, Claude, CapCut, ElevenLabs, n8n. So voice and scheduling are usually automated, while ideas, scripts and learning from results usually still involve a human. 15 recipes were built from faceless-channel videos. Most were run by hand, one stage at a time, and almost none had an automatic learning loop. Income claims in those videos were not checked; do not rely on them.",
+  "examples": [
+   {
+    "id": "emkXHpaWkZQ",
+    "title": "This AI Clone Automation Creates Unique Content Daily! (100% Automated!)",
+    "channel": "AI Andy",
+    "views": 71054
+   },
+   {
+    "id": "zXE_PpJ5WUc",
+    "title": "How To Build a Faceless YouTube Channel with Claude (Full Automation)",
+    "channel": "Zinho Automates",
+    "views": 79036
+   },
+   {
+    "id": "V4HuwQUD9m4",
+    "title": "I Built a Fully Automated YouTube Channel Using Muse AI Agent (100% Free)",
+    "channel": "SpotLight",
+    "views": 82941
+   },
+   {
+    "id": "OINK1lURm4w",
+    "title": "$101,415 in 90 days with AI YouTube Automation (just copy me)",
+    "channel": "adavia and adavia archives",
+    "views": 573322
+   },
+   {
+    "id": "ygeCgN-SfE8",
+    "title": "how i make $36,438/mo posting YouTube Shorts (using AI)",
+    "channel": "Kellan Henneberry",
+    "views": 1328600
+   }
+  ]
+ }
+}

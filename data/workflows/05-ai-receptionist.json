@@ -1,0 +1,382 @@
+{
+ "id": "05-ai-receptionist",
+ "slug": "ai-receptionist",
+ "title": "AI phone receptionist that answers, books and texts you a summary",
+ "outcome": "Every call to your business number is answered on the first ring by an AI voice that answers common questions, books the appointment into your calendar, texts you a short summary, and hands the call to a real person when it should.",
+ "covers_tasks": [
+  "phone-answering",
+  "book-appointments",
+  "calendar",
+  "crm-update"
+ ],
+ "doesnt_cover": "Outbound sales calls, taking payments by phone, medical or legal advice, anything that needs a judgment call about a person's situation, and your existing booking system if it has no API (some dental, vet and salon systems). Complaints and emergencies always go to a human. You still own the business phone number, the calendar and the rules.",
+ "status": "untested",
+ "price": "free",
+ "time_to_set_up": "About 3 to 5 hours for a first version, plus 1 to 2 hours of test calls. Allow a few days if you need to port or forward a phone number.",
+ "difficulty": "medium",
+ "harness": [
+  {
+   "name": "Voice agent platform (Retell AI, Vapi or Synthflow) + Cal.com + Google Calendar + a small n8n or Make scenario for the text summary (our default)",
+   "best_for": "Most small businesses. The voice platform handles the call, Cal.com checks and books real slots, the automation tool sends the SMS and logs the call.",
+   "runs_unattended": true,
+   "monthly_cost": "Varies. Examples from the study videos: a Retell number was $2/month and calls about 12.5 cents a minute; one build added up to about 13 cents a minute across hosting, transcription, model and voice; a Twilio number was about $1/month. Cal.com has a free plan. Check current prices before you commit."
+  },
+  {
+   "name": "GoHighLevel built-in voice AI",
+   "best_for": "Owners who already use GoHighLevel as their CRM and calendar. One platform, fewer connections.",
+   "runs_unattended": true,
+   "monthly_cost": "Varies. Plans and some premium actions are billed separately; a free trial was mentioned in the videos."
+  },
+  {
+   "name": "Solvea or similar all-in-one no-code receptionist",
+   "best_for": "The fastest start with the least wiring. Covers chat, calls and email, uses Google Calendar and Sheets, and lets you take over a conversation.",
+   "runs_unattended": true,
+   "monthly_cost": "Varies. The video only mentioned free starter credits."
+  },
+  {
+   "name": "ChatGPT or Claude app only (manual)",
+   "best_for": "Practicing the script and the knowledge base before you pay for a phone platform. It cannot answer a real call.",
+   "runs_unattended": false,
+   "monthly_cost": "Whatever your plan already costs."
+  }
+ ],
+ "models": [
+  {
+   "step": "Live call conversation",
+   "model": "A fast, reliable chat model inside the voice platform (GPT-4.1-class was recommended in two videos because it called tools more reliably than a newer, more creative model)",
+   "why": "The call has to answer in under a second and must call the booking tool correctly every time. Pick reliability over cleverness."
+  },
+  {
+   "step": "Voice (text to speech)",
+   "model": "ElevenLabs or the platform's built-in voice",
+   "why": "Clear, calm and not slow. Test with your real business name and street names, because those are what voices mispronounce."
+  },
+  {
+   "step": "Speech to text",
+   "model": "The platform's default transcriber",
+   "why": "Switch only if your callers have strong accents or the line is noisy."
+  },
+  {
+   "step": "Call summary and SMS",
+   "model": "A cheap small model (n8n/Make AI node)",
+   "why": "Summarizing a transcript in three lines does not need a strong model."
+  },
+  {
+   "step": "Weekly review of flagged calls",
+   "model": "Your strongest model (Claude or ChatGPT)",
+   "why": "It reads the week's transcripts, finds patterns and suggests prompt fixes. Quality matters more than cost here, and it runs once a week."
+  }
+ ],
+ "interview_questions": [
+  "What is the business phone number callers use today, and which carrier or provider holds it? (We need to know if it can forward to a new number.)",
+  "What are your opening hours, time zone, and any holidays or days you close? What should callers hear outside those hours?",
+  "What are the 10 questions callers ask most? Paste your price list, services list, address, parking notes and policies if you have them.",
+  "What can be booked by phone? For each type, how long is it, which days and hours, and who does it? What must be asked before booking (name, phone, vehicle, pet, reason)?",
+  "Which calendar do you use (Google, Outlook, something else), and is it always up to date? Does anyone else book into it by hand?",
+  "When must the AI hand the call to a person? Examples: emergency, upset caller, refund, a named VIP, medical or legal question, caller asks for a human. Which number rings, and at what hours?",
+  "If nobody picks up the transfer, what should happen? (Take a message, offer a callback time, book a slot.)",
+  "Which phone number should get the text summary after each call, and do you want every call texted or only bookings and urgent ones?",
+  "Do you have to follow rules on call recording or consent where you operate (for example saying the call may be recorded)? Should the AI say it is an AI at the start?",
+  "What would a bad call look like for you? (Wrong price, wrong time slot, rude tone, double booking.) What is the worst thing it could say?"
+ ],
+ "setup": [
+  {
+   "who": "you",
+   "step": "Run the interview prompt and save the result as profile.md. Review it and fix anything wrong, especially hours and prices.",
+   "time": "30 min"
+  },
+  {
+   "who": "you",
+   "step": "Create accounts: a voice platform (Retell, Vapi or Synthflow), Cal.com (free plan), and an automation tool (n8n or Make). Pay and accept terms yourself.",
+   "time": "30 min"
+  },
+  {
+   "who": "you",
+   "step": "Connect Google Calendar to Cal.com. Check the time zone in both. Set event types, lengths, working hours and buffers.",
+   "time": "30 min"
+  },
+  {
+   "who": "you",
+   "step": "Buy or port a phone number in the voice platform (or Twilio). Keep API keys in the tool's credential store, never in chat.",
+   "time": "20 min"
+  },
+  {
+   "who": "ai",
+   "step": "Turn profile.md into the knowledge base document, using the knowledge-base prompt below. You read it and approve every line that states a price, hour or policy.",
+   "time": "30 min"
+  },
+  {
+   "who": "ai",
+   "step": "Write the receptionist system prompt from profile.md using the system prompt below. You approve it.",
+   "time": "20 min"
+  },
+  {
+   "who": "you",
+   "step": "Paste the prompt and knowledge base into the voice agent. Choose a voice, write the greeting, set max call length and the transfer number. Add the booking tool (check availability and book) pointed at Cal.com.",
+   "time": "45 min"
+  },
+  {
+   "who": "ai",
+   "step": "Build the after-call scenario: the platform sends a webhook when the call ends, the automation summarizes it, texts you, and logs a row.",
+   "time": "45 min"
+  },
+  {
+   "who": "you",
+   "step": "Make 15 test calls using the test-call list from the test prompt below. Include a wrong-number caller, an angry caller, a request for a human, and a double booking attempt. Fix and retest.",
+   "time": "1 to 2 hours"
+  },
+  {
+   "who": "you",
+   "step": "Go live in shadow mode: forward only after-hours or overflow calls first. After a week of clean calls, forward all calls (carrier forwarding may need your carrier's portal or a support call).",
+   "time": "20 min, then 1 week"
+  }
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "name": "Call comes in",
+   "tool": "Phone number on the voice platform",
+   "detail": "The caller dials your business number, which rings the AI directly or is forwarded to it (always, after hours, or when you do not pick up). The AI greets them with your business name and, if your rules require it, says it is an AI assistant and the call may be recorded."
+  },
+  {
+   "n": 2,
+   "name": "Understand why they called",
+   "tool": "Voice agent (speech to text + chat model)",
+   "detail": "The agent works out the reason: question, booking, change or cancel, message for someone, or something it must hand off. It asks one question at a time."
+  },
+  {
+   "n": 3,
+   "name": "Answer from the knowledge base only",
+   "tool": "Knowledge base attached to the agent",
+   "detail": "Prices, hours, services and policies come from your approved document. If the answer is not there, the agent says it will pass the question on and takes a message. It never guesses."
+  },
+  {
+   "n": 4,
+   "name": "Check real availability",
+   "tool": "Cal.com connected to Google Calendar",
+   "detail": "The agent calls the 'check availability' tool with the service type and date. It offers at most 2 or 3 times and reads them back in plain words."
+  },
+  {
+   "n": 5,
+   "name": "Confirm details, then book",
+   "tool": "Cal.com booking tool",
+   "detail": "It collects name, phone number and the reason or vehicle/pet/service details, repeats them back, and only then books. The booking lands in your Google Calendar and Cal.com emails or texts the customer a confirmation."
+  },
+  {
+   "n": 6,
+   "name": "Transfer to a person when needed",
+   "tool": "Voice platform call transfer",
+   "detail": "On any hand-off rule (emergency, upset caller, asks for a human, question outside the knowledge base twice) the agent says it is connecting them and transfers to your number. If nobody answers, it falls back to taking a message and promising a callback time."
+  },
+  {
+   "n": 7,
+   "name": "End of call webhook",
+   "tool": "Voice platform webhook to n8n or Make",
+   "detail": "When the call ends, the platform sends the transcript, recording link, caller number, duration and any booking result to your automation."
+  },
+  {
+   "n": 8,
+   "name": "Summarize and classify",
+   "tool": "AI node in n8n or Make",
+   "detail": "A small model turns the transcript into a 3 line summary and a label: booked, question answered, message taken, transferred, or needs follow-up. It also flags anything that matches a hold rule."
+  },
+  {
+   "n": 9,
+   "name": "Text the owner",
+   "tool": "Twilio, or the platform's SMS",
+   "detail": "Send you the summary: who, what they wanted, what was booked, and what you must do. Urgent or flagged calls go out right away. Routine ones can be batched in one text at set times."
+  },
+  {
+   "n": 10,
+   "name": "Log it",
+   "tool": "Google Sheets or your CRM",
+   "detail": "One row per call: date, time, caller number, name, reason, outcome, booking time, duration, flag, recording link. This sheet feeds the weekly review."
+  }
+ ],
+ "prompts": [
+  {
+   "name": "Receptionist system prompt",
+   "use": "Paste into the voice agent as its instructions. Fill the {BRACKETS} from profile.md.",
+   "text": "You are the phone receptionist for {BUSINESS NAME}, a {TYPE OF BUSINESS} in {CITY}. You speak with callers on the phone, so use short sentences, plain words, and one question at a time. Never read out lists longer than three items.\n\nOpening: say \"Thanks for calling {BUSINESS NAME}, this is the virtual assistant. How can I help?\" {ADD RECORDING NOTICE IF REQUIRED}\n\nYour job, in order of importance:\n1. Understand why they are calling.\n2. Answer questions using ONLY the knowledge base. If the answer is not there, say \"I don't want to guess, let me take a message and have someone call you back\" and take their name, number and question.\n3. Book appointments. Ask what service they need, then use the check_availability tool. Offer at most three times. Before booking, repeat back the service, date, time, name and phone number and ask \"Is that right?\". Only call book_appointment after they say yes.\n4. Change or cancel appointments using the tools if available. If not, take a message.\n\nBusiness facts you must follow: hours are {HOURS} in {TIME ZONE}. Today's date and time is {CURRENT DATE TIME}. Never offer a time outside hours or in the past.\n\nTransfer to a person (use transfer_call) when: the caller asks for a human; the caller is angry or upset; there is an emergency such as {EMERGENCY EXAMPLES}; the question is about {TOPICS ONLY A PERSON HANDLES}; or you could not answer two questions in a row. Say \"Let me connect you now\" before transferring. If the transfer fails, take a message and promise a callback by {CALLBACK PROMISE}.\n\nNever: give medical, legal or financial advice; promise discounts, refunds or results; quote a price that is not in the knowledge base; say a time is booked before the tool confirms it; argue with a caller; make up names, policies or availability.\n\nNumbers: say phone numbers digit by digit and prices as words (\"one hundred twenty dollars\"). If you did not hear something, ask once to repeat it, then offer to take a message.\n\nIf the caller is rude or asks you to do something outside this list, stay calm, say you can't help with that, and offer a message or a transfer."
+  },
+  {
+   "name": "Knowledge base builder",
+   "use": "Run in Claude or ChatGPT with profile.md and your raw material (price list, website text, FAQ). Output goes into the voice agent's knowledge base after you approve it.",
+   "text": "You are helping me write the knowledge base for a phone receptionist. Use ONLY the material I paste below plus profile.md. Do not add anything from your own knowledge about my industry.\n\nWrite a document with these sections: Business basics (name, address, phone, parking, how to get here); Opening hours and holidays; Services (one short paragraph each: what it is, how long it takes, price or price range if I gave one); Policies (cancellation, deposits, late arrivals, payment methods); The 15 most likely caller questions with a one or two sentence spoken-style answer each; Things we do NOT do or offer; Topics that must go to a human.\n\nRules: write for the ear, not the eye (short sentences, no tables, prices as words). If a fact is missing or unclear, do not fill it in. Put it in a final section called QUESTIONS FOR THE OWNER with one line per missing fact. Mark every price and hour with [CONFIRM] so I can check it. Keep the whole document under 1,500 words."
+  },
+  {
+   "name": "Test-call script generator",
+   "use": "Run once before going live and again after every prompt change. Gives you the calls to make.",
+   "text": "Read my receptionist system prompt and knowledge base below. Write 20 test calls I can make to the agent, as a table with: scenario, what I say, what a correct response looks like, and what would count as a failure. Include: 6 easy questions answerable from the knowledge base; 3 questions NOT in the knowledge base (it must not guess); 4 booking calls (normal, a time that is full, outside hours, changing my mind halfway); 2 reschedule or cancel calls; 2 angry or rude callers; 1 request for a human; 1 emergency; 1 caller who gives a wrong or unclear phone number. Make the wording sound like real callers, with filler words and interruptions."
+  },
+  {
+   "name": "After-call summary and text",
+   "use": "Put in the AI node after the end-of-call webhook. Input is the transcript and the booking result.",
+   "text": "You will get a phone call transcript between a receptionist AI and a caller, plus the booking tool result. Return JSON only with these keys: \"outcome\" (one of: booked, question_answered, message_taken, transferred, needs_followup, spam); \"caller_name\" (or null); \"callback_number\" (or null); \"reason\" (max 12 words); \"booking\" (date and time or null); \"owner_action\" (what the owner must do, max 15 words, or \"none\"); \"flag\" (true if the caller was upset, an emergency, a legal/medical/refund topic, the AI said something not in the knowledge base, or the AI promised something); \"flag_reason\" (or null); \"sms\" (max 300 characters, plain text, starting with the caller's name or number, saying what happened and what to do next). Use only facts in the transcript. If the booking tool result does not show a confirmed booking, never say it was booked."
+  },
+  {
+   "name": "Weekly call review",
+   "use": "Run once a week on the call log sheet and the week's transcripts. This is the learning loop.",
+   "text": "Here are this week's call log rows and transcripts for our AI receptionist, plus the current system prompt and knowledge base. Review them and produce: 1) counts by outcome and the share of calls transferred and flagged; 2) the 5 questions callers asked that the knowledge base answered badly or not at all; 3) every case where the agent gave wrong information, offered a bad time, or sounded rude, with a short quote; 4) the top 3 changes you recommend, each as an exact edit to the prompt or knowledge base (old text, new text, why); 5) anything that looks like a pattern, such as a time of day with many hang-ups. Do not change anything yourself. Mark each recommended edit as SAFE (adds a missing fact I supplied) or NEEDS OWNER (changes a rule, price, hour or hand-off). Be specific and quote the calls."
+  }
+ ],
+ "qa_checks": [
+  {
+   "check": "Before go-live: 15 to 20 test calls pass, including a question outside the knowledge base, a full-calendar request, an angry caller and a request for a human.",
+   "on_fail": "Fix the prompt or knowledge base, then rerun the whole list. Do not go live with any failed test."
+  },
+  {
+   "check": "Booking confirmation check: the automation compares the booking tool result with what the agent told the caller. A booking is only 'booked' if Cal.com returned a confirmed event.",
+   "on_fail": "Mark the call needs_followup and text you right away so you can call the customer back."
+  },
+  {
+   "check": "Double-booking check: before each booking the agent re-checks availability, and the daily review looks for two events in the same slot.",
+   "on_fail": "Keep one booking, text the other customer an apology and new times. Check calendar sync in Cal.com."
+  },
+  {
+   "check": "Time zone and hours check: a test booking at the start and end of the day lands at the right local time in your calendar.",
+   "on_fail": "Fix the time zone in the voice platform, Cal.com and Google Calendar. All three must match."
+  },
+  {
+   "check": "Hold for a human: emergency, anger, legal or medical topics, refunds, a price not in the knowledge base, or any call where the agent said it did not know twice.",
+   "on_fail": "Transfer the live call. If nobody answers, take a message and text it to you marked URGENT. The agent never improvises."
+  },
+  {
+   "check": "Summary check: the SMS must contain a callback number and a plain next step. Missing number or empty transcript triggers a warning instead of a summary.",
+   "on_fail": "Send you the recording link with the message 'Check this call'."
+  },
+  {
+   "check": "Cost guard: calls over the maximum length (for example 6 minutes) are ended politely after the agent offers to take a message or transfer.",
+   "on_fail": "Review the transcript for loops or a caller testing the bot, and tighten the prompt."
+  }
+ ],
+ "learning_loop": {
+  "reads": "The call log sheet (outcome, duration, flag, booking) and the transcripts of every flagged call plus a random 10 of the rest. Also the booking count from Cal.com and, if you have it, how many calls you missed before the AI.",
+  "when": "Quick look every day at the flagged calls. Full review every Friday. Deeper checkpoint at day 7 and day 30 after going live, then monthly.",
+  "compares": "This week against last week and against the first week: share of calls booked, share transferred, share where the caller hung up in the first 20 seconds, average call length, questions the AI could not answer. Compared the same way each time.",
+  "adjusts": "Without asking you: it may add facts you already supplied to the knowledge base, fix pronunciation notes, and reword greeting or confirmations. It writes every change into learnings.md with the date and the reason. Everything else is proposed, not applied.",
+  "guardrails": "It can never change prices, hours, policies, hand-off rules, the transfer number, or what the agent is allowed to promise. It can never remove a human-hold rule. Any change that makes the agent say something new about money, health, law or safety needs your yes. Keep the previous prompt version so you can roll back in one step."
+ },
+ "maintenance": {
+  "daily": [
+   {
+    "task": "Read the text summaries and the flagged calls. Call back anyone marked urgent or needs_followup.",
+    "minutes": 10
+   },
+   {
+    "task": "Glance at tomorrow's calendar for double bookings or odd times.",
+    "minutes": 3
+   }
+  ],
+  "weekly": [
+   {
+    "task": "Run the weekly call review, approve the SAFE edits and decide on the NEEDS OWNER ones.",
+    "minutes": 30
+   },
+   {
+    "task": "Make 2 test calls yourself to make sure it still answers, books and transfers.",
+    "minutes": 10
+   },
+   {
+    "task": "Update the knowledge base for new specials, closures, staff changes or price changes.",
+    "minutes": 10
+   }
+  ],
+  "monthly": [
+   {
+    "task": "Check the voice platform, phone number, Twilio and automation bills and any credit balance. Set a low-balance alert.",
+    "minutes": 15
+   },
+   {
+    "task": "Re-authorize any connection that expired (Google Calendar, Cal.com, SMS provider) and confirm test bookings still reach your calendar.",
+    "minutes": 10
+   },
+   {
+    "task": "Review the 30 day numbers against the success number in profile.md and decide whether to widen what the AI handles or narrow it.",
+    "minutes": 30
+   }
+  ]
+ },
+ "failure_points": [
+  {
+   "problem": "Wrong time zone or business hours, so slots are offered at the wrong time.",
+   "fix": "Set the same time zone in the voice platform, Cal.com and Google Calendar, and give the agent today's date and time in the prompt. Test a booking at opening and closing time."
+  },
+  {
+   "problem": "The model invents answers when the knowledge base is missing or not used.",
+   "fix": "Keep the 'only use the knowledge base' rule, attach the document properly, and test questions that are not in it. Update the document whenever the business changes."
+  },
+  {
+   "problem": "The booking tool fails or calls the wrong function, especially with newer, more creative models.",
+   "fix": "Use a model known for reliable tool calls, return a clear success or error result from the booking step, and make the agent say it cannot confirm if the tool errors."
+  },
+  {
+   "problem": "Webhook or tool parameters do not match (date formats, missing session ID), so bookings silently fail.",
+   "fix": "Use the platform's test event, check the exact fields arriving, use ISO dates, and do not reply 'success' from the automation until the calendar step actually succeeded."
+  },
+  {
+   "problem": "Your calendar is out of date or others book by hand, so the AI double-books.",
+   "fix": "Make the connected calendar the single source of truth, and block time for anything booked elsewhere."
+  },
+  {
+   "problem": "Your scheduling software has no API (many dental, vet and salon systems).",
+   "fix": "Have the AI take a message and text you, or use a middle tool that supports it. Do not promise live booking you cannot deliver."
+  },
+  {
+   "problem": "Transfer fails or goes to a number nobody answers.",
+   "fix": "Test the transfer at different times, set a fallback to take a message, and keep a second transfer number."
+  },
+  {
+   "problem": "Call forwarding setup differs by carrier and may need the carrier portal or a support call; some platforms only sell US and Canada numbers.",
+   "fix": "Check this before you start. Use Twilio or a local provider for other countries."
+  },
+  {
+   "problem": "Per-minute cost climbs on long or spam calls.",
+   "fix": "Set a max call length, add a spam rule, and watch the monthly bill."
+  },
+  {
+   "problem": "Numbers and names are read badly (for example '1M' or an unusual street name).",
+   "fix": "Write numbers as words in the prompt and add pronunciation hints for your business and street names."
+  },
+  {
+   "problem": "Legal rules on recording calls or disclosing the AI.",
+   "fix": "Check the rules where you and your callers are, add the notice to the greeting if needed. This is not legal advice; ask a professional."
+  }
+ ],
+ "evidence": {
+  "videos_used": 13,
+  "study_note": "In the study, 'Answer the phone' appeared in 86 videos and 90% of them ran fully on their own. 'Book sales calls and appointments' appeared in 137 videos, 78% fully automatic. 'Send appointment reminders' appeared in 30 videos, 90% fully automatic. Common tools: ChatGPT/OpenAI, GoHighLevel, n8n, Claude. 13 of the 15 recipes for this workflow were useful. Most videos had no learning loop and no hand-off tests, so the QA and review steps here are our own design. No video proved results for a real business we can verify.",
+  "examples": [
+   {
+    "id": "HGBMr1RQliY",
+    "title": "I Built an AI Voice Agent That Never Misses a Call (No Code)",
+    "channel": "Ed Hill | AI Automation",
+    "views": 390047
+   },
+   {
+    "id": "5PFpBIr0sN0",
+    "title": "Build a Complete AI Employee in 30 Minutes (No Coding)",
+    "channel": "Robert's Tech Toolbox",
+    "views": 25906
+   },
+   {
+    "id": "1YuT8fLEx80",
+    "title": "How to Build an AI Receptionist (with Bookings and Calls) | Solvea AI Tutorial - 2026",
+    "channel": "Dan - Smart Tutorials",
+    "views": 27705
+   },
+   {
+    "id": "Jf8fyPTw2xk",
+    "title": "Build & Sell AI Receptionists (Full A-Z Guide 2026)",
+    "channel": "Anthony Shoosh",
+    "views": 19815
+   },
+   {
+    "id": "O86apIsR8YU",
+    "title": "How to Build an ai Dental receptionist (n8n + 11Labs)",
+    "channel": "GreymatterAI",
+    "views": 31302
+   }
+  ]
+ }
+}

@@ -31,6 +31,11 @@ def bar(t):
     return (f'<span class="ab" role="img" aria-label="{t["pfull"]}% AI runs it, {t["passist"]}% AI drafts and a person checks, {t["phuman"]}% keep it human">'
             f'<i class="f" style="--w:{t["pfull"]}%"></i><i class="a" style="--w:{t["passist"]}%"></i><i class="h" style="--w:{t["phuman"]}%"></i></span>')
 
+import glob as _g
+WF = {}
+for _f in _g.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', 'workflows', '*.json')):
+    _w = json.load(open(_f, encoding='utf-8'))
+    for _t in _w.get('covers_tasks') or []: WF.setdefault(_t, (_w['slug'], _w['title']))
 def row(t, area, open_=False):
     lab, cls = VERD[t['verdict']]
     ex = ''.join(f'<li><a href="https://www.youtube.com/watch?v={x["id"]}" rel="noopener">{E(x["title"])}</a><span>{E(x["channel"])} · {k(x["views"])} views</span></li>' for x in t['examples'])
@@ -38,7 +43,8 @@ def row(t, area, open_=False):
     det = (f'<div class="ad"><p><b>{t["n"]}</b> videos cover this. <b>{t["shown"]}</b> show it working on screen or report a real result.</p>'
            + (f'<p><b>Tools used most:</b> {E(", ".join(t["tools"]))}</p>' if t['tools'] else '')
            + (f'<p><b>Platforms:</b> {E(plats)}</p>' if plats and area == 'content' else '')
-           + (f'<p><b>Videos that show it:</b></p><ul>{ex}</ul>' if ex else '') + '</div>')
+           + (f'<p><b>Videos that show it:</b></p><ul>{ex}</ul>' if ex else '')
+           + (f'<p class="wflink"><a href="/workflows/{WF[t["id"]][0]}/">Free workflow: {E(WF[t["id"]][1])} →</a></p>' if t['id'] in WF else '') + '</div>')
     return (f'<details class="ar {cls}" data-area="{area}" data-n="{t["n"]}" data-full="{t["pfull"]}" data-auto="{t["pfull"] + t["passist"] / 2:.0f}"{" open" if open_ else ""}>'
             f'<summary><span class="an">{E(t["name"])}<small class="vt">{lab}</small></span>{bar(t)}<span class="ac">{t["n"]}<small>videos</small></span></summary>{det}</details>')
 

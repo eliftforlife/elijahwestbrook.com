@@ -1,0 +1,388 @@
+{
+ "id": "10-lead-finding-outreach",
+ "slug": "lead-finding-outreach",
+ "title": "Lead Finding and Outreach: find, personalize, send, follow up",
+ "outcome": "Each week the AI builds a list of businesses or people that fit your ideal customer, finds their public business contact details, writes a short personal email or message for each, queues them for your approval, sends them slowly on a schedule with a few follow-ups, stops when someone replies or opts out, and hands you the replies.",
+ "covers_tasks": [
+  "find-leads",
+  "enrich-leads",
+  "write-cold-email",
+  "send-outreach",
+  "follow-up"
+ ],
+ "doesnt_cover": "Answering replies, taking calls, closing the sale, buying lists of people who never heard of you, and anything legal. You decide who you are allowed to contact in your country and what you offer. This is not legal advice. Cold calling and private-account social DMs are not covered.",
+ "status": "untested",
+ "price": "free",
+ "time_to_set_up": "About 4 to 8 hours of work, spread over 2 to 3 weeks because new sending addresses must warm up before real sending",
+ "difficulty": "hard",
+ "harness": [
+  {
+   "name": "Claude Code + a cold email tool such as Instantly (our default)",
+   "best_for": "AI researches each lead and writes the copy in files you can read; the email tool handles sending, warm-up, stop-on-reply and unsubscribes. Used in two of the recipes.",
+   "runs_unattended": true,
+   "monthly_cost": "Varies (Claude plan or API use plus the email tool's plan; no recipe gave a firm number)"
+  },
+  {
+   "name": "n8n or Make with Google Sheets, a scraper (Apify, Google Maps) and an email-finder",
+   "best_for": "A fully built pipeline: scrape, filter, enrich, write, queue. Most common in the recipes. One recipe quoted about 500 leads for roughly $1 and 3,000 leads for about $32 a month in scraping and AI costs.",
+   "runs_unattended": true,
+   "monthly_cost": "Varies (tool plans plus per-lead costs; Apify's free monthly credit was about $5 in one recipe)"
+  },
+  {
+   "name": "Apollo or Clay with Claude",
+   "best_for": "Finding and enriching leads inside one database. One recipe: about 172 Clay credits (about $12) for 50 fully enriched leads with personalized emails.",
+   "runs_unattended": false,
+   "monthly_cost": "Varies (free tier exists in Apollo; Clay uses credits)"
+  },
+  {
+   "name": "ChatGPT or Claude app only (manual)",
+   "best_for": "Start here with 20 leads. Search, paste results, get a table and drafts, then send from your own email by hand.",
+   "runs_unattended": false,
+   "monthly_cost": "Your existing plan"
+  }
+ ],
+ "models": [
+  {
+   "step": "Deciding if a lead fits (ICP check)",
+   "model": "A small, cheap model (Claude Haiku or GPT mini class)",
+   "why": "Simple yes/no with a reason, run on hundreds of leads."
+  },
+  {
+   "step": "Researching one lead and finding a real hook",
+   "model": "A strong model with web or page-reading access",
+   "why": "Personalization is only good if the fact it uses is real."
+  },
+  {
+   "step": "Writing the email and follow-ups",
+   "model": "A strong model (Claude Sonnet or GPT-4o class)",
+   "why": "Tone and brevity decide whether anyone replies."
+  },
+  {
+   "step": "Second-opinion check on drafts",
+   "model": "The same strong model with a checker prompt",
+   "why": "Catches wrong facts, banned phrases and anything over the line before you see it."
+  }
+ ],
+ "interview_questions": [
+  "Who is your ideal customer? Describe the type of business or person, their size, their location, and the problem you solve for them. Give 2 to 3 real examples of good customers.",
+  "What exactly are you offering, and what is the one small next step you want from a reply (a quick call, a yes/no, a free sample)?",
+  "Where are you based, and in which countries will you send? (Rules differ: the US, Canada and the EU are not the same.)",
+  "What is your business name and physical mailing address (a street address or registered PO box)? It must appear in every commercial email.",
+  "Which email address will you send from? Do you have a separate domain for cold email, or only your main business domain? Who controls the domain's DNS settings?",
+  "How many emails a day are you comfortable sending at the start? (The safe default is 20 to 30 a day per address, rising slowly.)",
+  "What are your proof points: real results, real customers you can name, real numbers? Anything not on this list must never be claimed.",
+  "Who must NOT be contacted: current customers, past complainers, competitors, partners, people who said no, or certain industries?",
+  "Do you want to approve every email before it goes, or only a sample? (Default: you approve everything for the first 100 emails.)",
+  "Who handles replies, how fast, and what should happen with an interested reply, a 'not now', a question, and an angry one?"
+ ],
+ "setup": [
+  {
+   "who": "you",
+   "step": "Decide the offer, the ideal customer and the one number that proves it works (for example 'booked calls'). Write your real proof points.",
+   "time": "30 min"
+  },
+  {
+   "who": "ai",
+   "step": "Interview you with the shared prompt plus the questions above and write profile.md, including do-not-contact rules and your postal address.",
+   "time": "20 min"
+  },
+  {
+   "who": "you",
+   "step": "Buy one or two separate sending domains (similar to your brand, not your main domain) and create a mailbox on each. Keep your main business domain for real conversations only. Add the DNS records (SPF, DKIM, DMARC) your email provider gives you.",
+   "time": "1 to 2 hours"
+  },
+  {
+   "who": "ai",
+   "step": "Check the DNS records with a free mail-test tool and tell you what is missing.",
+   "time": "10 min"
+  },
+  {
+   "who": "you",
+   "step": "Turn on warm-up for each new mailbox (built into most cold email tools). Expect at least 2 weeks of warm-up before real sending, and send only a few emails a day at first.",
+   "time": "15 min, then 2 weeks of waiting"
+  },
+  {
+   "who": "you",
+   "step": "Create the lead sheet with columns: source, company, person, role, email, email_status, fit_reason, hook, draft, status, last_contact, do_not_contact. Create the Suppression tab (opt-outs and bounces).",
+   "time": "15 min"
+  },
+  {
+   "who": "you",
+   "step": "Open accounts and add keys yourself: lead source (Apollo, Apify, Google Maps scraper), email finder/verifier, cold email tool, AI key. Store keys in the tool's vault or a .env file, never in chat.",
+   "time": "30 to 60 min"
+  },
+  {
+   "who": "ai",
+   "step": "Build the pipeline and run it on 20 leads in dry-run mode: nothing is sent, everything lands in the sheet for you to read.",
+   "time": "1 to 2 hours"
+  },
+  {
+   "who": "you",
+   "step": "Read all 20 drafts. Fix the prompts until you would send every one. Then send the first 20 a day for a week, approving each by hand.",
+   "time": "1 week, 15 min a day"
+  }
+ ],
+ "steps": [
+  {
+   "n": 1,
+   "name": "Define who fits",
+   "tool": "profile.md",
+   "detail": "The ideal customer, the places you will look (maps, directories, job posts, LinkedIn-style searches, your own website visitors), and the do-not-contact list."
+  },
+  {
+   "n": 2,
+   "name": "Find leads",
+   "tool": "Apollo, Apify actor, Google Maps scraper, or Google search + AI cleanup",
+   "detail": "Pull a batch (start with 50). Keep the source link for each. Remove duplicates against the sheet and against past contacts. Respect the sites' terms and the platforms' limits: do not scrape logged-in private data."
+  },
+  {
+   "n": 3,
+   "name": "Check fit",
+   "tool": "Small model",
+   "detail": "For each lead: fits, maybe, or no, with one sentence why. Only 'fits' moves on. Keep the reason in the sheet."
+  },
+  {
+   "n": 4,
+   "name": "Find a work contact",
+   "tool": "Email finder/verifier (for example Apollo, AnyMailFinder, a verifier such as MillionVerifier)",
+   "detail": "Look for a role-based or named business email from public or licensed sources. Verify it. Drop invalid, risky or catch-all results. Never guess an address and send."
+  },
+  {
+   "n": 5,
+   "name": "Research one real hook",
+   "tool": "Strong model + page reading",
+   "detail": "Read the lead's own website or public post and find one true, specific thing worth mentioning, with its source link. No hook found: use a plain non-personal email or skip the lead."
+  },
+  {
+   "n": 6,
+   "name": "Write the email",
+   "tool": "Strong model",
+   "detail": "Short first email (about 80 to 100 words), plain text, one clear ask, no tracking pixels or heavy formatting. Then 2 follow-ups with new, useful content (not just 'bumping this')."
+  },
+  {
+   "n": 7,
+   "name": "Check the draft",
+   "tool": "Checker prompt + script",
+   "detail": "Run the compliance and quality checks in section 7 (facts, banned phrases, length, address, opt-out line). Failed drafts are fixed once automatically, then held."
+  },
+  {
+   "n": 8,
+   "name": "You approve",
+   "tool": "Google Sheet or the email tool's draft view",
+   "detail": "You read a batch, mark approve or edit. During the first 100 emails you read every one; later you read a sample plus everything the checker flagged."
+  },
+  {
+   "n": 9,
+   "name": "Send slowly",
+   "tool": "Cold email tool",
+   "detail": "Send only in business hours for the lead's time zone, at your daily limit, spread out. Follow-ups after a few days. Stop-on-reply on. Open tracking off. Unsubscribe link or reply-to-opt-out line in every email."
+  },
+  {
+   "n": 10,
+   "name": "Handle replies and opt-outs",
+   "tool": "Cold email tool inbox + suppression list",
+   "detail": "Any 'stop', 'unsubscribe' or 'remove me' goes on the Suppression tab immediately and is never contacted again, from any campaign. Interested replies are sent to you right away. The AI may draft a reply but never sends it."
+  },
+  {
+   "n": 11,
+   "name": "Report",
+   "tool": "Weekly message",
+   "detail": "Sent, bounced, replied, positive replies, opt-outs, spam complaints, and which hook types worked."
+  }
+ ],
+ "prompts": [
+  {
+   "name": "Fit check prompt",
+   "use": "Step 3. Runs on every lead.",
+   "text": "You decide if a business is a good lead for the offer below.\n\nOffer: {one sentence from profile.md}\nIdeal customer: {from profile.md}\nDo-not-contact rules: {from profile.md}\n\nLead data: {name, website text or description, location, size if known}\n\nAnswer JSON only: {\"fit\": \"yes|maybe|no\", \"reason\": \"one plain sentence that quotes something from the lead data\", \"missing\": \"what you could not tell\"}\nIf the lead data is thin, answer maybe. Do not guess facts."
+  },
+  {
+   "name": "Hook research prompt",
+   "use": "Step 5. One lead at a time, with page-reading access.",
+   "text": "Read the lead's own website and any public post I give you. Find ONE specific, true thing that connects to my offer (a new service, a hiring post, a recent project, a product line). Give me the fact, the exact words or page where you saw it, and the link.\n\nRules: only use what you can see on the page. If you find nothing specific, say 'no hook' instead of inventing one. Do not mention anything private, personal or family-related. Do not use flattery without a fact behind it.\n\nMy offer: {offer}\nLead: {name, website}"
+  },
+  {
+   "name": "First email prompt",
+   "use": "Step 6. Writes the first message and two follow-ups.",
+   "text": "Write a cold email from {sender name} at {business} to {first name} at {company}.\n\nFacts you may use: the hook below (with its source) and the proof points from my profile. Do not add any other claim, number or customer name.\nHook: {hook}\nProof points: {proof points}\n\nRules:\n- 80 to 100 words, plain text, no bold, no links in the first email except what profile.md allows.\n- Subject under 40 characters, honest, describes what the email is about. No fake 'Re:' or 'Fwd:'.\n- Sound like a person: one idea, one clear ask that is easy to answer with yes or no.\n- Never write: 'I hope this finds you well', 'I came across your profile', 'game-changer', 'revolutionary', guaranteed results, fake urgency, or praise that is not tied to the hook.\n- Do not say or imply we know them if we do not.\n- End with the sender's name, business, and this exact line: {postal address line}. Then: {opt-out line from profile.md}.\n\nThen write follow-up 1 (sent after 3 to 4 days, adds one new useful point, 40 to 60 words) and follow-up 2 (sent after 7 days, a polite last note with an easy out, 30 to 50 words). Return JSON: {subject, body, follow_up_1, follow_up_2}."
+  },
+  {
+   "name": "Short direct message prompt",
+   "use": "For a business social account or contact form, only where that platform allows it and you send by hand.",
+   "text": "Write a 2 to 3 sentence message from {sender} to {first name}. Mention this one true thing: {hook}. Ask one easy yes/no question related to {offer}. No links, no hashtags, no emojis, no pressure. It must read like a normal person wrote it. If the message would break the platform's rules for unsolicited messages, say so instead of writing it."
+  },
+  {
+   "name": "Draft checker prompt",
+   "use": "Step 7. A separate reviewer, ideally a different run from the writer.",
+   "text": "You are a strict reviewer. Check this email against the facts and rules, and answer JSON: {\"pass\": true/false, \"problems\": [list]}.\n\nFacts allowed: {hook with source, proof points}\nRules: every claim in the email must appear in the allowed facts; no guaranteed results; no fake urgency; no misleading subject or fake reply/forward; sender name and business are real; the postal address line and opt-out line are present; length 80 to 100 words (follow-ups shorter); none of these phrases appear: {banned list}.\nAlso flag: anything that sounds like praise without a fact, anything that could be taken as a threat, and any medical, legal or financial promise.\n\nEmail:\n{subject and body}"
+  },
+  {
+   "name": "Reply sorter prompt",
+   "use": "Step 10. Reads each reply and tells you what to do. It never answers for you.",
+   "text": "Classify this reply to my cold email as exactly one of: interested, question, not_now, not_interested, opt_out, out_of_office, bounce, angry, other. If the sender asks to stop, be removed, or says it is unwanted in any way, choose opt_out. Return JSON: {\"label\": \"...\", \"one_line_summary\": \"...\", \"suggested_next_step\": \"...\"}. If label is angry or you are unsure, say 'human only'."
+  }
+ ],
+ "qa_checks": [
+  {
+   "check": "Email address is verified (valid, not risky, not catch-all) and came from a public business source or a licensed provider",
+   "on_fail": "Drop the lead. Never guess or pattern-guess addresses and send."
+  },
+  {
+   "check": "Lead is not on the Suppression tab, not a current customer, and not already contacted in the last 90 days",
+   "on_fail": "Skip the lead and note why."
+  },
+  {
+   "check": "Every fact in the email is on the allowed list with a source link (the hook and your proof points)",
+   "on_fail": "Rewrite once; if it still fails, hold for a human."
+  },
+  {
+   "check": "Email has a truthful sender name and subject, your physical postal address, and a clear way to opt out",
+   "on_fail": "Hold for a human. Nothing goes out without all three."
+  },
+  {
+   "check": "No banned phrases, no guaranteed results, no fake urgency, no fake 'Re:' or 'Fwd:' subject, no medical, legal or financial promises",
+   "on_fail": "Rewrite once; if it still fails, hold for a human."
+  },
+  {
+   "check": "Length and format: 80 to 100 words, plain text, subject under 40 characters, no tracking pixel",
+   "on_fail": "Auto-fix once, then hold."
+  },
+  {
+   "check": "Country check: the lead is in a place where you may send cold email under the rules in profile.md (the EU, UK and Canada are stricter than the US and often need consent or a clear business relevance)",
+   "on_fail": "Skip the lead, or hold for a human who has checked the rule. This workflow is not legal advice."
+  },
+  {
+   "check": "Daily cap and sending health: under the daily limit, bounce rate under about 2%, and spam complaints near zero in the tool's dashboard",
+   "on_fail": "Pause all sending automatically and tell you. Do not resume until you have looked."
+  },
+  {
+   "check": "Any reply that is angry, a complaint, a legal threat, or mentions a regulator",
+   "on_fail": "Stop that person and campaign, add to Suppression, and hold for a human."
+  }
+ ],
+ "learning_loop": {
+  "reads": "The cold email tool's numbers (sent, bounced, replied, positive replies, opt-outs, spam complaints) and the reply labels from the reply sorter, pulled into the sheet. Also which lead source, which hook type and which subject line each lead came from.",
+  "when": "After every 100 emails sent, and again at fixed checkpoints: 7 days and 14 days after each batch (replies mostly arrive within days). A monthly review of the whole month.",
+  "compares": "Batches against each other with one thing changed at a time (for example hook about a hiring post vs a new service, or subject line A vs B), on similar sizes of at least 100 emails each. Judge on positive replies per 100 sent, not opens (open tracking is off).",
+  "adjusts": "On its own it may reorder which lead sources and hook types to try more, choose the better subject line for the next batch, and tune send time. It writes proposed wording changes to learnings.md but does not change the email prompt until you approve.",
+  "guardrails": "It never raises the daily limit by more than you allowed, never adds new sending addresses or domains, never removes the opt-out line, address or checks, never contacts anyone on Suppression, and pauses all sending if bounces or complaints pass the limits. Every change and the reason is logged."
+ },
+ "maintenance": {
+  "daily": [
+   {
+    "task": "Approve or edit the day's drafts (first 100 emails: every one)",
+    "minutes": "10 to 20"
+   },
+   {
+    "task": "Read and answer positive replies yourself; move opt-outs to Suppression if the tool did not",
+    "minutes": "10 to 20"
+   },
+   {
+    "task": "Glance at sending health: bounces, spam complaints, warm-up score",
+    "minutes": "2"
+   }
+  ],
+  "weekly": [
+   {
+    "task": "Read the weekly report, spot-check 5 sent emails for accuracy, and approve the next batch of leads",
+    "minutes": "20"
+   },
+   {
+    "task": "Clean the sheet: remove bounced and no-longer-fit leads, update statuses",
+    "minutes": "10"
+   }
+  ],
+  "monthly": [
+   {
+    "task": "Check billing and credits on every lead tool, scraper, email tool and AI account",
+    "minutes": "15"
+   },
+   {
+    "task": "Check domains are renewed, DNS records still valid, and mailboxes still logged in",
+    "minutes": "15"
+   },
+   {
+    "task": "Review the month's results and learnings.md; update the offer, hooks and do-not-contact list",
+    "minutes": "30"
+   },
+   {
+    "task": "Delete or archive old lead data you no longer need, and honor any data-deletion requests",
+    "minutes": "15"
+   }
+  ]
+ },
+ "failure_points": [
+  {
+   "problem": "Sending from your main business domain, or before the mailboxes are warmed up, lands emails in spam and can get the domain flagged",
+   "fix": "Use separate sending domains, warm up for at least 2 weeks, and start with a low daily number."
+  },
+  {
+   "problem": "Scrapers miss emails, return duplicates, or break when a site changes",
+   "fix": "Test on a small batch first, dedupe against the sheet, verify every email, and expect to repair the scraper from time to time."
+  },
+  {
+   "problem": "The AI invents a personal detail, or the 'personalized' line is wrong or awkward (for example generic flattery, odd phrasing)",
+   "fix": "The hook must carry a source link, the checker compares every claim to the allowed facts, and you read the first 100 drafts."
+  },
+  {
+   "problem": "Too many messages too fast get your email account or a social account restricted (LinkedIn-type limits were raised in the recipes)",
+   "fix": "Keep a low daily cap, use the tool's schedule, and send social messages by hand within the platform's limits."
+  },
+  {
+   "problem": "Someone opted out but is emailed again from another campaign or an old list",
+   "fix": "One shared Suppression list checked before every send in every campaign. Opt-outs are honored promptly; the US rule allows up to 10 business days, but do it the same day."
+  },
+  {
+   "problem": "The same person or company is contacted twice",
+   "fix": "Dedupe against the sheet on email and company domain before every batch."
+  },
+  {
+   "problem": "Costs rise quietly: long research runs, retries and lead-tool credits (one recipe noted that deep research per lead is slow and token-heavy)",
+   "fix": "Set monthly spending caps, run research on small batches, and track cost per positive reply."
+  },
+  {
+   "problem": "API keys or login details are pasted into prompts or notes",
+   "fix": "Keep keys in the tool's vault or a .env file, never in chat or files you share, and rotate them if exposed."
+  },
+  {
+   "problem": "Rules differ by country and the AI cannot know your local law",
+   "fix": "Fill in the country rules in profile.md after checking them (or asking a lawyer), and skip countries you are unsure about."
+  }
+ ],
+ "evidence": {
+  "videos_used": 15,
+  "study_note": "All 15 recipes filed under this workflow were marked useful. The five lead-gen and outreach tasks are among the most-automated in the study: 'Find leads and build prospect lists' appears in 231 videos (49% fully AI), 'Look up contact info and research leads' in 72 (69%), 'Write cold emails and DMs' in 117 (only 23% fully AI, most keep a person in the loop), 'Send outreach sequences' in 140 (75%), and 'Follow up with leads who went quiet' in 61 (66%). Top tools: ChatGPT/OpenAI, Claude, n8n, Google Sheets, Gmail, Instantly, Apollo and Clay. Several recipes stress separate sending domains, warm-up of at least two weeks, stop-on-reply, verified emails and open tracking off. Reported results in the videos (for example reply rates or revenue) are the creators' own claims and were not checked. For the compliance rules in this workflow (US CAN-SPAM requirements for a truthful sender and subject, a postal address and a working opt-out; stricter consent rules in places like the EU, UK and Canada), please confirm them yourself or with a lawyer. This is not legal advice.",
+  "examples": [
+   {
+    "id": "XgclEibeoGc",
+    "title": "Using ChatGPT to Generate 1000s of Leads in Any Niche (Free + Easy Method)",
+    "channel": "Helena Liu",
+    "views": 951361
+   },
+   {
+    "id": "EqJoui72QrU",
+    "title": "Claude Cowork Just Changed Sales Forever",
+    "channel": "Ben AI",
+    "views": 101612
+   },
+   {
+    "id": "QoiFASDh8J8",
+    "title": "How I Use Claude For Cold Outreach (B2B Sales)",
+    "channel": "Oleg Melnikov",
+    "views": 73269
+   },
+   {
+    "id": "zyvdl__Ywfk",
+    "title": "Claude Code + Clay Makes Lead Generation Actually Fun",
+    "channel": "Nate Herk | AI Automation",
+    "views": 60388
+   },
+   {
+    "id": "Yl_0pSSiEVs",
+    "title": "How To Send 1000 Deep-Personalized Cold Emails Per Day with Claude Code",
+    "channel": "Instantly",
+    "views": 29684
+   }
+  ]
+ }
+}
