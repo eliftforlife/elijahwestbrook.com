@@ -1,0 +1,7765 @@
+{
+ "videos": 1876,
+ "relevant": 1787,
+ "transcripts": 1768,
+ "views": 473970847,
+ "channels": 944,
+ "kinds": [
+  [
+   "tutorial",
+   1397
+  ],
+  [
+   "case-study",
+   125
+  ],
+  [
+   "opinion",
+   112
+  ],
+  [
+   "ideas-list",
+   87
+  ],
+  [
+   "other",
+   26
+  ],
+  [
+   "news",
+   23
+  ],
+  [
+   "pitch",
+   17
+  ]
+ ],
+ "types": [
+  [
+   "general",
+   1135
+  ],
+  [
+   "Creators and YouTubers",
+   773
+  ],
+  [
+   "Marketing agencies",
+   606
+  ],
+  [
+   "Coaches and consultants",
+   349
+  ],
+  [
+   "SaaS and tech startups",
+   290
+  ],
+  [
+   "E-commerce stores",
+   283
+  ],
+  [
+   "Freelancers and photographers",
+   188
+  ],
+  [
+   "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+   115
+  ],
+  [
+   "Dental and medical practices",
+   93
+  ],
+  [
+   "Real estate agents",
+   90
+  ],
+  [
+   "Accounting and bookkeeping",
+   83
+  ],
+  [
+   "Restaurants",
+   67
+  ],
+  [
+   "Law firms",
+   55
+  ],
+  [
+   "Salons, med spas and beauty",
+   47
+  ],
+  [
+   "Contractors and construction",
+   43
+  ],
+  [
+   "Schools, courses and tutors",
+   41
+  ],
+  [
+   "Retail stores",
+   38
+  ],
+  [
+   "Gyms and fitness",
+   36
+  ],
+  [
+   "Recruiting and staffing",
+   35
+  ],
+  [
+   "Car dealers and auto repair",
+   26
+  ],
+  [
+   "Insurance and mortgage",
+   24
+  ],
+  [
+   "Travel agents",
+   18
+  ],
+  [
+   "Pet businesses (grooming, boarding)",
+   10
+  ],
+  [
+   "Property management",
+   9
+  ],
+  [
+   "Nonprofits",
+   6
+  ],
+  [
+   "Therapists and counselors",
+   5
+  ]
+ ],
+ "tools": [
+  [
+   "ChatGPT / OpenAI",
+   696
+  ],
+  [
+   "Claude",
+   591
+  ],
+  [
+   "n8n",
+   275
+  ],
+  [
+   "Google Sheets",
+   182
+  ],
+  [
+   "Gemini",
+   164
+  ],
+  [
+   "Gmail",
+   150
+  ],
+  [
+   "Make",
+   137
+  ],
+  [
+   "Zapier",
+   112
+  ],
+  [
+   "CapCut",
+   84
+  ],
+  [
+   "Slack",
+   77
+  ],
+  [
+   "ElevenLabs",
+   77
+  ],
+  [
+   "Shopify",
+   76
+  ],
+  [
+   "GoHighLevel",
+   76
+  ],
+  [
+   "Canva",
+   72
+  ],
+  [
+   "Microsoft Copilot / Power Automate",
+   63
+  ],
+  [
+   "Perplexity",
+   62
+  ],
+  [
+   "Notion",
+   55
+  ],
+  [
+   "Apify",
+   54
+  ],
+  [
+   "Airtable",
+   51
+  ],
+  [
+   "HeyGen",
+   41
+  ],
+  [
+   "HubSpot",
+   36
+  ],
+  [
+   "Instantly",
+   29
+  ],
+  [
+   "QuickBooks",
+   28
+  ],
+  [
+   "ManyChat",
+   27
+  ],
+  [
+   "Lovable",
+   25
+  ],
+  [
+   "Apollo",
+   23
+  ],
+  [
+   "Midjourney",
+   22
+  ],
+  [
+   "Cursor",
+   21
+  ],
+  [
+   "Opus Clip",
+   20
+  ],
+  [
+   "Clay",
+   20
+  ]
+ ],
+ "new_tasks": [
+  [
+   "prompt-engineering",
+   9
+  ],
+  [
+   "browser-automation",
+   6
+  ],
+  [
+   "product-sourcing",
+   5
+  ],
+  [
+   "skills",
+   5
+  ],
+  [
+   "voice-cloning",
+   5
+  ],
+  [
+   "channel-setup",
+   4
+  ],
+  [
+   "webhooks",
+   4
+  ],
+  [
+   "connectors",
+   4
+  ],
+  [
+   "bank-reconciliation",
+   4
+  ],
+  [
+   "agent-orchestration",
+   4
+  ],
+  [
+   "process-mapping",
+   4
+  ],
+  [
+   "import-products",
+   4
+  ],
+  [
+   "whatsapp-integration",
+   3
+  ],
+  [
+   "channel-branding",
+   3
+  ],
+  [
+   "email-warmup",
+   3
+  ],
+  [
+   "product-selection",
+   3
+  ],
+  [
+   "memory-import",
+   3
+  ],
+  [
+   "connectors-setup",
+   3
+  ],
+  [
+   "ai-search-optimization",
+   3
+  ],
+  [
+   "niche-selection",
+   3
+  ],
+  [
+   "niche-validation",
+   3
+  ],
+  [
+   "missed-call-text-back",
+   3
+  ],
+  [
+   "projects",
+   3
+  ],
+  [
+   "domain-registration",
+   3
+  ],
+  [
+   "voice-clone",
+   3
+  ],
+  [
+   "background-removal",
+   2
+  ],
+  [
+   "lead-scraping",
+   2
+  ],
+  [
+   "generate-b-roll",
+   2
+  ],
+  [
+   "virality-scoring",
+   2
+  ],
+  [
+   "email-notifications",
+   2
+  ],
+  [
+   "publish-ai-model",
+   2
+  ],
+  [
+   "affiliate-monetization",
+   2
+  ],
+  [
+   "connect-apps",
+   2
+  ],
+  [
+   "domain-setup",
+   2
+  ],
+  [
+   "generate-music",
+   2
+  ],
+  [
+   "skills-creation",
+   2
+  ],
+  [
+   "scrape-linkedin-posts",
+   2
+  ],
+  [
+   "flight-search",
+   2
+  ],
+  [
+   "model-routing",
+   2
+  ],
+  [
+   "create-skills",
+   2
+  ],
+  [
+   "monitoring-alerts",
+   2
+  ],
+  [
+   "software test automation",
+   2
+  ],
+  [
+   "visualize-workflows",
+   2
+  ],
+  [
+   "generate-images",
+   2
+  ],
+  [
+   "product-recommendation",
+   2
+  ],
+  [
+   "deploy-vps",
+   2
+  ],
+  [
+   "internal-linking",
+   2
+  ],
+  [
+   "fraud-detection",
+   2
+  ],
+  [
+   "webhook-setup",
+   2
+  ],
+  [
+   "artifacts",
+   2
+  ],
+  [
+   "brand-kit",
+   2
+  ],
+  [
+   "real-time personalization",
+   2
+  ],
+  [
+   "image-generation",
+   2
+  ],
+  [
+   "lock-visual-style",
+   2
+  ],
+  [
+   "agent-memory",
+   2
+  ],
+  [
+   "recipe-generation",
+   2
+  ],
+  [
+   "ringless-voicemail-drops",
+   2
+  ],
+  [
+   "connect-tools",
+   2
+  ],
+  [
+   "automations",
+   2
+  ],
+  [
+   "cron-jobs",
+   2
+  ]
+ ],
+ "areas": [
+  {
+   "id": "content",
+   "name": "Content and social media",
+   "tasks": [
+    {
+     "id": "content-ideas",
+     "name": "Come up with content ideas and research trends",
+     "n": 435,
+     "full": 72,
+     "assist": 353,
+     "human": 10,
+     "shown": 361,
+     "views": 115111211,
+     "pfull": 17,
+     "passist": 81,
+     "phuman": 2,
+     "verdict": "assist",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "CapCut",
+      "Gemini"
+     ],
+     "platforms": {
+      "youtube": 205,
+      "instagram": 116,
+      "tiktok": 101,
+      "facebook": 64,
+      "linkedin": 47,
+      "youtube-shorts": 47,
+      "x": 38,
+      "blog": 28,
+      "email": 12,
+      "pinterest": 12,
+      "google-business": 10,
+      "reddit": 7,
+      "podcast": 4,
+      "threads": 1
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       345
+      ],
+      [
+       "Marketing agencies",
+       166
+      ],
+      [
+       "Coaches and consultants",
+       128
+      ],
+      [
+       "E-commerce stores",
+       88
+      ],
+      [
+       "SaaS and tech startups",
+       54
+      ]
+     ],
+     "examples": [
+      {
+       "id": "LlhTEttKcwQ",
+       "title": "I Tried The LAZIEST Way to Make Money With AI",
+       "channel": "Mark Tilbury",
+       "views": 9112167
+      },
+      {
+       "id": "BaVpeJlcQzg",
+       "title": "using AI to write a youtube video",
+       "channel": "Drew Gooden",
+       "views": 6797377
+      },
+      {
+       "id": "LEJGFnjIWmQ",
+       "title": "How I Created a $10,000/month Faceless YouTube Channel Using Free AI Tools",
+       "channel": "All About Money",
+       "views": 2587864
+      },
+      {
+       "id": "1r0eyM7suUg",
+       "title": "I BLEW UP a YouTube Channel in 7 Days with AI",
+       "channel": "Jack Craig",
+       "views": 2524892
+      }
+     ]
+    },
+    {
+     "id": "scripts",
+     "name": "Write scripts and hooks",
+     "n": 331,
+     "full": 44,
+     "assist": 280,
+     "human": 7,
+     "shown": 274,
+     "views": 123738401,
+     "pfull": 13,
+     "passist": 85,
+     "phuman": 2,
+     "verdict": "assist",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "CapCut",
+      "ElevenLabs"
+     ],
+     "platforms": {
+      "youtube": 192,
+      "instagram": 105,
+      "tiktok": 101,
+      "youtube-shorts": 57,
+      "facebook": 44,
+      "linkedin": 23,
+      "x": 17,
+      "email": 5,
+      "google-business": 3,
+      "podcast": 3,
+      "blog": 3
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       283
+      ],
+      [
+       "Marketing agencies",
+       119
+      ],
+      [
+       "Coaches and consultants",
+       88
+      ],
+      [
+       "E-commerce stores",
+       69
+      ],
+      [
+       "SaaS and tech startups",
+       42
+      ]
+     ],
+     "examples": [
+      {
+       "id": "xfOT2elC2Ok",
+       "title": "I Tried AI Dropshipping For 7 Days, Here's How You Can Copy Me",
+       "channel": "Mark Tilbury",
+       "views": 18992840
+      },
+      {
+       "id": "LlhTEttKcwQ",
+       "title": "I Tried The LAZIEST Way to Make Money With AI",
+       "channel": "Mark Tilbury",
+       "views": 9112167
+      },
+      {
+       "id": "BaVpeJlcQzg",
+       "title": "using AI to write a youtube video",
+       "channel": "Drew Gooden",
+       "views": 6797377
+      },
+      {
+       "id": "s7-WWTL7vuc",
+       "title": "I Tricked the Internet with an AI YouTuber",
+       "channel": "yikes",
+       "views": 3352533
+      }
+     ]
+    },
+    {
+     "id": "film",
+     "name": "Film or record (on camera)",
+     "n": 25,
+     "full": 6,
+     "assist": 8,
+     "human": 11,
+     "shown": 11,
+     "views": 15603605,
+     "pfull": 24,
+     "passist": 32,
+     "phuman": 44,
+     "verdict": "human",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "HeyGen",
+      "Canva"
+     ],
+     "platforms": {
+      "youtube": 9,
+      "instagram": 7,
+      "youtube-shorts": 6,
+      "tiktok": 5,
+      "linkedin": 4,
+      "facebook": 3,
+      "email": 2
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       20
+      ],
+      [
+       "Marketing agencies",
+       8
+      ],
+      [
+       "Coaches and consultants",
+       6
+      ],
+      [
+       "SaaS and tech startups",
+       6
+      ],
+      [
+       "Freelancers and photographers",
+       4
+      ]
+     ],
+     "examples": [
+      {
+       "id": "OeXdY6avIIs",
+       "title": "I Tricked the Internet with Fake AI Videos",
+       "channel": "yikes",
+       "views": 6479502
+      },
+      {
+       "id": "44Zr3z216ow",
+       "title": "ai reacting to ai",
+       "channel": "2 Danny 2 Furious",
+       "views": 2790009
+      },
+      {
+       "id": "xwNRyKItpOk",
+       "title": "How to Start YouTube Automation (STEP BY STEP) NO FACE | NO EDITING | FREE COURSE",
+       "channel": "Baddie In Business",
+       "views": 1926410
+      },
+      {
+       "id": "8Rf0xna31xg",
+       "title": "How a Faceless Channel Made $39K With Claude + ChatGPT",
+       "channel": "Sanji Nai-Chien",
+       "views": 1655376
+      }
+     ]
+    },
+    {
+     "id": "ai-avatar",
+     "name": "Make videos with an AI avatar or AI presenter",
+     "n": 199,
+     "full": 135,
+     "assist": 62,
+     "human": 2,
+     "shown": 170,
+     "views": 70698311,
+     "pfull": 68,
+     "passist": 31,
+     "phuman": 1,
+     "verdict": "auto",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "CapCut",
+      "HeyGen"
+     ],
+     "platforms": {
+      "youtube": 105,
+      "tiktok": 74,
+      "instagram": 69,
+      "youtube-shorts": 34,
+      "facebook": 32,
+      "x": 3,
+      "linkedin": 2,
+      "podcast": 1,
+      "email": 1,
+      "google-business": 1,
+      "pinterest": 1,
+      "threads": 1
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       174
+      ],
+      [
+       "Marketing agencies",
+       74
+      ],
+      [
+       "E-commerce stores",
+       59
+      ],
+      [
+       "Coaches and consultants",
+       38
+      ],
+      [
+       "SaaS and tech startups",
+       22
+      ]
+     ],
+     "examples": [
+      {
+       "id": "LlhTEttKcwQ",
+       "title": "I Tried The LAZIEST Way to Make Money With AI",
+       "channel": "Mark Tilbury",
+       "views": 9112167
+      },
+      {
+       "id": "KHLnnTOF-T8",
+       "title": "AI Is Ruining YouTube Kids...",
+       "channel": "Steve Terreberry",
+       "views": 6798667
+      },
+      {
+       "id": "OeXdY6avIIs",
+       "title": "I Tricked the Internet with Fake AI Videos",
+       "channel": "yikes",
+       "views": 6479502
+      },
+      {
+       "id": "s7-WWTL7vuc",
+       "title": "I Tricked the Internet with an AI YouTuber",
+       "channel": "yikes",
+       "views": 3352533
+      }
+     ]
+    },
+    {
+     "id": "voiceover",
+     "name": "Record voiceovers",
+     "n": 187,
+     "full": 124,
+     "assist": 61,
+     "human": 2,
+     "shown": 172,
+     "views": 69225630,
+     "pfull": 66,
+     "passist": 33,
+     "phuman": 1,
+     "verdict": "auto",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "CapCut",
+      "ElevenLabs"
+     ],
+     "platforms": {
+      "youtube": 108,
+      "tiktok": 43,
+      "instagram": 39,
+      "youtube-shorts": 33,
+      "facebook": 14,
+      "podcast": 4,
+      "linkedin": 3,
+      "x": 2,
+      "blog": 1,
+      "threads": 1
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       175
+      ],
+      [
+       "Marketing agencies",
+       47
+      ],
+      [
+       "E-commerce stores",
+       32
+      ],
+      [
+       "Coaches and consultants",
+       31
+      ],
+      [
+       "SaaS and tech startups",
+       15
+      ]
+     ],
+     "examples": [
+      {
+       "id": "LlhTEttKcwQ",
+       "title": "I Tried The LAZIEST Way to Make Money With AI",
+       "channel": "Mark Tilbury",
+       "views": 9112167
+      },
+      {
+       "id": "OeXdY6avIIs",
+       "title": "I Tricked the Internet with Fake AI Videos",
+       "channel": "yikes",
+       "views": 6479502
+      },
+      {
+       "id": "s7-WWTL7vuc",
+       "title": "I Tricked the Internet with an AI YouTuber",
+       "channel": "yikes",
+       "views": 3352533
+      },
+      {
+       "id": "LEJGFnjIWmQ",
+       "title": "How I Created a $10,000/month Faceless YouTube Channel Using Free AI Tools",
+       "channel": "All About Money",
+       "views": 2587864
+      }
+     ]
+    },
+    {
+     "id": "edit-video",
+     "name": "Edit videos",
+     "n": 332,
+     "full": 120,
+     "assist": 188,
+     "human": 24,
+     "shown": 280,
+     "views": 96849096,
+     "pfull": 36,
+     "passist": 57,
+     "phuman": 7,
+     "verdict": "assist",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "CapCut",
+      "ElevenLabs"
+     ],
+     "platforms": {
+      "youtube": 205,
+      "tiktok": 116,
+      "instagram": 110,
+      "youtube-shorts": 66,
+      "facebook": 34,
+      "linkedin": 11,
+      "x": 9,
+      "threads": 2,
+      "blog": 1
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       308
+      ],
+      [
+       "Marketing agencies",
+       118
+      ],
+      [
+       "E-commerce stores",
+       65
+      ],
+      [
+       "Coaches and consultants",
+       60
+      ],
+      [
+       "Freelancers and photographers",
+       35
+      ]
+     ],
+     "examples": [
+      {
+       "id": "LlhTEttKcwQ",
+       "title": "I Tried The LAZIEST Way to Make Money With AI",
+       "channel": "Mark Tilbury",
+       "views": 9112167
+      },
+      {
+       "id": "OeXdY6avIIs",
+       "title": "I Tricked the Internet with Fake AI Videos",
+       "channel": "yikes",
+       "views": 6479502
+      },
+      {
+       "id": "s7-WWTL7vuc",
+       "title": "I Tricked the Internet with an AI YouTuber",
+       "channel": "yikes",
+       "views": 3352533
+      },
+      {
+       "id": "44Zr3z216ow",
+       "title": "ai reacting to ai",
+       "channel": "2 Danny 2 Furious",
+       "views": 2790009
+      }
+     ]
+    },
+    {
+     "id": "clips",
+     "name": "Cut long videos into short clips",
+     "n": 82,
+     "full": 44,
+     "assist": 37,
+     "human": 1,
+     "shown": 73,
+     "views": 18248924,
+     "pfull": 54,
+     "passist": 45,
+     "phuman": 1,
+     "verdict": "auto",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "CapCut",
+      "Opus Clip"
+     ],
+     "platforms": {
+      "youtube": 54,
+      "tiktok": 52,
+      "instagram": 52,
+      "youtube-shorts": 38,
+      "facebook": 10,
+      "linkedin": 7,
+      "x": 4,
+      "threads": 1
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       79
+      ],
+      [
+       "Marketing agencies",
+       34
+      ],
+      [
+       "Coaches and consultants",
+       16
+      ],
+      [
+       "E-commerce stores",
+       16
+      ],
+      [
+       "SaaS and tech startups",
+       9
+      ]
+     ],
+     "examples": [
+      {
+       "id": "OC71RgkY3xY",
+       "title": "I Made a YouTube Shorts Automation Channel USING ONLY AI in 24 Hours",
+       "channel": "Replayz - Business",
+       "views": 1684022
+      },
+      {
+       "id": "V_t51u1tBJc",
+       "title": "How I Make $24,937/mo Posting YouTube Shorts (Using Claude AI)",
+       "channel": "Kellan Henneberry",
+       "views": 1637091
+      },
+      {
+       "id": "ygeCgN-SfE8",
+       "title": "how i make $36,438/mo posting YouTube Shorts (using AI)",
+       "channel": "Kellan Henneberry",
+       "views": 1328600
+      },
+      {
+       "id": "ldETapkr8Hg",
+       "title": "I Built a Marketing Team with 1 AI Agent and No Code (free n8n template)",
+       "channel": "Nate Herk | AI Automation",
+       "views": 965292
+      }
+     ]
+    },
+    {
+     "id": "captions-subtitles",
+     "name": "Add captions and subtitles",
+     "n": 119,
+     "full": 57,
+     "assist": 61,
+     "human": 1,
+     "shown": 110,
+     "views": 34591713,
+     "pfull": 48,
+     "passist": 51,
+     "phuman": 1,
+     "verdict": "assist",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "CapCut",
+      "ElevenLabs"
+     ],
+     "platforms": {
+      "youtube": 78,
+      "tiktok": 50,
+      "instagram": 50,
+      "youtube-shorts": 32,
+      "facebook": 14,
+      "linkedin": 7,
+      "x": 4,
+      "threads": 2,
+      "blog": 1
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       113
+      ],
+      [
+       "Marketing agencies",
+       35
+      ],
+      [
+       "Coaches and consultants",
+       19
+      ],
+      [
+       "E-commerce stores",
+       14
+      ],
+      [
+       "Freelancers and photographers",
+       14
+      ]
+     ],
+     "examples": [
+      {
+       "id": "s7-WWTL7vuc",
+       "title": "I Tricked the Internet with an AI YouTuber",
+       "channel": "yikes",
+       "views": 3352533
+      },
+      {
+       "id": "LEJGFnjIWmQ",
+       "title": "How I Created a $10,000/month Faceless YouTube Channel Using Free AI Tools",
+       "channel": "All About Money",
+       "views": 2587864
+      },
+      {
+       "id": "358xI2QpWKU",
+       "title": "YouTube Automation with AI | Make FACELESS YouTube Videos with AI",
+       "channel": "DecodingYT",
+       "views": 2467921
+      },
+      {
+       "id": "Xslo9OK3OCE",
+       "title": "The AI Wastelands of YouTube Shorts",
+       "channel": "Farrell McGuire",
+       "views": 1934187
+      }
+     ]
+    },
+    {
+     "id": "thumbnails",
+     "name": "Make thumbnails and cover images",
+     "n": 104,
+     "full": 25,
+     "assist": 71,
+     "human": 8,
+     "shown": 78,
+     "views": 54140974,
+     "pfull": 24,
+     "passist": 68,
+     "phuman": 8,
+     "verdict": "assist",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "Canva",
+      "ElevenLabs"
+     ],
+     "platforms": {
+      "youtube": 96,
+      "instagram": 7,
+      "tiktok": 4,
+      "youtube-shorts": 3,
+      "podcast": 1,
+      "facebook": 1
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       99
+      ],
+      [
+       "Marketing agencies",
+       26
+      ],
+      [
+       "Coaches and consultants",
+       20
+      ],
+      [
+       "SaaS and tech startups",
+       8
+      ],
+      [
+       "E-commerce stores",
+       8
+      ]
+     ],
+     "examples": [
+      {
+       "id": "LlhTEttKcwQ",
+       "title": "I Tried The LAZIEST Way to Make Money With AI",
+       "channel": "Mark Tilbury",
+       "views": 9112167
+      },
+      {
+       "id": "5feKFjDHl8U",
+       "title": "How to Create YouTube Thumbnails with AI using ThumbnailCreator.com AI YouTube Thumbnail Generator",
+       "channel": "Aleric Heck",
+       "views": 4160394
+      },
+      {
+       "id": "s7-WWTL7vuc",
+       "title": "I Tricked the Internet with an AI YouTuber",
+       "channel": "yikes",
+       "views": 3352533
+      },
+      {
+       "id": "LEJGFnjIWmQ",
+       "title": "How I Created a $10,000/month Faceless YouTube Channel Using Free AI Tools",
+       "channel": "All About Money",
+       "views": 2587864
+      }
+     ]
+    },
+    {
+     "id": "graphics",
+     "name": "Make graphics, carousels and images",
+     "n": 286,
+     "full": 136,
+     "assist": 146,
+     "human": 4,
+     "shown": 262,
+     "views": 58612118,
+     "pfull": 48,
+     "passist": 51,
+     "phuman": 1,
+     "verdict": "assist",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "Canva",
+      "CapCut"
+     ],
+     "platforms": {
+      "instagram": 81,
+      "youtube": 74,
+      "facebook": 39,
+      "tiktok": 33,
+      "linkedin": 32,
+      "blog": 17,
+      "youtube-shorts": 15,
+      "pinterest": 14,
+      "x": 10,
+      "google-business": 6,
+      "email": 3,
+      "threads": 2
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       201
+      ],
+      [
+       "Marketing agencies",
+       93
+      ],
+      [
+       "E-commerce stores",
+       64
+      ],
+      [
+       "Coaches and consultants",
+       52
+      ],
+      [
+       "SaaS and tech startups",
+       23
+      ]
+     ],
+     "examples": [
+      {
+       "id": "wZeOwqmSw84",
+       "title": "Learn 97% of Claude in Under 16 Minutes",
+       "channel": "Dan Martell",
+       "views": 2634335
+      },
+      {
+       "id": "1r0eyM7suUg",
+       "title": "I BLEW UP a YouTube Channel in 7 Days with AI",
+       "channel": "Jack Craig",
+       "views": 2524892
+      },
+      {
+       "id": "358xI2QpWKU",
+       "title": "YouTube Automation with AI | Make FACELESS YouTube Videos with AI",
+       "channel": "DecodingYT",
+       "views": 2467921
+      },
+      {
+       "id": "DGPpQ789THI",
+       "title": "I Tried Every AI Slop Restaurant...",
+       "channel": "John Casterline",
+       "views": 2203041
+      }
+     ]
+    },
+    {
+     "id": "write-posts",
+     "name": "Write posts, captions and threads",
+     "n": 241,
+     "full": 57,
+     "assist": 178,
+     "human": 6,
+     "shown": 183,
+     "views": 98894702,
+     "pfull": 24,
+     "passist": 74,
+     "phuman": 2,
+     "verdict": "assist",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "n8n",
+      "Google Sheets"
+     ],
+     "platforms": {
+      "instagram": 104,
+      "linkedin": 99,
+      "x": 72,
+      "facebook": 61,
+      "youtube": 60,
+      "tiktok": 37,
+      "email": 22,
+      "google-business": 17,
+      "blog": 14,
+      "youtube-shorts": 10,
+      "pinterest": 9,
+      "threads": 7,
+      "reddit": 4,
+      "podcast": 1
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       153
+      ],
+      [
+       "Marketing agencies",
+       118
+      ],
+      [
+       "Coaches and consultants",
+       76
+      ],
+      [
+       "E-commerce stores",
+       35
+      ],
+      [
+       "SaaS and tech startups",
+       33
+      ]
+     ],
+     "examples": [
+      {
+       "id": "xfOT2elC2Ok",
+       "title": "I Tried AI Dropshipping For 7 Days, Here's How You Can Copy Me",
+       "channel": "Mark Tilbury",
+       "views": 18992840
+      },
+      {
+       "id": "BaVpeJlcQzg",
+       "title": "using AI to write a youtube video",
+       "channel": "Drew Gooden",
+       "views": 6797377
+      },
+      {
+       "id": "FwOTs4UxQS4",
+       "title": "AI Agents, Clearly Explained",
+       "channel": "Jeff Su",
+       "views": 5650481
+      },
+      {
+       "id": "0Tch0N5nsRU",
+       "title": "You’re not behind (yet): How to learn AI in 18 minutes",
+       "channel": "Dan Martell",
+       "views": 3300160
+      }
+     ]
+    },
+    {
+     "id": "titles-hashtags",
+     "name": "Write titles, descriptions and hashtags",
+     "n": 133,
+     "full": 24,
+     "assist": 108,
+     "human": 1,
+     "shown": 108,
+     "views": 45960670,
+     "pfull": 18,
+     "passist": 81,
+     "phuman": 1,
+     "verdict": "assist",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "Canva",
+      "CapCut"
+     ],
+     "platforms": {
+      "youtube": 77,
+      "instagram": 32,
+      "tiktok": 18,
+      "linkedin": 13,
+      "youtube-shorts": 13,
+      "facebook": 12,
+      "x": 11,
+      "pinterest": 7,
+      "email": 6,
+      "google-business": 5,
+      "blog": 5,
+      "threads": 2,
+      "reddit": 1
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       115
+      ],
+      [
+       "Marketing agencies",
+       49
+      ],
+      [
+       "Coaches and consultants",
+       32
+      ],
+      [
+       "E-commerce stores",
+       20
+      ],
+      [
+       "Freelancers and photographers",
+       11
+      ]
+     ],
+     "examples": [
+      {
+       "id": "BaVpeJlcQzg",
+       "title": "using AI to write a youtube video",
+       "channel": "Drew Gooden",
+       "views": 6797377
+      },
+      {
+       "id": "s7-WWTL7vuc",
+       "title": "I Tricked the Internet with an AI YouTuber",
+       "channel": "yikes",
+       "views": 3352533
+      },
+      {
+       "id": "LEJGFnjIWmQ",
+       "title": "How I Created a $10,000/month Faceless YouTube Channel Using Free AI Tools",
+       "channel": "All About Money",
+       "views": 2587864
+      },
+      {
+       "id": "1r0eyM7suUg",
+       "title": "I BLEW UP a YouTube Channel in 7 Days with AI",
+       "channel": "Jack Craig",
+       "views": 2524892
+      }
+     ]
+    },
+    {
+     "id": "schedule-posts",
+     "name": "Schedule and publish posts",
+     "n": 271,
+     "full": 198,
+     "assist": 61,
+     "human": 12,
+     "shown": 222,
+     "views": 50970213,
+     "pfull": 73,
+     "passist": 23,
+     "phuman": 4,
+     "verdict": "auto",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "n8n",
+      "Google Sheets"
+     ],
+     "platforms": {
+      "instagram": 105,
+      "youtube": 71,
+      "linkedin": 67,
+      "tiktok": 62,
+      "x": 54,
+      "facebook": 53,
+      "pinterest": 23,
+      "email": 16,
+      "youtube-shorts": 14,
+      "google-business": 13,
+      "blog": 12,
+      "threads": 9,
+      "podcast": 1,
+      "reddit": 1
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       193
+      ],
+      [
+       "Marketing agencies",
+       125
+      ],
+      [
+       "Coaches and consultants",
+       62
+      ],
+      [
+       "E-commerce stores",
+       31
+      ],
+      [
+       "SaaS and tech startups",
+       29
+      ]
+     ],
+     "examples": [
+      {
+       "id": "FwOTs4UxQS4",
+       "title": "AI Agents, Clearly Explained",
+       "channel": "Jeff Su",
+       "views": 5650481
+      },
+      {
+       "id": "ONgECvZNI3o",
+       "title": "You NEED to Use n8n RIGHT NOW!! (Free, Local, Private)",
+       "channel": "NetworkChuck",
+       "views": 2664579
+      },
+      {
+       "id": "H0YRniHh2tg",
+       "title": "This Social Media AI System Creates Unique Content Daily! (100% Automated)",
+       "channel": "Helena Liu",
+       "views": 1227796
+      },
+      {
+       "id": "budTmdQfXYU",
+       "title": "n8n Now Runs My ENTIRE Homelab",
+       "channel": "NetworkChuck",
+       "views": 1087120
+      }
+     ]
+    },
+    {
+     "id": "repurpose",
+     "name": "Repurpose one piece of content for every platform",
+     "n": 167,
+     "full": 62,
+     "assist": 102,
+     "human": 3,
+     "shown": 134,
+     "views": 35914956,
+     "pfull": 37,
+     "passist": 61,
+     "phuman": 2,
+     "verdict": "assist",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "n8n",
+      "CapCut"
+     ],
+     "platforms": {
+      "instagram": 113,
+      "youtube": 91,
+      "tiktok": 82,
+      "linkedin": 55,
+      "facebook": 45,
+      "x": 37,
+      "youtube-shorts": 36,
+      "blog": 10,
+      "pinterest": 10,
+      "threads": 10,
+      "email": 8,
+      "podcast": 3,
+      "google-business": 3,
+      "reddit": 3
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       144
+      ],
+      [
+       "Marketing agencies",
+       88
+      ],
+      [
+       "Coaches and consultants",
+       45
+      ],
+      [
+       "E-commerce stores",
+       28
+      ],
+      [
+       "SaaS and tech startups",
+       24
+      ]
+     ],
+     "examples": [
+      {
+       "id": "OeXdY6avIIs",
+       "title": "I Tricked the Internet with Fake AI Videos",
+       "channel": "yikes",
+       "views": 6479502
+      },
+      {
+       "id": "Xslo9OK3OCE",
+       "title": "The AI Wastelands of YouTube Shorts",
+       "channel": "Farrell McGuire",
+       "views": 1934187
+      },
+      {
+       "id": "xwNRyKItpOk",
+       "title": "How to Start YouTube Automation (STEP BY STEP) NO FACE | NO EDITING | FREE COURSE",
+       "channel": "Baddie In Business",
+       "views": 1926410
+      },
+      {
+       "id": "V_t51u1tBJc",
+       "title": "How I Make $24,937/mo Posting YouTube Shorts (Using Claude AI)",
+       "channel": "Kellan Henneberry",
+       "views": 1637091
+      }
+     ]
+    },
+    {
+     "id": "comments",
+     "name": "Reply to comments",
+     "n": 27,
+     "full": 22,
+     "assist": 4,
+     "human": 1,
+     "shown": 24,
+     "views": 1988681,
+     "pfull": 81,
+     "passist": 15,
+     "phuman": 4,
+     "verdict": "auto",
+     "tools": [
+      "ManyChat",
+      "ChatGPT / OpenAI",
+      "Google Sheets",
+      "n8n"
+     ],
+     "platforms": {
+      "instagram": 17,
+      "youtube": 4,
+      "x": 3,
+      "tiktok": 3,
+      "facebook": 3,
+      "linkedin": 1
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       25
+      ],
+      [
+       "Marketing agencies",
+       12
+      ],
+      [
+       "Coaches and consultants",
+       10
+      ],
+      [
+       "E-commerce stores",
+       7
+      ],
+      [
+       "Freelancers and photographers",
+       2
+      ]
+     ],
+     "examples": [
+      {
+       "id": "aGqK67lXw6M",
+       "title": "Create Your First Manychat Automation (step-by-step tutorial) 💬 Manychat Basics Ep. 2",
+       "channel": "Manychat",
+       "views": 529773
+      },
+      {
+       "id": "FM2grcQLfqQ",
+       "title": "Automatically DM someone who comments on your Instagram post with Manychat! *full tutorial*",
+       "channel": "Stephanie Kase",
+       "views": 252885
+      },
+      {
+       "id": "k7iLBjvcNFs",
+       "title": "How to Automate on Instagram 📲 (Comment KEYWORD & automatically send a DM) - ManyChat Tutorial",
+       "channel": "Louise Henry",
+       "views": 112478
+      },
+      {
+       "id": "QoP-C3EexsU",
+       "title": "4 Easy AI Automations That WILL Change Your Life",
+       "channel": "Natalie Dawson",
+       "views": 93346
+      }
+     ]
+    },
+    {
+     "id": "dms",
+     "name": "Reply to DMs",
+     "n": 37,
+     "full": 34,
+     "assist": 3,
+     "human": 0,
+     "shown": 33,
+     "views": 3574632,
+     "pfull": 92,
+     "passist": 8,
+     "phuman": 0,
+     "verdict": "auto",
+     "tools": [
+      "ManyChat",
+      "ChatGPT / OpenAI",
+      "Claude",
+      "n8n"
+     ],
+     "platforms": {
+      "instagram": 29,
+      "facebook": 9,
+      "x": 5,
+      "tiktok": 3,
+      "youtube": 2,
+      "reddit": 1,
+      "email": 1,
+      "linkedin": 1
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       31
+      ],
+      [
+       "Marketing agencies",
+       14
+      ],
+      [
+       "Coaches and consultants",
+       12
+      ],
+      [
+       "SaaS and tech startups",
+       6
+      ],
+      [
+       "E-commerce stores",
+       4
+      ]
+     ],
+     "examples": [
+      {
+       "id": "bS9R6aCVEzw",
+       "title": "n8n will change your life as a developer...",
+       "channel": "Fireship",
+       "views": 1277710
+      },
+      {
+       "id": "FM2grcQLfqQ",
+       "title": "Automatically DM someone who comments on your Instagram post with Manychat! *full tutorial*",
+       "channel": "Stephanie Kase",
+       "views": 252885
+      },
+      {
+       "id": "RZyl1XSVWI4",
+       "title": "I Tried Selling AI Digital Products on instagram to prove its NOT luck",
+       "channel": "DIGITAL INCOME PROJECT",
+       "views": 119887
+      },
+      {
+       "id": "iLtU0wQvCBU",
+       "title": "I Built an Entire Marketing Team With One AI Agent (no code with n8n)",
+       "channel": "Riley Brown",
+       "views": 115035
+      }
+     ]
+    },
+    {
+     "id": "content-analytics",
+     "name": "Track what performs (analytics)",
+     "n": 113,
+     "full": 25,
+     "assist": 86,
+     "human": 2,
+     "shown": 86,
+     "views": 21273011,
+     "pfull": 22,
+     "passist": 76,
+     "phuman": 2,
+     "verdict": "assist",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "Gemini",
+      "CapCut"
+     ],
+     "platforms": {
+      "youtube": 37,
+      "instagram": 27,
+      "tiktok": 17,
+      "facebook": 14,
+      "google-business": 8,
+      "linkedin": 8,
+      "x": 6,
+      "email": 5,
+      "youtube-shorts": 3,
+      "blog": 3,
+      "pinterest": 3
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       69
+      ],
+      [
+       "Marketing agencies",
+       44
+      ],
+      [
+       "Coaches and consultants",
+       32
+      ],
+      [
+       "E-commerce stores",
+       29
+      ],
+      [
+       "SaaS and tech startups",
+       15
+      ]
+     ],
+     "examples": [
+      {
+       "id": "1r0eyM7suUg",
+       "title": "I BLEW UP a YouTube Channel in 7 Days with AI",
+       "channel": "Jack Craig",
+       "views": 2524892
+      },
+      {
+       "id": "LqY6hFLMEJw",
+       "title": "How AI Makes Him Crores: Second Brain, Automations & Systems | Vaibhav Sisinty | FO557 Raj Shamani",
+       "channel": "Raj Shamani and Vaibhav Sisinty",
+       "views": 1827242
+      },
+      {
+       "id": "8Rf0xna31xg",
+       "title": "How a Faceless Channel Made $39K With Claude + ChatGPT",
+       "channel": "Sanji Nai-Chien",
+       "views": 1655376
+      },
+      {
+       "id": "AcW8Ktjk1G8",
+       "title": "Reacting To AI Videos About Me!",
+       "channel": "CaylusBlox Movies",
+       "views": 1209880
+      }
+     ]
+    },
+    {
+     "id": "blog-articles",
+     "name": "Write blog posts and articles",
+     "n": 73,
+     "full": 32,
+     "assist": 41,
+     "human": 0,
+     "shown": 62,
+     "views": 15806461,
+     "pfull": 44,
+     "passist": 56,
+     "phuman": 0,
+     "verdict": "assist",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "Google Sheets",
+      "n8n"
+     ],
+     "platforms": {
+      "blog": 56,
+      "google-business": 5,
+      "instagram": 4,
+      "facebook": 3,
+      "linkedin": 3,
+      "x": 3,
+      "email": 3,
+      "youtube": 3,
+      "tiktok": 1
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       41
+      ],
+      [
+       "Marketing agencies",
+       38
+      ],
+      [
+       "Coaches and consultants",
+       20
+      ],
+      [
+       "E-commerce stores",
+       16
+      ],
+      [
+       "SaaS and tech startups",
+       14
+      ]
+     ],
+     "examples": [
+      {
+       "id": "BaVpeJlcQzg",
+       "title": "using AI to write a youtube video",
+       "channel": "Drew Gooden",
+       "views": 6797377
+      },
+      {
+       "id": "ldETapkr8Hg",
+       "title": "I Built a Marketing Team with 1 AI Agent and No Code (free n8n template)",
+       "channel": "Nate Herk | AI Automation",
+       "views": 965292
+      },
+      {
+       "id": "Zqno_vux6d8",
+       "title": "AI agents explained: Build your first agent in 8 minutes",
+       "channel": "Google Cloud Tech and Smitha Kolan - Machine Learning Engineer",
+       "views": 639165
+      },
+      {
+       "id": "u5TyXyf1jRk",
+       "title": "How to Make $30,000/Year Blogging Using AI & Automation (step-by-step course)",
+       "channel": "Helena Liu",
+       "views": 447528
+      }
+     ]
+    },
+    {
+     "id": "newsletter",
+     "name": "Write and send newsletters",
+     "n": 49,
+     "full": 18,
+     "assist": 31,
+     "human": 0,
+     "shown": 39,
+     "views": 4617012,
+     "pfull": 37,
+     "passist": 63,
+     "phuman": 0,
+     "verdict": "assist",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "Gmail",
+      "n8n"
+     ],
+     "platforms": {
+      "email": 42,
+      "tiktok": 1,
+      "linkedin": 1,
+      "x": 1,
+      "blog": 1
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       21
+      ],
+      [
+       "Marketing agencies",
+       18
+      ],
+      [
+       "E-commerce stores",
+       16
+      ],
+      [
+       "Coaches and consultants",
+       15
+      ],
+      [
+       "SaaS and tech startups",
+       10
+      ]
+     ],
+     "examples": [
+      {
+       "id": "KmcTu2EigTs",
+       "title": "Learn 95% of ChatGPT Work in Under 20 Minutes",
+       "channel": "Jeff Su",
+       "views": 535349
+      },
+      {
+       "id": "KSOxkhWs2Ic",
+       "title": "AI Automation: Complete Beginners Guide",
+       "channel": "The AI Advantage",
+       "views": 452100
+      },
+      {
+       "id": "2pLJE6Zy33s",
+       "title": "My AI Shopify Store Made Its First Sale in 1 Hour",
+       "channel": "Davie Fogarty",
+       "views": 382707
+      },
+      {
+       "id": "eorc3jLBqIA",
+       "title": "I Built An Entire AI Marketing Team With Claude Code In 16 Minutes",
+       "channel": "Zubair Trabzada | AI Workshop",
+       "views": 290529
+      }
+     ]
+    },
+    {
+     "id": "podcast",
+     "name": "Produce podcasts",
+     "n": 8,
+     "full": 2,
+     "assist": 6,
+     "human": 0,
+     "shown": 4,
+     "views": 970530,
+     "pfull": 25,
+     "passist": 75,
+     "phuman": 0,
+     "verdict": "assist",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "Gemini",
+      "Descript"
+     ],
+     "platforms": {
+      "podcast": 4,
+      "tiktok": 1,
+      "youtube": 1
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       6
+      ],
+      [
+       "Marketing agencies",
+       3
+      ],
+      [
+       "Coaches and consultants",
+       2
+      ],
+      [
+       "Freelancers and photographers",
+       2
+      ],
+      [
+       "Dental and medical practices",
+       2
+      ]
+     ],
+     "examples": [
+      {
+       "id": "L110osBj5Kk",
+       "title": "Google's FREE AI Just Replaced LinkedIn, Naukri, and Indeed (Complete Job Hunt Stack)",
+       "channel": "Vaibhav Sisinty",
+       "views": 391529
+      },
+      {
+       "id": "yDTbAxJ3sKI",
+       "title": "How to Use ElevenLabs AI (Complete Voiceover Beginner Tutorial)",
+       "channel": "Kevin Stratvert",
+       "views": 91794
+      },
+      {
+       "id": "AkYJ__ic2CI",
+       "title": "I Wasted 40 Hours Repurposing Content... Until I Found This AI Tool",
+       "channel": "Tech with Ayrass",
+       "views": 50462
+      },
+      {
+       "id": "8tOfGkddPNM",
+       "title": "Claude + NotebookLM: Ultimate AI Automation Workflow to Work 10x Faster",
+       "channel": "AI Master",
+       "views": 17229
+      }
+     ]
+    },
+    {
+     "id": "ugc-influencers",
+     "name": "Find and manage creators and influencers",
+     "n": 4,
+     "full": 0,
+     "assist": 3,
+     "human": 1,
+     "shown": 1,
+     "views": 19553936,
+     "pfull": 0,
+     "passist": 75,
+     "phuman": 25,
+     "verdict": "rare",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Perplexity",
+      "Claude",
+      "Gemini"
+     ],
+     "platforms": {
+      "instagram": 2,
+      "linkedin": 1,
+      "x": 1,
+      "youtube": 1,
+      "tiktok": 1
+     },
+     "types": [
+      [
+       "E-commerce stores",
+       3
+      ],
+      [
+       "SaaS and tech startups",
+       2
+      ],
+      [
+       "Creators and YouTubers",
+       2
+      ],
+      [
+       "Coaches and consultants",
+       1
+      ],
+      [
+       "Marketing agencies",
+       1
+      ]
+     ],
+     "examples": [
+      {
+       "id": "xfOT2elC2Ok",
+       "title": "I Tried AI Dropshipping For 7 Days, Here's How You Can Copy Me",
+       "channel": "Mark Tilbury",
+       "views": 18992840
+      }
+     ]
+    }
+   ],
+   "n": 1000
+  },
+  {
+   "id": "ads",
+   "name": "Ads",
+   "tasks": [
+    {
+     "id": "ad-copy",
+     "name": "Write ad copy",
+     "n": 51,
+     "full": 13,
+     "assist": 38,
+     "human": 0,
+     "shown": 39,
+     "views": 6322919,
+     "pfull": 25,
+     "passist": 75,
+     "phuman": 0,
+     "verdict": "assist",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "Gemini",
+      "Shopify"
+     ],
+     "platforms": {
+      "facebook": 37,
+      "instagram": 23,
+      "google-business": 8,
+      "tiktok": 5,
+      "youtube": 4,
+      "linkedin": 2,
+      "x": 2
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       30
+      ],
+      [
+       "E-commerce stores",
+       29
+      ],
+      [
+       "Creators and YouTubers",
+       17
+      ],
+      [
+       "Coaches and consultants",
+       12
+      ],
+      [
+       "SaaS and tech startups",
+       8
+      ]
+     ],
+     "examples": [
+      {
+       "id": "ksRcFGLPoSk",
+       "title": "I Built A Business With AI In 24 Hours",
+       "channel": "Codie Sanchez",
+       "views": 491383
+      },
+      {
+       "id": "ngXvG87RZOA",
+       "title": "I Created 32 Social Media Posts in 10 Minutes Using Claude + Canva",
+       "channel": "HubSpot Marketing",
+       "views": 326462
+      },
+      {
+       "id": "eorc3jLBqIA",
+       "title": "I Built An Entire AI Marketing Team With Claude Code In 16 Minutes",
+       "channel": "Zubair Trabzada | AI Workshop",
+       "views": 290529
+      },
+      {
+       "id": "-EInjdpjKy0",
+       "title": "Claude Code Google Ads: Automate Everything ($730K Earned)",
+       "channel": "Jono Catliff",
+       "views": 270287
+      }
+     ]
+    },
+    {
+     "id": "ad-creatives",
+     "name": "Make ad creatives (images and video)",
+     "n": 115,
+     "full": 52,
+     "assist": 61,
+     "human": 2,
+     "shown": 95,
+     "views": 17710201,
+     "pfull": 45,
+     "passist": 53,
+     "phuman": 2,
+     "verdict": "assist",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "Gemini",
+      "Shopify"
+     ],
+     "platforms": {
+      "facebook": 64,
+      "instagram": 63,
+      "tiktok": 39,
+      "youtube": 21,
+      "youtube-shorts": 9,
+      "google-business": 7,
+      "blog": 2,
+      "x": 2,
+      "email": 1,
+      "reddit": 1,
+      "linkedin": 1,
+      "pinterest": 1
+     },
+     "types": [
+      [
+       "E-commerce stores",
+       73
+      ],
+      [
+       "Marketing agencies",
+       71
+      ],
+      [
+       "Creators and YouTubers",
+       52
+      ],
+      [
+       "Coaches and consultants",
+       22
+      ],
+      [
+       "SaaS and tech startups",
+       19
+      ]
+     ],
+     "examples": [
+      {
+       "id": "DGPpQ789THI",
+       "title": "I Tried Every AI Slop Restaurant...",
+       "channel": "John Casterline",
+       "views": 2203041
+      },
+      {
+       "id": "JWMizuT_A8E",
+       "title": "How to Start a 1-Person AI Business using Claude in 2026 (FREE COURSE)",
+       "channel": "Ishan Sharma",
+       "views": 635564
+      },
+      {
+       "id": "GtwVwqPiouE",
+       "title": "Ultimate AI Agents Masterclass for Founders & Marketers | Rethinking Marketing with AI Agents",
+       "channel": "Think School",
+       "views": 626536
+      },
+      {
+       "id": "ksRcFGLPoSk",
+       "title": "I Built A Business With AI In 24 Hours",
+       "channel": "Codie Sanchez",
+       "views": 491383
+      }
+     ]
+    },
+    {
+     "id": "ad-launch",
+     "name": "Launch ad campaigns",
+     "n": 50,
+     "full": 16,
+     "assist": 29,
+     "human": 5,
+     "shown": 33,
+     "views": 26946523,
+     "pfull": 32,
+     "passist": 58,
+     "phuman": 10,
+     "verdict": "assist",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "Shopify",
+      "GoHighLevel"
+     ],
+     "platforms": {
+      "facebook": 39,
+      "instagram": 31,
+      "google-business": 11,
+      "tiktok": 8,
+      "youtube": 3,
+      "x": 3,
+      "linkedin": 2,
+      "email": 1,
+      "pinterest": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       32
+      ],
+      [
+       "E-commerce stores",
+       27
+      ],
+      [
+       "Creators and YouTubers",
+       16
+      ],
+      [
+       "Coaches and consultants",
+       10
+      ],
+      [
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       7
+      ]
+     ],
+     "examples": [
+      {
+       "id": "xfOT2elC2Ok",
+       "title": "I Tried AI Dropshipping For 7 Days, Here's How You Can Copy Me",
+       "channel": "Mark Tilbury",
+       "views": 18992840
+      },
+      {
+       "id": "JWMizuT_A8E",
+       "title": "How to Start a 1-Person AI Business using Claude in 2026 (FREE COURSE)",
+       "channel": "Ishan Sharma",
+       "views": 635564
+      },
+      {
+       "id": "ScF0pi6FSLQ",
+       "title": "how to literally print money while you sleep with AI dropshipping (just copy me)",
+       "channel": "Romas Ecom",
+       "views": 452688
+      },
+      {
+       "id": "F5fEldWnHMg",
+       "title": "i hate your ai slop \"business\"",
+       "channel": "Cloud's Commentary",
+       "views": 406622
+      }
+     ]
+    },
+    {
+     "id": "ad-optimize",
+     "name": "Adjust budgets and pause losing ads",
+     "n": 29,
+     "full": 13,
+     "assist": 15,
+     "human": 1,
+     "shown": 17,
+     "views": 1955078,
+     "pfull": 45,
+     "passist": 52,
+     "phuman": 3,
+     "verdict": "assist",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "Shopify",
+      "GoHighLevel"
+     ],
+     "platforms": {
+      "facebook": 21,
+      "instagram": 13,
+      "google-business": 8,
+      "tiktok": 3,
+      "reddit": 1,
+      "linkedin": 1,
+      "youtube": 1,
+      "email": 1,
+      "pinterest": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       19
+      ],
+      [
+       "E-commerce stores",
+       18
+      ],
+      [
+       "Coaches and consultants",
+       6
+      ],
+      [
+       "Creators and YouTubers",
+       6
+      ],
+      [
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       4
+      ]
+     ],
+     "examples": [
+      {
+       "id": "ScF0pi6FSLQ",
+       "title": "how to literally print money while you sleep with AI dropshipping (just copy me)",
+       "channel": "Romas Ecom",
+       "views": 452688
+      },
+      {
+       "id": "-EInjdpjKy0",
+       "title": "Claude Code Google Ads: Automate Everything ($730K Earned)",
+       "channel": "Jono Catliff",
+       "views": 270287
+      },
+      {
+       "id": "gVPZU1btFA8",
+       "title": "GPT-6 Astra Changed Meta Ads Forever!",
+       "channel": "Higgsfield AI and Higgsfield Marketing",
+       "views": 188262
+      },
+      {
+       "id": "6DSHG8UO6Ag",
+       "title": "The Best AI Automation Service for your Marketing Agency",
+       "channel": "Plai",
+       "views": 102224
+      }
+     ]
+    },
+    {
+     "id": "ad-reporting",
+     "name": "Report on ad results",
+     "n": 10,
+     "full": 5,
+     "assist": 5,
+     "human": 0,
+     "shown": 5,
+     "views": 609943,
+     "pfull": 50,
+     "passist": 50,
+     "phuman": 0,
+     "verdict": "auto",
+     "tools": [
+      "Claude",
+      "Make",
+      "Slack",
+      "Zapier"
+     ],
+     "platforms": {
+      "facebook": 6,
+      "instagram": 3,
+      "google-business": 1,
+      "youtube": 1,
+      "email": 1
+     },
+     "types": [
+      [
+       "E-commerce stores",
+       8
+      ],
+      [
+       "Marketing agencies",
+       7
+      ],
+      [
+       "Creators and YouTubers",
+       5
+      ],
+      [
+       "Coaches and consultants",
+       3
+      ],
+      [
+       "Freelancers and photographers",
+       2
+      ]
+     ],
+     "examples": [
+      {
+       "id": "-EInjdpjKy0",
+       "title": "Claude Code Google Ads: Automate Everything ($730K Earned)",
+       "channel": "Jono Catliff",
+       "views": 270287
+      },
+      {
+       "id": "UGiN8aVy2l8",
+       "title": "How I Use Claude Cowork as a Creative Strategist",
+       "channel": "Dara Denney",
+       "views": 108626
+      },
+      {
+       "id": "5G6pjezR1OI",
+       "title": "How I Automated Meta Ads Using Manus AI🔥",
+       "channel": "Summia Jamshed",
+       "views": 20320
+      },
+      {
+       "id": "fo8Sw7CMl-M",
+       "title": "How I Automated Meta Ads With Claude Code",
+       "channel": "Chris Rudy",
+       "views": 18601
+      }
+     ]
+    },
+    {
+     "id": "ad-strategy",
+     "name": "Decide the offer, audience and ad strategy",
+     "n": 25,
+     "full": 5,
+     "assist": 19,
+     "human": 1,
+     "shown": 16,
+     "views": 2068969,
+     "pfull": 20,
+     "passist": 76,
+     "phuman": 4,
+     "verdict": "assist",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "Gemini",
+      "Google Sheets"
+     ],
+     "platforms": {
+      "facebook": 12,
+      "instagram": 6,
+      "youtube": 3,
+      "google-business": 2,
+      "email": 1,
+      "pinterest": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       15
+      ],
+      [
+       "Creators and YouTubers",
+       10
+      ],
+      [
+       "E-commerce stores",
+       10
+      ],
+      [
+       "Coaches and consultants",
+       8
+      ],
+      [
+       "Real estate agents",
+       4
+      ]
+     ],
+     "examples": [
+      {
+       "id": "eorc3jLBqIA",
+       "title": "I Built An Entire AI Marketing Team With Claude Code In 16 Minutes",
+       "channel": "Zubair Trabzada | AI Workshop",
+       "views": 290529
+      },
+      {
+       "id": "S9dc0y_Zesc",
+       "title": "AI Agents Every Business Needs to Skyrocket Efficiency and Cut Costs",
+       "channel": "Vendasta",
+       "views": 275917
+      },
+      {
+       "id": "iFmL2auLnbs",
+       "title": "This Claude AI System Runs Meta Ads Automatically (Full Guide)",
+       "channel": "WsCube Tech",
+       "views": 121701
+      },
+      {
+       "id": "DvsKFckdfE0",
+       "title": "How To Use Pomelli: Google's Free AI Marketing Agent",
+       "channel": "Paul J Lipsky",
+       "views": 116442
+      }
+     ]
+    }
+   ],
+   "n": 173
+  },
+  {
+   "id": "sales",
+   "name": "Sales and leads",
+   "tasks": [
+    {
+     "id": "find-leads",
+     "name": "Find leads and build prospect lists",
+     "n": 231,
+     "full": 114,
+     "assist": 93,
+     "human": 24,
+     "shown": 153,
+     "views": 44388928,
+     "pfull": 49,
+     "passist": 40,
+     "phuman": 10,
+     "verdict": "assist",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "n8n",
+      "Google Sheets"
+     ],
+     "platforms": {
+      "linkedin": 52,
+      "email": 38,
+      "instagram": 28,
+      "google-business": 23,
+      "facebook": 17,
+      "x": 12,
+      "youtube": 12,
+      "tiktok": 4,
+      "blog": 1,
+      "youtube-shorts": 1,
+      "reddit": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       139
+      ],
+      [
+       "Coaches and consultants",
+       84
+      ],
+      [
+       "Creators and YouTubers",
+       69
+      ],
+      [
+       "SaaS and tech startups",
+       53
+      ],
+      [
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       52
+      ]
+     ],
+     "examples": [
+      {
+       "id": "0-FUhQKe-eU",
+       "title": "Start Earning Money With AI - Free Tools & Business Ideas | Vaibhav Sisinty | FO376 Raj Shamani",
+       "channel": "Raj Shamani",
+       "views": 4700441
+      },
+      {
+       "id": "pKpN4j1IGfI",
+       "title": "Facebook Messenger AI Chatbots - 2 Minute Set Up!",
+       "channel": "Jason West",
+       "views": 4313236
+      },
+      {
+       "id": "bFG9XuFY4Qs",
+       "title": "AI Customer Support On WhatsApp (Easy Setup)",
+       "channel": "Jason West",
+       "views": 2923589
+      },
+      {
+       "id": "WnzR5aOElvw",
+       "title": "Why AI Agents are either the best or worst thing we’ve ever built",
+       "channel": "Hannah Fry",
+       "views": 2712447
+      }
+     ]
+    },
+    {
+     "id": "enrich-leads",
+     "name": "Look up contact info and research leads",
+     "n": 72,
+     "full": 50,
+     "assist": 22,
+     "human": 0,
+     "shown": 64,
+     "views": 12491435,
+     "pfull": 69,
+     "passist": 31,
+     "phuman": 0,
+     "verdict": "auto",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "n8n",
+      "Instantly"
+     ],
+     "platforms": {
+      "email": 18,
+      "linkedin": 17,
+      "x": 2,
+      "instagram": 2,
+      "google-business": 1,
+      "youtube": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       53
+      ],
+      [
+       "Coaches and consultants",
+       31
+      ],
+      [
+       "SaaS and tech startups",
+       25
+      ],
+      [
+       "Creators and YouTubers",
+       14
+      ],
+      [
+       "Freelancers and photographers",
+       14
+      ]
+     ],
+     "examples": [
+      {
+       "id": "0-FUhQKe-eU",
+       "title": "Start Earning Money With AI - Free Tools & Business Ideas | Vaibhav Sisinty | FO376 Raj Shamani",
+       "channel": "Raj Shamani",
+       "views": 4700441
+      },
+      {
+       "id": "XgclEibeoGc",
+       "title": "Using ChatGPT to Generate 1000s of Leads in Any Niche (Free + Easy Method)",
+       "channel": "Helena Liu",
+       "views": 951361
+      },
+      {
+       "id": "HNKlFTd1maM",
+       "title": "How I Sold These 4 AI Agents for $23,000 (as a beginner)",
+       "channel": "Nate Herk | AI Automation",
+       "views": 517186
+      },
+      {
+       "id": "DD-SiFV93sQ",
+       "title": "I Made $250K In 30 Days: The FASTEST Way To Make Money & Build Automations (Claude Code)",
+       "channel": "The Calum Johnson Show and Nate Herk | AI Automation",
+       "views": 444268
+      }
+     ]
+    },
+    {
+     "id": "write-cold-email",
+     "name": "Write cold emails and DMs",
+     "n": 117,
+     "full": 27,
+     "assist": 86,
+     "human": 4,
+     "shown": 94,
+     "views": 20492553,
+     "pfull": 23,
+     "passist": 74,
+     "phuman": 3,
+     "verdict": "assist",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "n8n",
+      "Google Sheets"
+     ],
+     "platforms": {
+      "email": 80,
+      "linkedin": 27,
+      "instagram": 8,
+      "x": 8,
+      "youtube": 4,
+      "google-business": 3,
+      "facebook": 2,
+      "tiktok": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       70
+      ],
+      [
+       "Coaches and consultants",
+       42
+      ],
+      [
+       "SaaS and tech startups",
+       32
+      ],
+      [
+       "Freelancers and photographers",
+       26
+      ],
+      [
+       "Creators and YouTubers",
+       25
+      ]
+     ],
+     "examples": [
+      {
+       "id": "0-FUhQKe-eU",
+       "title": "Start Earning Money With AI - Free Tools & Business Ideas | Vaibhav Sisinty | FO376 Raj Shamani",
+       "channel": "Raj Shamani",
+       "views": 4700441
+      },
+      {
+       "id": "g1XSdDiBPvE",
+       "title": "Automate sales prospecting in Notion with AI (full workflow)",
+       "channel": "Notion",
+       "views": 1840688
+      },
+      {
+       "id": "r2vYObllqJU",
+       "title": "Claude AI Tutorial for Beginners (Step-by-Step)",
+       "channel": "Kevin Stratvert",
+       "views": 1546238
+      },
+      {
+       "id": "zDYabud11jQ",
+       "title": "People Who Use AI To Write Emails",
+       "channel": "Ryan George",
+       "views": 881137
+      }
+     ]
+    },
+    {
+     "id": "send-outreach",
+     "name": "Send outreach sequences",
+     "n": 140,
+     "full": 105,
+     "assist": 27,
+     "human": 8,
+     "shown": 104,
+     "views": 34010249,
+     "pfull": 75,
+     "passist": 19,
+     "phuman": 6,
+     "verdict": "auto",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Gmail",
+      "Claude",
+      "n8n"
+     ],
+     "platforms": {
+      "email": 81,
+      "linkedin": 30,
+      "instagram": 11,
+      "x": 9,
+      "google-business": 5,
+      "facebook": 3,
+      "tiktok": 1,
+      "youtube": 1,
+      "reddit": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       81
+      ],
+      [
+       "Coaches and consultants",
+       46
+      ],
+      [
+       "SaaS and tech startups",
+       36
+      ],
+      [
+       "Creators and YouTubers",
+       32
+      ],
+      [
+       "Freelancers and photographers",
+       25
+      ]
+     ],
+     "examples": [
+      {
+       "id": "0-FUhQKe-eU",
+       "title": "Start Earning Money With AI - Free Tools & Business Ideas | Vaibhav Sisinty | FO376 Raj Shamani",
+       "channel": "Raj Shamani",
+       "views": 4700441
+      },
+      {
+       "id": "EH5jx5qPabU",
+       "title": "From Zero to Your First AI Agent in 25 Minutes (No Coding)",
+       "channel": "Futurepedia and AI Agent Lab",
+       "views": 4545329
+      },
+      {
+       "id": "WnzR5aOElvw",
+       "title": "Why AI Agents are either the best or worst thing we’ve ever built",
+       "channel": "Hannah Fry",
+       "views": 2712447
+      },
+      {
+       "id": "eK0RYHakLQ0",
+       "title": "New AI Tool Will Change Insurance Sales Forever! (Cody Askins & David Kohel)",
+       "channel": "Cody Askins",
+       "views": 1361977
+      }
+     ]
+    },
+    {
+     "id": "cold-call",
+     "name": "Make cold calls",
+     "n": 7,
+     "full": 1,
+     "assist": 2,
+     "human": 4,
+     "shown": 2,
+     "views": 970810,
+     "pfull": 14,
+     "passist": 29,
+     "phuman": 57,
+     "verdict": "human",
+     "tools": [
+      "GoHighLevel",
+      "ChatGPT / OpenAI",
+      "Clay",
+      "Claude"
+     ],
+     "platforms": {
+      "instagram": 2,
+      "facebook": 2,
+      "email": 2,
+      "linkedin": 1,
+      "x": 1,
+      "google-business": 1
+     },
+     "types": [
+      [
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       4
+      ],
+      [
+       "Marketing agencies",
+       4
+      ],
+      [
+       "Contractors and construction",
+       2
+      ],
+      [
+       "Creators and YouTubers",
+       2
+      ],
+      [
+       "Coaches and consultants",
+       2
+      ]
+     ],
+     "examples": [
+      {
+       "id": "3aeAy3Qs2UA",
+       "title": "How to Sell AI Websites to Local Businesses in 2026 (No Tech Skills)",
+       "channel": "The Savvy Couple - Kelan & Brittany ",
+       "views": 384669
+      },
+      {
+       "id": "HBmBmnmoLOk",
+       "title": "16 Insane AI Lead Generation Systems for 2025 (with PROOF!)",
+       "channel": "Liam Ottley",
+       "views": 85289
+      }
+     ]
+    },
+    {
+     "id": "speed-to-lead",
+     "name": "Reply to new leads within minutes",
+     "n": 31,
+     "full": 25,
+     "assist": 6,
+     "human": 0,
+     "shown": 24,
+     "views": 8734196,
+     "pfull": 81,
+     "passist": 19,
+     "phuman": 0,
+     "verdict": "auto",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "Google Sheets",
+      "Make"
+     ],
+     "platforms": {
+      "email": 9,
+      "google-business": 5,
+      "x": 3,
+      "youtube": 2,
+      "linkedin": 2,
+      "instagram": 2,
+      "facebook": 2,
+      "podcast": 1,
+      "tiktok": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       22
+      ],
+      [
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       15
+      ],
+      [
+       "Coaches and consultants",
+       11
+      ],
+      [
+       "Real estate agents",
+       11
+      ],
+      [
+       "Dental and medical practices",
+       9
+      ]
+     ],
+     "examples": [
+      {
+       "id": "0-FUhQKe-eU",
+       "title": "Start Earning Money With AI - Free Tools & Business Ideas | Vaibhav Sisinty | FO376 Raj Shamani",
+       "channel": "Raj Shamani",
+       "views": 4700441
+      },
+      {
+       "id": "x-4R38Wdp_o",
+       "title": "15 AI Tools That Will Make You $1M (With Zero Employees)",
+       "channel": "Dan Martell",
+       "views": 1365239
+      },
+      {
+       "id": "NyfYxpXiw_0",
+       "title": "Every Grok Bot Concept Explained for Normal People",
+       "channel": "Nate Herk | AI Automation",
+       "views": 584035
+      },
+      {
+       "id": "iUNzRKOC25w",
+       "title": "Sell AI Automation to Local Businesses (Beginner Step-by-Step Guide)",
+       "channel": "Jason Wardrop",
+       "views": 314243
+      }
+     ]
+    },
+    {
+     "id": "qualify-leads",
+     "name": "Qualify leads",
+     "n": 68,
+     "full": 39,
+     "assist": 28,
+     "human": 1,
+     "shown": 44,
+     "views": 14875427,
+     "pfull": 57,
+     "passist": 41,
+     "phuman": 1,
+     "verdict": "auto",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "n8n",
+      "Make"
+     ],
+     "platforms": {
+      "email": 14,
+      "instagram": 8,
+      "google-business": 6,
+      "x": 5,
+      "facebook": 5,
+      "linkedin": 2,
+      "youtube": 1,
+      "tiktok": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       33
+      ],
+      [
+       "Coaches and consultants",
+       25
+      ],
+      [
+       "Creators and YouTubers",
+       19
+      ],
+      [
+       "SaaS and tech startups",
+       13
+      ],
+      [
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       12
+      ]
+     ],
+     "examples": [
+      {
+       "id": "x-4R38Wdp_o",
+       "title": "15 AI Tools That Will Make You $1M (With Zero Employees)",
+       "channel": "Dan Martell",
+       "views": 1365239
+      },
+      {
+       "id": "5TxSqvPbnWw",
+       "title": "How to Build & Sell AI Automations: Ultimate Beginner’s Guide",
+       "channel": "Liam Ottley",
+       "views": 1302425
+      },
+      {
+       "id": "DA_IhG1ZFl4",
+       "title": "How AI is causing an unemployment crisis among middle aged job seekers | 60 Minutes Australia",
+       "channel": "60 Minutes Australia",
+       "views": 1168000
+      },
+      {
+       "id": "SJywU4UQryQ",
+       "title": "How to Build an AI Agent for Every Part of Your Life",
+       "channel": "Dan Martell",
+       "views": 412920
+      }
+     ]
+    },
+    {
+     "id": "book-appointments",
+     "name": "Book sales calls and appointments",
+     "n": 137,
+     "full": 107,
+     "assist": 26,
+     "human": 4,
+     "shown": 100,
+     "views": 23139409,
+     "pfull": 78,
+     "passist": 19,
+     "phuman": 3,
+     "verdict": "auto",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "GoHighLevel",
+      "Claude",
+      "n8n"
+     ],
+     "platforms": {
+      "email": 25,
+      "google-business": 25,
+      "instagram": 16,
+      "facebook": 12,
+      "x": 9,
+      "youtube": 9,
+      "tiktok": 4,
+      "linkedin": 4,
+      "youtube-shorts": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       61
+      ],
+      [
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       43
+      ],
+      [
+       "Coaches and consultants",
+       38
+      ],
+      [
+       "Dental and medical practices",
+       32
+      ],
+      [
+       "Real estate agents",
+       24
+      ]
+     ],
+     "examples": [
+      {
+       "id": "A0fECnj5sas",
+       "title": "I Sent an AI to My Job Interview. So Did the Company.",
+       "channel": "Graham Raabe",
+       "views": 6213231
+      },
+      {
+       "id": "uh2ioems964",
+       "title": "Build a WhatsApp Chatbot in 2 Minutes With No Coding",
+       "channel": "Jason West",
+       "views": 1269332
+      },
+      {
+       "id": "YGSi2kvolYY",
+       "title": "I Built A Business From Scratch Only Following ChatGPT's Advice",
+       "channel": "3.7Million",
+       "views": 857622
+      },
+      {
+       "id": "_R_d3ibfttY",
+       "title": "Generative AI vs AI Agents vs Agentic AI Explained | Complete Beginner's Guide (2026)",
+       "channel": "ezCommit",
+       "views": 649801
+      }
+     ]
+    },
+    {
+     "id": "follow-up",
+     "name": "Follow up with leads who went quiet",
+     "n": 61,
+     "full": 40,
+     "assist": 19,
+     "human": 2,
+     "shown": 42,
+     "views": 6547941,
+     "pfull": 66,
+     "passist": 31,
+     "phuman": 3,
+     "verdict": "auto",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "GoHighLevel",
+      "Gmail"
+     ],
+     "platforms": {
+      "email": 32,
+      "x": 7,
+      "instagram": 6,
+      "facebook": 4,
+      "linkedin": 2,
+      "youtube": 2,
+      "google-business": 1,
+      "tiktok": 1,
+      "youtube-shorts": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       35
+      ],
+      [
+       "Coaches and consultants",
+       19
+      ],
+      [
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       15
+      ],
+      [
+       "Creators and YouTubers",
+       15
+      ],
+      [
+       "Real estate agents",
+       13
+      ]
+     ],
+     "examples": [
+      {
+       "id": "TZe5UqlUg0c",
+       "title": "7 Best AI Tools You NEED to Try (Free & Powerful!) 💡",
+       "channel": "Kevin Stratvert",
+       "views": 730469
+      },
+      {
+       "id": "-5DylM1EdI4",
+       "title": "7 Insane Use Cases For Manus AI (with Zero Code)",
+       "channel": "Dan Martell",
+       "views": 612400
+      },
+      {
+       "id": "3aeAy3Qs2UA",
+       "title": "How to Sell AI Websites to Local Businesses in 2026 (No Tech Skills)",
+       "channel": "The Savvy Couple - Kelan & Brittany ",
+       "views": 384669
+      },
+      {
+       "id": "jBF48jNWPJE",
+       "title": "5 \"BORING\" AI Automations To Sell For $1.5K+ Each in 2025",
+       "channel": "Nick Saraev",
+       "views": 282979
+      }
+     ]
+    },
+    {
+     "id": "proposals",
+     "name": "Write proposals, quotes and estimates",
+     "n": 47,
+     "full": 7,
+     "assist": 37,
+     "human": 3,
+     "shown": 23,
+     "views": 5256281,
+     "pfull": 15,
+     "passist": 79,
+     "phuman": 6,
+     "verdict": "assist",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "n8n",
+      "Make"
+     ],
+     "platforms": {
+      "email": 7,
+      "google-business": 3,
+      "instagram": 1,
+      "blog": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       25
+      ],
+      [
+       "Coaches and consultants",
+       22
+      ],
+      [
+       "Freelancers and photographers",
+       15
+      ],
+      [
+       "SaaS and tech startups",
+       13
+      ],
+      [
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       12
+      ]
+     ],
+     "examples": [
+      {
+       "id": "5TxSqvPbnWw",
+       "title": "How to Build & Sell AI Automations: Ultimate Beginner’s Guide",
+       "channel": "Liam Ottley",
+       "views": 1302425
+      },
+      {
+       "id": "3lPnN8omdPA",
+       "title": "How to Stop AI from Killing Your Critical Thinking | Advait Sarkar | TED",
+       "channel": "TED",
+       "views": 840019
+      },
+      {
+       "id": "Jvt3FxRKDzU",
+       "title": "AI Runs My Entire Business: EASY Way To Use AI Agents In Your Work, Content & Life (Step by Step!)",
+       "channel": "The Calum Johnson Show and Rachel Woods",
+       "views": 231857
+      },
+      {
+       "id": "di-8OITQ07U",
+       "title": "Cleaning Business Automation: The Full Guide",
+       "channel": "Shania Gladwell",
+       "views": 208327
+      }
+     ]
+    },
+    {
+     "id": "crm-update",
+     "name": "Log calls and update the CRM",
+     "n": 88,
+     "full": 66,
+     "assist": 21,
+     "human": 1,
+     "shown": 70,
+     "views": 13719732,
+     "pfull": 75,
+     "passist": 24,
+     "phuman": 1,
+     "verdict": "auto",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "n8n",
+      "Google Sheets",
+      "Claude"
+     ],
+     "platforms": {
+      "email": 11,
+      "google-business": 9,
+      "instagram": 3,
+      "podcast": 1,
+      "youtube": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       51
+      ],
+      [
+       "Coaches and consultants",
+       25
+      ],
+      [
+       "SaaS and tech startups",
+       22
+      ],
+      [
+       "Creators and YouTubers",
+       17
+      ],
+      [
+       "Freelancers and photographers",
+       13
+      ]
+     ],
+     "examples": [
+      {
+       "id": "0-FUhQKe-eU",
+       "title": "Start Earning Money With AI - Free Tools & Business Ideas | Vaibhav Sisinty | FO376 Raj Shamani",
+       "channel": "Raj Shamani",
+       "views": 4700441
+      },
+      {
+       "id": "j8IwsPdezE8",
+       "title": "I Reviewed Maia by Make — An AI Co-Worker That Builds Your Automations",
+       "channel": "Shark Numbers",
+       "views": 1822135
+      },
+      {
+       "id": "XRU-CjzYt_o",
+       "title": "Why I Switched From ChatGPT to Claude (without losing anything)",
+       "channel": "Dan Martell",
+       "views": 755269
+      },
+      {
+       "id": "HNKlFTd1maM",
+       "title": "How I Sold These 4 AI Agents for $23,000 (as a beginner)",
+       "channel": "Nate Herk | AI Automation",
+       "views": 517186
+      }
+     ]
+    },
+    {
+     "id": "sales-call",
+     "name": "Run the sales call",
+     "n": 29,
+     "full": 3,
+     "assist": 11,
+     "human": 15,
+     "shown": 7,
+     "views": 3661670,
+     "pfull": 10,
+     "passist": 38,
+     "phuman": 52,
+     "verdict": "human",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "GoHighLevel",
+      "Make"
+     ],
+     "platforms": {
+      "google-business": 2,
+      "email": 2,
+      "x": 2,
+      "linkedin": 2,
+      "youtube": 2,
+      "podcast": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       17
+      ],
+      [
+       "Coaches and consultants",
+       16
+      ],
+      [
+       "Freelancers and photographers",
+       10
+      ],
+      [
+       "Real estate agents",
+       8
+      ],
+      [
+       "SaaS and tech startups",
+       8
+      ]
+     ],
+     "examples": [
+      {
+       "id": "5TxSqvPbnWw",
+       "title": "How to Build & Sell AI Automations: Ultimate Beginner’s Guide",
+       "channel": "Liam Ottley",
+       "views": 1302425
+      },
+      {
+       "id": "9RvWcXVaAng",
+       "title": "Integrating Generative AI Into Business Strategy: Dr. George Westerman",
+       "channel": "MIT Corporate Relations",
+       "views": 237332
+      },
+      {
+       "id": "I-R1bc1rlFs",
+       "title": "We replaced our sales team with 20 AI agents—here’s what happened next | Jason Lemkin (SaaStr)",
+       "channel": "Lenny's Podcast",
+       "views": 85010
+      },
+      {
+       "id": "BwqNVrInMrU",
+       "title": "I Built One AI Employee And Sell It To Every Local Business  ($5K Each)",
+       "channel": "Automate AI Consulting",
+       "views": 41746
+      }
+     ]
+    },
+    {
+     "id": "negotiate-close",
+     "name": "Negotiate and close the deal",
+     "n": 5,
+     "full": 4,
+     "assist": 0,
+     "human": 1,
+     "shown": 2,
+     "views": 905682,
+     "pfull": 80,
+     "passist": 0,
+     "phuman": 20,
+     "verdict": "auto",
+     "tools": [
+      "Claude",
+      "Perplexity"
+     ],
+     "platforms": {
+      "instagram": 1,
+      "email": 1
+     },
+     "types": [
+      [
+       "Car dealers and auto repair",
+       2
+      ],
+      [
+       "Real estate agents",
+       1
+      ],
+      [
+       "Coaches and consultants",
+       1
+      ],
+      [
+       "Law firms",
+       1
+      ],
+      [
+       "Retail stores",
+       1
+      ]
+     ],
+     "examples": [
+      {
+       "id": "SLyzjybUjm0",
+       "title": "Using AI to Negotiate Car Prices with 5,000 Car Dealers",
+       "channel": "CarEdge",
+       "views": 53316
+      },
+      {
+       "id": "i4ZQYmIhnmU",
+       "title": "I Retested the CAR EDGE AI Negotiator and Braced for the Worst",
+       "channel": "Chevy Dude",
+       "views": 48616
+      }
+     ]
+    },
+    {
+     "id": "reactivation",
+     "name": "Win back old customers and leads",
+     "n": 11,
+     "full": 7,
+     "assist": 4,
+     "human": 0,
+     "shown": 6,
+     "views": 514812,
+     "pfull": 64,
+     "passist": 36,
+     "phuman": 0,
+     "verdict": "auto",
+     "tools": [
+      "Claude",
+      "n8n",
+      "GoHighLevel",
+      "ChatGPT / OpenAI"
+     ],
+     "platforms": {
+      "email": 2,
+      "x": 1
+     },
+     "types": [
+      [
+       "Dental and medical practices",
+       6
+      ],
+      [
+       "Coaches and consultants",
+       5
+      ],
+      [
+       "Marketing agencies",
+       5
+      ],
+      [
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       4
+      ],
+      [
+       "E-commerce stores",
+       4
+      ]
+     ],
+     "examples": [
+      {
+       "id": "Y3PcRp5RFzk",
+       "title": "I’ve Built 500 AI Workflows, This is What Businesses Want in 2026",
+       "channel": "Nate Herk | AI Automation",
+       "views": 276936
+      },
+      {
+       "id": "lIvMDYBZwCo",
+       "title": "I Stopped Learning AI and Made $5K in 7 Days. Here's How.",
+       "channel": "Automate AI Consulting",
+       "views": 36076
+      },
+      {
+       "id": "0i_APvGWUA4",
+       "title": "8 Claude Skills You Can Sell to Local Businesses (I Built All 8)",
+       "channel": "Automate AI Consulting",
+       "views": 21792
+      },
+      {
+       "id": "pr5Pce7Z4eg",
+       "title": "8 Claude Skills to Automate Your Sales",
+       "channel": "Ben AI",
+       "views": 14989
+      }
+     ]
+    }
+   ],
+   "n": 510
+  },
+  {
+   "id": "support",
+   "name": "Customer service",
+   "tasks": [
+    {
+     "id": "faq-chat",
+     "name": "Answer customer questions by chat or email",
+     "n": 173,
+     "full": 135,
+     "assist": 37,
+     "human": 1,
+     "shown": 123,
+     "views": 42539955,
+     "pfull": 78,
+     "passist": 21,
+     "phuman": 1,
+     "verdict": "auto",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "n8n",
+      "Claude",
+      "Google Sheets"
+     ],
+     "platforms": {
+      "email": 39,
+      "instagram": 28,
+      "facebook": 27,
+      "youtube": 27,
+      "google-business": 24,
+      "x": 13,
+      "tiktok": 12,
+      "linkedin": 7,
+      "threads": 6,
+      "blog": 6,
+      "podcast": 5,
+      "reddit": 2,
+      "youtube-shorts": 2,
+      "pinterest": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       45
+      ],
+      [
+       "E-commerce stores",
+       35
+      ],
+      [
+       "Creators and YouTubers",
+       30
+      ],
+      [
+       "Coaches and consultants",
+       20
+      ],
+      [
+       "SaaS and tech startups",
+       18
+      ]
+     ],
+     "examples": [
+      {
+       "id": "pKpN4j1IGfI",
+       "title": "Facebook Messenger AI Chatbots - 2 Minute Set Up!",
+       "channel": "Jason West",
+       "views": 4313236
+      },
+      {
+       "id": "j1i-84ICREA",
+       "title": "I Tested AI Drive Thrus",
+       "channel": "Sambucha",
+       "views": 3371399
+      },
+      {
+       "id": "9Q5HyykOcRI",
+       "title": "How To Make AI Agent For Free | Build Smart Automation Without Coding",
+       "channel": "Alamin",
+       "views": 3126187
+      },
+      {
+       "id": "bFG9XuFY4Qs",
+       "title": "AI Customer Support On WhatsApp (Easy Setup)",
+       "channel": "Jason West",
+       "views": 2923589
+      }
+     ]
+    },
+    {
+     "id": "phone-answering",
+     "name": "Answer the phone",
+     "n": 86,
+     "full": 77,
+     "assist": 9,
+     "human": 0,
+     "shown": 56,
+     "views": 15806250,
+     "pfull": 90,
+     "passist": 10,
+     "phuman": 0,
+     "verdict": "auto",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "GoHighLevel",
+      "n8n",
+      "Claude"
+     ],
+     "platforms": {
+      "google-business": 9,
+      "youtube": 6,
+      "x": 5,
+      "instagram": 4,
+      "email": 2,
+      "facebook": 2,
+      "tiktok": 1,
+      "podcast": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       34
+      ],
+      [
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       33
+      ],
+      [
+       "Dental and medical practices",
+       23
+      ],
+      [
+       "Real estate agents",
+       11
+      ],
+      [
+       "Salons, med spas and beauty",
+       11
+      ]
+     ],
+     "examples": [
+      {
+       "id": "j1i-84ICREA",
+       "title": "I Tested AI Drive Thrus",
+       "channel": "Sambucha",
+       "views": 3371399
+      },
+      {
+       "id": "xA26OEyVaS0",
+       "title": "AI Automation TAGALOG for Beginners (Step-by-Step)",
+       "channel": "Kuys RJ",
+       "views": 488412
+      },
+      {
+       "id": "zZOuU05hxtE",
+       "title": "How AI And Automation Are Taking Over Grocery Stores And Drive-Thru Lanes",
+       "channel": "CNBC",
+       "views": 485325
+      },
+      {
+       "id": "HGBMr1RQliY",
+       "title": "I Built an AI Voice Agent That Never Misses a Call (No Code)",
+       "channel": "Ed Hill | AI Automation",
+       "views": 390047
+      }
+     ]
+    },
+    {
+     "id": "ticket-routing",
+     "name": "Sort and route support tickets",
+     "n": 25,
+     "full": 18,
+     "assist": 7,
+     "human": 0,
+     "shown": 18,
+     "views": 2942364,
+     "pfull": 72,
+     "passist": 28,
+     "phuman": 0,
+     "verdict": "auto",
+     "tools": [
+      "Google Sheets",
+      "Make",
+      "ChatGPT / OpenAI",
+      "Gmail"
+     ],
+     "platforms": {
+      "email": 5
+     },
+     "types": [
+      [
+       "SaaS and tech startups",
+       10
+      ],
+      [
+       "Marketing agencies",
+       6
+      ],
+      [
+       "Dental and medical practices",
+       4
+      ],
+      [
+       "Coaches and consultants",
+       4
+      ],
+      [
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       4
+      ]
+     ],
+     "examples": [
+      {
+       "id": "JSA2oezQWOU",
+       "title": "Make.com Automation Tutorial for Beginners",
+       "channel": "Kevin Stratvert",
+       "views": 1007576
+      },
+      {
+       "id": "QDsenEcAJIk",
+       "title": "Anthropic’s CEO: How to Build a 1 Person Business with Claude",
+       "channel": "Nate Herk | AI Automation",
+       "views": 197964
+      },
+      {
+       "id": "3L48KfOrIo8",
+       "title": "Make.com AI Agent Tutorial — Build Your First Agent in 20 Minutes",
+       "channel": "Kevin Stratvert",
+       "views": 115137
+      },
+      {
+       "id": "HN0oWxbF2bM",
+       "title": "From Zero to Inbox Agent (Full Beginner's Course, No-Code)",
+       "channel": "Nate Herk | AI Automation",
+       "views": 70593
+      }
+     ]
+    },
+    {
+     "id": "order-status",
+     "name": "Handle order status, returns and refunds",
+     "n": 25,
+     "full": 24,
+     "assist": 0,
+     "human": 1,
+     "shown": 20,
+     "views": 23507413,
+     "pfull": 96,
+     "passist": 0,
+     "phuman": 4,
+     "verdict": "auto",
+     "tools": [
+      "Shopify",
+      "ChatGPT / OpenAI",
+      "Claude",
+      "n8n"
+     ],
+     "platforms": {
+      "google-business": 4,
+      "tiktok": 2,
+      "email": 2,
+      "instagram": 2,
+      "youtube": 1,
+      "facebook": 1
+     },
+     "types": [
+      [
+       "E-commerce stores",
+       21
+      ],
+      [
+       "Marketing agencies",
+       6
+      ],
+      [
+       "Creators and YouTubers",
+       4
+      ],
+      [
+       "Dental and medical practices",
+       3
+      ],
+      [
+       "Law firms",
+       3
+      ]
+     ],
+     "examples": [
+      {
+       "id": "xfOT2elC2Ok",
+       "title": "I Tried AI Dropshipping For 7 Days, Here's How You Can Copy Me",
+       "channel": "Mark Tilbury",
+       "views": 18992840
+      },
+      {
+       "id": "n896i7EORZg",
+       "title": "Automate Shopify Fulfillment with SKUSavvy AI Autopilot Shipping",
+       "channel": "SKUSavvy",
+       "views": 1096978
+      },
+      {
+       "id": "w-iIZQi35kU",
+       "title": "$2.7M With Claude Ai Dropshipping Full Guide (Just Copy Me)",
+       "channel": "Austin Rabin",
+       "views": 290214
+      },
+      {
+       "id": "kEW9vQiDQeI",
+       "title": "This AI Workflow Prints MONEY — n8n + ChatGPT + Automation Explained",
+       "channel": "Shahid Anwar",
+       "views": 287288
+      }
+     ]
+    },
+    {
+     "id": "reminders",
+     "name": "Send appointment reminders and cut no-shows",
+     "n": 30,
+     "full": 27,
+     "assist": 3,
+     "human": 0,
+     "shown": 20,
+     "views": 6703379,
+     "pfull": 90,
+     "passist": 10,
+     "phuman": 0,
+     "verdict": "auto",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Google Sheets",
+      "GoHighLevel",
+      "Gmail"
+     ],
+     "platforms": {
+      "email": 12,
+      "google-business": 7,
+      "x": 6,
+      "instagram": 3,
+      "facebook": 3,
+      "linkedin": 2,
+      "tiktok": 1,
+      "youtube-shorts": 1,
+      "youtube": 1,
+      "threads": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       12
+      ],
+      [
+       "SaaS and tech startups",
+       6
+      ],
+      [
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       6
+      ],
+      [
+       "Creators and YouTubers",
+       5
+      ],
+      [
+       "Coaches and consultants",
+       5
+      ]
+     ],
+     "examples": [
+      {
+       "id": "f1lTMzWygTA",
+       "title": "Microsoft Power Automate for Beginners: Start Automating Today!",
+       "channel": "Teacher's Tech",
+       "views": 1224012
+      },
+      {
+       "id": "rCkYVxOX-dI",
+       "title": "Build Your First AI Agent in 20 Minutes (No Coding)",
+       "channel": "Metics Media",
+       "views": 654140
+      },
+      {
+       "id": "aPSbZbOzB4s",
+       "title": "These Are the Best AI Tools in 2026",
+       "channel": "Dan Martell",
+       "views": 497105
+      },
+      {
+       "id": "r7AORjSuOUA",
+       "title": "I Hired 6 AI Employees to Scale My Business to $1 Million",
+       "channel": "David Alex and 2 more",
+       "views": 462808
+      }
+     ]
+    },
+    {
+     "id": "client-onboarding",
+     "name": "Onboard new clients",
+     "n": 48,
+     "full": 13,
+     "assist": 32,
+     "human": 3,
+     "shown": 25,
+     "views": 6962177,
+     "pfull": 27,
+     "passist": 67,
+     "phuman": 6,
+     "verdict": "assist",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Make",
+      "Claude",
+      "n8n"
+     ],
+     "platforms": {
+      "email": 5,
+      "google-business": 4,
+      "linkedin": 2,
+      "facebook": 1,
+      "youtube": 1,
+      "tiktok": 1,
+      "instagram": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       28
+      ],
+      [
+       "Coaches and consultants",
+       21
+      ],
+      [
+       "Freelancers and photographers",
+       14
+      ],
+      [
+       "SaaS and tech startups",
+       12
+      ],
+      [
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       10
+      ]
+     ],
+     "examples": [
+      {
+       "id": "j8IwsPdezE8",
+       "title": "I Reviewed Maia by Make — An AI Co-Worker That Builds Your Automations",
+       "channel": "Shark Numbers",
+       "views": 1822135
+      },
+      {
+       "id": "AVvD8RMxvxc",
+       "title": "AI Chatbots For Businesses 101",
+       "channel": "Jason West",
+       "views": 782098
+      },
+      {
+       "id": "HNKlFTd1maM",
+       "title": "How I Sold These 4 AI Agents for $23,000 (as a beginner)",
+       "channel": "Nate Herk | AI Automation",
+       "views": 517186
+      },
+      {
+       "id": "1zW6Uu21Q40",
+       "title": "The Rise Of AI-Powered Trading Agents",
+       "channel": "CNBC",
+       "views": 417448
+      }
+     ]
+    },
+    {
+     "id": "reviews-request",
+     "name": "Ask customers for reviews",
+     "n": 14,
+     "full": 7,
+     "assist": 5,
+     "human": 2,
+     "shown": 7,
+     "views": 1094528,
+     "pfull": 50,
+     "passist": 36,
+     "phuman": 14,
+     "verdict": "auto",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "Gemini",
+      "GoHighLevel"
+     ],
+     "platforms": {
+      "google-business": 9,
+      "facebook": 2,
+      "email": 2,
+      "x": 1,
+      "tiktok": 1,
+      "instagram": 1,
+      "youtube": 1
+     },
+     "types": [
+      [
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       8
+      ],
+      [
+       "Marketing agencies",
+       7
+      ],
+      [
+       "Dental and medical practices",
+       5
+      ],
+      [
+       "Real estate agents",
+       3
+      ],
+      [
+       "Coaches and consultants",
+       3
+      ]
+     ],
+     "examples": [
+      {
+       "id": "di-8OITQ07U",
+       "title": "Cleaning Business Automation: The Full Guide",
+       "channel": "Shania Gladwell",
+       "views": 208327
+      },
+      {
+       "id": "nkuPUJVzB_E",
+       "title": "How To Use AI to Start, Build & Grow Your Small Business (20 AI Marketing Tools!)",
+       "channel": "HubSpot Marketing",
+       "views": 198349
+      },
+      {
+       "id": "BTnU_cCx36Y",
+       "title": "Claude Code Local SEO: How I Got 50,000 Google Clicks/Mo (Steal This)",
+       "channel": "Jono Catliff",
+       "views": 115105
+      },
+      {
+       "id": "Xn-Ypru9JsI",
+       "title": "GoHighLevel Automations Masterclass - Become An Automation Expert!",
+       "channel": "Jasper Aiken",
+       "views": 85442
+      }
+     ]
+    },
+    {
+     "id": "reviews-reply",
+     "name": "Reply to reviews",
+     "n": 14,
+     "full": 8,
+     "assist": 6,
+     "human": 0,
+     "shown": 10,
+     "views": 871338,
+     "pfull": 57,
+     "passist": 43,
+     "phuman": 0,
+     "verdict": "auto",
+     "tools": [
+      "Claude",
+      "Gemini",
+      "ChatGPT / OpenAI",
+      "Zapier"
+     ],
+     "platforms": {
+      "google-business": 10,
+      "youtube": 2,
+      "linkedin": 1,
+      "tiktok": 1,
+      "instagram": 1,
+      "facebook": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       7
+      ],
+      [
+       "Dental and medical practices",
+       3
+      ],
+      [
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       3
+      ],
+      [
+       "Coaches and consultants",
+       3
+      ],
+      [
+       "Salons, med spas and beauty",
+       3
+      ]
+     ],
+     "examples": [
+      {
+       "id": "7CneVzUgAxc",
+       "title": "I automated Google My Business with AI for FREE* | Copy this 🔥",
+       "channel": "Damini Tripathi",
+       "views": 116719
+      },
+      {
+       "id": "BTnU_cCx36Y",
+       "title": "Claude Code Local SEO: How I Got 50,000 Google Clicks/Mo (Steal This)",
+       "channel": "Jono Catliff",
+       "views": 115105
+      },
+      {
+       "id": "iT7IjHbpXZo",
+       "title": "Master 4 AI Automations for marketing in 15 Mins | 2026 🔥",
+       "channel": "Damini Tripathi",
+       "views": 76029
+      },
+      {
+       "id": "ir0z_oaG_ao",
+       "title": "Top 10 AI Workflows for Small Businesses | GoHighLevel AI",
+       "channel": "Jon Law ",
+       "views": 51823
+      }
+     ]
+    },
+    {
+     "id": "feedback-surveys",
+     "name": "Collect feedback and surveys",
+     "n": 2,
+     "full": 1,
+     "assist": 1,
+     "human": 0,
+     "shown": 0,
+     "views": 45112,
+     "pfull": 50,
+     "passist": 50,
+     "phuman": 0,
+     "verdict": "rare",
+     "tools": [
+      "Zapier",
+      "Make",
+      "GoHighLevel",
+      "n8n"
+     ],
+     "platforms": {},
+     "types": [
+      [
+       "Marketing agencies",
+       2
+      ],
+      [
+       "Gyms and fitness",
+       1
+      ],
+      [
+       "Dental and medical practices",
+       1
+      ],
+      [
+       "SaaS and tech startups",
+       1
+      ],
+      [
+       "E-commerce stores",
+       1
+      ]
+     ],
+     "examples": [
+      {
+       "id": "IhX7WUfdVYk",
+       "title": "10 AI Automation Projects That WILL Get You Clients",
+       "channel": "Kuys RJ",
+       "views": 32972
+      },
+      {
+       "id": "LOktCypa7Yc",
+       "title": "6 Zapier Automations Clients Actually Pay For (Beginner-Friendly)",
+       "channel": "AI Founders",
+       "views": 12140
+      }
+     ]
+    },
+    {
+     "id": "complaints",
+     "name": "Handle complaints and upset customers",
+     "n": 2,
+     "full": 2,
+     "assist": 0,
+     "human": 0,
+     "shown": 2,
+     "views": 95170,
+     "pfull": 100,
+     "passist": 0,
+     "phuman": 0,
+     "verdict": "rare",
+     "tools": [
+      "Shopify",
+      "CapCut"
+     ],
+     "platforms": {
+      "google-business": 1,
+      "email": 1
+     },
+     "types": [
+      [
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       1
+      ],
+      [
+       "Contractors and construction",
+       1
+      ],
+      [
+       "E-commerce stores",
+       1
+      ]
+     ],
+     "examples": [
+      {
+       "id": "mcrWAHmyr4c",
+       "title": "How to Start an Ecommerce Business using AI (FOR BEGINNERS)",
+       "channel": "Andy Stauring",
+       "views": 81632
+      },
+      {
+       "id": "iF_C9Ez7x6o",
+       "title": "I Tried to Break My AI Receptionist (7 Real Calls)",
+       "channel": "Neil Patel",
+       "views": 13538
+      }
+     ]
+    }
+   ],
+   "n": 332
+  },
+  {
+   "id": "web",
+   "name": "Website and SEO",
+   "tasks": [
+    {
+     "id": "website",
+     "name": "Build websites and landing pages",
+     "n": 240,
+     "full": 96,
+     "assist": 136,
+     "human": 8,
+     "shown": 204,
+     "views": 77604355,
+     "pfull": 40,
+     "passist": 57,
+     "phuman": 3,
+     "verdict": "assist",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "Shopify",
+      "Gemini"
+     ],
+     "platforms": {
+      "google-business": 43,
+      "youtube": 34,
+      "blog": 32,
+      "instagram": 15,
+      "email": 14,
+      "facebook": 11,
+      "tiktok": 7,
+      "x": 4,
+      "linkedin": 3,
+      "youtube-shorts": 1
+     },
+     "types": [
+      [
+       "E-commerce stores",
+       90
+      ],
+      [
+       "Marketing agencies",
+       87
+      ],
+      [
+       "Creators and YouTubers",
+       83
+      ],
+      [
+       "Coaches and consultants",
+       55
+      ],
+      [
+       "SaaS and tech startups",
+       54
+      ]
+     ],
+     "examples": [
+      {
+       "id": "xfOT2elC2Ok",
+       "title": "I Tried AI Dropshipping For 7 Days, Here's How You Can Copy Me",
+       "channel": "Mark Tilbury",
+       "views": 18992840
+      },
+      {
+       "id": "WnzR5aOElvw",
+       "title": "Why AI Agents are either the best or worst thing we’ve ever built",
+       "channel": "Hannah Fry",
+       "views": 2712447
+      },
+      {
+       "id": "Qgi5hb7yxjU",
+       "title": "I Tried 500+ AI Tools, These 9 Will Make You Rich",
+       "channel": "Simon Squibb",
+       "views": 1887088
+      },
+      {
+       "id": "wtDDjBOfTZo",
+       "title": "⁠Give Me 26 minutes, I'll Give You 10,000 hours of Claude Knowledge",
+       "channel": "Iman Gadzhi",
+       "views": 1859170
+      }
+     ]
+    },
+    {
+     "id": "keyword-research",
+     "name": "Do keyword research",
+     "n": 49,
+     "full": 12,
+     "assist": 35,
+     "human": 2,
+     "shown": 38,
+     "views": 6670686,
+     "pfull": 24,
+     "passist": 71,
+     "phuman": 4,
+     "verdict": "assist",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "Canva",
+      "Perplexity"
+     ],
+     "platforms": {
+      "blog": 16,
+      "google-business": 11,
+      "youtube": 4,
+      "facebook": 1,
+      "instagram": 1,
+      "tiktok": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       23
+      ],
+      [
+       "Creators and YouTubers",
+       20
+      ],
+      [
+       "Coaches and consultants",
+       14
+      ],
+      [
+       "E-commerce stores",
+       13
+      ],
+      [
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       8
+      ]
+     ],
+     "examples": [
+      {
+       "id": "Sp83h2FqOH0",
+       "title": "How I Created a $30,000/month Faceless YouTube Channel Using AI Tools",
+       "channel": "E'Calm",
+       "views": 435477
+      },
+      {
+       "id": "yLXLHnD4fco",
+       "title": "Claude Code: Build Your Full AI Marketing Team (Agents + Claude Skills)",
+       "channel": "Grace Leung",
+       "views": 372026
+      },
+      {
+       "id": "7DRO4rEIHDk",
+       "title": "The Complete SEO & AI SEO Course for 2026 (Full Beginner’s Guide)",
+       "channel": "Surfer Academy and Matt Kenyon",
+       "views": 351263
+      },
+      {
+       "id": "4IyJm1i__ag",
+       "title": "Claude Code SEO: How I Got 50,000 Clicks Per Month (Steal This)",
+       "channel": "Jono Catliff",
+       "views": 294713
+      }
+     ]
+    },
+    {
+     "id": "seo-pages",
+     "name": "Write and optimize pages for search",
+     "n": 50,
+     "full": 16,
+     "assist": 34,
+     "human": 0,
+     "shown": 42,
+     "views": 4254121,
+     "pfull": 32,
+     "passist": 68,
+     "phuman": 0,
+     "verdict": "assist",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "Shopify",
+      "Perplexity"
+     ],
+     "platforms": {
+      "blog": 15,
+      "google-business": 15,
+      "youtube": 2,
+      "tiktok": 2,
+      "x": 1,
+      "instagram": 1
+     },
+     "types": [
+      [
+       "E-commerce stores",
+       30
+      ],
+      [
+       "Marketing agencies",
+       17
+      ],
+      [
+       "Creators and YouTubers",
+       15
+      ],
+      [
+       "Coaches and consultants",
+       9
+      ],
+      [
+       "SaaS and tech startups",
+       8
+      ]
+     ],
+     "examples": [
+      {
+       "id": "ScF0pi6FSLQ",
+       "title": "how to literally print money while you sleep with AI dropshipping (just copy me)",
+       "channel": "Romas Ecom",
+       "views": 452688
+      },
+      {
+       "id": "istNOWqKKQk",
+       "title": "How to Create a Shopify Dropshipping Store in 20 Minutes (Using AI)",
+       "channel": "Metics Media",
+       "views": 351876
+      },
+      {
+       "id": "7DRO4rEIHDk",
+       "title": "The Complete SEO & AI SEO Course for 2026 (Full Beginner’s Guide)",
+       "channel": "Surfer Academy and Matt Kenyon",
+       "views": 351263
+      },
+      {
+       "id": "4IyJm1i__ag",
+       "title": "Claude Code SEO: How I Got 50,000 Clicks Per Month (Steal This)",
+       "channel": "Jono Catliff",
+       "views": 294713
+      }
+     ]
+    },
+    {
+     "id": "website-chat",
+     "name": "Website chat and lead capture",
+     "n": 66,
+     "full": 51,
+     "assist": 15,
+     "human": 0,
+     "shown": 50,
+     "views": 17152897,
+     "pfull": 77,
+     "passist": 23,
+     "phuman": 0,
+     "verdict": "auto",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "n8n",
+      "Claude",
+      "Google Sheets"
+     ],
+     "platforms": {
+      "google-business": 22,
+      "youtube": 17,
+      "instagram": 9,
+      "facebook": 8,
+      "email": 6,
+      "tiktok": 6,
+      "x": 6,
+      "blog": 5,
+      "linkedin": 5,
+      "youtube-shorts": 3,
+      "podcast": 1,
+      "reddit": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       22
+      ],
+      [
+       "E-commerce stores",
+       17
+      ],
+      [
+       "Dental and medical practices",
+       15
+      ],
+      [
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       11
+      ],
+      [
+       "Creators and YouTubers",
+       10
+      ]
+     ],
+     "examples": [
+      {
+       "id": "pKpN4j1IGfI",
+       "title": "Facebook Messenger AI Chatbots - 2 Minute Set Up!",
+       "channel": "Jason West",
+       "views": 4313236
+      },
+      {
+       "id": "9Q5HyykOcRI",
+       "title": "How To Make AI Agent For Free | Build Smart Automation Without Coding",
+       "channel": "Alamin",
+       "views": 3126187
+      },
+      {
+       "id": "AVvD8RMxvxc",
+       "title": "AI Chatbots For Businesses 101",
+       "channel": "Jason West",
+       "views": 782098
+      },
+      {
+       "id": "dn27M2vAc1Y",
+       "title": "Build a Customer Support Chatbot in 5 Minutes (No Code)",
+       "channel": "Botpress",
+       "views": 654265
+      }
+     ]
+    },
+    {
+     "id": "site-updates",
+     "name": "Update and maintain the website",
+     "n": 15,
+     "full": 7,
+     "assist": 8,
+     "human": 0,
+     "shown": 14,
+     "views": 1274749,
+     "pfull": 47,
+     "passist": 53,
+     "phuman": 0,
+     "verdict": "assist",
+     "tools": [
+      "Shopify",
+      "ChatGPT / OpenAI",
+      "Claude",
+      "Perplexity"
+     ],
+     "platforms": {
+      "blog": 3,
+      "google-business": 2
+     },
+     "types": [
+      [
+       "E-commerce stores",
+       9
+      ],
+      [
+       "Marketing agencies",
+       6
+      ],
+      [
+       "Coaches and consultants",
+       4
+      ],
+      [
+       "SaaS and tech startups",
+       2
+      ],
+      [
+       "Creators and YouTubers",
+       2
+      ]
+     ],
+     "examples": [
+      {
+       "id": "istNOWqKKQk",
+       "title": "How to Create a Shopify Dropshipping Store in 20 Minutes (Using AI)",
+       "channel": "Metics Media",
+       "views": 351876
+      },
+      {
+       "id": "7DRO4rEIHDk",
+       "title": "The Complete SEO & AI SEO Course for 2026 (Full Beginner’s Guide)",
+       "channel": "Surfer Academy and Matt Kenyon",
+       "views": 351263
+      },
+      {
+       "id": "EpPuU9k6Ahg",
+       "title": "Claude Can Now Do EVERYTHING on Shopify",
+       "channel": "Brendan Gillen",
+       "views": 106483
+      },
+      {
+       "id": "ChUbX71FFeE",
+       "title": "Using Claude Code SEO to Rank #1 in 24 hours ($1,600/mo)",
+       "channel": "Tim The SEO Guru",
+       "views": 64138
+      }
+     ]
+    }
+   ],
+   "n": 344
+  },
+  {
+   "id": "ops",
+   "name": "Operations and admin",
+   "tasks": [
+    {
+     "id": "inbox",
+     "name": "Sort and answer the inbox",
+     "n": 153,
+     "full": 65,
+     "assist": 88,
+     "human": 0,
+     "shown": 125,
+     "views": 40534494,
+     "pfull": 42,
+     "passist": 58,
+     "phuman": 0,
+     "verdict": "assist",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "Gmail",
+      "n8n"
+     ],
+     "platforms": {
+      "email": 96,
+      "google-business": 16,
+      "youtube": 7,
+      "linkedin": 4,
+      "facebook": 4,
+      "instagram": 3,
+      "blog": 2,
+      "podcast": 2,
+      "tiktok": 1,
+      "x": 1
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       54
+      ],
+      [
+       "Marketing agencies",
+       42
+      ],
+      [
+       "SaaS and tech startups",
+       32
+      ],
+      [
+       "Coaches and consultants",
+       31
+      ],
+      [
+       "Real estate agents",
+       16
+      ]
+     ],
+     "examples": [
+      {
+       "id": "wZeOwqmSw84",
+       "title": "Learn 97% of Claude in Under 16 Minutes",
+       "channel": "Dan Martell",
+       "views": 2634335
+      },
+      {
+       "id": "TL8V41Ea6oM",
+       "title": "4 AI Agents To Automate 99% Of Your Life",
+       "channel": "Sandeep Swadia",
+       "views": 2491831
+      },
+      {
+       "id": "Mxy6MVbpNhg",
+       "title": "These ChatGPT Hacks Will Make You SO Productive It Feels Illegal",
+       "channel": "Dan Martell",
+       "views": 1890128
+      },
+      {
+       "id": "wtDDjBOfTZo",
+       "title": "⁠Give Me 26 minutes, I'll Give You 10,000 hours of Claude Knowledge",
+       "channel": "Iman Gadzhi",
+       "views": 1859170
+      }
+     ]
+    },
+    {
+     "id": "calendar",
+     "name": "Manage the calendar and scheduling",
+     "n": 86,
+     "full": 52,
+     "assist": 34,
+     "human": 0,
+     "shown": 70,
+     "views": 31968610,
+     "pfull": 60,
+     "passist": 40,
+     "phuman": 0,
+     "verdict": "auto",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "Gmail",
+      "n8n"
+     ],
+     "platforms": {
+      "google-business": 22,
+      "email": 17,
+      "x": 3,
+      "youtube": 3,
+      "linkedin": 3,
+      "instagram": 1,
+      "facebook": 1
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       32
+      ],
+      [
+       "Marketing agencies",
+       31
+      ],
+      [
+       "SaaS and tech startups",
+       18
+      ],
+      [
+       "Coaches and consultants",
+       17
+      ],
+      [
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       11
+      ]
+     ],
+     "examples": [
+      {
+       "id": "EH5jx5qPabU",
+       "title": "From Zero to Your First AI Agent in 25 Minutes (No Coding)",
+       "channel": "Futurepedia and AI Agent Lab",
+       "views": 4545329
+      },
+      {
+       "id": "wZeOwqmSw84",
+       "title": "Learn 97% of Claude in Under 16 Minutes",
+       "channel": "Dan Martell",
+       "views": 2634335
+      },
+      {
+       "id": "TL8V41Ea6oM",
+       "title": "4 AI Agents To Automate 99% Of Your Life",
+       "channel": "Sandeep Swadia",
+       "views": 2491831
+      },
+      {
+       "id": "9oJySubZRSA",
+       "title": "The Ultimate Beginner’s Guide to Claude AI",
+       "channel": "Metics Media",
+       "views": 2433063
+      }
+     ]
+    },
+    {
+     "id": "data-entry",
+     "name": "Enter and move data between apps",
+     "n": 247,
+     "full": 196,
+     "assist": 46,
+     "human": 5,
+     "shown": 209,
+     "views": 48376163,
+     "pfull": 79,
+     "passist": 19,
+     "phuman": 2,
+     "verdict": "auto",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Google Sheets",
+      "n8n",
+      "Claude"
+     ],
+     "platforms": {
+      "google-business": 33,
+      "email": 13,
+      "blog": 9,
+      "youtube": 6,
+      "instagram": 5,
+      "tiktok": 4,
+      "linkedin": 3,
+      "x": 3,
+      "facebook": 2,
+      "podcast": 1,
+      "pinterest": 1,
+      "reddit": 1,
+      "threads": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       74
+      ],
+      [
+       "Creators and YouTubers",
+       62
+      ],
+      [
+       "Accounting and bookkeeping",
+       40
+      ],
+      [
+       "Coaches and consultants",
+       38
+      ],
+      [
+       "Freelancers and photographers",
+       34
+      ]
+     ],
+     "examples": [
+      {
+       "id": "FwOTs4UxQS4",
+       "title": "AI Agents, Clearly Explained",
+       "channel": "Jeff Su",
+       "views": 5650481
+      },
+      {
+       "id": "bFG9XuFY4Qs",
+       "title": "AI Customer Support On WhatsApp (Easy Setup)",
+       "channel": "Jason West",
+       "views": 2923589
+      },
+      {
+       "id": "UXzOlBI_Zk0",
+       "title": "EASILY Make an Automated Data Entry Form in Excel",
+       "channel": "Kenji Explains",
+       "views": 2047618
+      },
+      {
+       "id": "g1XSdDiBPvE",
+       "title": "Automate sales prospecting in Notion with AI (full workflow)",
+       "channel": "Notion",
+       "views": 1840688
+      }
+     ]
+    },
+    {
+     "id": "documents",
+     "name": "Read and pull data from documents, forms and PDFs",
+     "n": 348,
+     "full": 141,
+     "assist": 206,
+     "human": 1,
+     "shown": 275,
+     "views": 89951175,
+     "pfull": 41,
+     "passist": 59,
+     "phuman": 0,
+     "verdict": "assist",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "n8n",
+      "Google Sheets"
+     ],
+     "platforms": {
+      "email": 24,
+      "google-business": 21,
+      "youtube": 11,
+      "blog": 6,
+      "instagram": 3,
+      "facebook": 2,
+      "youtube-shorts": 1,
+      "tiktok": 1,
+      "linkedin": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       84
+      ],
+      [
+       "Creators and YouTubers",
+       79
+      ],
+      [
+       "SaaS and tech startups",
+       69
+      ],
+      [
+       "Accounting and bookkeeping",
+       59
+      ],
+      [
+       "Coaches and consultants",
+       58
+      ]
+     ],
+     "examples": [
+      {
+       "id": "EH5jx5qPabU",
+       "title": "From Zero to Your First AI Agent in 25 Minutes (No Coding)",
+       "channel": "Futurepedia and AI Agent Lab",
+       "views": 4545329
+      },
+      {
+       "id": "9Q5HyykOcRI",
+       "title": "How To Make AI Agent For Free | Build Smart Automation Without Coding",
+       "channel": "Alamin",
+       "views": 3126187
+      },
+      {
+       "id": "TL8V41Ea6oM",
+       "title": "4 AI Agents To Automate 99% Of Your Life",
+       "channel": "Sandeep Swadia",
+       "views": 2491831
+      },
+      {
+       "id": "9oJySubZRSA",
+       "title": "The Ultimate Beginner’s Guide to Claude AI",
+       "channel": "Metics Media",
+       "views": 2433063
+      }
+     ]
+    },
+    {
+     "id": "meeting-notes",
+     "name": "Take meeting notes and summaries",
+     "n": 62,
+     "full": 23,
+     "assist": 39,
+     "human": 0,
+     "shown": 42,
+     "views": 19447750,
+     "pfull": 37,
+     "passist": 63,
+     "phuman": 0,
+     "verdict": "assist",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "n8n",
+      "Gemini"
+     ],
+     "platforms": {
+      "email": 7,
+      "google-business": 4,
+      "youtube": 3,
+      "podcast": 1,
+      "linkedin": 1,
+      "tiktok": 1,
+      "x": 1,
+      "pinterest": 1,
+      "youtube-shorts": 1,
+      "instagram": 1,
+      "facebook": 1
+     },
+     "types": [
+      [
+       "Coaches and consultants",
+       22
+      ],
+      [
+       "Marketing agencies",
+       20
+      ],
+      [
+       "Creators and YouTubers",
+       18
+      ],
+      [
+       "SaaS and tech startups",
+       14
+      ],
+      [
+       "Freelancers and photographers",
+       7
+      ]
+     ],
+     "examples": [
+      {
+       "id": "wtDDjBOfTZo",
+       "title": "⁠Give Me 26 minutes, I'll Give You 10,000 hours of Claude Knowledge",
+       "channel": "Iman Gadzhi",
+       "views": 1859170
+      },
+      {
+       "id": "LqY6hFLMEJw",
+       "title": "How AI Makes Him Crores: Second Brain, Automations & Systems | Vaibhav Sisinty | FO557 Raj Shamani",
+       "channel": "Raj Shamani and Vaibhav Sisinty",
+       "views": 1827242
+      },
+      {
+       "id": "x-4R38Wdp_o",
+       "title": "15 AI Tools That Will Make You $1M (With Zero Employees)",
+       "channel": "Dan Martell",
+       "views": 1365239
+      },
+      {
+       "id": "7zPQV1BSH_k",
+       "title": "23 Ways to Use ChatGPT So Well it Feels Like Cheating",
+       "channel": "Dan Martell",
+       "views": 1164381
+      }
+     ]
+    },
+    {
+     "id": "sops",
+     "name": "Write SOPs and documentation",
+     "n": 120,
+     "full": 6,
+     "assist": 111,
+     "human": 3,
+     "shown": 81,
+     "views": 33415041,
+     "pfull": 5,
+     "passist": 92,
+     "phuman": 2,
+     "verdict": "assist",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "n8n",
+      "Gmail"
+     ],
+     "platforms": {
+      "youtube": 5,
+      "linkedin": 3,
+      "x": 1,
+      "google-business": 1,
+      "email": 1,
+      "instagram": 1,
+      "youtube-shorts": 1,
+      "tiktok": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       48
+      ],
+      [
+       "SaaS and tech startups",
+       38
+      ],
+      [
+       "Creators and YouTubers",
+       36
+      ],
+      [
+       "Coaches and consultants",
+       31
+      ],
+      [
+       "Accounting and bookkeeping",
+       12
+      ]
+     ],
+     "examples": [
+      {
+       "id": "-QFHIoCo-Ko",
+       "title": "Full Walkthrough: Workflow for AI Coding — Matt Pocock",
+       "channel": "AI Engineer and Matt Pocock",
+       "views": 1985996
+      },
+      {
+       "id": "wtDDjBOfTZo",
+       "title": "⁠Give Me 26 minutes, I'll Give You 10,000 hours of Claude Knowledge",
+       "channel": "Iman Gadzhi",
+       "views": 1859170
+      },
+      {
+       "id": "LqY6hFLMEJw",
+       "title": "How AI Makes Him Crores: Second Brain, Automations & Systems | Vaibhav Sisinty | FO557 Raj Shamani",
+       "channel": "Raj Shamani and Vaibhav Sisinty",
+       "views": 1827242
+      },
+      {
+       "id": "r2vYObllqJU",
+       "title": "Claude AI Tutorial for Beginners (Step-by-Step)",
+       "channel": "Kevin Stratvert",
+       "views": 1546238
+      }
+     ]
+    },
+    {
+     "id": "project-updates",
+     "name": "Track projects and send status updates",
+     "n": 33,
+     "full": 9,
+     "assist": 22,
+     "human": 2,
+     "shown": 21,
+     "views": 8723307,
+     "pfull": 27,
+     "passist": 67,
+     "phuman": 6,
+     "verdict": "assist",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "Slack",
+      "n8n"
+     ],
+     "platforms": {
+      "google-business": 2,
+      "linkedin": 1,
+      "instagram": 1,
+      "x": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       11
+      ],
+      [
+       "SaaS and tech startups",
+       8
+      ],
+      [
+       "Coaches and consultants",
+       7
+      ],
+      [
+       "Creators and YouTubers",
+       7
+      ],
+      [
+       "Freelancers and photographers",
+       6
+      ]
+     ],
+     "examples": [
+      {
+       "id": "wZeOwqmSw84",
+       "title": "Learn 97% of Claude in Under 16 Minutes",
+       "channel": "Dan Martell",
+       "views": 2634335
+      },
+      {
+       "id": "r2vYObllqJU",
+       "title": "Claude AI Tutorial for Beginners (Step-by-Step)",
+       "channel": "Kevin Stratvert",
+       "views": 1546238
+      },
+      {
+       "id": "NyfYxpXiw_0",
+       "title": "Every Grok Bot Concept Explained for Normal People",
+       "channel": "Nate Herk | AI Automation",
+       "views": 584035
+      },
+      {
+       "id": "HNKlFTd1maM",
+       "title": "How I Sold These 4 AI Agents for $23,000 (as a beginner)",
+       "channel": "Nate Herk | AI Automation",
+       "views": 517186
+      }
+     ]
+    },
+    {
+     "id": "reports",
+     "name": "Build reports and dashboards",
+     "n": 218,
+     "full": 78,
+     "assist": 138,
+     "human": 2,
+     "shown": 169,
+     "views": 42201636,
+     "pfull": 36,
+     "passist": 63,
+     "phuman": 1,
+     "verdict": "assist",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "Gmail",
+      "n8n"
+     ],
+     "platforms": {
+      "email": 27,
+      "google-business": 20,
+      "youtube": 16,
+      "blog": 7,
+      "x": 5,
+      "facebook": 5,
+      "instagram": 5,
+      "tiktok": 4,
+      "linkedin": 4,
+      "youtube-shorts": 3,
+      "podcast": 2,
+      "pinterest": 1,
+      "reddit": 1,
+      "threads": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       82
+      ],
+      [
+       "Creators and YouTubers",
+       53
+      ],
+      [
+       "SaaS and tech startups",
+       48
+      ],
+      [
+       "Coaches and consultants",
+       46
+      ],
+      [
+       "E-commerce stores",
+       35
+      ]
+     ],
+     "examples": [
+      {
+       "id": "Mxy6MVbpNhg",
+       "title": "These ChatGPT Hacks Will Make You SO Productive It Feels Illegal",
+       "channel": "Dan Martell",
+       "views": 1890128
+      },
+      {
+       "id": "x-4R38Wdp_o",
+       "title": "15 AI Tools That Will Make You $1M (With Zero Employees)",
+       "channel": "Dan Martell",
+       "views": 1365239
+      },
+      {
+       "id": "eK0RYHakLQ0",
+       "title": "New AI Tool Will Change Insurance Sales Forever! (Cody Askins & David Kohel)",
+       "channel": "Cody Askins",
+       "views": 1361977
+      },
+      {
+       "id": "uh2ioems964",
+       "title": "Build a WhatsApp Chatbot in 2 Minutes With No Coding",
+       "channel": "Jason West",
+       "views": 1269332
+      }
+     ]
+    },
+    {
+     "id": "files",
+     "name": "Organize files",
+     "n": 68,
+     "full": 43,
+     "assist": 23,
+     "human": 2,
+     "shown": 65,
+     "views": 14754055,
+     "pfull": 63,
+     "passist": 34,
+     "phuman": 3,
+     "verdict": "auto",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "n8n",
+      "Google Sheets"
+     ],
+     "platforms": {
+      "google-business": 11,
+      "youtube": 3,
+      "blog": 2,
+      "email": 2,
+      "instagram": 1
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       28
+      ],
+      [
+       "Marketing agencies",
+       17
+      ],
+      [
+       "Accounting and bookkeeping",
+       16
+      ],
+      [
+       "Freelancers and photographers",
+       10
+      ],
+      [
+       "Coaches and consultants",
+       8
+      ]
+     ],
+     "examples": [
+      {
+       "id": "TL8V41Ea6oM",
+       "title": "4 AI Agents To Automate 99% Of Your Life",
+       "channel": "Sandeep Swadia",
+       "views": 2491831
+      },
+      {
+       "id": "wtDDjBOfTZo",
+       "title": "⁠Give Me 26 minutes, I'll Give You 10,000 hours of Claude Knowledge",
+       "channel": "Iman Gadzhi",
+       "views": 1859170
+      },
+      {
+       "id": "nlxn4cHz-kI",
+       "title": "ViXC: The Future of Photo Management — Search, Context, and Automation.",
+       "channel": "ViXC",
+       "views": 1133265
+      },
+      {
+       "id": "bTMPwUgLZf0",
+       "title": "Build an AI Agent From Scratch in Python - Tutorial for Beginners",
+       "channel": "Tech With Tim",
+       "views": 1008524
+      }
+     ]
+    },
+    {
+     "id": "transcribe-translate",
+     "name": "Transcribe and translate",
+     "n": 193,
+     "full": 92,
+     "assist": 97,
+     "human": 4,
+     "shown": 142,
+     "views": 65094194,
+     "pfull": 48,
+     "passist": 50,
+     "phuman": 2,
+     "verdict": "assist",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "n8n",
+      "Google Sheets"
+     ],
+     "platforms": {
+      "youtube": 43,
+      "instagram": 13,
+      "tiktok": 9,
+      "facebook": 6,
+      "podcast": 6,
+      "email": 6,
+      "google-business": 4,
+      "x": 4,
+      "blog": 3,
+      "youtube-shorts": 3,
+      "linkedin": 3
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       95
+      ],
+      [
+       "Marketing agencies",
+       71
+      ],
+      [
+       "Coaches and consultants",
+       40
+      ],
+      [
+       "SaaS and tech startups",
+       33
+      ],
+      [
+       "Freelancers and photographers",
+       19
+      ]
+     ],
+     "examples": [
+      {
+       "id": "pKpN4j1IGfI",
+       "title": "Facebook Messenger AI Chatbots - 2 Minute Set Up!",
+       "channel": "Jason West",
+       "views": 4313236
+      },
+      {
+       "id": "j1i-84ICREA",
+       "title": "I Tested AI Drive Thrus",
+       "channel": "Sambucha",
+       "views": 3371399
+      },
+      {
+       "id": "bFG9XuFY4Qs",
+       "title": "AI Customer Support On WhatsApp (Easy Setup)",
+       "channel": "Jason West",
+       "views": 2923589
+      },
+      {
+       "id": "wZeOwqmSw84",
+       "title": "Learn 97% of Claude in Under 16 Minutes",
+       "channel": "Dan Martell",
+       "views": 2634335
+      }
+     ]
+    },
+    {
+     "id": "inventory",
+     "name": "Track inventory and reorder supplies",
+     "n": 14,
+     "full": 5,
+     "assist": 8,
+     "human": 1,
+     "shown": 7,
+     "views": 1235447,
+     "pfull": 36,
+     "passist": 57,
+     "phuman": 7,
+     "verdict": "assist",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Shopify",
+      "n8n",
+      "Claude"
+     ],
+     "platforms": {
+      "google-business": 1
+     },
+     "types": [
+      [
+       "E-commerce stores",
+       7
+      ],
+      [
+       "Retail stores",
+       5
+      ],
+      [
+       "Marketing agencies",
+       3
+      ],
+      [
+       "Restaurants",
+       2
+      ],
+      [
+       "Dental and medical practices",
+       1
+      ]
+     ],
+     "examples": [
+      {
+       "id": "Nf-P-qNej3c",
+       "title": "How AI and Automation Fuel Walmart’s Ultrafast Deliveries | WSJ Shipping Wars",
+       "channel": "The Wall Street Journal",
+       "views": 482699
+      },
+      {
+       "id": "Ih5RapM8XKw",
+       "title": "How to Use Claude to Build and Run a Shopify Store",
+       "channel": "Learn With Shopify",
+       "views": 185613
+      },
+      {
+       "id": "Ceey93kRo4g",
+       "title": "Walmart using AI to streamline organization – what will it mean for workers?",
+       "channel": "NBC News",
+       "views": 71726
+      },
+      {
+       "id": "RlOXkcSPM18",
+       "title": "This AI System Runs Ecommerce Stores on Autopilot (n8n Free Template)",
+       "channel": "AI Pathways",
+       "views": 61995
+      }
+     ]
+    },
+    {
+     "id": "dispatch",
+     "name": "Dispatch and route field staff",
+     "n": 8,
+     "full": 8,
+     "assist": 0,
+     "human": 0,
+     "shown": 5,
+     "views": 1118424,
+     "pfull": 100,
+     "passist": 0,
+     "phuman": 0,
+     "verdict": "auto",
+     "tools": [
+      "Gmail",
+      "Claude",
+      "Shopify",
+      "ChatGPT / OpenAI"
+     ],
+     "platforms": {
+      "tiktok": 1
+     },
+     "types": [
+      [
+       "E-commerce stores",
+       4
+      ],
+      [
+       "Marketing agencies",
+       3
+      ],
+      [
+       "Coaches and consultants",
+       2
+      ],
+      [
+       "Creators and YouTubers",
+       2
+      ],
+      [
+       "Dental and medical practices",
+       2
+      ]
+     ],
+     "examples": [
+      {
+       "id": "lBwIK3tFBQk",
+       "title": "$1.7 million with a.i. dropshipping. f*ck it, just copy my store.",
+       "channel": "Austin Rabin",
+       "views": 473709
+      },
+      {
+       "id": "5KCahgo3-Zc",
+       "title": "How to Start TikTok Shop Automation (STEP BY STEP) FREE Course ",
+       "channel": "Baddie In Business",
+       "views": 51311
+      },
+      {
+       "id": "1SLNpczzxaA",
+       "title": "AI Agents That Small Businesses Actually Need in 2026 (Claude)",
+       "channel": "Jake One Page",
+       "views": 27836
+      },
+      {
+       "id": "OsIF8U5sOz4",
+       "title": "How to Automate ANY Business with AI (Complete Beginner's Guide)",
+       "channel": "Nick Puru | AI Automation",
+       "views": 17335
+      }
+     ]
+    },
+    {
+     "id": "research",
+     "name": "Research and summarize",
+     "n": 475,
+     "full": 177,
+     "assist": 281,
+     "human": 17,
+     "shown": 357,
+     "views": 186448812,
+     "pfull": 37,
+     "passist": 59,
+     "phuman": 4,
+     "verdict": "assist",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "n8n",
+      "Gemini"
+     ],
+     "platforms": {
+      "youtube": 52,
+      "instagram": 22,
+      "email": 18,
+      "tiktok": 17,
+      "linkedin": 17,
+      "google-business": 16,
+      "x": 13,
+      "blog": 11,
+      "facebook": 11,
+      "reddit": 9,
+      "youtube-shorts": 6,
+      "podcast": 4,
+      "pinterest": 3,
+      "threads": 1
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       189
+      ],
+      [
+       "Marketing agencies",
+       166
+      ],
+      [
+       "SaaS and tech startups",
+       110
+      ],
+      [
+       "Coaches and consultants",
+       106
+      ],
+      [
+       "E-commerce stores",
+       92
+      ]
+     ],
+     "examples": [
+      {
+       "id": "xfOT2elC2Ok",
+       "title": "I Tried AI Dropshipping For 7 Days, Here's How You Can Copy Me",
+       "channel": "Mark Tilbury",
+       "views": 18992840
+      },
+      {
+       "id": "FwOTs4UxQS4",
+       "title": "AI Agents, Clearly Explained",
+       "channel": "Jeff Su",
+       "views": 5650481
+      },
+      {
+       "id": "EH5jx5qPabU",
+       "title": "From Zero to Your First AI Agent in 25 Minutes (No Coding)",
+       "channel": "Futurepedia and AI Agent Lab",
+       "views": 4545329
+      },
+      {
+       "id": "cfaZZPjA3g0",
+       "title": "How AI Became More Expensive Than The Workers It Replaced",
+       "channel": "Economy Media",
+       "views": 3543716
+      }
+     ]
+    },
+    {
+     "id": "quality-check",
+     "name": "Check work for quality and mistakes",
+     "n": 123,
+     "full": 39,
+     "assist": 75,
+     "human": 9,
+     "shown": 73,
+     "views": 38747169,
+     "pfull": 32,
+     "passist": 61,
+     "phuman": 7,
+     "verdict": "assist",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "n8n",
+      "Zapier"
+     ],
+     "platforms": {
+      "youtube": 10,
+      "instagram": 6,
+      "tiktok": 5,
+      "linkedin": 3,
+      "blog": 2,
+      "email": 2,
+      "google-business": 2,
+      "x": 2,
+      "facebook": 2,
+      "pinterest": 1
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       30
+      ],
+      [
+       "SaaS and tech startups",
+       29
+      ],
+      [
+       "Marketing agencies",
+       29
+      ],
+      [
+       "E-commerce stores",
+       13
+      ],
+      [
+       "Freelancers and photographers",
+       13
+      ]
+     ],
+     "examples": [
+      {
+       "id": "bFG9XuFY4Qs",
+       "title": "AI Customer Support On WhatsApp (Easy Setup)",
+       "channel": "Jason West",
+       "views": 2923589
+      },
+      {
+       "id": "LtgS4QgEU6Q",
+       "title": "I Tried AI-Generated Restaurants",
+       "channel": "Sambucha",
+       "views": 2514032
+      },
+      {
+       "id": "-QFHIoCo-Ko",
+       "title": "Full Walkthrough: Workflow for AI Coding — Matt Pocock",
+       "channel": "AI Engineer and Matt Pocock",
+       "views": 1985996
+      },
+      {
+       "id": "budTmdQfXYU",
+       "title": "n8n Now Runs My ENTIRE Homelab",
+       "channel": "NetworkChuck",
+       "views": 1087120
+      }
+     ]
+    }
+   ],
+   "n": 1111
+  },
+  {
+   "id": "finance",
+   "name": "Money and finance",
+   "tasks": [
+    {
+     "id": "invoicing",
+     "name": "Send invoices",
+     "n": 17,
+     "full": 10,
+     "assist": 7,
+     "human": 0,
+     "shown": 12,
+     "views": 1847813,
+     "pfull": 59,
+     "passist": 41,
+     "phuman": 0,
+     "verdict": "auto",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "Make",
+      "GoHighLevel"
+     ],
+     "platforms": {
+      "email": 3,
+      "google-business": 2
+     },
+     "types": [
+      [
+       "Freelancers and photographers",
+       6
+      ],
+      [
+       "Marketing agencies",
+       6
+      ],
+      [
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       5
+      ],
+      [
+       "Creators and YouTubers",
+       5
+      ],
+      [
+       "Coaches and consultants",
+       5
+      ]
+     ],
+     "examples": [
+      {
+       "id": "ztXUJa58r9o",
+       "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+       "channel": "Softgirlnocode",
+       "views": 217703
+      },
+      {
+       "id": "di-8OITQ07U",
+       "title": "Cleaning Business Automation: The Full Guide",
+       "channel": "Shania Gladwell",
+       "views": 208327
+      },
+      {
+       "id": "EwcWzy9OYVA",
+       "title": "Automate WhatsApp Without the API",
+       "channel": "Excel For Freelancers",
+       "views": 127349
+      },
+      {
+       "id": "XYMcBrFSJ4c",
+       "title": "9 BORING AI Automations That Can Make $1,200 A Day!",
+       "channel": "Michele Torti",
+       "views": 113973
+      }
+     ]
+    },
+    {
+     "id": "collections",
+     "name": "Chase late payments",
+     "n": 2,
+     "full": 1,
+     "assist": 1,
+     "human": 0,
+     "shown": 0,
+     "views": 351998,
+     "pfull": 50,
+     "passist": 50,
+     "phuman": 0,
+     "verdict": "rare",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "Gemini",
+      "Notion"
+     ],
+     "platforms": {},
+     "types": [
+      [
+       "Gyms and fitness",
+       1
+      ],
+      [
+       "Dental and medical practices",
+       1
+      ],
+      [
+       "SaaS and tech startups",
+       1
+      ],
+      [
+       "E-commerce stores",
+       1
+      ],
+      [
+       "Coaches and consultants",
+       1
+      ]
+     ],
+     "examples": [
+      {
+       "id": "HdI_aYzgJIg",
+       "title": "Personal Agents, Clearly Explained",
+       "channel": "Jeff Su",
+       "views": 319026
+      },
+      {
+       "id": "IhX7WUfdVYk",
+       "title": "10 AI Automation Projects That WILL Get You Clients",
+       "channel": "Kuys RJ",
+       "views": 32972
+      }
+     ]
+    },
+    {
+     "id": "bookkeeping",
+     "name": "Categorize transactions and do bookkeeping",
+     "n": 24,
+     "full": 11,
+     "assist": 13,
+     "human": 0,
+     "shown": 15,
+     "views": 4759145,
+     "pfull": 46,
+     "passist": 54,
+     "phuman": 0,
+     "verdict": "assist",
+     "tools": [
+      "QuickBooks",
+      "ChatGPT / OpenAI",
+      "Claude",
+      "Google Sheets"
+     ],
+     "platforms": {
+      "blog": 1,
+      "email": 1,
+      "google-business": 1
+     },
+     "types": [
+      [
+       "Accounting and bookkeeping",
+       19
+      ],
+      [
+       "Freelancers and photographers",
+       4
+      ],
+      [
+       "SaaS and tech startups",
+       4
+      ],
+      [
+       "Creators and YouTubers",
+       3
+      ],
+      [
+       "Marketing agencies",
+       2
+      ]
+     ],
+     "examples": [
+      {
+       "id": "ztXUJa58r9o",
+       "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+       "channel": "Softgirlnocode",
+       "views": 217703
+      },
+      {
+       "id": "CFAMh7NMqgo",
+       "title": "ChatGPT for Accountants (with Use Cases)",
+       "channel": "365 Financial Analyst",
+       "views": 108490
+      },
+      {
+       "id": "AsCJ-pn_AKA",
+       "title": "How Smart Accountants Are Using AI to Automate Accounts Payable",
+       "channel": "Accounting Firm Coach with Jason Staats",
+       "views": 85717
+      },
+      {
+       "id": "koTaPquHMNo",
+       "title": "Automatic Invoice Entry Tally Prime 7.2 Using AI 🤯| Ek Click m Kaam Hoga",
+       "channel": "Accounts Expert",
+       "views": 55035
+      }
+     ]
+    },
+    {
+     "id": "receipts",
+     "name": "Process receipts and expenses",
+     "n": 3,
+     "full": 2,
+     "assist": 1,
+     "human": 0,
+     "shown": 3,
+     "views": 350365,
+     "pfull": 67,
+     "passist": 33,
+     "phuman": 0,
+     "verdict": "rare",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "n8n",
+      "Google Sheets",
+      "Lovable"
+     ],
+     "platforms": {},
+     "types": [
+      [
+       "Marketing agencies",
+       1
+      ],
+      [
+       "Creators and YouTubers",
+       1
+      ],
+      [
+       "Coaches and consultants",
+       1
+      ],
+      [
+       "Accounting and bookkeeping",
+       1
+      ]
+     ],
+     "examples": [
+      {
+       "id": "Dt6u-yFEpsk",
+       "title": "10 Insane AI Agent Use Cases in n8n! (steal these)",
+       "channel": "Jono Catliff",
+       "views": 323155
+      },
+      {
+       "id": "zo1izxXPbQ4",
+       "title": "How to Use Claude Cowork 2.0 – Full Workflow Automation Guide 2026",
+       "channel": "AI Master",
+       "views": 14473
+      },
+      {
+       "id": "z0zMbH6X6AA",
+       "title": "I Created an AI Accountant That Never Misses a Receipt | No-Code",
+       "channel": "Ed Hill | AI Automation",
+       "views": 12737
+      }
+     ]
+    },
+    {
+     "id": "payroll",
+     "name": "Run payroll",
+     "n": 3,
+     "full": 2,
+     "assist": 1,
+     "human": 0,
+     "shown": 0,
+     "views": 99853,
+     "pfull": 67,
+     "passist": 33,
+     "phuman": 0,
+     "verdict": "rare",
+     "tools": [],
+     "platforms": {
+      "email": 1
+     },
+     "types": [
+      [
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       2
+      ],
+      [
+       "SaaS and tech startups",
+       1
+      ],
+      [
+       "E-commerce stores",
+       1
+      ]
+     ],
+     "examples": [
+      {
+       "id": "zsHXK1Y57yE",
+       "title": "AI in HR: What You Need to Know [2025]",
+       "channel": "AIHR - Academy to Innovate HR",
+       "views": 54402
+      },
+      {
+       "id": "4ryBQ9P_p64",
+       "title": "How I'd Automate a Plumbing Company in 15 Steps (AI & More)",
+       "channel": "Nick Saraev",
+       "views": 27127
+      },
+      {
+       "id": "0u5_VMLd8HU",
+       "title": "AI automation expert explains what skills are AI proof",
+       "channel": "CBS 8 San Diego",
+       "views": 18324
+      }
+     ]
+    },
+    {
+     "id": "financial-reports",
+     "name": "Make financial reports and forecasts",
+     "n": 12,
+     "full": 1,
+     "assist": 10,
+     "human": 1,
+     "shown": 8,
+     "views": 635020,
+     "pfull": 8,
+     "passist": 83,
+     "phuman": 8,
+     "verdict": "assist",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "Canva",
+      "QuickBooks"
+     ],
+     "platforms": {
+      "google-business": 1
+     },
+     "types": [
+      [
+       "Accounting and bookkeeping",
+       4
+      ],
+      [
+       "E-commerce stores",
+       2
+      ],
+      [
+       "Freelancers and photographers",
+       2
+      ],
+      [
+       "Contractors and construction",
+       1
+      ],
+      [
+       "Salons, med spas and beauty",
+       1
+      ]
+     ],
+     "examples": [
+      {
+       "id": "ztXUJa58r9o",
+       "title": "How I Use Claude to Automate Tax and Bookkeeping (Beginner Tutorial)",
+       "channel": "Softgirlnocode",
+       "views": 217703
+      },
+      {
+       "id": "nkuPUJVzB_E",
+       "title": "How To Use AI to Start, Build & Grow Your Small Business (20 AI Marketing Tools!)",
+       "channel": "HubSpot Marketing",
+       "views": 198349
+      },
+      {
+       "id": "ukzWabxgGBs",
+       "title": "Claude for Small Business is VERY Impressive, Here’s Why..",
+       "channel": "Christian Peverelli",
+       "views": 44478
+      },
+      {
+       "id": "G7vndKEihP0",
+       "title": "I've Built 95 Claude Skills for Construction — Here Are the 8 Best",
+       "channel": "Tim Fairley",
+       "views": 23790
+      }
+     ]
+    },
+    {
+     "id": "taxes",
+     "name": "Prepare taxes",
+     "n": 3,
+     "full": 2,
+     "assist": 1,
+     "human": 0,
+     "shown": 2,
+     "views": 377892,
+     "pfull": 67,
+     "passist": 33,
+     "phuman": 0,
+     "verdict": "rare",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude"
+     ],
+     "platforms": {},
+     "types": [
+      [
+       "Accounting and bookkeeping",
+       1
+      ],
+      [
+       "SaaS and tech startups",
+       1
+      ],
+      [
+       "E-commerce stores",
+       1
+      ]
+     ],
+     "examples": [
+      {
+       "id": "VWvov9G4DBI",
+       "title": "How to Make an Ecommerce Website with Claude AI + WooCommerce (2026)",
+       "channel": "Darrel Wilson",
+       "views": 18590
+      },
+      {
+       "id": "S7d16BYDFhs",
+       "title": "How AI Automates Bookkeeping for SMBs | HelloBooks.ai Demo",
+       "channel": "HelloBooks AI",
+       "views": 16954
+      }
+     ]
+    },
+    {
+     "id": "pricing",
+     "name": "Set prices",
+     "n": 24,
+     "full": 2,
+     "assist": 11,
+     "human": 11,
+     "shown": 10,
+     "views": 4772960,
+     "pfull": 8,
+     "passist": 46,
+     "phuman": 46,
+     "verdict": "human",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "n8n",
+      "GoHighLevel"
+     ],
+     "platforms": {
+      "linkedin": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       8
+      ],
+      [
+       "SaaS and tech startups",
+       7
+      ],
+      [
+       "Freelancers and photographers",
+       6
+      ],
+      [
+       "E-commerce stores",
+       6
+      ],
+      [
+       "Coaches and consultants",
+       5
+      ]
+     ],
+     "examples": [
+      {
+       "id": "-VXrYRBCdCU",
+       "title": "Claude + WhatsApp = $12,000/month",
+       "channel": "Oliver Rasmussen",
+       "views": 330689
+      },
+      {
+       "id": "Ih5RapM8XKw",
+       "title": "How to Use Claude to Build and Run a Shopify Store",
+       "channel": "Learn With Shopify",
+       "views": 185613
+      },
+      {
+       "id": "RKZWC99TnUk",
+       "title": "ChatGPT for Photographers: Save Time, Reduce Burnout, Stay Creative with Lindsay Adler",
+       "channel": "Adorama",
+       "views": 50190
+      },
+      {
+       "id": "TMcKp0QW_J4",
+       "title": "How to Build a Shopify Dropshipping Store with AI IN 8 MINUTES",
+       "channel": "Reetu Maz ",
+       "views": 38220
+      }
+     ]
+    },
+    {
+     "id": "spending-decisions",
+     "name": "Decide what to spend money on",
+     "n": 2,
+     "full": 0,
+     "assist": 2,
+     "human": 0,
+     "shown": 0,
+     "views": 290824,
+     "pfull": 0,
+     "passist": 100,
+     "phuman": 0,
+     "verdict": "rare",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Gmail",
+      "HeyGen",
+      "Notion"
+     ],
+     "platforms": {},
+     "types": [
+      [
+       "Car dealers and auto repair",
+       1
+      ],
+      [
+       "Marketing agencies",
+       1
+      ],
+      [
+       "Creators and YouTubers",
+       1
+      ],
+      [
+       "SaaS and tech startups",
+       1
+      ]
+     ],
+     "examples": [
+      {
+       "id": "zWL6XGP3Em8",
+       "title": "14 Insane Things ChatGPT Work Can Do (Automate Anything)",
+       "channel": "Riley Brown",
+       "views": 277419
+      },
+      {
+       "id": "iXwQV90iHwc",
+       "title": "I'm Launching an AI-Powered Used Car Dealer: The AI Car Dealership Project | Episode 1",
+       "channel": "Car Dealer Magazine",
+       "views": 13405
+      }
+     ]
+    }
+   ],
+   "n": 78
+  },
+  {
+   "id": "people",
+   "name": "Hiring and team",
+   "tasks": [
+    {
+     "id": "job-posts",
+     "name": "Write job posts",
+     "n": 6,
+     "full": 0,
+     "assist": 3,
+     "human": 3,
+     "shown": 2,
+     "views": 2257820,
+     "pfull": 0,
+     "passist": 50,
+     "phuman": 50,
+     "verdict": "human",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "Microsoft Copilot / Power Automate",
+      "CapCut"
+     ],
+     "platforms": {
+      "youtube": 1
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       2
+      ],
+      [
+       "Restaurants",
+       1
+      ],
+      [
+       "SaaS and tech startups",
+       1
+      ],
+      [
+       "E-commerce stores",
+       1
+      ],
+      [
+       "Contractors and construction",
+       1
+      ]
+     ],
+     "examples": [
+      {
+       "id": "h1yuSg_-qME",
+       "title": "Can AI Make Your Construction Company Better? (Don't Get Left Behind)",
+       "channel": "Tyler Link",
+       "views": 14928
+      },
+      {
+       "id": "QHsDIe1osQ8",
+       "title": "I Built an Entire AI Recruiter Team with Claude Code in 15 min",
+       "channel": "Zubair Trabzada | AI Workshop",
+       "views": 12641
+      }
+     ]
+    },
+    {
+     "id": "screen-resumes",
+     "name": "Screen resumes and applications",
+     "n": 16,
+     "full": 9,
+     "assist": 6,
+     "human": 1,
+     "shown": 6,
+     "views": 2511781,
+     "pfull": 56,
+     "passist": 38,
+     "phuman": 6,
+     "verdict": "auto",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "n8n",
+      "Microsoft Copilot / Power Automate"
+     ],
+     "platforms": {
+      "email": 1
+     },
+     "types": [
+      [
+       "Recruiting and staffing",
+       7
+      ],
+      [
+       "Marketing agencies",
+       4
+      ],
+      [
+       "Coaches and consultants",
+       4
+      ],
+      [
+       "SaaS and tech startups",
+       3
+      ],
+      [
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       3
+      ]
+     ],
+     "examples": [
+      {
+       "id": "xA26OEyVaS0",
+       "title": "AI Automation TAGALOG for Beginners (Step-by-Step)",
+       "channel": "Kuys RJ",
+       "views": 488412
+      },
+      {
+       "id": "dIH1F1WlE84",
+       "title": "11 Make.com Automations You NEED To Start Using Every Day (steal these)",
+       "channel": "Jono Catliff",
+       "views": 290989
+      },
+      {
+       "id": "di-8OITQ07U",
+       "title": "Cleaning Business Automation: The Full Guide",
+       "channel": "Shania Gladwell",
+       "views": 208327
+      },
+      {
+       "id": "FJgxXaXONNw",
+       "title": "How to Start YouTube Shorts Automation in 2026 - My Exact System",
+       "channel": "Alex Christian",
+       "views": 32084
+      }
+     ]
+    },
+    {
+     "id": "schedule-interviews",
+     "name": "Schedule interviews",
+     "n": 3,
+     "full": 2,
+     "assist": 1,
+     "human": 0,
+     "shown": 1,
+     "views": 325525,
+     "pfull": 67,
+     "passist": 33,
+     "phuman": 0,
+     "verdict": "rare",
+     "tools": [
+      "Google Sheets",
+      "ChatGPT / OpenAI",
+      "Make",
+      "GoHighLevel"
+     ],
+     "platforms": {},
+     "types": [
+      [
+       "Marketing agencies",
+       1
+      ],
+      [
+       "Coaches and consultants",
+       1
+      ],
+      [
+       "Freelancers and photographers",
+       1
+      ],
+      [
+       "Recruiting and staffing",
+       1
+      ]
+     ],
+     "examples": [
+      {
+       "id": "dIH1F1WlE84",
+       "title": "11 Make.com Automations You NEED To Start Using Every Day (steal these)",
+       "channel": "Jono Catliff",
+       "views": 290989
+      }
+     ]
+    },
+    {
+     "id": "interview",
+     "name": "Interview and pick who to hire",
+     "n": 10,
+     "full": 7,
+     "assist": 3,
+     "human": 0,
+     "shown": 9,
+     "views": 10774563,
+     "pfull": 70,
+     "passist": 30,
+     "phuman": 0,
+     "verdict": "auto",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "Gmail",
+      "Gemini"
+     ],
+     "platforms": {
+      "youtube": 1,
+      "podcast": 1,
+      "youtube-shorts": 1
+     },
+     "types": [
+      [
+       "Recruiting and staffing",
+       8
+      ]
+     ],
+     "examples": [
+      {
+       "id": "A0fECnj5sas",
+       "title": "I Sent an AI to My Job Interview. So Did the Company.",
+       "channel": "Graham Raabe",
+       "views": 6213231
+      },
+      {
+       "id": "TL8V41Ea6oM",
+       "title": "4 AI Agents To Automate 99% Of Your Life",
+       "channel": "Sandeep Swadia",
+       "views": 2491831
+      },
+      {
+       "id": "UdDA0JOfRCY",
+       "title": "AI Interviewed Me for Real Jobs",
+       "channel": "Husk IRL",
+       "views": 928986
+      },
+      {
+       "id": "Ng_Bj7tVw78",
+       "title": "AI INTERVIEWS ARE HERE!! SO I TROLLED ONE TO SHOW YOU...",
+       "channel": "Joshua Fluke",
+       "views": 589985
+      }
+     ]
+    },
+    {
+     "id": "employee-onboarding",
+     "name": "Onboard and train new employees",
+     "n": 11,
+     "full": 1,
+     "assist": 10,
+     "human": 0,
+     "shown": 2,
+     "views": 3596460,
+     "pfull": 9,
+     "passist": 91,
+     "phuman": 0,
+     "verdict": "assist",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "Make",
+      "Gmail"
+     ],
+     "platforms": {
+      "email": 1
+     },
+     "types": [
+      [
+       "Dental and medical practices",
+       3
+      ],
+      [
+       "Real estate agents",
+       2
+      ],
+      [
+       "Marketing agencies",
+       2
+      ],
+      [
+       "E-commerce stores",
+       2
+      ],
+      [
+       "Schools, courses and tutors",
+       1
+      ]
+     ],
+     "examples": [
+      {
+       "id": "eK0RYHakLQ0",
+       "title": "New AI Tool Will Change Insurance Sales Forever! (Cody Askins & David Kohel)",
+       "channel": "Cody Askins",
+       "views": 1361977
+      },
+      {
+       "id": "RcCFDnq-in4",
+       "title": "ChatGPT for Automation in Business and Personal Tasks Easily",
+       "channel": "Adrian Twarog",
+       "views": 55271
+      }
+     ]
+    },
+    {
+     "id": "hr-questions",
+     "name": "Answer employee questions",
+     "n": 0,
+     "full": 0,
+     "assist": 0,
+     "human": 0,
+     "shown": 0,
+     "views": 0,
+     "pfull": 0,
+     "passist": 0,
+     "phuman": 0,
+     "verdict": "rare",
+     "tools": [],
+     "platforms": {},
+     "types": [],
+     "examples": []
+    },
+    {
+     "id": "manage-team",
+     "name": "Manage, motivate and give feedback",
+     "n": 9,
+     "full": 0,
+     "assist": 6,
+     "human": 3,
+     "shown": 4,
+     "views": 2117272,
+     "pfull": 0,
+     "passist": 67,
+     "phuman": 33,
+     "verdict": "assist",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "Microsoft Copilot / Power Automate",
+      "Gemini"
+     ],
+     "platforms": {
+      "youtube": 3
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       3
+      ],
+      [
+       "SaaS and tech startups",
+       3
+      ],
+      [
+       "Coaches and consultants",
+       3
+      ],
+      [
+       "Creators and YouTubers",
+       2
+      ],
+      [
+       "Schools, courses and tutors",
+       1
+      ]
+     ],
+     "examples": [
+      {
+       "id": "h8_2FVvCEe0",
+       "title": "F*ck it. Zero to $1,000/Day With Faceless YouTube Automation (Just Copy Me)",
+       "channel": "Chris Barrera",
+       "views": 60882
+      },
+      {
+       "id": "ZrR988-YTSE",
+       "title": "How AI Is Taking Over Car Repair Jobs!",
+       "channel": "Mark Savant",
+       "views": 38785
+      },
+      {
+       "id": "9C5hLJ1bIzk",
+       "title": "I Tested ChatGPT's New Business Platform. Should You Switch?",
+       "channel": "Liam Ottley",
+       "views": 37907
+      },
+      {
+       "id": "8cSCJtPOkmM",
+       "title": "SaaS in the Agent Economy: Why AI Just Changed Bootstrapped SaaS Forever",
+       "channel": "MicroConf",
+       "views": 16736
+      }
+     ]
+    },
+    {
+     "id": "fire",
+     "name": "Let people go",
+     "n": 0,
+     "full": 0,
+     "assist": 0,
+     "human": 0,
+     "shown": 0,
+     "views": 0,
+     "pfull": 0,
+     "passist": 0,
+     "phuman": 0,
+     "verdict": "rare",
+     "tools": [],
+     "platforms": {},
+     "types": [],
+     "examples": []
+    }
+   ],
+   "n": 44
+  },
+  {
+   "id": "legal",
+   "name": "Legal and compliance",
+   "tasks": [
+    {
+     "id": "draft-contracts",
+     "name": "Draft contracts",
+     "n": 8,
+     "full": 3,
+     "assist": 4,
+     "human": 1,
+     "shown": 3,
+     "views": 558781,
+     "pfull": 38,
+     "passist": 50,
+     "phuman": 12,
+     "verdict": "assist",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Slack",
+      "Zapier",
+      "Claude"
+     ],
+     "platforms": {
+      "instagram": 1,
+      "google-business": 1,
+      "email": 1,
+      "tiktok": 1
+     },
+     "types": [
+      [
+       "Law firms",
+       3
+      ],
+      [
+       "Creators and YouTubers",
+       2
+      ],
+      [
+       "Coaches and consultants",
+       2
+      ],
+      [
+       "Freelancers and photographers",
+       2
+      ],
+      [
+       "Gyms and fitness",
+       1
+      ]
+     ],
+     "examples": [
+      {
+       "id": "F1wB-Sw8kTA",
+       "title": "I Hired 6 AI Employees to Run My Entire Business with Marblism",
+       "channel": "Solopreneur",
+       "views": 16788
+      },
+      {
+       "id": "Xhk6RqrwMs8",
+       "title": "How to Draft Legal Documents with Claude Plug-Ins",
+       "channel": "Masai Brown-Andrews",
+       "views": 15726
+      },
+      {
+       "id": "S-Wtm7nU9ok",
+       "title": "Crosby: The AI Law Firm Making the Billable Hour Obsolete",
+       "channel": "Bain Capital Ventures",
+       "views": 13694
+      }
+     ]
+    },
+    {
+     "id": "review-contracts",
+     "name": "Review contracts",
+     "n": 8,
+     "full": 0,
+     "assist": 8,
+     "human": 0,
+     "shown": 0,
+     "views": 196754,
+     "pfull": 0,
+     "passist": 100,
+     "phuman": 0,
+     "verdict": "assist",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "Microsoft Copilot / Power Automate",
+      "Gemini"
+     ],
+     "platforms": {},
+     "types": [
+      [
+       "Contractors and construction",
+       4
+      ],
+      [
+       "Law firms",
+       2
+      ],
+      [
+       "Gyms and fitness",
+       1
+      ],
+      [
+       "Dental and medical practices",
+       1
+      ],
+      [
+       "SaaS and tech startups",
+       1
+      ]
+     ],
+     "examples": [
+      {
+       "id": "0BH56EBEk28",
+       "title": "AI in Procurement: Smarter Sourcing, Contracts, & Supplier Management",
+       "channel": "IBM",
+       "views": 80580
+      },
+      {
+       "id": "IhX7WUfdVYk",
+       "title": "10 AI Automation Projects That WILL Get You Clients",
+       "channel": "Kuys RJ",
+       "views": 32972
+      },
+      {
+       "id": "Q55c1uwv0vM",
+       "title": "Where it makes sense to apply AI in construction",
+       "channel": "Tim Fairley",
+       "views": 16031
+      },
+      {
+       "id": "fs4PGGZmp_0",
+       "title": "Claude 2.0 for Construction — 12 New Features Explained",
+       "channel": "Tim Fairley",
+       "views": 14556
+      }
+     ]
+    },
+    {
+     "id": "compliance",
+     "name": "Check compliance and rules",
+     "n": 13,
+     "full": 0,
+     "assist": 9,
+     "human": 4,
+     "shown": 7,
+     "views": 719340,
+     "pfull": 0,
+     "passist": 69,
+     "phuman": 31,
+     "verdict": "assist",
+     "tools": [
+      "n8n",
+      "ChatGPT / OpenAI",
+      "Claude",
+      "Make"
+     ],
+     "platforms": {},
+     "types": [
+      [
+       "SaaS and tech startups",
+       9
+      ],
+      [
+       "Marketing agencies",
+       7
+      ],
+      [
+       "Coaches and consultants",
+       6
+      ],
+      [
+       "Freelancers and photographers",
+       3
+      ],
+      [
+       "Creators and YouTubers",
+       3
+      ]
+     ],
+     "examples": [
+      {
+       "id": "GScUjc-A4yE",
+       "title": "AI Agent Fundamentals",
+       "channel": "codebasics",
+       "views": 106668
+      },
+      {
+       "id": "xxARTGo_Oqg",
+       "title": "How to Actually Deliver AI Projects (APIs, Hosting & Handover Explained)",
+       "channel": "Nate Herk | AI Automation",
+       "views": 101622
+      },
+      {
+       "id": "cWjS56edaUA",
+       "title": "Agentic Apps: How Big Companies Are Actually Deploying AI Agents",
+       "channel": "Cole Medin",
+       "views": 27900
+      },
+      {
+       "id": "G7vndKEihP0",
+       "title": "I've Built 95 Claude Skills for Construction — Here Are the 8 Best",
+       "channel": "Tim Fairley",
+       "views": 23790
+      }
+     ]
+    },
+    {
+     "id": "legal-advice",
+     "name": "Give legal advice and sign off",
+     "n": 1,
+     "full": 1,
+     "assist": 0,
+     "human": 0,
+     "shown": 0,
+     "views": 89429,
+     "pfull": 100,
+     "passist": 0,
+     "phuman": 0,
+     "verdict": "rare",
+     "tools": [],
+     "platforms": {},
+     "types": [
+      [
+       "Real estate agents",
+       1
+      ],
+      [
+       "Coaches and consultants",
+       1
+      ],
+      [
+       "Law firms",
+       1
+      ],
+      [
+       "Retail stores",
+       1
+      ],
+      [
+       "Insurance and mortgage",
+       1
+      ]
+     ],
+     "examples": [
+      {
+       "id": "0i0O_TFbAoU",
+       "title": "10 Jobs AI Won’t Replace - Yet",
+       "channel": "Valuetainment",
+       "views": 89429
+      }
+     ]
+    }
+   ],
+   "n": 28
+  },
+  {
+   "id": "delivery",
+   "name": "Doing the actual work",
+   "tasks": [
+    {
+     "id": "hands-on-service",
+     "name": "Do the hands-on service (repairs, cleaning, grooming, cooking, treatment)",
+     "n": 13,
+     "full": 10,
+     "assist": 1,
+     "human": 2,
+     "shown": 8,
+     "views": 7992000,
+     "pfull": 77,
+     "passist": 8,
+     "phuman": 15,
+     "verdict": "auto",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Make"
+     ],
+     "platforms": {},
+     "types": [
+      [
+       "Restaurants",
+       4
+      ],
+      [
+       "Contractors and construction",
+       2
+      ],
+      [
+       "E-commerce stores",
+       2
+      ],
+      [
+       "Retail stores",
+       1
+      ],
+      [
+       "Dental and medical practices",
+       1
+      ]
+     ],
+     "examples": [
+      {
+       "id": "Awtsxsai0tc",
+       "title": "I Investigated AI Stores",
+       "channel": "Sambucha",
+       "views": 2613941
+      },
+      {
+       "id": "rnBAdnNIIXk",
+       "title": "Robots And AI: The Future Is Automated And Every Job Is At Risk [Automation, Pt. 1] | AJ+ Docs",
+       "channel": "AJ+",
+       "views": 1093286
+      },
+      {
+       "id": "zyUekx9NZ18",
+       "title": "Automated AI restaurant opens in California",
+       "channel": "CBS Evening News",
+       "views": 923231
+      },
+      {
+       "id": "MMIsbl3DIL8",
+       "title": "The Future of Your Job in the Age of AI | Robots & Us | WIRED",
+       "channel": "WIRED",
+       "views": 240216
+      }
+     ]
+    },
+    {
+     "id": "client-deliverables",
+     "name": "Make client deliverables (reports, designs, plans)",
+     "n": 43,
+     "full": 17,
+     "assist": 26,
+     "human": 0,
+     "shown": 32,
+     "views": 7434231,
+     "pfull": 40,
+     "passist": 60,
+     "phuman": 0,
+     "verdict": "assist",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "n8n",
+      "Gemini"
+     ],
+     "platforms": {
+      "youtube": 2,
+      "blog": 1,
+      "google-business": 1,
+      "email": 1
+     },
+     "types": [
+      [
+       "Creators and YouTubers",
+       13
+      ],
+      [
+       "Freelancers and photographers",
+       12
+      ],
+      [
+       "Marketing agencies",
+       10
+      ],
+      [
+       "Coaches and consultants",
+       8
+      ],
+      [
+       "E-commerce stores",
+       4
+      ]
+     ],
+     "examples": [
+      {
+       "id": "TL8V41Ea6oM",
+       "title": "4 AI Agents To Automate 99% Of Your Life",
+       "channel": "Sandeep Swadia",
+       "views": 2491831
+      },
+      {
+       "id": "r2vYObllqJU",
+       "title": "Claude AI Tutorial for Beginners (Step-by-Step)",
+       "channel": "Kevin Stratvert",
+       "views": 1546238
+      },
+      {
+       "id": "e-sHMT2mvcA",
+       "title": "The 4 Claude Features That Will Put You Ahead of 99% of People Using AI",
+       "channel": "Ali H. Salem",
+       "views": 351509
+      },
+      {
+       "id": "GphgJjaKKhw",
+       "title": "Get started with ChatGPT Work",
+       "channel": "OpenAI",
+       "views": 296029
+      }
+     ]
+    },
+    {
+     "id": "coding",
+     "name": "Write code and build software",
+     "n": 138,
+     "full": 33,
+     "assist": 92,
+     "human": 13,
+     "shown": 83,
+     "views": 53172742,
+     "pfull": 24,
+     "passist": 67,
+     "phuman": 9,
+     "verdict": "assist",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "n8n",
+      "Gemini"
+     ],
+     "platforms": {
+      "youtube": 2
+     },
+     "types": [
+      [
+       "SaaS and tech startups",
+       67
+      ],
+      [
+       "Creators and YouTubers",
+       29
+      ],
+      [
+       "Marketing agencies",
+       29
+      ],
+      [
+       "Coaches and consultants",
+       16
+      ],
+      [
+       "Freelancers and photographers",
+       13
+      ]
+     ],
+     "examples": [
+      {
+       "id": "wZeOwqmSw84",
+       "title": "Learn 97% of Claude in Under 16 Minutes",
+       "channel": "Dan Martell",
+       "views": 2634335
+      },
+      {
+       "id": "9oJySubZRSA",
+       "title": "The Ultimate Beginner’s Guide to Claude AI",
+       "channel": "Metics Media",
+       "views": 2433063
+      },
+      {
+       "id": "UXzOlBI_Zk0",
+       "title": "EASILY Make an Automated Data Entry Form in Excel",
+       "channel": "Kenji Explains",
+       "views": 2047618
+      },
+      {
+       "id": "-QFHIoCo-Ko",
+       "title": "Full Walkthrough: Workflow for AI Coding — Matt Pocock",
+       "channel": "AI Engineer and Matt Pocock",
+       "views": 1985996
+      }
+     ]
+    },
+    {
+     "id": "build-ai-tools",
+     "name": "Build custom AI agents and chatbots",
+     "n": 799,
+     "full": 391,
+     "assist": 371,
+     "human": 37,
+     "shown": 604,
+     "views": 189474164,
+     "pfull": 49,
+     "passist": 46,
+     "phuman": 5,
+     "verdict": "assist",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "n8n",
+      "Google Sheets"
+     ],
+     "platforms": {
+      "youtube": 59,
+      "instagram": 37,
+      "email": 24,
+      "tiktok": 23,
+      "facebook": 22,
+      "google-business": 21,
+      "linkedin": 18,
+      "x": 13,
+      "youtube-shorts": 11,
+      "blog": 10,
+      "threads": 4,
+      "podcast": 3,
+      "reddit": 3,
+      "pinterest": 1
+     },
+     "types": [
+      [
+       "Marketing agencies",
+       328
+      ],
+      [
+       "Creators and YouTubers",
+       300
+      ],
+      [
+       "Coaches and consultants",
+       201
+      ],
+      [
+       "SaaS and tech startups",
+       198
+      ],
+      [
+       "E-commerce stores",
+       107
+      ]
+     ],
+     "examples": [
+      {
+       "id": "FwOTs4UxQS4",
+       "title": "AI Agents, Clearly Explained",
+       "channel": "Jeff Su",
+       "views": 5650481
+      },
+      {
+       "id": "0-FUhQKe-eU",
+       "title": "Start Earning Money With AI - Free Tools & Business Ideas | Vaibhav Sisinty | FO376 Raj Shamani",
+       "channel": "Raj Shamani",
+       "views": 4700441
+      },
+      {
+       "id": "aooiDA-AsNo",
+       "title": "I Tracked Down the Hidden Workers Secretly Powering ChatGPT",
+       "channel": "More Perfect Union",
+       "views": 3810442
+      },
+      {
+       "id": "cfaZZPjA3g0",
+       "title": "How AI Became More Expensive Than The Workers It Replaced",
+       "channel": "Economy Media",
+       "views": 3543716
+      }
+     ]
+    },
+    {
+     "id": "expert-judgment",
+     "name": "Make expert calls (diagnosis, legal, financial, medical)",
+     "n": 16,
+     "full": 4,
+     "assist": 4,
+     "human": 8,
+     "shown": 3,
+     "views": 3737122,
+     "pfull": 25,
+     "passist": 25,
+     "phuman": 50,
+     "verdict": "human",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "Gemini",
+      "n8n"
+     ],
+     "platforms": {
+      "youtube": 1,
+      "instagram": 1,
+      "tiktok": 1
+     },
+     "types": [
+      [
+       "Law firms",
+       4
+      ],
+      [
+       "Accounting and bookkeeping",
+       3
+      ],
+      [
+       "Dental and medical practices",
+       2
+      ],
+      [
+       "SaaS and tech startups",
+       2
+      ],
+      [
+       "Creators and YouTubers",
+       2
+      ]
+     ],
+     "examples": [
+      {
+       "id": "rLr641OzEtg",
+       "title": "Can AI Diagnose This Honda Civic That Won’t Start?! Let’s Find Out! ",
+       "channel": "Royalty Auto Service",
+       "views": 880426
+      },
+      {
+       "id": "rDf3TfHlGmk",
+       "title": "I Built a Profitable AI Agent Day Trader - Here’s How (n8n)",
+       "channel": "AI Pathways",
+       "views": 419612
+      },
+      {
+       "id": "fKM7zbrqQCg",
+       "title": "Photographers WILL lose to AI if they don't do this",
+       "channel": "Tony & Chelsea Northrup",
+       "views": 21999
+      }
+     ]
+    },
+    {
+     "id": "client-relationship",
+     "name": "Build trust and relationships with clients",
+     "n": 15,
+     "full": 1,
+     "assist": 5,
+     "human": 9,
+     "shown": 1,
+     "views": 1580682,
+     "pfull": 7,
+     "passist": 33,
+     "phuman": 60,
+     "verdict": "human",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Claude",
+      "Gemini",
+      "Microsoft Copilot / Power Automate"
+     ],
+     "platforms": {
+      "linkedin": 1,
+      "email": 1,
+      "x": 1
+     },
+     "types": [
+      [
+       "SaaS and tech startups",
+       5
+      ],
+      [
+       "Coaches and consultants",
+       3
+      ],
+      [
+       "Retail stores",
+       3
+      ],
+      [
+       "E-commerce stores",
+       3
+      ],
+      [
+       "Law firms",
+       2
+      ]
+     ],
+     "examples": [
+      {
+       "id": "hjbVmXTQltQ",
+       "title": "How to Build an AI Chatbot for Customer Service",
+       "channel": "Jason West",
+       "views": 422913
+      }
+     ]
+    }
+   ],
+   "n": 902
+  },
+  {
+   "id": "strategy",
+   "name": "Running the business",
+   "tasks": [
+    {
+     "id": "business-decisions",
+     "name": "Make big business decisions",
+     "n": 19,
+     "full": 1,
+     "assist": 8,
+     "human": 10,
+     "shown": 4,
+     "views": 10961891,
+     "pfull": 5,
+     "passist": 42,
+     "phuman": 53,
+     "verdict": "human",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI",
+      "Microsoft Copilot / Power Automate",
+      "Make"
+     ],
+     "platforms": {},
+     "types": [
+      [
+       "SaaS and tech startups",
+       8
+      ],
+      [
+       "Coaches and consultants",
+       4
+      ],
+      [
+       "Marketing agencies",
+       3
+      ],
+      [
+       "Freelancers and photographers",
+       2
+      ],
+      [
+       "Retail stores",
+       2
+      ]
+     ],
+     "examples": [
+      {
+       "id": "YGSi2kvolYY",
+       "title": "I Built A Business From Scratch Only Following ChatGPT's Advice",
+       "channel": "3.7Million",
+       "views": 857622
+      },
+      {
+       "id": "K65vd9EYbDU",
+       "title": "I Built a $1M/y SaaS with Claude Code, Here's How",
+       "channel": "Nick Saraev",
+       "views": 85667
+      },
+      {
+       "id": "ehQFj6VmuI8",
+       "title": "AI Consulting in Practice – NLW, Superintelligent, @AIDailyBrief⁩",
+       "channel": "AI Engineer",
+       "views": 30875
+      },
+      {
+       "id": "gFKqVUfctc8",
+       "title": "Claude Just Became My Personal AI Coach (Full Setup)",
+       "channel": "Chris Michael Harris ",
+       "views": 12787
+      }
+     ]
+    },
+    {
+     "id": "partnerships",
+     "name": "Build partnerships and network",
+     "n": 1,
+     "full": 0,
+     "assist": 1,
+     "human": 0,
+     "shown": 0,
+     "views": 634757,
+     "pfull": 0,
+     "passist": 100,
+     "phuman": 0,
+     "verdict": "rare",
+     "tools": [
+      "Claude",
+      "ChatGPT / OpenAI"
+     ],
+     "platforms": {},
+     "types": [],
+     "examples": [
+      {
+       "id": "qflh4GKbmVQ",
+       "title": "Economist explains what happens after AI takes all jobs",
+       "channel": "Future of Life Institute",
+       "views": 634757
+      }
+     ]
+    },
+    {
+     "id": "vision",
+     "name": "Set the vision and goals",
+     "n": 3,
+     "full": 0,
+     "assist": 1,
+     "human": 2,
+     "shown": 0,
+     "views": 59454,
+     "pfull": 0,
+     "passist": 33,
+     "phuman": 67,
+     "verdict": "rare",
+     "tools": [
+      "ChatGPT / OpenAI",
+      "Twilio",
+      "Claude",
+      "Retell AI"
+     ],
+     "platforms": {},
+     "types": [
+      [
+       "Coaches and consultants",
+       1
+      ],
+      [
+       "Gyms and fitness",
+       1
+      ],
+      [
+       "Pet businesses (grooming, boarding)",
+       1
+      ],
+      [
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       1
+      ],
+      [
+       "Real estate agents",
+       1
+      ]
+     ],
+     "examples": [
+      {
+       "id": "uB-4OJD_73E",
+       "title": "AI is Going to Break SAAS Pricing Models—And That's Breaking VC",
+       "channel": "AI News & Strategy Daily | Nate B Jones",
+       "views": 21021
+      },
+      {
+       "id": "Jf8fyPTw2xk",
+       "title": "Build & Sell AI Receptionists (Full A-Z Guide 2026)",
+       "channel": "Anthony Shoosh",
+       "views": 19815
+      },
+      {
+       "id": "cmg3LfJZORw",
+       "title": "The Future of Consulting in an Age of Ai",
+       "channel": "The Innovation Show with Aidan McCullen",
+       "views": 18618
+      }
+     ]
+    }
+   ],
+   "n": 20
+  }
+ ],
+ "platforms": {
+  "youtube": "YouTube",
+  "youtube-shorts": "YouTube Shorts",
+  "tiktok": "TikTok",
+  "instagram": "Instagram",
+  "facebook": "Facebook",
+  "linkedin": "LinkedIn",
+  "x": "X (Twitter)",
+  "threads": "Threads",
+  "pinterest": "Pinterest",
+  "reddit": "Reddit",
+  "podcast": "Podcasts",
+  "blog": "Blog",
+  "email": "Email newsletter",
+  "google-business": "Google Business Profile"
+ }
+}

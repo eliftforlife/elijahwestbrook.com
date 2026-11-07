@@ -41,3 +41,21 @@
     map.forEach((_, id) => { const s = document.getElementById(id); s && so.observe(s); });
   }
 })();
+
+/* AI automation study (11-07): category tabs + sort on the big chart */
+(function () {
+  var box = document.getElementById('arows'); if (!box) return;
+  var area = '', sort = 'list', rows = [].slice.call(box.querySelectorAll('.ar')), heads = [].slice.call(box.querySelectorAll('.agh')), order = rows.concat(heads);
+  function draw() {
+    rows.forEach(function (r) { r.hidden = !!area && r.dataset.area !== area; });
+    heads.forEach(function (h) { h.hidden = sort !== 'list' || (!!area && h.dataset.area !== area); });
+    if (sort === 'list') { box.innerHTML = ''; heads.forEach(function (h) { box.appendChild(h); rows.filter(function (r) { return r.dataset.area === h.dataset.area; }).forEach(function (r) { box.appendChild(r); }); }); }
+    else { rows.slice().sort(function (a, b) { return (+b.dataset[sort]) - (+a.dataset[sort]); }).forEach(function (r) { box.appendChild(r); }); }
+  }
+  document.querySelectorAll('.atabs button').forEach(function (b) {
+    b.addEventListener('click', function () {
+      b.parentNode.querySelectorAll('button').forEach(function (x) { x.classList.toggle('on', x === b); });
+      if (b.dataset.a !== undefined) area = b.dataset.a; else sort = b.dataset.s; draw();
+    });
+  });
+})();

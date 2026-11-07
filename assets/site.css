@@ -285,3 +285,69 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -.02em; line-height: 1.08; margin
 .spons { display: block; text-align: center; font: 500 12px/1.3 Inter, system-ui, -apple-system, "Segoe UI", Arial, sans-serif; letter-spacing: .02em; padding: 7px 16px; background: #eef3f8; color: #505a66; text-decoration: none; }
 .spons b { color: #3f78b4; font-weight: 700; }
 .spons:hover b, .spons:focus-visible b { text-decoration: underline; }
+
+/* ---------- AI automation study (11-07): every business task on one chart ---------- */
+.aistudy .achart { margin: 40px 0; }
+.aistudy .achart h2 { font-size: 30px; margin-bottom: 14px; }
+.alegend { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 14px; color: var(--mute); margin: 0 0 14px; }
+.alegend span { display: inline-flex; align-items: center; gap: 8px; }
+.alegend i, .ab i { display: inline-block; }
+.alegend i { width: 14px; height: 14px; border-radius: 3px; }
+.f { background: var(--red); } .a { background: #8f959c; } .h { background: repeating-linear-gradient(135deg, #d5d8dc 0 3px, #f3f4f6 3px 6px); }
+.atabs { display: flex; gap: 20px; overflow-x: auto; scrollbar-width: none; border-bottom: 1px solid var(--line); }
+.atabs::-webkit-scrollbar { display: none; }
+.atabs button { font: 600 15px/1 Inter, system-ui, sans-serif; padding: 12px 0 11px; border: 0; border-bottom: 2px solid transparent; margin-bottom: -1px; background: none; color: var(--mute); cursor: pointer; white-space: nowrap; }
+.atabs button.on { color: var(--ink); border-bottom-color: var(--ink); }
+.atabs.sort button { font-size: 14px; }
+.arows { margin-top: 6px; }
+.agh { font-size: 19px; margin: 30px 0 4px; } .agh a { text-decoration: none; } .agh a:hover { color: var(--red); }
+.ar { border-bottom: 1px solid var(--line); }
+.ar summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: minmax(0, 38%) minmax(0, 1fr) 56px; gap: 14px; align-items: center; padding: 11px 0; }
+.ar summary::-webkit-details-marker { display: none; }
+.an { font-weight: 600; font-size: 15px; line-height: 1.3; min-width: 0; }
+.vt { display: block; font-size: 12.5px; font-weight: 600; color: var(--mute); margin-top: 2px; }
+.v-auto .vt { color: var(--red); }
+.ab { display: flex; height: 22px; border-radius: 6px; overflow: hidden; background: var(--soft); }
+.ab i { height: 100%; width: var(--w); }
+.v-rare .ab { opacity: .35; }
+.ac { text-align: right; font-weight: 800; font-size: 17px; font-variant-numeric: tabular-nums; line-height: 1.1; } .ac small { display: block; font-weight: 400; font-size: 11px; color: var(--mute); }
+.ar:hover .an { color: var(--red); }
+.ad { padding: 2px 0 16px; font-size: 15px; line-height: 1.55; color: var(--ink2); }
+.ad p { margin: 6px 0; } .ad ul { margin: 6px 0 0; padding-left: 18px; } .ad li { margin: 6px 0; } .ad li span { display: block; font-size: 13px; color: var(--mute); }
+.ad a { text-decoration: underline; text-decoration-color: var(--red); text-underline-offset: 3px; }
+.sec.two { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; } .sec.two h2 { font-size: 24px; }
+.alist { padding-left: 20px; margin: 14px 0 0; } .alist li { margin: 0 0 12px; } .alist b { display: block; font-size: 16px; } .alist span { font-size: 14px; color: var(--mute); }
+.acards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.acard { display: flex; flex-direction: column; gap: 6px; padding: 20px; border-radius: 14px; box-shadow: inset 0 0 0 1.5px var(--line); text-decoration: none; }
+.acard:hover { box-shadow: inset 0 0 0 1.5px var(--ink); } .acard b { font-size: 18px; } .acard span { font-size: 14px; color: var(--mute); }
+.acard .mini { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 6px; } .acard .mini i { width: 12px; height: 12px; border-radius: 2px; background: var(--soft); }
+.mini .v-auto { background: var(--red); } .mini .v-assist { background: #8f959c; } .mini .v-human { background: repeating-linear-gradient(135deg, #c9cdd2 0 2px, #f3f4f6 2px 4px); }
+.aplat { margin: 40px 0; } .aplat h2 { font-size: 26px; margin-bottom: 6px; }
+.awrap { overflow-x: auto; margin-top: 14px; }
+.aplat table { border-collapse: collapse; font-size: 13px; min-width: 640px; width: 100%; }
+.aplat th { text-align: left; font-weight: 600; padding: 7px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.aplat thead th { font-size: 12px; color: var(--mute); }
+.aplat td { text-align: center; padding: 7px 4px; border-bottom: 1px solid #fff; font-variant-numeric: tabular-nums; background: rgba(232, 20, 28, var(--o)); color: var(--ink); }
+.aoffer { margin: 36px 0; padding: 26px; border-radius: var(--r); background: var(--ink); color: #fff; display: flex; gap: 20px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.aoffer h2 { font-size: 24px; color: #fff; } .aoffer p { margin: 6px 0 0; color: #d0d3d8; }
+@media (max-width: 720px) {
+  .ar summary { grid-template-columns: minmax(0, 1fr) 48px; } .ar .ab { grid-column: 1 / -1; grid-row: 2; height: 16px; }
+  .sec.two, .acards { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* application form (11-07) */
+.aform { max-width: 720px; margin: 10px auto 60px; display: grid; gap: 26px; }
+.aform fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: 10px; }
+.aform legend { font-weight: 800; font-size: 19px; letter-spacing: -.01em; margin-bottom: 10px; padding: 0; }
+.aform input:not([type=radio]):not([type=checkbox]), .aform select, .aform textarea { font: 400 16px/1.4 Inter, system-ui, sans-serif; padding: 12px 14px; border: 1.5px solid var(--line); border-radius: 10px; width: 100%; background: #fff; color: var(--ink); }
+.aform input:focus, .aform select:focus, .aform textarea:focus { outline: none; border-color: var(--ink); }
+.opts { display: flex; flex-wrap: wrap; gap: 8px; }
+.opt input { position: absolute; opacity: 0; pointer-events: none; }
+.opt span { display: inline-block; padding: 10px 14px; border: 1.5px solid var(--line); border-radius: 10px; font-size: 15px; cursor: pointer; }
+.opt input:checked + span { border-color: var(--ink); background: var(--ink); color: #fff; }
+.opt input:focus-visible + span { outline: 2px solid var(--red); outline-offset: 2px; }
+.aform .hp { position: absolute; left: -9999px; width: 1px; height: 1px; }
+.aform .fine { font-size: 13px; color: var(--mute); margin: 0; }
+.aform .btn { justify-self: start; }
+.amsg { margin: 0; font-weight: 600; color: var(--red); min-height: 1.4em; }
+.adone h2 { font-size: 30px; } .adone p { color: var(--ink2); }

@@ -16,7 +16,7 @@ SUB = SITE['youtube'] + '?sub_confirmation=1'
 # phone menu. Styles/JS: assets/gh.css + gh.js (master copy in 0 HQ/Tools/site header/).
 GH_CHEV = '<svg viewBox="0 0 8 8" aria-hidden="true"><path d="M2.5 1 5.5 4 2.5 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 def header(active=''):
-    items = (('Studies', '/studies/'), ('Videos', '/#videos'), ('About', '/about/'))
+    items = (('AI automation', '/ai-automation/'), ('Studies', '/studies/'), ('Videos', '/#videos'), ('About', '/about/'))
     nav = ''.join(f'<a href="{u}"{" aria-current=page" if active == k else ""}>{k}</a>' for k, u in items)
     return f'''<header class="gh" style="--gh-logo-r: 50%;"><div class="gh-in"><a class="gh-brand" href="/"><img src="/assets/me-128.webp" alt="" width="24" height="24">{SITE['name']}</a>
 <nav class="gh-links" aria-label="Main">{nav}</nav>
@@ -67,15 +67,16 @@ def page(path, title, desc, body, kind='website', ld=None, active='', cls=''):
 <meta name="description" content="{E(desc)}">
 <link rel="canonical" href="{url}">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#000000">
 <meta property="og:type" content="{kind}"><meta property="og:site_name" content="{SITE['name']}">
 <meta property="og:url" content="{url}"><meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}">
 <meta property="og:image" content="{SITE['url']}/assets/og.png"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/assets/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="/assets/site.css?v={V}">
 <link rel="stylesheet" href="/assets/gh.css?v=2"><script src="/assets/gh.js?v=1" defer></script>
+<link rel="stylesheet" href="/assets/marque.css?v={V}">
 <script>document.documentElement.classList.add('js')</script>
 <script src="/assets/site.js?v={V}" defer></script>
 {lds}
@@ -137,7 +138,7 @@ def card(s, i=0):
 
 def author():
     return f'''<aside class="author reveal"><img src="/assets/me-400.webp" alt="Elijah Westbrook" width="72" height="72" loading="lazy"><div><b>By {SITE['name']}</b>
-<span>I run these studies, then test them on my own channel. Not monetized, nothing to sell you.</span>
+<span>I run these studies, then test them on my own channel.</span>
 <a href="{SUB}" rel="noopener">Watch the experiments on YouTube {ARROW}</a></div></aside>'''
 
 def slug_id(h): return re.sub(r'[^a-z0-9]+', '-', h.lower()).strip('-')[:48]
@@ -221,12 +222,14 @@ def build():
     page('/about/', 'About Elijah Westbrook: Free YouTube Data Studies', 'Elijah Westbrook runs free data studies on YouTube, ads, outreach and business, then tests them on his own channel.', about, active='About',
          ld=[{'@context': 'https://schema.org', '@type': 'ProfilePage', 'mainEntity': {'@type': 'Person', 'name': SITE['name'], 'url': SITE['url'], 'image': SITE['url'] + '/assets/me-400.webp', 'sameAs': [u for _, u, _, _ in SOCIALS]}}])
     page('/404.html', 'Not found | ' + SITE['name'], 'Page not found.', f'<main class="study"><section class="shero"><h1>That page doesn’t exist.</h1><p><a class="btn" href="/studies/">See all the studies {ARROW}</a></p></section></main>')
-    urls = ['/', '/studies/', '/about/'] + [f'/studies/{s["slug"]}/' for s in STUDIES]
+    import automation; ai_urls = automation.build(page, ARROW, author)
+    urls = ['/', '/studies/', '/about/'] + [f'/studies/{s["slug"]}/' for s in STUDIES] + ai_urls
     open(f'{OUT}/sitemap.xml', 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
         ''.join(f'<url><loc>{SITE["url"]}{u}</loc><lastmod>{TODAY}</lastmod></url>\n' for u in urls) + '</urlset>\n')
     open(f'{OUT}/robots.txt', 'w').write(f'User-agent: *\nAllow: /\n\nSitemap: {SITE["url"]}/sitemap.xml\n')
     open(f'{OUT}/llms.txt', 'w', encoding='utf-8').write(f'# {SITE["name"]}\n\n> {SITE["blurb"]}\n\n## Studies\n' +
         ''.join(f'- [{s["title"]}]({SITE["url"]}/studies/{s["slug"]}/): {s["short"]}\n' for s in STUDIES))
+    open(f'{OUT}/llms.txt', 'a', encoding='utf-8').write('\n## AI automation study\n' + ''.join(f'- {SITE["url"]}{u}\n' for u in ai_urls))
     open(f'{OUT}/CNAME', 'w').write('elijahwestbrook.com\n')
     open(f'{OUT}/.nojekyll', 'w').write('')
     print('built', len(urls), 'pages into', OUT)
