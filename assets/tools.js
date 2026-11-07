@@ -6,7 +6,7 @@
     rows.forEach(function (r, i) { r.dataset.rank = i; });
     var draw = function () {
       rows.forEach(function (r) { r.hidden = f === 'core' ? r.dataset.core !== '5' : f === 'free' ? r.dataset.free !== '1' : f ? r.dataset[f] !== '1' : false; });
-      rows.slice().sort(function (a, b) { return s === 'cost' ? (+a.dataset.cost) - (+b.dataset.cost) : s === 'all' ? (+b.dataset.all) - (+a.dataset.all) : (+a.dataset.rank) - (+b.dataset.rank); })
+      rows.slice().sort(function (a, b) { return s === 'cost' ? (+a.dataset.cost) - (+b.dataset.cost) : s === 'since' ? (+a.dataset.since) - (+b.dataset.since) : s === 'all' ? (+b.dataset.all) - (+a.dataset.all) : (+a.dataset.rank) - (+b.dataset.rank); })
         .forEach(function (r) { body.appendChild(r); });
       var n = 1; [].forEach.call(body.rows, function (r) { if (!r.hidden) r.cells[0].textContent = n++; });
     };

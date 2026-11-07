@@ -1,0 +1,660 @@
+{
+ "series": {
+  "years": [
+   1998,
+   1999,
+   2000,
+   2001,
+   2002,
+   2003,
+   2004,
+   2005,
+   2006,
+   2007,
+   2008,
+   2009,
+   2010,
+   2011,
+   2012,
+   2013,
+   2014,
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "rules": [
+   3,
+   3,
+   3,
+   5,
+   5,
+   5,
+   6,
+   8,
+   10,
+   15,
+   16,
+   17,
+   19,
+   21,
+   25,
+   28,
+   30,
+   32,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38,
+   38
+  ],
+  "ai": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   4,
+   4,
+   12,
+   13,
+   29,
+   67,
+   68,
+   70,
+   70
+  ],
+  "any": [
+   3,
+   3,
+   3,
+   5,
+   5,
+   5,
+   6,
+   8,
+   10,
+   15,
+   16,
+   17,
+   19,
+   23,
+   27,
+   30,
+   32,
+   34,
+   40,
+   40,
+   42,
+   42,
+   50,
+   51,
+   60,
+   70,
+   70,
+   71,
+   71
+  ],
+  "total": 78
+ },
+ "events": [
+  {
+   "key": "autoresponder",
+   "year": 1998,
+   "month": null,
+   "approx": false,
+   "tool": "Email autoresponders (AWeber)",
+   "what": "automatic reply and follow-up emails",
+   "kind": "rules",
+   "tasks": [
+    "Reply to new leads within minutes",
+    "Onboard new clients",
+    "Onboard and train new employees"
+   ],
+   "source": "https://en.wikipedia.org/wiki/AWeber"
+  },
+  {
+   "key": "mailchimp",
+   "year": 2001,
+   "month": null,
+   "approx": false,
+   "tool": "Mailchimp",
+   "what": "scheduled email newsletters and campaigns",
+   "kind": "rules",
+   "tasks": [
+    "Write and send newsletters",
+    "Win back old customers and leads"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Mailchimp"
+  },
+  {
+   "key": "gmail-filters",
+   "year": 2004,
+   "month": "Apr",
+   "approx": true,
+   "tool": "Gmail filters",
+   "what": "automatic inbox sorting by rules",
+   "kind": "rules",
+   "tasks": [
+    "Sort and answer the inbox"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Gmail"
+  },
+  {
+   "key": "google-analytics",
+   "year": 2005,
+   "month": "Nov",
+   "approx": false,
+   "tool": "Google Analytics",
+   "what": "automatic traffic reports",
+   "kind": "rules",
+   "tasks": [
+    "Track what performs (analytics)",
+    "Report on ad results"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Google_Analytics"
+  },
+  {
+   "key": "shopify",
+   "year": 2006,
+   "month": "Jun",
+   "approx": false,
+   "tool": "Shopify",
+   "what": "automatic order and shipping emails",
+   "kind": "rules",
+   "tasks": [
+    "Handle order status, returns and refunds",
+    "Track inventory and reorder supplies"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Shopify"
+  },
+  {
+   "key": "xero-bank-rules",
+   "year": 2007,
+   "month": null,
+   "approx": false,
+   "tool": "Bank feeds with rules (Xero, QuickBooks Online)",
+   "what": "automatic bank feeds and transaction matching, with rules that auto-categorize",
+   "kind": "rules",
+   "tasks": [
+    "Send invoices",
+    "Categorize transactions and do bookkeeping",
+    "Make financial reports and forecasts"
+   ],
+   "source": "https://blog.xero.com/product-updates/bank-reconciliation-evolution-at-xero/"
+  },
+  {
+   "key": "wix",
+   "year": 2007,
+   "month": null,
+   "approx": false,
+   "tool": "Wix",
+   "what": "website builders with templates",
+   "kind": "rules",
+   "tasks": [
+    "Build websites and landing pages"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Wix.com"
+  },
+  {
+   "key": "zendesk",
+   "year": 2007,
+   "month": null,
+   "approx": false,
+   "tool": "Zendesk",
+   "what": "automatic ticket routing rules",
+   "kind": "rules",
+   "tasks": [
+    "Sort and route support tickets"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Zendesk"
+  },
+  {
+   "key": "hootsuite",
+   "year": 2008,
+   "month": "Nov/Dec",
+   "approx": true,
+   "tool": "Hootsuite",
+   "what": "scheduled social media posts",
+   "kind": "rules",
+   "tasks": [
+    "Schedule and publish posts"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Hootsuite"
+  },
+  {
+   "key": "youtube-captions",
+   "year": 2009,
+   "month": "Nov",
+   "approx": false,
+   "tool": "YouTube automatic captions",
+   "what": "automatic subtitles",
+   "kind": "rules",
+   "tasks": [
+    "Add captions and subtitles"
+   ],
+   "source": "https://youtube.googleblog.com/2009/11/innovation-in-accessibility.html"
+  },
+  {
+   "key": "twilio",
+   "year": 2010,
+   "month": "Feb",
+   "approx": false,
+   "tool": "Twilio SMS API",
+   "what": "automatic text messages and reminders",
+   "kind": "rules",
+   "tasks": [
+    "Send appointment reminders and cut no-shows",
+    "Ask customers for reviews"
+   ],
+   "source": "https://techcrunch.com/2010/02/09/twilio-sms-api/"
+  },
+  {
+   "key": "ai-video-edit",
+   "year": 2011,
+   "month": "Sep",
+   "approx": false,
+   "tool": "AI video editors (Magisto, Descript, CapCut AI)",
+   "what": "AI editing of video",
+   "kind": "ai",
+   "tasks": [
+    "Edit videos",
+    "Produce podcasts"
+   ],
+   "source": "https://techcrunch.com/2011/09/20/magisto-debuts-automatic-video-editing-tool-raises-5-5m-from-li-ka-shing-others"
+  },
+  {
+   "key": "intercom",
+   "year": 2011,
+   "month": null,
+   "approx": false,
+   "tool": "Intercom",
+   "what": "website live chat with saved answers",
+   "kind": "rules",
+   "tasks": [
+    "Answer customer questions by chat or email",
+    "Website chat and lead capture"
+   ],
+   "source": "https://www.intercom.com/blog/intercom-turns-10"
+  },
+  {
+   "key": "zapier",
+   "year": 2012,
+   "month": "May",
+   "approx": false,
+   "tool": "Zapier",
+   "what": "moving data between apps with no code",
+   "kind": "rules",
+   "tasks": [
+    "Log calls and update the CRM",
+    "Enter and move data between apps",
+    "Track projects and send status updates",
+    "Organize files"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Zapier"
+  },
+  {
+   "key": "calendly",
+   "year": 2013,
+   "month": null,
+   "approx": false,
+   "tool": "Calendly",
+   "what": "self-booking calendars",
+   "kind": "rules",
+   "tasks": [
+    "Book sales calls and appointments",
+    "Manage the calendar and scheduling"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Calendly"
+  },
+  {
+   "key": "keyword-planner",
+   "year": 2013,
+   "month": "Aug",
+   "approx": false,
+   "tool": "Google Keyword Planner",
+   "what": "keyword research data",
+   "kind": "rules",
+   "tasks": [
+    "Do keyword research"
+   ],
+   "source": "https://www.seroundtable.com/amp/google-keyword-tool-gone-17286.html"
+  },
+  {
+   "key": "email-sequences",
+   "year": 2014,
+   "month": null,
+   "approx": true,
+   "tool": "Sales sequence tools (Outreach, Mixmax)",
+   "what": "automatic follow-up sequences",
+   "kind": "rules",
+   "tasks": [
+    "Send outreach sequences",
+    "Follow up with leads who went quiet"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Salesloft"
+  },
+  {
+   "key": "clearbit",
+   "year": 2015,
+   "month": null,
+   "approx": true,
+   "tool": "Clearbit Enrichment API",
+   "what": "automatic lead and company data lookup",
+   "kind": "rules",
+   "tasks": [
+    "Find leads and build prospect lists",
+    "Look up contact info and research leads"
+   ],
+   "source": "https://clearbit.com/blog/2015"
+  },
+  {
+   "key": "messenger-bots",
+   "year": 2016,
+   "month": "Apr",
+   "approx": false,
+   "tool": "Facebook Messenger bots",
+   "what": "automatic DM and chat replies",
+   "kind": "rules",
+   "tasks": [
+    "Reply to comments",
+    "Reply to DMs",
+    "Qualify leads"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Facebook_Messenger"
+  },
+  {
+   "key": "fb-rules",
+   "year": 2016,
+   "month": null,
+   "approx": true,
+   "tool": "Facebook ads automated rules",
+   "what": "ads paused or scaled by rules",
+   "kind": "rules",
+   "tasks": [
+    "Launch ad campaigns",
+    "Adjust budgets and pause losing ads"
+   ],
+   "source": "https://adaptworldwide.com/insights/2017/facebook-rules"
+  },
+  {
+   "key": "data-studio",
+   "year": 2016,
+   "month": "Mar",
+   "approx": false,
+   "tool": "Google Data Studio",
+   "what": "automatic dashboards",
+   "kind": "rules",
+   "tasks": [
+    "Build reports and dashboards"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Looker_Studio"
+  },
+  {
+   "key": "wavenet",
+   "year": 2018,
+   "month": "Mar",
+   "approx": false,
+   "tool": "Google Cloud Text-to-Speech (WaveNet voices)",
+   "what": "natural-sounding AI voiceovers",
+   "kind": "ai",
+   "tasks": [
+    "Record voiceovers"
+   ],
+   "source": "https://en.wikipedia.org/wiki/WaveNet"
+  },
+  {
+   "key": "otter",
+   "year": 2018,
+   "month": "Feb",
+   "approx": false,
+   "tool": "Otter.ai",
+   "what": "AI meeting notes and transcripts",
+   "kind": "ai",
+   "tasks": [
+    "Take meeting notes and summaries"
+   ],
+   "source": "https://businesswire.com/news/home/20180509005449/en/AISense-Announces-General-Availability-Premium-Version-Otter"
+  },
+  {
+   "key": "gpt3",
+   "year": 2020,
+   "month": "Jun",
+   "approx": false,
+   "tool": "GPT-3 (and writing apps like Copy.ai)",
+   "what": "AI-written copy, posts and emails",
+   "kind": "ai",
+   "tasks": [
+    "Write scripts and hooks",
+    "Write posts, captions and threads",
+    "Write titles, descriptions and hashtags",
+    "Write blog posts and articles",
+    "Write ad copy",
+    "Write cold emails and DMs",
+    "Write and optimize pages for search"
+   ],
+   "source": "https://en.wikipedia.org/wiki/GPT-3"
+  },
+  {
+   "key": "synthesia",
+   "year": 2020,
+   "month": null,
+   "approx": true,
+   "tool": "Synthesia STUDIO",
+   "what": "AI presenter videos",
+   "kind": "ai",
+   "tasks": [
+    "Make videos with an AI avatar or AI presenter"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Synthesia"
+  },
+  {
+   "key": "copilot",
+   "year": 2021,
+   "month": "Jun",
+   "approx": false,
+   "tool": "GitHub Copilot",
+   "what": "AI writing code",
+   "kind": "ai",
+   "tasks": [
+    "Write code and build software"
+   ],
+   "source": "https://en.wikipedia.org/wiki/GitHub_Copilot"
+  },
+  {
+   "key": "chatgpt",
+   "year": 2022,
+   "month": "Nov",
+   "approx": false,
+   "tool": "ChatGPT",
+   "what": "AI drafting almost any text",
+   "kind": "ai",
+   "tasks": [
+    "Come up with content ideas and research trends",
+    "Repurpose one piece of content for every platform",
+    "Write and send newsletters",
+    "Follow up with leads who went quiet",
+    "Win back old customers and leads",
+    "Onboard new clients",
+    "Reply to reviews",
+    "Do keyword research",
+    "Write SOPs and documentation",
+    "Research and summarize",
+    "Onboard and train new employees"
+   ],
+   "source": "https://openai.com/index/chatgpt/"
+  },
+  {
+   "key": "ai-images",
+   "year": 2022,
+   "month": "Jul",
+   "approx": false,
+   "tool": "DALL-E 2 and Midjourney",
+   "what": "AI images and graphics",
+   "kind": "ai",
+   "tasks": [
+    "Make thumbnails and cover images",
+    "Make graphics, carousels and images",
+    "Make ad creatives (images and video)"
+   ],
+   "source": "https://en.wikipedia.org/wiki/Midjourney"
+  },
+  {
+   "key": "whisper",
+   "year": 2022,
+   "month": "Sep",
+   "approx": false,
+   "tool": "OpenAI Whisper",
+   "what": "accurate AI transcription and translation",
+   "kind": "ai",
+   "tasks": [
+    "Add captions and subtitles",
+    "Transcribe and translate"
+   ],
+   "source": "https://openai.com/index/whisper/"
+  },
+  {
+   "key": "opus-clip",
+   "year": 2023,
+   "month": "Jul",
+   "approx": false,
+   "tool": "AI clipping tools (Opus Clip)",
+   "what": "long videos cut into shorts by AI",
+   "kind": "ai",
+   "tasks": [
+    "Cut long videos into short clips"
+   ],
+   "source": "https://www.producthunt.com/products/opus-clip/launches"
+  },
+  {
+   "key": "ai-agents-tools",
+   "year": 2023,
+   "month": null,
+   "approx": true,
+   "tool": "AI nodes in n8n, Make and Zapier",
+   "what": "AI steps inside automations",
+   "kind": "ai",
+   "tasks": [
+    "Schedule and publish posts",
+    "Build custom AI agents and chatbots"
+   ],
+   "source": "https://community.zapier.com/product-updates/transform-your-workday-with-openai-zapier-28699"
+  },
+  {
+   "key": "voice-agents",
+   "year": 2023,
+   "month": "Aug",
+   "approx": false,
+   "tool": "AI voice agent platforms (Bland, Vapi, Retell)",
+   "what": "AI that answers the phone and books",
+   "kind": "ai",
+   "tasks": [
+    "Book sales calls and appointments",
+    "Answer the phone",
+    "Send appointment reminders and cut no-shows"
+   ],
+   "source": "https://www.producthunt.com/products/bland-ai/launches"
+  },
+  {
+   "key": "gpt4",
+   "year": 2023,
+   "month": "Mar",
+   "approx": false,
+   "tool": "GPT-4",
+   "what": "AI that reads documents and follows complex rules",
+   "kind": "ai",
+   "tasks": [
+    "Reply to comments",
+    "Reply to DMs",
+    "Track what performs (analytics)",
+    "Adjust budgets and pause losing ads",
+    "Report on ad results",
+    "Find leads and build prospect lists",
+    "Look up contact info and research leads",
+    "Send outreach sequences",
+    "Reply to new leads within minutes",
+    "Qualify leads",
+    "Write proposals, quotes and estimates",
+    "Log calls and update the CRM",
+    "Answer customer questions by chat or email",
+    "Sort and route support tickets",
+    "Handle order status, returns and refunds",
+    "Ask customers for reviews",
+    "Website chat and lead capture",
+    "Sort and answer the inbox",
+    "Manage the calendar and scheduling",
+    "Enter and move data between apps",
+    "Read and pull data from documents, forms and PDFs",
+    "Track projects and send status updates",
+    "Build reports and dashboards",
+    "Organize files",
+    "Check work for quality and mistakes",
+    "Send invoices",
+    "Categorize transactions and do bookkeeping",
+    "Make financial reports and forecasts",
+    "Screen resumes and applications",
+    "Draft contracts",
+    "Review contracts",
+    "Make client deliverables (reports, designs, plans)"
+   ],
+   "source": "https://openai.com/index/gpt-4-research/"
+  },
+  {
+   "key": "mcp",
+   "year": 2024,
+   "month": "Nov",
+   "approx": false,
+   "tool": "Model Context Protocol",
+   "what": "AI connected to any business tool",
+   "kind": "ai",
+   "tasks": [
+    "Launch ad campaigns"
+   ],
+   "source": "https://www.anthropic.com/news/model-context-protocol"
+  },
+  {
+   "key": "claude-code",
+   "year": 2025,
+   "month": "Feb",
+   "approx": false,
+   "tool": "Claude Code",
+   "what": "AI agents that build and run whole workflows",
+   "kind": "ai",
+   "tasks": [
+    "Build websites and landing pages",
+    "Update and maintain the website"
+   ],
+   "source": "https://www.anthropic.com/news/claude-3-7-sonnet"
+  }
+ ],
+ "verified": true
+}

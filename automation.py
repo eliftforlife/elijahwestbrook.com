@@ -1,7 +1,7 @@
 # The AI automation study (11-07): /ai-automation/ (every business task on one chart) + one page per business category.
 # Data: data/automation.json, made by "1 Elijah Westbrook/Videos/ai automation study/aggregate.py". Called from build.py after the main pages.
 import json, os, html
-import art as ART
+import art as ART, timeline as TL
 E = lambda s: html.escape(str(s), quote=True)
 D = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', 'automation.json'), encoding='utf-8'))
 VERD = {'auto': ('AI runs it', 'v-auto'), 'assist': ('AI drafts, you check', 'v-assist'), 'human': ('Keep it human', 'v-human'), 'rare': ('Almost nobody automates it', 'v-rare')}
@@ -71,6 +71,7 @@ def build(page, ARROW, author):
 <h1>What AI can automate</h1>
 <p class="lede1">AI runs <b>{nv["auto"]} of {len(tasks)}</b> business tasks on its own, from {D["relevant"]:,} AI automation videos. Tap a task for the tools and a free workflow.</p></section>
 <section class="achart tight" id="chart">{LEGEND}{tabs}{sorts}<div class="arows" id="arows">{chart}</div></section>
+{TL.section()}
 {offer(ARROW)}
 <section class="list"><div class="head reveal"><h2>By business area</h2></div><div class="acards">{cards}</div></section>
 <section class="sec two reveal"><div><h2>What AI runs on its own</h2><ol class="alist">{lst(top_auto)}</ol></div><div><h2>What’s still human</h2><ol class="alist">{lsth(top_human)}</ol></div></section>
