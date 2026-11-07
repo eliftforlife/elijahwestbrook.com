@@ -59,3 +59,18 @@
     });
   });
 })();
+
+
+/* 11-07: Simple / Detailed switch. Simple (default) hides everything marked .adv; Detailed shows it. Remembered per visitor. */
+(function () {
+  if (!document.querySelector('.adv')) return;
+  var root = document.documentElement, key = 'ew-detail', on = false;
+  try { on = localStorage.getItem(key) === '1'; } catch (e) {}
+  var set = function (v) { on = v; root.classList.toggle('detailed', v); try { localStorage.setItem(key, v ? '1' : '0'); } catch (e) {}
+    sw.querySelectorAll('button').forEach(function (b) { b.classList.toggle('on', (b.dataset.v === '1') === v); b.setAttribute('aria-pressed', (b.dataset.v === '1') === v); }); };
+  var sw = document.createElement('div'); sw.className = 'modesw'; sw.setAttribute('role', 'group'); sw.setAttribute('aria-label', 'How much detail');
+  sw.innerHTML = '<button type="button" data-v="0">Simple</button><button type="button" data-v="1">Detailed</button>';
+  sw.addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) set(b.dataset.v === '1'); });
+  var h = document.querySelector('main h1'); if (h && h.parentNode) h.parentNode.insertBefore(sw, h.nextSibling);
+  set(on);
+})();

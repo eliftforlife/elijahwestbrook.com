@@ -147,7 +147,7 @@ def study(s):
     path = f'/studies/{s["slug"]}/'; i = STUDIES.index(s)
     stat, lab = HERO[s['slug']]
     toc = ''.join(f'<a href="#{slug_id(h)}">{E(h)}</a>' for h, _, _ in s['sections'])
-    secs = ''.join(f'''<section class="sec reveal" id="{slug_id(h)}"><div class="n">{k + 1:02d}</div><h2>{E(h)}</h2>{"".join(f"<p>{p}</p>" for p in ps)}
+    secs = ''.join(f'''<section class="sec reveal adv" id="{slug_id(h)}"><div class="n">{k + 1:02d}</div><h2>{E(h)}</h2>{"".join(f"<p>{p}</p>" for p in ps)}
 <div class="sowhat"><b>{ARROW} What to do</b><p>{so}</p></div></section>''' for k, (h, ps, so) in enumerate(s['sections']))
     faq = ''.join(f'<details class="reveal"><summary>{E(q)}<i></i></summary><p>{E(a)}</p></details>' for q, a in s['faq'])
     own = s.get('video'); vid = own or RELATED.get(s['slug'])
@@ -160,13 +160,13 @@ def study(s):
 <div class="bigstat"><div class="v">{count(stat)}</div><p>{E(lab)}</p></div>
 <p class="byline"><img src="/assets/me-128.webp" alt="" width="28" height="28">By&nbsp;<a href="/about/">{SITE['name']}</a>&nbsp;· {s['date']} · {max(2, round(words / 220))} min read</p></section>
 <div class="answer reveal"><b>The short answer</b><p>{s['answer']}</p></div>
-<nav class="toc reveal"><b>In this study</b>{toc}<a href="#method">How I did it</a></nav>
+<nav class="toc reveal adv"><b>In this study</b>{toc}<a href="#method">How I did it</a></nav>
 {chart(s['chart'])}
 {secs}
-{chart(s['chart2']) if s.get('chart2') else ''}
+<div class="adv">{chart(s['chart2']) if s.get('chart2') else ''}</div>
 {video}
-<section class="sec method reveal" id="method"><h2>How I did it</h2><p>{s['method']}</p><h3>The limits</h3><p>{s['limits']}</p></section>
-<section class="faq"><h2 class="reveal">Questions</h2>{faq}</section>
+<section class="sec method reveal adv" id="method"><h2>How I did it</h2><p>{s['method']}</p><h3>The limits</h3><p>{s['limits']}</p></section>
+<section class="faq adv"><h2 class="reveal">Questions</h2>{faq}</section>
 {author()}
 <nav class="pn"><a class="reveal" href="/studies/{prv['slug']}/"><small>← Previous</small><b>{E(short_title(prv))}</b></a><a class="reveal" href="/studies/{nxt['slug']}/"><small>Next →</small><b>{E(short_title(nxt))}</b></a></nav>
 </main>'''
@@ -191,22 +191,18 @@ def build():
     ticker = ''.join(f'<span><b>{t["pfull"]}%</b> of {t["n"]} videos had AI {E(t["name"][0].lower() + t["name"][1:])} on its own</span>' for t in sorted([t for t in AT if t['n'] >= 25], key=lambda t: -t['pfull'])[:10])
     areas = ''.join(f'''<a class="acard reveal" href="/ai-automation/{AU.SLUG[a["id"]]}/"><b>{E(a["name"])}</b><span>{sum(t["verdict"] == "auto" for t in a["tasks"])} of {len(a["tasks"])} tasks AI runs alone</span>{ART.art(a["id"], a["tasks"])}</a>''' for a in AU.D['areas'])
     import workflows as WFM
-    WFCARDS = ''.join(f'<a class="wcard reveal" href="/workflows/{w["slug"]}/">{WFM.BADGE(w)}<b>{E(w["title"])}</b><span>{E(w.get("outcome", ""))[:150]}</span><em>Free workflow {ARROW}</em></a>' for w in WFM.W[:4])
+    WFCARDS = ''.join(f'<a class="wcard reveal" href="/workflows/{w["slug"]}/">{WFM.BADGE(w)}<b>{E(w["title"])}</b><em>Free workflow {ARROW}</em></a>' for w in WFM.W[:4])
     home = f'''<main class="home">
 <section class="hero"><div class="hero-bars" aria-hidden="true">{bars}</div><p class="kicker reveal">AI automation for real businesses</p>
 <h1><span class="w">Let</span> <span class="w">AI</span> <span class="w">run</span> <span class="w">the</span> <span class="w">busy</span> <mark class="w">work.</mark></h1>
-<p class="blurb reveal">{E(SITE['blurb'])}</p>
+<p class="blurb reveal">See what AI can run in your business. Use the free workflows, or get a person to set it up.</p>
 <div class="ctas reveal"><a class="btn" href="/ai-automation/">See what AI can automate {ARROW}</a><a class="btn ghost" href="/automate/">Get human help {ARROW}</a></div></section>
-<div class="ticker" aria-hidden="true"><div>{ticker}{ticker}</div></div>
-<section class="stats"><div class="reveal"><b>{count(f"{AU.D['relevant']:,}")}</b><span>AI automation videos read</span></div><div class="reveal" style="--d:80ms"><b>{nauto} of {len(AT)}</b><span>business tasks AI runs on its own</span></div><div class="reveal" style="--d:160ms"><b>{nhum}</b><span>tasks that still need a person</span></div></section>
+<section class="stats"><div class="reveal"><b>{count(f"{AU.D['relevant']:,}")}</b><span>AI automation videos read</span></div><div class="reveal" style="--d:80ms"><b>{nauto} of {len(AT)}</b><span>business tasks AI runs on its own</span></div><div class="reveal" style="--d:160ms"><b>{sum(t['verdict'] == 'assist' for t in AT)}</b><span>where a person checks AI’s work</span></div></section>
 {AU.offer(ARROW)}
 <section class="list"><div class="head reveal"><h2>What AI can automate</h2><a href="/ai-automation/">See every task {ARROW}</a></div><div class="acards">{areas}</div></section>
 <section class="list"><div class="head reveal"><h2>Free workflows</h2><a href="/workflows/">See all {ARROW}</a></div><div class="wcards">{WFCARDS}</div></section>
 <section class="list"><div class="head reveal"><h2>Content research</h2><a href="/studies/">See all {len(STUDIES)} {ARROW}</a></div><div class="cards">{''.join(card(s, i) for i, s in enumerate(STUDIES[:2]))}</div></section>
-<section class="about reveal"><div><p class="kick">Who’s behind this</p><h2>Real data, real people.</h2>
-<p>I’ve started and quit a lot of businesses, and I built an app with AI without knowing how to code (<a href="{SITE['mealmonster']}" rel="noopener">Meal Monster</a>). I run my own channels on AI automations every day.</p>
-<p>Before I recommend anything, I pull the data. Then a real person helps you set up only what actually works for your business.</p>
-<a class="more" href="/automate/">Get help from human professionals {ARROW}</a></div></section>
+
 </main>'''
     ld = [{'@context': 'https://schema.org', '@type': 'WebSite', 'name': SITE['name'], 'url': SITE['url']},
           {'@context': 'https://schema.org', '@type': 'Person', 'name': SITE['name'], 'url': SITE['url'], 'image': SITE['url'] + '/assets/me-400.webp', 'email': 'mailto:' + SITE['email'],

@@ -39,19 +39,19 @@ def page_for(w, page, ARROW, offer):
 <section class="shero"><p class="crumbs"><a href="/">Home</a> <span>/</span> <a href="/workflows/">Workflows</a></p>{BADGE(w)}
 <h1>{E(w["title"])}</h1><p class="lead">{E(w.get("outcome", ""))}</p>
 <div class="wmeta"><span><b>Set up</b>{E(w.get("time_to_set_up", "—"))}</span><span><b>Difficulty</b>{E(w.get("difficulty", "—"))}</span><span><b>From</b>{ev.get("videos_used", "—")} videos</span></div></section>
-<div class="answer reveal"><b>Untested means</b><p>This workflow is built from what the videos in our study show working. We haven’t run it on our own business yet, so it’s free. When we’ve tested it, the tested version (with our results and fixes) becomes paid. General information, not legal, tax or financial advice: check the rules where you operate.</p></div>
-<section class="sec reveal"><h2>What it covers</h2><p>{E(", ".join(TASKNAME.get(t, t) for t in w.get("covers_tasks") or []))}.</p><p><b>Doesn’t cover:</b> {E(w.get("doesnt_cover", ""))}</p></section>
+<div class="answer reveal adv"><b>Untested means</b><p>This workflow is built from what the videos in our study show working. We haven’t run it on our own business yet, so it’s free. When we’ve tested it, the tested version (with our results and fixes) becomes paid. General information, not legal, tax or financial advice: check the rules where you operate.</p></div>
+<section class="sec reveal adv"><h2>What it covers</h2><p>{E(", ".join(TASKNAME.get(t, t) for t in w.get("covers_tasks") or []))}.</p><p><b>Doesn’t cover:</b> {E(w.get("doesnt_cover", ""))}</p></section>
 <section class="sec reveal"><h2>1. Start with the interview</h2><p>Paste this into Claude or ChatGPT. It asks you questions one at a time, then writes a profile of your business that every later step uses.</p>{copybox("Interview prompt", interview(w))}</section>
-<section class="sec reveal"><h2>2. Pick where it runs</h2><div class="twrap"><table class="wtab"><thead><tr><th>Option</th><th>Best for</th><th>Runs on its own</th><th>Monthly cost</th></tr></thead><tbody>{harness}</tbody></table></div>{f"<h3>Models</h3><ul class='wl'>{models}</ul>" if models else ""}</section>
+<section class="sec reveal adv"><h2>2. Pick where it runs</h2><div class="twrap"><table class="wtab"><thead><tr><th>Option</th><th>Best for</th><th>Runs on its own</th><th>Monthly cost</th></tr></thead><tbody>{harness}</tbody></table></div>{f"<h3>Models</h3><ul class='wl'>{models}</ul>" if models else ""}</section>
 <section class="sec reveal"><h2>3. Setup</h2><ol class="wsetup">{setup}</ol></section>
 <section class="sec reveal"><h2>4. How it runs</h2><ol class="wsteps">{steps}</ol></section>
 <section class="sec reveal"><h2>5. The prompts</h2>{prompts}</section>
-<section class="sec reveal"><h2>6. Quality checks</h2><div class="twrap"><table class="wtab"><thead><tr><th>Check</th><th>If it fails</th></tr></thead><tbody>{qa}</tbody></table></div></section>
-<section class="sec reveal"><h2>7. Learning loop</h2>{loop}</section>
+<section class="sec reveal adv"><h2>6. Quality checks</h2><div class="twrap"><table class="wtab"><thead><tr><th>Check</th><th>If it fails</th></tr></thead><tbody>{qa}</tbody></table></div></section>
+<section class="sec reveal adv"><h2>7. Learning loop</h2>{loop}</section>
 <section class="sec reveal"><h2>8. What it still needs from you</h2><div class="wmaint">{maint}</div></section>
 {offer(ARROW)}
-<section class="sec reveal"><h2>9. What goes wrong (and the fix)</h2><div class="twrap"><table class="wtab"><thead><tr><th>Problem</th><th>Fix</th></tr></thead><tbody>{fails}</tbody></table></div></section>
-<section class="sec reveal"><h2>10. Proof from the study</h2><p>{E(ev.get("study_note", ""))}</p><ul class="wex">{exs}</ul></section>
+<section class="sec reveal adv"><h2>9. What goes wrong (and the fix)</h2><div class="twrap"><table class="wtab"><thead><tr><th>Problem</th><th>Fix</th></tr></thead><tbody>{fails}</tbody></table></div></section>
+<section class="sec reveal adv"><h2>10. Proof from the study</h2><p>{E(ev.get("study_note", ""))}</p><ul class="wex">{exs}</ul></section>
 <script src="/assets/workflows.js?v=1" defer></script></main>'''
     page(f'/workflows/{w["slug"]}/', f'{w["title"]}: Free AI Workflow (Untested)'[:65], f'{w.get("outcome", "")} Free, untested AI automation workflow built from real YouTube tutorials: setup, prompts, checks and upkeep.'[:165],
          body, 'article', [{'@context': 'https://schema.org', '@type': 'HowTo', 'name': w['title'], 'description': w.get('outcome', ''), 'step': [{'@type': 'HowToStep', 'name': s.get('name'), 'text': s.get('detail')} for s in w.get('steps') or []]}], 'Workflows', 'reading aipage')
@@ -60,12 +60,12 @@ def page_for(w, page, ARROW, offer):
 def build(page, ARROW, author, offer):
     if not W: return []
     urls = [page_for(w, page, ARROW, offer) for w in W]
-    cards = ''.join(f'''<a class="wcard reveal" href="/workflows/{w["slug"]}/">{BADGE(w)}<b>{E(w["title"])}</b><span>{E(w.get("outcome", ""))}</span>
+    cards = ''.join(f'''<a class="wcard reveal" href="/workflows/{w["slug"]}/">{BADGE(w)}<b>{E(w["title"])}</b><span class="adv">{E(w.get("outcome", ""))}</span>
 <em>{E(w.get("time_to_set_up", ""))} · {E(w.get("difficulty", ""))} · {(w.get("evidence") or {}).get("videos_used", "")} videos {ARROW}</em></a>''' for w in W)
     body = f'''<main class="study aistudy wf">
 <section class="shero"><p class="crumbs"><a href="/">Home</a> <span>/</span> Workflows</p><h1>AI automation workflows</h1>
-<p class="lead">Step-by-step automations built from what {len(W)} sets of real YouTube tutorials show working: the interview, the tools, the prompts, the checks and the upkeep. Untested ones are free. Tested ones come with our own results.</p></section>
-<div class="wpricing reveal"><div><span class="wbadge u">Untested · Free</span><p>Built from the study. Use it, improve it.</p></div><div><span class="wbadge t">Tested · $15</span><p>We ran it on our own business. Includes our results and fixes.</p></div><div><span class="wbadge t">All access · $39/mo</span><p>Every tested workflow, plus new ones as they’re tested.</p></div></div>
+<p class="lead">Free step-by-step automations, built from real tutorials.</p></section>
+<div class="wpricing reveal adv"><div><span class="wbadge u">Untested · Free</span><p>Built from the study. Use it, improve it.</p></div><div><span class="wbadge t">Tested · $15</span><p>We ran it on our own business. Includes our results and fixes.</p></div><div><span class="wbadge t">All access · $39/mo</span><p>Every tested workflow, plus new ones as they’re tested.</p></div></div>
 <section class="list"><div class="wcards">{cards}</div></section>
 {offer(ARROW)}</main>'''
     page('/workflows/', 'Free AI Automation Workflows (Built From 2,000 Videos)', 'Free, step-by-step AI automation workflows built from real YouTube tutorials: interview prompt, tools, setup, prompts, quality checks, learning loop and upkeep.', body, 'website', None, 'Workflows', 'aipage')

@@ -73,14 +73,14 @@ def build(page, ARROW, author):
 <h1>What AI can automate</h1>
 <p class="lede1">AI runs <b>{nv["auto"]} of {len(tasks)}</b> business tasks on its own, from {D["relevant"]:,} AI automation videos. Tap a task for the tools and a free workflow.</p></section>
 <section class="achart tight" id="chart">{LEGEND}{tabs}{sorts}<div class="arows" id="arows">{chart}</div></section>
-{TL.section()}
+<div class="adv">{TL.section()}</div>
 {offer(ARROW)}
 <section class="list"><div class="head reveal"><h2>By business area</h2></div><div class="acards">{cards}</div></section>
-<section class="sec two reveal"><div><h2>What AI runs on its own</h2><ol class="alist">{lst(top_auto)}</ol></div><div><h2>What’s still human</h2><ol class="alist">{lsth(top_human)}</ol></div></section>
-<section class="sec reveal"><h2>The short answer</h2><p>{ANSWER}</p></section>
-<details class="sec method reveal" id="method"><summary><h2>How we did it</h2></summary><p>{METHOD}</p><h3>The limits</h3><p>{LIMITS}</p></details>
-<section class="faq"><h2 class="reveal">Questions</h2>{"".join(f'<details class="reveal"><summary>{E(q)}<i></i></summary><p>{E(a)}</p></details>' for q, a in FAQ)}</section>
-{author()}</main>'''
+<section class="sec two reveal adv"><div><h2>What AI runs on its own</h2><ol class="alist">{lst(top_auto)}</ol></div><div><h2>What’s still human</h2><ol class="alist">{lsth(top_human)}</ol></div></section>
+<section class="sec reveal adv"><h2>The short answer</h2><p>{ANSWER}</p></section>
+<details class="sec method reveal adv" id="method"><summary><h2>How we did it</h2></summary><p>{METHOD}</p><h3>The limits</h3><p>{LIMITS}</p></details>
+<section class="faq adv"><h2 class="reveal">Questions</h2>{"".join(f'<details class="reveal"><summary>{E(q)}<i></i></summary><p>{E(a)}</p></details>' for q, a in FAQ)}</section>
+<div class="adv">{author()}</div></main>'''
     ld = [{'@context': 'https://schema.org', '@type': 'Article', 'headline': 'What AI can automate in a business', 'datePublished': DATE, 'dateModified': DATE,
            'author': {'@type': 'Person', 'name': 'Elijah Westbrook'}, 'mainEntityOfPage': 'https://elijahwestbrook.com/ai-automation/'},
           {'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in FAQ]},
@@ -93,7 +93,7 @@ def build(page, ARROW, author):
         if a['id'] == 'content':
             P = [p for p in D['platforms'] if sum(t['platforms'].get(p, 0) for t in ts) >= 5]
             mx = max([t['platforms'].get(p, 0) for t in ts for p in P] or [1])
-            plat = ('<section class="aplat reveal"><h2>Every platform, every part of the job</h2><p class="note">How many videos automate each part, per platform. Darker = more videos.</p><div class="awrap"><table><thead><tr><th>Part of the job</th>'
+            plat = ('<section class="aplat reveal adv"><h2>Every platform, every part of the job</h2><p class="note">How many videos automate each part, per platform. Darker = more videos.</p><div class="awrap"><table><thead><tr><th>Part of the job</th>'
                     + ''.join(f'<th>{E(D["platforms"][p])}</th>' for p in P) + '</tr></thead><tbody>'
                     + ''.join(f'<tr><th>{E(t["name"])}</th>' + ''.join(f'<td{" class=dk" if t["platforms"].get(p, 0) / mx > .45 else ""} style="--o:{t["platforms"].get(p, 0) / mx:.2f}">{t["platforms"].get(p, 0) or ""}</td>' for p in P) + '</tr>' for t in ts if t['n'])
                     + '</tbody></table></div></section>')
@@ -105,7 +105,7 @@ def build(page, ARROW, author):
 <div class="aphoto">{ART.art(a["id"], a["tasks"], "art big")}</div></section>
 <section class="achart tight">{LEGEND}<div class="arows">{"".join(row(t, a["id"]) for t in sorted(ts, key=lambda t: (t["n"] < 10, -(t["pfull"] + t["passist"] / 2))))}</div></section>
 {plat}{offer(ARROW)}
-<nav class="pn"><a class="reveal" href="/ai-automation/"><small>← All tasks</small><b>Every business task, ranked</b></a><a class="reveal" href="/ai-automation/{SLUG[nxt["id"]]}/"><small>Next →</small><b>{E(nxt["name"])}</b></a></nav>
+<nav class="pn adv"><a class="reveal" href="/ai-automation/"><small>← All tasks</small><b>Every business task, ranked</b></a><a class="reveal" href="/ai-automation/{SLUG[nxt["id"]]}/"><small>Next →</small><b>{E(nxt["name"])}</b></a></nav>
 {author()}</main>'''
         page(f'/ai-automation/{SLUG[a["id"]]}/', TITLES[a['id']][0], f'Which {a["name"].lower()} tasks AI runs alone, which need a person to check, and which stay human, from {a["n"]:,} YouTube videos.', body, 'article',
              [{'@context': 'https://schema.org', '@type': 'Article', 'headline': TITLES[a['id']][1], 'datePublished': DATE, 'dateModified': DATE, 'author': {'@type': 'Person', 'name': 'Elijah Westbrook'},

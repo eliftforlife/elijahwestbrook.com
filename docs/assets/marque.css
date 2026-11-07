@@ -371,3 +371,15 @@ details.method > summary h2 { display: inline; } details.method > summary::after
 .aoffer3 img { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; flex: none; }
 .aoffer3 h2 { flex: 1; color: #000; font-size: clamp(22px, 3vw, 36px); line-height: 1; margin: 0; }
 @media (max-width: 720px) { .aoffer3 { gap: 14px; padding: 16px; flex-wrap: wrap; } .aoffer3 img { width: 52px; height: 52px; } .home > .aoffer3 { margin: 40px 16px 0; } .aoffer3 .ao-btn { margin-left: 66px; } }
+
+/* 11-07: Simple / Detailed */
+html.js:not(.detailed) .adv { display: none !important; }
+.modesw { display: inline-flex; margin-top: 18px; border: 1px solid #333; border-radius: 999px; padding: 3px; }
+.modesw button { background: none; border: 0; color: #8f8f8f; font: 600 11.5px/1 var(--wide); font-variation-settings: "wdth" 112; text-transform: uppercase; letter-spacing: .07em; padding: 8px 14px; border-radius: 999px; cursor: pointer; }
+.modesw button.on { background: #fff; color: #000; }
+.home .hero .modesw { display: none; }
+@media (max-width: 720px) {
+  .stats { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+  .stats div { padding: 28px 6px 24px !important; } .stats div + div { border-top: 0 !important; border-left: 1px solid var(--line) !important; }
+  .stats b { font-size: 22px !important; white-space: normal !important; } .stats > div > span { font-size: 11.5px !important; line-height: 1.3; }
+}
