@@ -16,7 +16,7 @@ SUB = SITE['youtube'] + '?sub_confirmation=1'
 # phone menu. Styles/JS: assets/gh.css + gh.js (master copy in 0 HQ/Tools/site header/).
 GH_CHEV = '<svg viewBox="0 0 8 8" aria-hidden="true"><path d="M2.5 1 5.5 4 2.5 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 def header(active=''):
-    items = (('AI automation', '/ai-automation/'), ('Workflows', '/workflows/'), ('Tools', '/tools/social-media-scheduler/'), ('Research', '/studies/'), ('About', '/about/'))
+    items = (('AI automation', '/ai-automation/'), ('Workflows', '/workflows/'), ('Tools', '/tools/'), ('Research', '/studies/'), ('About', '/about/'))
     nav = ''.join(f'<a href="{u}"{" aria-current=page" if active == k else ""}>{k}</a>' for k, u in items)
     return f'''<header class="gh" style="--gh-logo-r: 50%;"><div class="gh-in"><a class="gh-brand" href="/"><img src="/assets/me-128.webp" alt="" width="24" height="24">{SITE['name']}</a>
 <nav class="gh-links" aria-label="Main">{nav}</nav>
@@ -51,7 +51,7 @@ def footer():
 <div class="cols">
 <div class="me"><a class="brand" href="/"><img src="/assets/me-128.webp" alt="" width="40" height="40" loading="lazy"><span>{SITE['name']}</span></a>
 <p>{E(SITE['tagline'])} What AI can really automate, free workflows to do it, and real people to set it up.</p><div class="socs">{soc}</div></div>
-<nav><b>Automate</b><a href="/ai-automation/">What AI can automate</a><a href="/workflows/">Free workflows</a><a href="/tools/social-media-scheduler/">Scheduler comparison</a><a href="/automate/">Get human help</a></nav>
+<nav><b>Automate</b><a href="/ai-automation/">What AI can automate</a><a href="/workflows/">Free workflows</a><a href="/tools/">Tool comparisons</a><a href="/automate/">Get human help</a></nav>
 <nav><b>More</b><a href="/studies/">Content research</a><a href="/about/">About</a><a href="mailto:{SITE['email']}">{SITE['email']}</a></nav>
 </div><p class="fine">© {TODAY[:4]} {SITE['name']}. Studies use public data, summarized. Nothing here is financial advice.</p></footer>'''
 
@@ -224,7 +224,7 @@ def build():
     page('/about/', 'About Elijah Westbrook: AI Automation That Works', 'Elijah Westbrook helps businesses hand busy work to AI, based on 2,000 AI automation videos, free workflows and real people who set it up.', about, active='About',
          ld=[{'@context': 'https://schema.org', '@type': 'ProfilePage', 'mainEntity': {'@type': 'Person', 'name': SITE['name'], 'url': SITE['url'], 'image': SITE['url'] + '/assets/me-400.webp', 'sameAs': [u for _, u, _, _ in SOCIALS]}}])
     page('/404.html', 'Not found | ' + SITE['name'], 'Page not found.', f'<main class="study"><section class="shero"><h1>That page doesn’t exist.</h1><p><a class="btn" href="/studies/">See all the studies {ARROW}</a></p></section></main>')
-    import automation, tools, workflows; ai_urls = automation.build(page, ARROW, author) + tools.build(page, ARROW, author, automation.offer) + workflows.build(page, ARROW, author, automation.offer)
+    import automation, tools, toolcats, workflows; ai_urls = automation.build(page, ARROW, author) + tools.build(page, ARROW, author, automation.offer) + toolcats.build(page, ARROW, author, automation.offer, tools.SUG) + workflows.build(page, ARROW, author, automation.offer)
     urls = ['/', '/studies/', '/about/'] + [f'/studies/{s["slug"]}/' for s in STUDIES] + ai_urls
     open(f'{OUT}/sitemap.xml', 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
         ''.join(f'<url><loc>{SITE["url"]}{u}</loc><lastmod>{TODAY}</lastmod></url>\n' for u in urls) + '</urlset>\n')

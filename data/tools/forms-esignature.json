@@ -1,0 +1,191 @@
+[
+    {
+        "name": "Google Forms",
+        "website": "https://forms.google.com",
+        "pricing_url": "https://workspace.google.com/pricing",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "Free with a Google account",
+        "start_usd": 0,
+        "small_business_plan": "Free (or Workspace Business Starter)",
+        "cost_small_business_usd": 0,
+        "cost_billed": "monthly",
+        "pricing_model": "free",
+        "usage_note": "",
+        "open_source": false,
+        "features": {
+            "forms": true,
+            "esign": false,
+            "payments": null,
+            "webhooks": null,
+            "free": true
+        },
+        "since": 2008,
+        "since_note": "First introduced 2008 (Wikipedia).",
+        "best_for": "Free simple surveys and sign-ups",
+        "notes": "Priced as free. Workspace Business Starter is $7 per user monthly (20% promo through Feb 2027) and includes Forms. Google eSignature sits in Docs/Drive from the Standard plan, not in Forms. Payments and webhooks not stated.",
+        "sources": [
+            "https://workspace.google.com/pricing",
+            "https://workspaceupdates.googleblog.com/2023/08/esignature-google-docs-google-drive.html",
+            "https://en.wikipedia.org/wiki/Google_Forms"
+        ]
+    },
+    {
+        "name": "PandaDoc",
+        "website": "https://www.pandadoc.com",
+        "pricing_url": "https://www.pandadoc.com/pricing/",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "Free eSign: about 5 documents a month, limited editor, no branding or integrations",
+        "start_usd": 35,
+        "small_business_plan": "Starter",
+        "cost_small_business_usd": 35,
+        "cost_billed": "monthly",
+        "pricing_model": "per seat",
+        "usage_note": "",
+        "open_source": false,
+        "features": {
+            "forms": null,
+            "esign": true,
+            "payments": true,
+            "webhooks": true,
+            "free": true
+        },
+        "since": 2011,
+        "since_note": "Founded 2011 per Wikipedia history text (infobox says 2013).",
+        "best_for": "Quotes and proposals that get signed",
+        "notes": "Starter is $19 per seat monthly when paid yearly, $35 on monthly billing. Business is $49 yearly, $65 monthly. Sources disagree on the free send limit (5 a month vs 60 a year). Payments and webhooks not read on the pricing page.",
+        "sources": [
+            "https://www.pandadoc.com/pricing/",
+            "https://www.pandadoc.com/blog/pandadoc-pricing-value/",
+            "https://www.pandadoc.com/free-electronic-signature-software/?ss=home_home_header-nav",
+            "https://en.wikipedia.org/wiki/PandaDoc"
+        ]
+    },
+    {
+        "name": "Typeform",
+        "website": "https://www.typeform.com",
+        "pricing_url": "https://www.typeform.com/pricing",
+        "checked": "2026-11-07",
+        "free_plan": null,
+        "free_plan_limits": "",
+        "start_usd": 39,
+        "small_business_plan": "Basic",
+        "cost_small_business_usd": 39,
+        "cost_billed": "monthly",
+        "pricing_model": "flat",
+        "usage_note": "",
+        "open_source": false,
+        "features": {
+            "forms": true,
+            "esign": false,
+            "payments": null,
+            "webhooks": null,
+            "free": null
+        },
+        "since": 2012,
+        "since_note": "Founded 2012; beta April 2013, official launch February 2014 (Wikipedia).",
+        "best_for": "Good-looking one-question-at-a-time forms",
+        "notes": "Basic $39 monthly ($28 yearly) for 100 responses; Plus $79 (1,000 responses, 3 users); Business $129. Search snippet only; pricing page was not read, and one source is about 2 years old. Free plan not stated.",
+        "sources": [
+            "https://www.typeform.com/pricing",
+            "https://help.typeform.com/hc/en-us/articles/360060147392-Plus-plan",
+            "https://en.wikipedia.org/wiki/Typeform",
+            "https://en.wikipedia.org/wiki/Typeform_(service)"
+        ]
+    },
+    {
+        "name": "Tally",
+        "website": "https://tally.so",
+        "pricing_url": "https://tally.so/pricing",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "Unlimited forms and submissions (fair use); 10 MB file uploads",
+        "start_usd": 29,
+        "small_business_plan": "Pro",
+        "cost_small_business_usd": 29,
+        "cost_billed": "monthly",
+        "pricing_model": "flat",
+        "usage_note": "",
+        "open_source": false,
+        "features": {
+            "forms": true,
+            "esign": true,
+            "payments": true,
+            "webhooks": null,
+            "free": true
+        },
+        "since": 2020,
+        "since_note": "Founded 2020 (Tally press kit); Product Hunt launch March 2021.",
+        "best_for": "Free forms with payments and signatures",
+        "notes": "Pro is $29 monthly ($24 yearly) per the help page; the pricing snippet may be out of date. Business is $74-$89. Payments use Stripe with no extra Tally fee per third-party sources. Webhooks not confirmed.",
+        "sources": [
+            "https://tally.so/help/tally-pro",
+            "https://tally.so/pricing",
+            "https://tally.so/help/best-free-online-form-builders",
+            "https://tally.so/help/press-kit"
+        ]
+    },
+    {
+        "name": "DocuSign",
+        "website": "https://www.docusign.com",
+        "pricing_url": "https://www.docusign.com/blog/docusign-plans-and-pricing",
+        "checked": "2026-11-07",
+        "free_plan": false,
+        "free_plan_limits": "",
+        "start_usd": 15,
+        "small_business_plan": "Standard (annual commitment, billed monthly)",
+        "cost_small_business_usd": 30,
+        "cost_billed": "monthly",
+        "pricing_model": "per seat",
+        "usage_note": "SMS delivery from $0.36 each; ID verification from $2.40 per try",
+        "open_source": false,
+        "features": {
+            "forms": false,
+            "esign": true,
+            "payments": true,
+            "webhooks": true,
+            "free": false
+        },
+        "since": 2003,
+        "since_note": "Founded 2003 (Wikipedia).",
+        "best_for": "Legally binding contract signing",
+        "notes": "Personal is $15 with no contract ($10-$11 on annual). Standard $30 per user (annual contract, billed monthly), $45 with no contract. Standard allows 100 envelopes per user a year. Payments and webhooks (Connect) not read on pricing page.",
+        "sources": [
+            "https://www.docusign.com/blog/docusign-plans-and-pricing",
+            "https://ecom.docusign.com/plans-and-pricing/esignature",
+            "https://en.wikipedia.org/wiki/DocuSign"
+        ]
+    },
+    {
+        "name": "Jotform",
+        "website": "https://www.jotform.com",
+        "pricing_url": "https://www.jotform.com/pricing/",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "5 forms, 100 submissions a month, 10 payment submissions, Jotform branding",
+        "start_usd": 39,
+        "small_business_plan": "Bronze",
+        "cost_small_business_usd": 39,
+        "cost_billed": "monthly",
+        "pricing_model": "flat",
+        "usage_note": "",
+        "open_source": false,
+        "features": {
+            "forms": true,
+            "esign": true,
+            "payments": true,
+            "webhooks": true,
+            "free": true
+        },
+        "since": 2006,
+        "since_note": "Established 2006 (Wikipedia).",
+        "best_for": "Many templates and payment forms",
+        "notes": "Bronze $39 monthly ($34 yearly): 25 forms, 1,000 submissions. Silver $49, Gold $129. Prices from Jotform's Teams page via search; main pricing page not read. E-sign means Jotform Sign.",
+        "sources": [
+            "https://www.jotform.com/teams/pricing/",
+            "https://www.jotform.com/answers/16965291-what-are-jotforms-pricing-plans",
+            "https://en.wikipedia.org/wiki/Jotform"
+        ]
+    }
+]

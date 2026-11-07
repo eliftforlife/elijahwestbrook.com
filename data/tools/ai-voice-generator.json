@@ -1,0 +1,213 @@
+[
+        {
+                "name": "ElevenLabs",
+                "website": "https://elevenlabs.io",
+                "pricing_url": "https://elevenlabs.io/pricing",
+                "checked": "2026-11-07",
+                "free_plan": true,
+                "free_plan_limits": "10,000 credits a month (about 10 minutes), 3 Studio projects, no commercial license",
+                "start_usd": 6,
+                "small_business_plan": "Creator",
+                "cost_small_business_usd": 22,
+                "cost_billed": "monthly",
+                "pricing_model": "credits",
+                "usage_note": "About $0.18 per extra minute on Creator",
+                "open_source": false,
+                "features": {
+                        "clone": true,
+                        "music": true,
+                        "api": true,
+                        "commercial": true,
+                        "free": true
+                },
+                "since": 2022,
+                "since_note": "Company founded 2022; beta platform released January 2023 (Wikipedia).",
+                "best_for": "Realistic voiceovers and voice cloning",
+                "notes": "Starter $6 (30,000 credits, instant clone). Creator $22 (121,000 credits, professional clone; first month $11). Yearly pays for 10 months. Credits do not roll over. Music not confirmed on pricing page.",
+                "sources": [
+                        "https://elevenlabs.io/pricing",
+                        "https://en.wikipedia.org/wiki/ElevenLabs"
+                ]
+        },
+        {
+                "name": "Suno",
+                "website": "https://suno.com",
+                "pricing_url": "https://suno.com/pricing",
+                "checked": "2026-11-07",
+                "free_plan": true,
+                "free_plan_limits": "50 credits a day, no downloads of songs, no commercial rights",
+                "start_usd": 10,
+                "small_business_plan": "Pro",
+                "cost_small_business_usd": 10,
+                "cost_billed": "monthly",
+                "pricing_model": "credits",
+                "usage_note": "",
+                "open_source": false,
+                "features": {
+                        "clone": null,
+                        "music": true,
+                        "api": null,
+                        "commercial": true,
+                        "free": true
+                },
+                "since": 2023,
+                "since_note": "Widely available December 2023; earlier open-source Bark model April 2023 (Wikipedia).",
+                "best_for": "Making full songs from a text prompt",
+                "notes": "Pro $10 monthly ($8 yearly): 2,500 credits, 20 song downloads a month, commercial rights. Premier $30 (10,000 credits, 60 downloads). Credits do not roll over.",
+                "sources": [
+                        "https://suno.com/pricing",
+                        "https://en.wikipedia.org/wiki/Suno_AI"
+                ]
+        },
+        {
+                "name": "Fish Audio",
+                "website": "https://fish.audio",
+                "pricing_url": "https://fish.audio/plan/",
+                "checked": "2026-11-07",
+                "free_plan": true,
+                "free_plan_limits": "8,000 credits a month, 7 minutes, 500 characters per generation",
+                "start_usd": 15,
+                "small_business_plan": "Plus",
+                "cost_small_business_usd": 15,
+                "cost_billed": "monthly",
+                "pricing_model": "credits",
+                "usage_note": "API is pay as you go, billed separately; rates not shown on the plan page",
+                "open_source": false,
+                "features": {
+                        "clone": true,
+                        "music": null,
+                        "api": true,
+                        "commercial": true,
+                        "free": true
+                },
+                "since": null,
+                "since_note": "Not published.",
+                "best_for": "Cheap voice cloning with many voices",
+                "notes": "Plus is $15 monthly ($11 yearly), 250,000 credits. Pro $100 monthly. Free plan is personal use only despite the feature list saying commercial. Music not stated.",
+                "sources": [
+                        "https://fish.audio/plan/"
+                ]
+        },
+        {
+                "name": "Cartesia",
+                "website": "https://cartesia.ai",
+                "pricing_url": "https://cartesia.ai/pricing",
+                "checked": "2026-11-07",
+                "free_plan": true,
+                "free_plan_limits": "20,000 credits and $1 of agent credit",
+                "start_usd": 5,
+                "small_business_plan": "Pro",
+                "cost_small_business_usd": 5,
+                "cost_billed": "monthly",
+                "pricing_model": "credits",
+                "usage_note": "$0.03 per minute of voice agent calls, plus phone and LLM costs; overage $65 per 1M credits on Pro",
+                "open_source": false,
+                "features": {
+                        "clone": true,
+                        "music": false,
+                        "api": true,
+                        "commercial": true,
+                        "free": true
+                },
+                "since": 2023,
+                "since_note": "Company founded 2023 (Lightspeed profile and other directories); product launch year not published.",
+                "best_for": "Fast voices for phone and voice agents",
+                "notes": "Pro $5 gives 100K credits, commercial license and instant cloning. Startup $49 adds professional cloning. With overages off, requests stop when credits run out.",
+                "sources": [
+                        "https://cartesia.ai/pricing",
+                        "https://lsvp.com/company/cartesia/"
+                ]
+        },
+        {
+                "name": "Chatterbox",
+                "website": "https://github.com/resemble-ai/chatterbox",
+                "pricing_url": "https://github.com/resemble-ai/chatterbox",
+                "checked": "2026-11-07",
+                "free_plan": true,
+                "free_plan_limits": "Whole tool is free; you run it yourself",
+                "start_usd": 0,
+                "small_business_plan": "Self-hosted (free)",
+                "cost_small_business_usd": 0,
+                "cost_billed": "monthly",
+                "pricing_model": "free",
+                "usage_note": "",
+                "open_source": true,
+                "features": {
+                        "clone": true,
+                        "music": false,
+                        "api": null,
+                        "commercial": null,
+                        "free": true
+                },
+                "since": 2025,
+                "since_note": "Original Chatterbox released May 2025 by Resemble AI (ThursdAI release tracker).",
+                "best_for": "Free local voice cloning if you can run code",
+                "notes": "MIT license. README says it is retired as of August 2026: no support or updates. You pay for your own computer. Output carries a watermark. No hosted service.",
+                "sources": [
+                        "https://github.com/resemble-ai/chatterbox",
+                        "https://thursdai.news/companies/resemble-ai"
+                ],
+                "status": "Retired"
+        },
+        {
+                "name": "Murf",
+                "website": "https://murf.ai",
+                "pricing_url": "https://murf.ai/pricing",
+                "checked": "2026-11-07",
+                "free_plan": true,
+                "free_plan_limits": "2 projects, 10 minutes of voice generation",
+                "start_usd": 19,
+                "small_business_plan": "Creator",
+                "cost_small_business_usd": 19,
+                "cost_billed": "yearly",
+                "pricing_model": "flat",
+                "usage_note": "",
+                "open_source": false,
+                "features": {
+                        "clone": null,
+                        "music": null,
+                        "api": null,
+                        "commercial": true,
+                        "free": true
+                },
+                "since": 2020,
+                "since_note": "Company founded October 2020 (Elevation Capital profile); product launch year not published.",
+                "best_for": "Studio-style voiceovers for presentations",
+                "notes": "Creator $19 a month paid yearly ($228): 24 hours of voice a year, commercial rights. Business $66. A 2026 guide lists different tiers ($29/$49), so plans may have changed. Murf's pricing page would not load.",
+                "sources": [
+                        "https://murf.ai/blog/best-ai-voice-generators",
+                        "https://elevationcapital.com/murf-ai"
+                ]
+        },
+        {
+                "name": "OpenAI TTS",
+                "website": "https://platform.openai.com",
+                "pricing_url": "https://developers.openai.com/api/docs/models/gpt-4o-mini-tts",
+                "checked": "2026-11-07",
+                "free_plan": false,
+                "free_plan_limits": "",
+                "start_usd": null,
+                "small_business_plan": "API pay as you go",
+                "cost_small_business_usd": null,
+                "cost_billed": "usage",
+                "pricing_model": "usage",
+                "usage_note": "$0.60 per 1M text tokens in + $12 per 1M audio tokens out; about $0.015 a minute (community estimate)",
+                "open_source": false,
+                "features": {
+                        "clone": false,
+                        "music": false,
+                        "api": true,
+                        "commercial": null,
+                        "free": false
+                },
+                "since": 2023,
+                "since_note": "TTS-1 API launched November 2023 at OpenAI DevDay (Speech Technology Magazine).",
+                "best_for": "Pay-per-use speech inside your own app",
+                "notes": "No monthly plan. OpenAI's model page lists gpt-4o-mini-tts as deprecated; check what replaced it. The per-minute figure is not official. No custom voice cloning stated.",
+                "sources": [
+                        "https://developers.openai.com/api/docs/models/gpt-4o-mini-tts",
+                        "https://community.openai.com/t/understanding-gpt-4o-mini-tts-pricing-input-characters-cost/1151816",
+                        "https://www.speechtechmag.com/Articles/News/Speech-Technology-News/OpenAI-Launches-TTS-Models-and-APIs-161366.aspx"
+                ]
+        }
+]

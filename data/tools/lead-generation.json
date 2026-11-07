@@ -1,0 +1,359 @@
+[
+  {
+    "name": "Instantly",
+    "website": "https://instantly.ai",
+    "pricing_url": "https://instantly.ai/pricing",
+    "checked": "2026-11-07",
+    "free_plan": null,
+    "free_plan_limits": "not stated",
+    "start_usd": 47,
+    "small_business_plan": "Outreach Growth",
+    "cost_small_business_usd": 47,
+    "cost_billed": "monthly",
+    "pricing_model": "flat",
+    "usage_note": "",
+    "open_source": false,
+    "features": {
+      "database": true,
+      "enrich": true,
+      "send": true,
+      "linkedin": null,
+      "free": null
+    },
+    "since": null,
+    "since_note": "Not published.",
+    "best_for": "Cold email sending at volume",
+    "notes": "Sending, lead database and credits are sold as separate plans. Outreach Growth ($47) sends 5,000 emails/mo but has no lead database. Page showed conflicting prices for some tiers. Free plan not stated.",
+    "sources": [
+      "https://instantly.ai/pricing"
+    ]
+  },
+  {
+    "name": "Apollo",
+    "website": "https://www.apollo.io",
+    "pricing_url": "https://www.apollo.io/pricing",
+    "checked": "2026-11-07",
+    "free_plan": true,
+    "free_plan_limits": "75 credits a month (900 a year), 2 sequences",
+    "start_usd": 49,
+    "small_business_plan": "Basic",
+    "cost_small_business_usd": 49,
+    "cost_billed": "yearly",
+    "pricing_model": "per seat",
+    "usage_note": "",
+    "open_source": false,
+    "features": {
+      "database": true,
+      "enrich": true,
+      "send": true,
+      "linkedin": null,
+      "free": true
+    },
+    "since": 2015,
+    "since_note": "Founded 2015 (Apollo about page).",
+    "best_for": "All-in-one lead lists plus email sequences",
+    "notes": "$49 per user is the yearly-billed price (30,000 credits a year). Monthly price not confirmed. Free plan connects Gmail only. Credits do not roll over. Prices come from Apollo's own articles; its pricing page did not load plan prices.",
+    "sources": [
+      "https://www.apollo.io/pricing",
+      "https://www.apollo.io/insights/more-information-on-what-they-are-paying-for-in-apollo-plan-detailsusage-walkthrough",
+      "https://www.apollo.io/about"
+    ]
+  },
+  {
+    "name": "Clay",
+    "website": "https://www.clay.com",
+    "pricing_url": "https://www.clay.com/pricing",
+    "checked": "2026-11-07",
+    "free_plan": true,
+    "free_plan_limits": "500 actions and 100 data credits a month, 200 rows per table",
+    "start_usd": 60,
+    "small_business_plan": "Launch",
+    "cost_small_business_usd": 60,
+    "cost_billed": "monthly",
+    "pricing_model": "credits",
+    "usage_note": "",
+    "open_source": false,
+    "features": {
+      "database": null,
+      "enrich": true,
+      "send": true,
+      "linkedin": null,
+      "free": true
+    },
+    "since": 2017,
+    "since_note": "Began in Brooklyn in 2017 (Clay about page).",
+    "best_for": "Building enriched lead lists from many sources",
+    "notes": "Launch is 'starts at $60' monthly ($54 yearly). Page also showed conflicting headline prices ($167 Launch). Free plan cannot launch email campaigns. Sending needs a paid plan.",
+    "sources": [
+      "https://www.clay.com/pricing",
+      "https://www.clay.com/about"
+    ]
+  },
+  {
+    "name": "Anymail Finder",
+    "website": "https://anymailfinder.com",
+    "pricing_url": "https://anymailfinder.com/pricing",
+    "checked": "2026-11-07",
+    "free_plan": false,
+    "free_plan_limits": "7-day trial with 100 credits",
+    "start_usd": 29,
+    "small_business_plan": "Starter (400 credits)",
+    "cost_small_business_usd": 29,
+    "cost_billed": "monthly",
+    "pricing_model": "credits",
+    "usage_note": "Credits are charged per verified email found",
+    "open_source": false,
+    "features": {
+      "database": null,
+      "enrich": true,
+      "send": null,
+      "linkedin": null,
+      "free": false
+    },
+    "since": 2015,
+    "since_note": "Finding emails since 2015 (Anymail Finder about page).",
+    "best_for": "Finding verified business emails",
+    "notes": "Monthly plans run $29 for 400 credits up to $799 for 100,000. Yearly billing is cheaper and has no trial. Sending and lead database not mentioned.",
+    "sources": [
+      "https://anymailfinder.com/pricing",
+      "https://anymailfinder.com/about"
+    ]
+  },
+  {
+    "name": "PhantomBuster",
+    "website": "https://phantombuster.com",
+    "pricing_url": "https://phantombuster.com/pricing",
+    "checked": "2026-11-07",
+    "free_plan": false,
+    "free_plan_limits": "14-day trial: 2 execution hours, 5 slots, 50 email credits",
+    "start_usd": 69,
+    "small_business_plan": "Starter",
+    "cost_small_business_usd": 69,
+    "cost_billed": "monthly",
+    "pricing_model": "flat",
+    "usage_note": "",
+    "open_source": false,
+    "features": {
+      "database": null,
+      "enrich": true,
+      "send": null,
+      "linkedin": true,
+      "free": false
+    },
+    "since": null,
+    "since_note": "Not published.",
+    "best_for": "Automating LinkedIn and web data pulls",
+    "notes": "Starter: 20 execution hours, 5 slots, 500 email credits, about $56 yearly. Price taken from PhantomBuster's own blog; the pricing page itself would not load. Priced per workspace, not per user.",
+    "sources": [
+      "https://phantombuster.com/blog/tools/phantombuster-vs-instantly/",
+      "https://phantombuster.com/blog/tools/phantombuster-features-explained/"
+    ]
+  },
+  {
+    "name": "LinkedIn Sales Navigator",
+    "website": "https://business.linkedin.com/sales-solutions",
+    "pricing_url": "https://business.linkedin.com/sales-solutions/compare-plans",
+    "checked": "2026-11-07",
+    "free_plan": false,
+    "free_plan_limits": "free trial offered, length not stated",
+    "start_usd": 119.99,
+    "small_business_plan": "Core",
+    "cost_small_business_usd": 119.99,
+    "cost_billed": "monthly",
+    "pricing_model": "per seat",
+    "usage_note": "",
+    "open_source": false,
+    "features": {
+      "database": null,
+      "enrich": null,
+      "send": null,
+      "linkedin": true,
+      "free": false
+    },
+    "since": null,
+    "since_note": "Not published.",
+    "best_for": "Finding and messaging people on LinkedIn",
+    "notes": "Core is $119.99 monthly or $1,079.88 a year per license. Advanced is $159.99 monthly. Includes 50 InMail messages a month. Email finding and sending not stated.",
+    "sources": [
+      "https://business.linkedin.com/sales-solutions/compare-plans"
+    ]
+  },
+  {
+    "name": "Smartlead",
+    "website": "https://www.smartlead.ai",
+    "pricing_url": "https://www.smartlead.ai/pricing",
+    "checked": "2026-11-07",
+    "free_plan": false,
+    "free_plan_limits": "free trial, no card; 50% off first month",
+    "start_usd": 39,
+    "small_business_plan": "Base",
+    "cost_small_business_usd": 39,
+    "cost_billed": "monthly",
+    "pricing_model": "flat",
+    "usage_note": "",
+    "open_source": false,
+    "features": {
+      "database": null,
+      "enrich": null,
+      "send": true,
+      "linkedin": null,
+      "free": false
+    },
+    "since": null,
+    "since_note": "Not published.",
+    "best_for": "Cold email with unlimited mailboxes",
+    "notes": "Base: 2,000 contacts, 6,000 sends a month, about $32 yearly. Pro is $94. Email verification is a separate add-on. Page showed duplicate conflicting prices; main cards used.",
+    "sources": [
+      "https://www.smartlead.ai/pricing"
+    ]
+  },
+  {
+    "name": "Lemlist",
+    "website": "https://www.lemlist.com",
+    "pricing_url": "https://www.lemlist.com/pricing",
+    "checked": "2026-11-07",
+    "free_plan": false,
+    "free_plan_limits": "14-day trial with 200 free credits",
+    "start_usd": 69,
+    "small_business_plan": "Multichannel",
+    "cost_small_business_usd": 109,
+    "cost_billed": "monthly",
+    "pricing_model": "per seat",
+    "usage_note": "",
+    "open_source": false,
+    "features": {
+      "database": true,
+      "enrich": true,
+      "send": true,
+      "linkedin": true,
+      "free": false
+    },
+    "since": null,
+    "since_note": "Not published.",
+    "best_for": "Email plus LinkedIn outreach in one tool",
+    "notes": "Email plan $69 ($55 yearly) has no LinkedIn. Multichannel $109 ($87 yearly) per user adds LinkedIn and SMS. Lead data enrichment is a $20/mo add-on.",
+    "sources": [
+      "https://www.lemlist.com/pricing"
+    ]
+  },
+  {
+    "name": "Hunter",
+    "website": "https://hunter.io",
+    "pricing_url": "https://hunter.io/pricing",
+    "checked": "2026-11-07",
+    "free_plan": true,
+    "free_plan_limits": "50 credits a month, 1 email account, 500 recipients per sequence",
+    "start_usd": 49,
+    "small_business_plan": "Starter",
+    "cost_small_business_usd": 49,
+    "cost_billed": "monthly",
+    "pricing_model": "credits",
+    "usage_note": "",
+    "open_source": false,
+    "features": {
+      "database": true,
+      "enrich": true,
+      "send": true,
+      "linkedin": null,
+      "free": true
+    },
+    "since": 2015,
+    "since_note": "Created 2015 (Hunter about page).",
+    "best_for": "Finding and verifying emails cheaply",
+    "notes": "Starter: 2,000 credits a month, $34/mo yearly. Extra email accounts for sequences cost from $10/mo each. Credits reset monthly.",
+    "sources": [
+      "https://hunter.io/pricing",
+      "https://hunter.io/about"
+    ]
+  },
+  {
+    "name": "HeyReach",
+    "website": "https://heyreach.io",
+    "pricing_url": "https://heyreach.io/pricing",
+    "checked": "2026-11-07",
+    "free_plan": false,
+    "free_plan_limits": "14-day free trial",
+    "start_usd": 79,
+    "small_business_plan": "Growth (1 sender)",
+    "cost_small_business_usd": 79,
+    "cost_billed": "monthly",
+    "pricing_model": "per seat",
+    "usage_note": "$79 per LinkedIn sender",
+    "open_source": false,
+    "features": {
+      "database": null,
+      "enrich": true,
+      "send": false,
+      "linkedin": true,
+      "free": false
+    },
+    "since": 2023,
+    "since_note": "Created 2023 (HeyReach about page).",
+    "best_for": "LinkedIn outreach across many accounts",
+    "notes": "$79 per sender monthly ($64 yearly); $59 at 10+ senders. Email only through Instantly or Smartlead integrations. Includes 100 enrichment credits per sender, one time.",
+    "sources": [
+      "https://heyreach.io/pricing",
+      "https://heyreach.io/about"
+    ]
+  },
+  {
+    "name": "MillionVerifier",
+    "website": "https://www.millionverifier.com",
+    "pricing_url": "https://www.millionverifier.com/pricing",
+    "checked": "2026-11-07",
+    "free_plan": false,
+    "free_plan_limits": "100 free credits for new accounts",
+    "start_usd": null,
+    "small_business_plan": "Credit pack",
+    "cost_small_business_usd": null,
+    "cost_billed": "usage",
+    "pricing_model": "one-time",
+    "usage_note": "One credit per email checked; unknown results are refunded",
+    "open_source": false,
+    "features": {
+      "database": false,
+      "enrich": false,
+      "send": false,
+      "linkedin": false,
+      "free": false
+    },
+    "since": null,
+    "since_note": "Not published.",
+    "best_for": "Cleaning email lists before sending",
+    "notes": "Prepaid packs, no subscription, credits don't expire. Pack prices not confirmed on an official page (third parties report 10,000 credits for $39). It checks emails; it does not find them.",
+    "sources": [
+      "https://help.millionverifier.com/payments-credits/credit-information",
+      "https://help.millionverifier.com/millionverifier/free-trial-credits"
+    ]
+  },
+  {
+    "name": "LeadMagic",
+    "website": "https://leadmagic.io",
+    "pricing_url": "https://leadmagic.io/pricing",
+    "checked": "2026-11-07",
+    "free_plan": false,
+    "free_plan_limits": "no free credits; 14-day search trial",
+    "start_usd": 99,
+    "small_business_plan": "Essential",
+    "cost_small_business_usd": 99,
+    "cost_billed": "monthly",
+    "pricing_model": "credits",
+    "usage_note": "1 credit per valid email found",
+    "open_source": false,
+    "features": {
+      "database": true,
+      "enrich": true,
+      "send": null,
+      "linkedin": null,
+      "free": false
+    },
+    "since": 2024,
+    "since_note": "Launched February 2024 as a B2B data API (LeadMagic story page).",
+    "best_for": "Finding work emails and company data",
+    "notes": "Essential: 5,000 credits a month, 1 user, $82.50/mo billed yearly. People and company search is free to use; credits are spent on email lookups.",
+    "sources": [
+      "https://leadmagic.io/pricing",
+      "https://leadmagic.io/company/story"
+    ]
+  }
+]

@@ -1,0 +1,274 @@
+[
+    {
+        "name": "Omnisend",
+        "website": "https://www.omnisend.com",
+        "pricing_url": "https://www.omnisend.com/pricing/",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "250 contacts, 500 emails a month",
+        "start_usd": 16,
+        "small_business_plan": "Standard (500 contacts)",
+        "cost_small_business_usd": 16,
+        "cost_billed": "monthly",
+        "pricing_model": "usage",
+        "usage_note": "Price rises with contacts; SMS from $0.007 per message",
+        "open_source": false,
+        "features": {
+            "flows": true,
+            "sms": true,
+            "ai": true,
+            "ecommerce": true,
+            "free": true
+        },
+        "since": 2014,
+        "since_note": "Founded 2014 as Soundest, renamed Omnisend 2017 (Wikipedia).",
+        "best_for": "Online stores that want email plus SMS",
+        "notes": "The page shows a 30% discounted $11.20; $16 is worked out from its 3-month totals ($48) and is not printed. SMS is only on Pro (about $59 at 2,500 contacts). Page also conflicts on Standard's email cap.",
+        "sources": [
+            "https://www.omnisend.com/pricing/",
+            "https://en.wikipedia.org/wiki/Omnisend"
+        ]
+    },
+    {
+        "name": "Mailchimp",
+        "website": "https://mailchimp.com",
+        "pricing_url": "https://mailchimp.com/pricing/marketing/",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "250 contacts, 500 emails a month (250 a day), no automation flows",
+        "start_usd": 13,
+        "small_business_plan": "Standard (500 contacts)",
+        "cost_small_business_usd": 20,
+        "cost_billed": "monthly",
+        "pricing_model": "usage",
+        "usage_note": "Price rises with contacts; SMS is a paid add-on",
+        "open_source": false,
+        "features": {
+            "flows": true,
+            "sms": true,
+            "ai": true,
+            "ecommerce": true,
+            "free": true
+        },
+        "since": 2001,
+        "since_note": "Launched 2001 (Wikipedia).",
+        "best_for": "Small lists that need simple campaigns",
+        "notes": "Prices are the 'starts at' 500-contact rates ($13 Essentials, $20 Standard) from Mailchimp's pages; the pricing page itself only showed promo prices. Essentials has no AI and only 4-step flows.",
+        "sources": [
+            "https://mailchimp.com/pricing/marketing/",
+            "https://mailchimp.com/landers/pricing/essentials/",
+            "https://en.wikipedia.org/wiki/Mailchimp"
+        ]
+    },
+    {
+        "name": "Klaviyo",
+        "website": "https://www.klaviyo.com",
+        "pricing_url": "https://www.klaviyo.com/pricing",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "250 active profiles, 500 emails a month, $5 of SMS credit",
+        "start_usd": 20,
+        "small_business_plan": "Email (500 profiles)",
+        "cost_small_business_usd": 20,
+        "cost_billed": "monthly",
+        "pricing_model": "usage",
+        "usage_note": "Price rises with active profiles",
+        "open_source": false,
+        "features": {
+            "flows": true,
+            "sms": true,
+            "ai": true,
+            "ecommerce": true,
+            "free": true
+        },
+        "since": 2012,
+        "since_note": "Wikipedia infobox says 2012 (its history text says 2013).",
+        "best_for": "Shopify and WooCommerce stores",
+        "notes": "Email plan includes 5,000 emails a month at 500 profiles. SMS is an add-on. Integrations include Shopify, WooCommerce, BigCommerce and Wix.",
+        "sources": [
+            "https://www.klaviyo.com/pricing",
+            "https://en.wikipedia.org/wiki/Klaviyo"
+        ]
+    },
+    {
+        "name": "ActiveCampaign",
+        "website": "https://www.activecampaign.com",
+        "pricing_url": "https://www.activecampaign.com/pricing",
+        "checked": "2026-11-07",
+        "free_plan": false,
+        "free_plan_limits": "",
+        "start_usd": 15,
+        "small_business_plan": "Starter (1,000 contacts)",
+        "cost_small_business_usd": 15,
+        "cost_billed": "yearly",
+        "pricing_model": "usage",
+        "usage_note": "Price rises with contacts; billed yearly",
+        "open_source": false,
+        "features": {
+            "flows": true,
+            "sms": true,
+            "ai": true,
+            "ecommerce": true,
+            "free": false
+        },
+        "since": 2003,
+        "since_note": "Launched 2003 in Chicago (Wikipedia).",
+        "best_for": "Automation-heavy email for small teams",
+        "notes": "The pricing page hid its prices; $15 comes from ActiveCampaign's own comparison pages (Plus $49 or $79, sources conflict). 14-day trial, no free plan. SMS sold separately.",
+        "sources": [
+            "https://www.activecampaign.com/pricing",
+            "https://www.activecampaign.com/compare/mailchimp",
+            "https://en.wikipedia.org/wiki/ActiveCampaign"
+        ]
+    },
+    {
+        "name": "Customer.io",
+        "website": "https://customer.io",
+        "pricing_url": "https://customer.io/pricing",
+        "checked": "2026-11-07",
+        "free_plan": false,
+        "free_plan_limits": "",
+        "start_usd": 100,
+        "small_business_plan": "Essentials (5,000 profiles)",
+        "cost_small_business_usd": 100,
+        "cost_billed": "monthly",
+        "pricing_model": "usage",
+        "usage_note": "$100 for 5k profiles, $145 for 10k; extra emails $0.12 per 1,000",
+        "open_source": false,
+        "features": {
+            "flows": true,
+            "sms": true,
+            "ai": true,
+            "ecommerce": null,
+            "free": false
+        },
+        "since": 2012,
+        "since_note": "Founded 2012 (Latka founder interview, CB Insights); one source says 2011.",
+        "best_for": "App and SaaS messaging workflows",
+        "notes": "No free plan; companies that raised under $10M get a year free through a startup program. Ecommerce features not mentioned. AI credits cost $10 per 100K.",
+        "sources": [
+            "https://customer.io/pricing",
+            "https://getlatka.com/companies/customerio/interviews/customerio-colin-nederkoorn-2024"
+        ]
+    },
+    {
+        "name": "beehiiv",
+        "website": "https://www.beehiiv.com",
+        "pricing_url": "https://www.beehiiv.com/pricing",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "2,500 subscribers, unlimited sends, no automations or paid subscriptions",
+        "start_usd": 59,
+        "small_business_plan": "Lite (1,000 subscribers)",
+        "cost_small_business_usd": 59,
+        "cost_billed": "monthly",
+        "pricing_model": "usage",
+        "usage_note": "Price rises with subscribers; $49 a month if billed yearly",
+        "open_source": false,
+        "features": {
+            "flows": true,
+            "sms": null,
+            "ai": true,
+            "ecommerce": null,
+            "free": true
+        },
+        "since": 2021,
+        "since_note": "Founded 2021 (beehiiv about page).",
+        "best_for": "Newsletters that sell paid subscriptions",
+        "notes": "Lite has 10 automations; Pro ($109) has unlimited. Sells digital products and paid tiers on paid plans. SMS not mentioned.",
+        "sources": [
+            "https://www.beehiiv.com/pricing",
+            "https://www.beehiiv.com/about"
+        ]
+    },
+    {
+        "name": "Resend",
+        "website": "https://resend.com",
+        "pricing_url": "https://resend.com/pricing",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "3,000 emails a month (100 a day) or 1,000 marketing contacts",
+        "start_usd": 20,
+        "small_business_plan": "Pro (50,000 emails)",
+        "cost_small_business_usd": 20,
+        "cost_billed": "monthly",
+        "pricing_model": "flat",
+        "usage_note": "$0.90 per extra 1,000 emails; marketing Pro is $40 for 5,000 contacts",
+        "open_source": false,
+        "features": {
+            "flows": true,
+            "sms": null,
+            "ai": true,
+            "ecommerce": null,
+            "free": true
+        },
+        "since": 2023,
+        "since_note": "Founded 2023, Y Combinator Winter 2023 batch (YC profile).",
+        "best_for": "Developers sending app emails",
+        "notes": "Priced as an email API: $20 is the transactional Pro plan. SMS and ecommerce are not on the pricing page. Monthly billing only.",
+        "sources": [
+            "https://resend.com/pricing",
+            "https://www.ycombinator.com/companies/resend"
+        ]
+    },
+    {
+        "name": "SendGrid",
+        "website": "https://sendgrid.com",
+        "pricing_url": "https://www.twilio.com/en-us/products/marketing-campaigns/pricing",
+        "checked": "2026-11-07",
+        "free_plan": null,
+        "free_plan_limits": "Marketing Campaigns trial: 60 days, 100 contacts, 100 emails a day",
+        "start_usd": 15,
+        "small_business_plan": "Marketing Campaigns Basic",
+        "cost_small_business_usd": 15,
+        "cost_billed": "monthly",
+        "pricing_model": "usage",
+        "usage_note": "Email API Essentials was $19.95 a month for 50,000 emails",
+        "open_source": false,
+        "features": {
+            "flows": null,
+            "sms": null,
+            "ai": null,
+            "ecommerce": null,
+            "free": null
+        },
+        "since": 2009,
+        "since_note": "Founded 2009 (Wikipedia).",
+        "best_for": "Sending app emails at volume",
+        "notes": "Prices come from search snippets of SendGrid/Twilio pages (the pages themselves showed no numbers) and may be dated. Marketing Campaigns and Email API are billed separately. Sources disagree on a permanent free plan.",
+        "sources": [
+            "https://www.twilio.com/en-us/products/marketing-campaigns/pricing",
+            "https://www.twilio.com/en-us/products/email-api/pricing",
+            "https://en.wikipedia.org/wiki/SendGrid"
+        ]
+    },
+    {
+        "name": "Kit",
+        "website": "https://kit.com",
+        "pricing_url": "https://kit.com/pricing",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "Up to 10,000 subscribers, 1 user, no visual automations or sequences",
+        "start_usd": 33,
+        "small_business_plan": "Creator (1,000 subscribers)",
+        "cost_small_business_usd": 33,
+        "cost_billed": "yearly",
+        "pricing_model": "usage",
+        "usage_note": "Price rises with subscribers; 3.5% + 30¢ fee on digital product sales",
+        "open_source": false,
+        "features": {
+            "flows": true,
+            "sms": true,
+            "ai": null,
+            "ecommerce": null,
+            "free": true
+        },
+        "since": null,
+        "since_note": "Not published.",
+        "best_for": "Creators selling digital products by email",
+        "notes": "Only yearly prices shown ($390 a year for Creator); monthly rate not stated. Pro is $66 a month standard. 14-day paid trial, no card. AI listed only as Kit MCP.",
+        "sources": [
+            "https://kit.com/pricing"
+        ]
+    }
+]

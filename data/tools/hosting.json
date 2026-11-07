@@ -1,0 +1,305 @@
+[
+    {
+        "name": "Hostinger VPS",
+        "website": "https://www.hostinger.com",
+        "pricing_url": "https://www.hostinger.com/vps/n8n-hosting",
+        "checked": "2026-11-07",
+        "free_plan": false,
+        "free_plan_limits": "",
+        "start_usd": 6.49,
+        "small_business_plan": "KVM 2",
+        "cost_small_business_usd": 8.79,
+        "cost_billed": "yearly",
+        "pricing_model": "flat",
+        "usage_note": "",
+        "open_source": false,
+        "features": {
+            "n8n": true,
+            "docker": true,
+            "static": null,
+            "free": false,
+            "db": null
+        },
+        "since": 2004,
+        "since_note": "Company founded 2004 as Hosting Media (Hostinger about page, Wikipedia); VPS launch year not published.",
+        "best_for": "Cheapest always-on server for n8n",
+        "notes": "Prices are per month on a 24-month prepaid term (KVM 2 = $210.96 upfront) and renew higher ($14.99). KVM 1 is $6.49, renews $11.99. One-click n8n template runs in Docker.",
+        "sources": [
+            "https://www.hostinger.com/vps/n8n-hosting",
+            "https://en.wikipedia.org/wiki/Hostinger",
+            "https://www.hostinger.com/about"
+        ]
+    },
+    {
+        "name": "Google Cloud",
+        "website": "https://cloud.google.com",
+        "pricing_url": "https://cloud.google.com/pricing",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "$300 credit for 90 days, plus one free e2-micro VM and 2M Cloud Run requests a month",
+        "start_usd": null,
+        "small_business_plan": "Pay as you go",
+        "cost_small_business_usd": null,
+        "cost_billed": "usage",
+        "pricing_model": "usage",
+        "usage_note": "Billed per use by service",
+        "open_source": false,
+        "features": {
+            "n8n": null,
+            "docker": true,
+            "static": true,
+            "free": true,
+            "db": true
+        },
+        "since": 2008,
+        "since_note": "App Engine previewed April 2008 (Wikipedia).",
+        "best_for": "Big scale; setup is harder",
+        "notes": "No fixed plan, so a monthly cost is not stated. Free VM works only in 3 US regions. Docker via Cloud Run and Compute Engine; static and database use assumed from standard products, not read on pages.",
+        "sources": [
+            "https://docs.cloud.google.com/free/docs/free-cloud-features",
+            "https://cloud.google.com/free",
+            "https://en.wikipedia.org/wiki/Google_Cloud_Platform"
+        ]
+    },
+    {
+        "name": "Vercel",
+        "website": "https://vercel.com",
+        "pricing_url": "https://vercel.com/pricing",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "Hobby: 1 seat, 100 GB transfer, 1M function calls a month; no extra usage can be bought",
+        "start_usd": 20,
+        "small_business_plan": "Pro",
+        "cost_small_business_usd": 20,
+        "cost_billed": "monthly",
+        "pricing_model": "per seat",
+        "usage_note": "$20 per developer seat includes $20 of usage credit, then pay as you go",
+        "open_source": false,
+        "features": {
+            "n8n": false,
+            "docker": null,
+            "static": true,
+            "free": true,
+            "db": null
+        },
+        "since": 2015,
+        "since_note": "Founded 2015 as ZEIT, renamed Vercel April 2020 (Wikipedia).",
+        "best_for": "Hosting websites and front-end apps",
+        "notes": "Not built for always-on servers like n8n. No managed database on the pricing page; databases come via Marketplace integrations. Commercial use on Hobby not checked.",
+        "sources": [
+            "https://vercel.com/pricing",
+            "https://en.wikipedia.org/wiki/Vercel"
+        ]
+    },
+    {
+        "name": "Railway",
+        "website": "https://railway.com",
+        "pricing_url": "https://railway.com/pricing",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "$1 of usage a month, 1 vCPU / 0.5 GB per service; new accounts get $5 trial credit for 30 days",
+        "start_usd": 5,
+        "small_business_plan": "Pro",
+        "cost_small_business_usd": 20,
+        "cost_billed": "monthly",
+        "pricing_model": "usage",
+        "usage_note": "About $10 per GB of RAM-month and $20 per vCPU-month",
+        "open_source": false,
+        "features": {
+            "n8n": null,
+            "docker": true,
+            "static": null,
+            "free": true,
+            "db": true
+        },
+        "since": null,
+        "since_note": "Not published.",
+        "best_for": "Quick app and n8n deploys, usage billed",
+        "notes": "Hobby $5 includes $5 usage; Pro $20 per workspace includes $20 usage and unlimited seats. Real bill grows with usage. Database and Docker use not stated on the pricing page.",
+        "sources": [
+            "https://railway.com/pricing"
+        ]
+    },
+    {
+        "name": "AWS",
+        "website": "https://aws.amazon.com",
+        "pricing_url": "https://aws.amazon.com/free/",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "$100 credit, up to $200 more for trying services; free plan closes after 6 months",
+        "start_usd": null,
+        "small_business_plan": "Pay as you go",
+        "cost_small_business_usd": null,
+        "cost_billed": "usage",
+        "pricing_model": "usage",
+        "usage_note": "Billed per use by service",
+        "open_source": false,
+        "features": {
+            "n8n": null,
+            "docker": true,
+            "static": true,
+            "free": true,
+            "db": true
+        },
+        "since": 2006,
+        "since_note": "S3 launched March 2006, EC2 August 2006 (Wikipedia).",
+        "best_for": "Large-scale hosting with many services",
+        "notes": "No fixed plan, so monthly cost is not stated. Free plan has no surprise bills; 30+ services stay free within limits. Docker, static and database use rely on standard AWS services, not read on this page.",
+        "sources": [
+            "https://aws.amazon.com/free/",
+            "https://en.wikipedia.org/wiki/Amazon_Web_Services"
+        ]
+    },
+    {
+        "name": "Netlify",
+        "website": "https://www.netlify.com",
+        "pricing_url": "https://www.netlify.com/pricing/",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "300 credits a month (a production deploy costs 15 credits)",
+        "start_usd": 9,
+        "small_business_plan": "Pro",
+        "cost_small_business_usd": 20,
+        "cost_billed": "monthly",
+        "pricing_model": "credits",
+        "usage_note": "Bandwidth 20 credits per GB; extra 1,500 credits cost $10 on Pro",
+        "open_source": false,
+        "features": {
+            "n8n": false,
+            "docker": null,
+            "static": true,
+            "free": true,
+            "db": true
+        },
+        "since": 2014,
+        "since_note": "Incorporated January 2014 (Wikipedia).",
+        "best_for": "Static sites and simple web apps",
+        "notes": "Personal $9 gets 1,000 credits; Pro $20 is flat for unlimited members with 3,000 credits. Credits can run out. Includes Netlify Database per pricing page.",
+        "sources": [
+            "https://www.netlify.com/pricing/",
+            "https://en.wikipedia.org/wiki/Netlify"
+        ]
+    },
+    {
+        "name": "Render",
+        "website": "https://render.com",
+        "pricing_url": "https://render.com/pricing",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "Hobby workspace is $0; static sites free, bandwidth and build minutes capped",
+        "start_usd": 7,
+        "small_business_plan": "Pro workspace + Starter instance",
+        "cost_small_business_usd": 32,
+        "cost_billed": "monthly",
+        "pricing_model": "flat",
+        "usage_note": "Each paid service costs extra; Starter instance from $7 a month for 512 MB",
+        "open_source": false,
+        "features": {
+            "n8n": null,
+            "docker": true,
+            "static": true,
+            "free": true,
+            "db": true
+        },
+        "since": null,
+        "since_note": "Not published.",
+        "best_for": "Simple always-on apps with Docker",
+        "notes": "Pro workspace is $25 flat with no seat fees (replaced the old $19 per member). Pricing page would not load; numbers are from Render's changelog and articles. $32 = Pro + one $7 Starter instance.",
+        "sources": [
+            "https://render.com/changelog/updated-plans-for-render-workspaces",
+            "https://render.com/docs/free",
+            "https://render.com/articles/how-much-does-cloud-application-hosting-cost-for-small-businesses"
+        ]
+    },
+    {
+        "name": "Coolify",
+        "website": "https://coolify.io",
+        "pricing_url": "https://coolify.io/cloud",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "Self-hosted is free; you pay for your own server",
+        "start_usd": 5,
+        "small_business_plan": "Coolify Cloud (plus your own server)",
+        "cost_small_business_usd": 5,
+        "cost_billed": "monthly",
+        "pricing_model": "flat",
+        "usage_note": "$5 covers 2 servers; each extra server is $3",
+        "open_source": true,
+        "features": {
+            "n8n": true,
+            "docker": true,
+            "static": true,
+            "free": true,
+            "db": true
+        },
+        "since": null,
+        "since_note": "Not published.",
+        "best_for": "Your own Vercel-style host on a cheap VPS",
+        "notes": "Apache-2.0 open source. Cloud only runs the dashboard; you still pay for a server (for example a VPS). Self-hosted and Cloud have the same features. Feature details from Coolify's comparison pages.",
+        "sources": [
+            "https://coolify.io/cloud",
+            "https://coolify.io/docs/usage",
+            "https://coolify.io/compare/vercel-alternative"
+        ]
+    },
+    {
+        "name": "DigitalOcean",
+        "website": "https://www.digitalocean.com",
+        "pricing_url": "https://www.digitalocean.com/pricing/droplets",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "App Platform: 3 static-site apps free, 1 GiB transfer each; promo credits vary",
+        "start_usd": 4,
+        "small_business_plan": "Basic Droplet",
+        "cost_small_business_usd": 4,
+        "cost_billed": "monthly",
+        "pricing_model": "flat",
+        "usage_note": "Extra outbound transfer $0.02 per GiB on App Platform",
+        "open_source": false,
+        "features": {
+            "n8n": true,
+            "docker": true,
+            "static": true,
+            "free": true,
+            "db": true
+        },
+        "since": 2011,
+        "since_note": "Founded June 2011 (Wikipedia infobox).",
+        "best_for": "Simple virtual servers with clear prices",
+        "notes": "$4 Droplet has only 512 MiB RAM; n8n needs more, so plan on a bigger one. App Platform containers start at $5. Dev database $7 (PostgreSQL only). One-click n8n is from DigitalOcean's marketplace, not read on these pages.",
+        "sources": [
+            "https://www.digitalocean.com/pricing/droplets",
+            "https://www.digitalocean.com/pricing/app-platform",
+            "https://en.wikipedia.org/wiki/DigitalOcean"
+        ]
+    },
+    {
+        "name": "Modal",
+        "website": "https://modal.com",
+        "pricing_url": "https://modal.com/pricing",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "Starter: $0 base fee with $30 of free credits a month",
+        "start_usd": 250,
+        "small_business_plan": "Starter (usage only)",
+        "cost_small_business_usd": null,
+        "cost_billed": "usage",
+        "pricing_model": "usage",
+        "usage_note": "Per second: CPU $0.0000131 per core, memory $0.00000222 per GiB, GPUs from $0.000164 (T4)",
+        "open_source": false,
+        "features": {
+            "n8n": null,
+            "docker": null,
+            "static": null,
+            "free": true,
+            "db": null
+        },
+        "since": null,
+        "since_note": "Not published.",
+        "best_for": "Running AI code on GPUs by the second",
+        "notes": "Team plan is $250 a month with $100 credits. Starter has no base fee, so a small business pays only for compute used. Not a place for always-on n8n.",
+        "sources": [
+            "https://modal.com/pricing"
+        ]
+    }
+]

@@ -1,0 +1,2505 @@
+{
+ "videos": 1787,
+ "categories": [
+  {
+   "slug": "ai-chatbot",
+   "name": "AI chat assistants",
+   "h1": "Every AI chat assistant, compared",
+   "kw": "ai chatbot",
+   "blurb": "The chat apps people use to write, research and plan.",
+   "features": [
+    [
+     "web",
+     "Searches the web"
+    ],
+    [
+     "files",
+     "Reads your files"
+    ],
+    [
+     "images",
+     "Makes images"
+    ],
+    [
+     "agent",
+     "Agent mode (does tasks)"
+    ],
+    [
+     "api",
+     "Has an API"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "ChatGPT",
+     "mentions": 694
+    },
+    {
+     "name": "Claude",
+     "mentions": 525
+    },
+    {
+     "name": "Gemini",
+     "mentions": 145
+    },
+    {
+     "name": "Perplexity",
+     "mentions": 60
+    },
+    {
+     "name": "Microsoft Copilot",
+     "mentions": 37
+    },
+    {
+     "name": "Grok",
+     "mentions": 26
+    },
+    {
+     "name": "NotebookLM",
+     "mentions": 15
+    },
+    {
+     "name": "DeepSeek",
+     "mentions": 12
+    },
+    {
+     "name": "Meta AI",
+     "mentions": 4
+    },
+    {
+     "name": "Mistral Le Chat",
+     "mentions": 4
+    }
+   ],
+   "mentions": 1522
+  },
+  {
+   "slug": "ai-agent",
+   "name": "AI agents that use a computer",
+   "h1": "AI agents that use a computer, compared",
+   "kw": "ai agents",
+   "blurb": "Tools that click, browse and finish tasks for you, not just chat.",
+   "features": [
+    [
+     "browser",
+     "Uses a browser"
+    ],
+    [
+     "desktop",
+     "Uses your desktop apps"
+    ],
+    [
+     "schedule",
+     "Runs on a schedule"
+    ],
+    [
+     "local",
+     "Runs on your own computer"
+    ],
+    [
+     "opensource",
+     "Open source"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Claude Cowork",
+     "mentions": 55
+    },
+    {
+     "name": "OpenClaw",
+     "mentions": 20
+    },
+    {
+     "name": "Hermes Agent",
+     "mentions": 17
+    },
+    {
+     "name": "Manus",
+     "mentions": 15
+    },
+    {
+     "name": "Claude in Chrome",
+     "mentions": 13
+    },
+    {
+     "name": "ChatGPT agent",
+     "mentions": 7
+    },
+    {
+     "name": "Genspark",
+     "mentions": 6
+    },
+    {
+     "name": "Lindy",
+     "mentions": 6
+    },
+    {
+     "name": "Perplexity Comet",
+     "mentions": 3
+    }
+   ],
+   "mentions": 142
+  },
+  {
+   "slug": "workflow-automation",
+   "name": "Workflow automation platforms",
+   "h1": "Every workflow automation platform, compared",
+   "kw": "n8n",
+   "blurb": "The tools that connect your apps and run the steps for you.",
+   "features": [
+    [
+     "ai",
+     "Built-in AI steps"
+    ],
+    [
+     "agents",
+     "AI agents"
+    ],
+    [
+     "selfhost",
+     "Self-host option"
+    ],
+    [
+     "code",
+     "Code steps"
+    ],
+    [
+     "integrations500",
+     "500+ app integrations"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "n8n",
+     "mentions": 282
+    },
+    {
+     "name": "Make",
+     "mentions": 135
+    },
+    {
+     "name": "Zapier",
+     "mentions": 112
+    },
+    {
+     "name": "Power Automate",
+     "mentions": 17
+    },
+    {
+     "name": "Gumloop",
+     "mentions": 4
+    },
+    {
+     "name": "Trigger.dev",
+     "mentions": 3
+    },
+    {
+     "name": "Relevance AI",
+     "mentions": 2
+    },
+    {
+     "name": "IFTTT",
+     "mentions": 2
+    },
+    {
+     "name": "Bardeen",
+     "mentions": 2
+    },
+    {
+     "name": "Pipedream",
+     "mentions": 1
+    },
+    {
+     "name": "Activepieces",
+     "mentions": 0
+    }
+   ],
+   "mentions": 560
+  },
+  {
+   "slug": "ai-coding",
+   "name": "AI coding tools",
+   "h1": "Every AI coding tool, compared",
+   "kw": "ai coding",
+   "blurb": "AI that writes and fixes code, from your terminal or editor.",
+   "features": [
+    [
+     "terminal",
+     "Works in the terminal"
+    ],
+    [
+     "editor",
+     "Works in an editor"
+    ],
+    [
+     "cloud",
+     "Runs in the cloud"
+    ],
+    [
+     "free",
+     "Free tier"
+    ],
+    [
+     "byok",
+     "Bring your own model key"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Claude Code",
+     "mentions": 180
+    },
+    {
+     "name": "OpenAI Codex",
+     "mentions": 37
+    },
+    {
+     "name": "Cursor",
+     "mentions": 21
+    },
+    {
+     "name": "GitHub Copilot",
+     "mentions": 12
+    },
+    {
+     "name": "Google Antigravity",
+     "mentions": 9
+    },
+    {
+     "name": "CodeRabbit",
+     "mentions": 9
+    },
+    {
+     "name": "OpenCode",
+     "mentions": 3
+    },
+    {
+     "name": "Gemini CLI",
+     "mentions": 1
+    },
+    {
+     "name": "Windsurf",
+     "mentions": 0
+    }
+   ],
+   "mentions": 272
+  },
+  {
+   "slug": "ai-app-builder",
+   "name": "AI app and website builders",
+   "h1": "Every AI app and website builder, compared",
+   "kw": "ai website builder",
+   "blurb": "Describe an app or site in plain words and get a working one.",
+   "features": [
+    [
+     "hosting",
+     "Hosting included"
+    ],
+    [
+     "database",
+     "Database built in"
+    ],
+    [
+     "domain",
+     "Custom domain"
+    ],
+    [
+     "code",
+     "Export the code"
+    ],
+    [
+     "payments",
+     "Payments built in"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Lovable",
+     "mentions": 25
+    },
+    {
+     "name": "WordPress",
+     "mentions": 20
+    },
+    {
+     "name": "Base44",
+     "mentions": 11
+    },
+    {
+     "name": "Replit",
+     "mentions": 10
+    },
+    {
+     "name": "Framer",
+     "mentions": 4
+    },
+    {
+     "name": "Bubble",
+     "mentions": 3
+    },
+    {
+     "name": "Wix",
+     "mentions": 3
+    },
+    {
+     "name": "Bolt",
+     "mentions": 2
+    },
+    {
+     "name": "Softr",
+     "mentions": 2
+    },
+    {
+     "name": "Emergent",
+     "mentions": 2
+    },
+    {
+     "name": "Webflow",
+     "mentions": 2
+    },
+    {
+     "name": "v0",
+     "mentions": 0
+    },
+    {
+     "name": "Hostinger Horizons",
+     "mentions": 0
+    }
+   ],
+   "mentions": 84
+  },
+  {
+   "slug": "ai-video-generator",
+   "name": "AI video generators",
+   "h1": "Every AI video generator, compared",
+   "kw": "ai video generator",
+   "blurb": "Type a prompt or drop an image and get a video clip.",
+   "features": [
+    [
+     "text",
+     "Text to video"
+    ],
+    [
+     "image",
+     "Image to video"
+    ],
+    [
+     "audio",
+     "Sound in the clip"
+    ],
+    [
+     "api",
+     "Has an API"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Higgsfield",
+     "mentions": 80
+    },
+    {
+     "name": "Seedance",
+     "mentions": 37
+    },
+    {
+     "name": "Google Veo / Flow",
+     "mentions": 26
+    },
+    {
+     "name": "Kling",
+     "mentions": 23
+    },
+    {
+     "name": "OpenAI Sora",
+     "mentions": 19
+    },
+    {
+     "name": "Runway",
+     "mentions": 9
+    },
+    {
+     "name": "Invideo",
+     "mentions": 6
+    },
+    {
+     "name": "Hailuo (MiniMax)",
+     "mentions": 4
+    },
+    {
+     "name": "Pictory",
+     "mentions": 3
+    },
+    {
+     "name": "Fliki",
+     "mentions": 2
+    },
+    {
+     "name": "Luma",
+     "mentions": 0
+    }
+   ],
+   "mentions": 209
+  },
+  {
+   "slug": "ai-avatar-ugc-video",
+   "name": "AI avatar and UGC ad video tools",
+   "h1": "AI avatar and UGC video tools, compared",
+   "kw": "ai avatar video generator",
+   "blurb": "AI presenters and UGC-style actors for ads and explainers.",
+   "features": [
+    [
+     "clone",
+     "Clone yourself"
+    ],
+    [
+     "stock",
+     "Stock avatars"
+    ],
+    [
+     "languages",
+     "Translate / dub"
+    ],
+    [
+     "api",
+     "Has an API"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "HeyGen",
+     "mentions": 41
+    },
+    {
+     "name": "Arcads",
+     "mentions": 13
+    },
+    {
+     "name": "CreateUGC",
+     "mentions": 6
+    },
+    {
+     "name": "Synthesia",
+     "mentions": 5
+    },
+    {
+     "name": "D-ID",
+     "mentions": 4
+    },
+    {
+     "name": "Creatify",
+     "mentions": 3
+    },
+    {
+     "name": "Captions",
+     "mentions": 3
+    },
+    {
+     "name": "Topview",
+     "mentions": 3
+    }
+   ],
+   "mentions": 78
+  },
+  {
+   "slug": "video-editing",
+   "name": "Video editing and clipping tools",
+   "h1": "Every video editor and clipping tool, compared",
+   "kw": "video editor with ai",
+   "blurb": "Edit videos, add captions, or cut long videos into shorts.",
+   "features": [
+    [
+     "captions",
+     "Auto captions"
+    ],
+    [
+     "clips",
+     "Long video to shorts"
+    ],
+    [
+     "textedit",
+     "Edit by text"
+    ],
+    [
+     "desktop",
+     "Desktop app"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "CapCut",
+     "mentions": 83
+    },
+    {
+     "name": "Adobe Premiere Pro",
+     "mentions": 23
+    },
+    {
+     "name": "Opus Clip",
+     "mentions": 20
+    },
+    {
+     "name": "Descript",
+     "mentions": 13
+    },
+    {
+     "name": "DaVinci Resolve",
+     "mentions": 7
+    },
+    {
+     "name": "Submagic",
+     "mentions": 6
+    },
+    {
+     "name": "Clipchamp",
+     "mentions": 4
+    },
+    {
+     "name": "Gling",
+     "mentions": 4
+    },
+    {
+     "name": "VEED",
+     "mentions": 3
+    },
+    {
+     "name": "Riverside",
+     "mentions": 3
+    },
+    {
+     "name": "AutoCut",
+     "mentions": 2
+    },
+    {
+     "name": "Instagram Edits",
+     "mentions": 2
+    }
+   ],
+   "mentions": 170
+  },
+  {
+   "slug": "video-api",
+   "name": "Video APIs for automations",
+   "h1": "Video APIs for automations, compared",
+   "kw": "video api",
+   "blurb": "Make videos from code or an n8n flow, no editor needed.",
+   "features": [
+    [
+     "templates",
+     "Templates"
+    ],
+    [
+     "code",
+     "Code-based video"
+    ],
+    [
+     "nocode",
+     "Works with n8n / Make"
+    ],
+    [
+     "opensource",
+     "Open source"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Remotion",
+     "mentions": 21
+    },
+    {
+     "name": "FFmpeg",
+     "mentions": 20
+    },
+    {
+     "name": "HyperFrames",
+     "mentions": 18
+    },
+    {
+     "name": "Creatomate",
+     "mentions": 3
+    },
+    {
+     "name": "JSON2Video",
+     "mentions": 1
+    },
+    {
+     "name": "Shotstack",
+     "mentions": 0
+    }
+   ],
+   "mentions": 63
+  },
+  {
+   "slug": "ai-voice-generator",
+   "name": "AI voice and music generators",
+   "h1": "Every AI voice and music generator, compared",
+   "kw": "ai voice generator",
+   "blurb": "Turn text into a natural voice, clone your own, or make music.",
+   "features": [
+    [
+     "clone",
+     "Voice cloning"
+    ],
+    [
+     "music",
+     "Makes music"
+    ],
+    [
+     "api",
+     "Has an API"
+    ],
+    [
+     "commercial",
+     "Commercial use on paid plans"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "ElevenLabs",
+     "mentions": 139
+    },
+    {
+     "name": "Suno",
+     "mentions": 7
+    },
+    {
+     "name": "Fish Audio",
+     "mentions": 2
+    },
+    {
+     "name": "Cartesia",
+     "mentions": 2
+    },
+    {
+     "name": "Chatterbox",
+     "mentions": 2
+    },
+    {
+     "name": "Murf",
+     "mentions": 1
+    },
+    {
+     "name": "OpenAI TTS",
+     "mentions": 0
+    }
+   ],
+   "mentions": 153
+  },
+  {
+   "slug": "ai-receptionist",
+   "name": "AI voice agents and receptionists",
+   "h1": "AI receptionists and voice agents, compared",
+   "kw": "ai receptionist",
+   "blurb": "AI that answers your phone, books appointments and makes calls.",
+   "features": [
+    [
+     "inbound",
+     "Answers calls"
+    ],
+    [
+     "outbound",
+     "Makes calls"
+    ],
+    [
+     "booking",
+     "Books appointments"
+    ],
+    [
+     "nocode",
+     "No-code setup"
+    ],
+    [
+     "phone",
+     "Phone number included"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Vapi",
+     "mentions": 21
+    },
+    {
+     "name": "Twilio",
+     "mentions": 17
+    },
+    {
+     "name": "Retell AI",
+     "mentions": 13
+    },
+    {
+     "name": "Synthflow",
+     "mentions": 2
+    },
+    {
+     "name": "Bland AI",
+     "mentions": 1
+    },
+    {
+     "name": "ElevenLabs Agents",
+     "mentions": 1
+    },
+    {
+     "name": "GoHighLevel Voice AI",
+     "mentions": 0
+    },
+    {
+     "name": "Air AI",
+     "mentions": 0
+    }
+   ],
+   "mentions": 55
+  },
+  {
+   "slug": "ai-image-generator",
+   "name": "AI image generators",
+   "h1": "Every AI image generator, compared",
+   "kw": "ai image generator",
+   "blurb": "Make images, thumbnails, product shots and ads from a prompt.",
+   "features": [
+    [
+     "text",
+     "Readable text in images"
+    ],
+    [
+     "edit",
+     "Edit your own photos"
+    ],
+    [
+     "api",
+     "Has an API"
+    ],
+    [
+     "commercial",
+     "Commercial use"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Nano Banana (Gemini)",
+     "mentions": 70
+    },
+    {
+     "name": "GPT Image (ChatGPT)",
+     "mentions": 41
+    },
+    {
+     "name": "Midjourney",
+     "mentions": 22
+    },
+    {
+     "name": "OpenArt",
+     "mentions": 11
+    },
+    {
+     "name": "Leonardo",
+     "mentions": 9
+    },
+    {
+     "name": "Flux",
+     "mentions": 8
+    },
+    {
+     "name": "Pikzels",
+     "mentions": 8
+    },
+    {
+     "name": "Magnific",
+     "mentions": 4
+    },
+    {
+     "name": "Ideogram",
+     "mentions": 3
+    },
+    {
+     "name": "Adobe Firefly",
+     "mentions": 3
+    },
+    {
+     "name": "Freepik",
+     "mentions": 2
+    },
+    {
+     "name": "Photoroom",
+     "mentions": 2
+    }
+   ],
+   "mentions": 183
+  },
+  {
+   "slug": "design-presentations",
+   "name": "Design and presentation tools",
+   "h1": "Design and AI presentation tools, compared",
+   "kw": "ai presentation",
+   "blurb": "Graphics, slides and brand kits, with AI to start the draft.",
+   "features": [
+    [
+     "templates",
+     "Templates"
+    ],
+    [
+     "aidraft",
+     "AI first draft"
+    ],
+    [
+     "brand",
+     "Brand kit"
+    ],
+    [
+     "team",
+     "Team editing"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Canva",
+     "mentions": 71
+    },
+    {
+     "name": "Gamma",
+     "mentions": 21
+    },
+    {
+     "name": "Adobe Photoshop",
+     "mentions": 15
+    },
+    {
+     "name": "Figma",
+     "mentions": 5
+    },
+    {
+     "name": "Adobe Lightroom",
+     "mentions": 5
+    },
+    {
+     "name": "Miro",
+     "mentions": 3
+    },
+    {
+     "name": "Excalidraw",
+     "mentions": 3
+    },
+    {
+     "name": "Pomelli",
+     "mentions": 3
+    }
+   ],
+   "mentions": 126
+  },
+  {
+   "slug": "crm",
+   "name": "CRMs",
+   "h1": "Every CRM in the AI automation videos, compared",
+   "kw": "crm with workflow automation",
+   "blurb": "Where your leads, deals and follow-ups live.",
+   "features": [
+    [
+     "automation",
+     "Built-in automations"
+    ],
+    [
+     "ai",
+     "AI features"
+    ],
+    [
+     "sms",
+     "SMS / calls built in"
+    ],
+    [
+     "api",
+     "Has an API"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "GoHighLevel",
+     "mentions": 99
+    },
+    {
+     "name": "HubSpot",
+     "mentions": 36
+    },
+    {
+     "name": "Salesforce",
+     "mentions": 28
+    },
+    {
+     "name": "Pipedrive",
+     "mentions": 4
+    },
+    {
+     "name": "Vendasta",
+     "mentions": 4
+    },
+    {
+     "name": "Attio",
+     "mentions": 2
+    },
+    {
+     "name": "Zoho CRM",
+     "mentions": 0
+    },
+    {
+     "name": "Close",
+     "mentions": 0
+    }
+   ],
+   "mentions": 173
+  },
+  {
+   "slug": "lead-generation",
+   "name": "Lead generation and cold email tools",
+   "h1": "Lead generation and cold email tools, compared",
+   "kw": "lead generation ai",
+   "blurb": "Find leads, get their emails and send outreach at scale.",
+   "features": [
+    [
+     "database",
+     "Lead database"
+    ],
+    [
+     "enrich",
+     "Finds emails"
+    ],
+    [
+     "send",
+     "Sends emails"
+    ],
+    [
+     "linkedin",
+     "LinkedIn outreach"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Instantly",
+     "mentions": 29
+    },
+    {
+     "name": "Apollo",
+     "mentions": 23
+    },
+    {
+     "name": "Clay",
+     "mentions": 20
+    },
+    {
+     "name": "Anymail Finder",
+     "mentions": 12
+    },
+    {
+     "name": "PhantomBuster",
+     "mentions": 10
+    },
+    {
+     "name": "LinkedIn Sales Navigator",
+     "mentions": 7
+    },
+    {
+     "name": "Smartlead",
+     "mentions": 4
+    },
+    {
+     "name": "Lemlist",
+     "mentions": 3
+    },
+    {
+     "name": "Hunter",
+     "mentions": 3
+    },
+    {
+     "name": "HeyReach",
+     "mentions": 2
+    },
+    {
+     "name": "MillionVerifier",
+     "mentions": 2
+    },
+    {
+     "name": "LeadMagic",
+     "mentions": 2
+    }
+   ],
+   "mentions": 117
+  },
+  {
+   "slug": "web-scraping",
+   "name": "Web scraping and search APIs",
+   "h1": "Web scraping tools and search APIs, compared",
+   "kw": "web scraper",
+   "blurb": "Pull data from websites, maps and search results into your flows.",
+   "features": [
+    [
+     "nocode",
+     "Ready-made scrapers"
+    ],
+    [
+     "ai",
+     "AI-ready output"
+    ],
+    [
+     "maps",
+     "Google Maps data"
+    ],
+    [
+     "search",
+     "Search results API"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Apify",
+     "mentions": 63
+    },
+    {
+     "name": "Firecrawl",
+     "mentions": 14
+    },
+    {
+     "name": "Playwright",
+     "mentions": 12
+    },
+    {
+     "name": "SerpApi",
+     "mentions": 8
+    },
+    {
+     "name": "Tavily",
+     "mentions": 7
+    },
+    {
+     "name": "Outscraper",
+     "mentions": 3
+    },
+    {
+     "name": "RapidAPI",
+     "mentions": 3
+    },
+    {
+     "name": "Exa",
+     "mentions": 2
+    },
+    {
+     "name": "Selenium",
+     "mentions": 2
+    },
+    {
+     "name": "Browse AI",
+     "mentions": 1
+    },
+    {
+     "name": "Bright Data",
+     "mentions": 0
+    }
+   ],
+   "mentions": 115
+  },
+  {
+   "slug": "ai-chatbot-builder",
+   "name": "Chatbot and DM automation builders",
+   "h1": "Chatbot builders and DM automation, compared",
+   "kw": "ai chatbot platform",
+   "blurb": "Bots for your website, Instagram DMs and WhatsApp.",
+   "features": [
+    [
+     "website",
+     "Website chat"
+    ],
+    [
+     "instagram",
+     "Instagram DMs"
+    ],
+    [
+     "whatsapp",
+     "WhatsApp"
+    ],
+    [
+     "ai",
+     "Answers with AI"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "ManyChat",
+     "mentions": 27
+    },
+    {
+     "name": "Copilot Studio",
+     "mentions": 12
+    },
+    {
+     "name": "Voiceflow",
+     "mentions": 10
+    },
+    {
+     "name": "Botpress",
+     "mentions": 7
+    },
+    {
+     "name": "Fastbots",
+     "mentions": 5
+    },
+    {
+     "name": "Zapier Chatbots",
+     "mentions": 3
+    },
+    {
+     "name": "Dialogflow",
+     "mentions": 2
+    },
+    {
+     "name": "Chatbase",
+     "mentions": 1
+    }
+   ],
+   "mentions": 67
+  },
+  {
+   "slug": "customer-support",
+   "name": "Customer support helpdesks",
+   "h1": "AI customer support helpdesks, compared",
+   "kw": "ai customer service",
+   "blurb": "Inboxes for support tickets, with AI that answers the easy ones.",
+   "features": [
+    [
+     "aiagent",
+     "AI answers tickets"
+    ],
+    [
+     "email",
+     "Email"
+    ],
+    [
+     "chat",
+     "Live chat"
+    ],
+    [
+     "shopify",
+     "Shopify app"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Zendesk",
+     "mentions": 7
+    },
+    {
+     "name": "Intercom",
+     "mentions": 3
+    },
+    {
+     "name": "Freshdesk",
+     "mentions": 3
+    },
+    {
+     "name": "Gorgias",
+     "mentions": 2
+    },
+    {
+     "name": "Help Scout",
+     "mentions": 0
+    }
+   ],
+   "mentions": 15
+  },
+  {
+   "slug": "ai-meeting-notes",
+   "name": "AI meeting note takers",
+   "h1": "Every AI meeting note taker, compared",
+   "kw": "ai note taker",
+   "blurb": "Record calls and get notes, action items and summaries.",
+   "features": [
+    [
+     "zoom",
+     "Zoom / Meet / Teams"
+    ],
+    [
+     "bot",
+     "Works without a bot joining"
+    ],
+    [
+     "crm",
+     "Sends notes to your CRM"
+    ],
+    [
+     "api",
+     "Has an API"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Fireflies",
+     "mentions": 16
+    },
+    {
+     "name": "Loom",
+     "mentions": 16
+    },
+    {
+     "name": "Granola",
+     "mentions": 10
+    },
+    {
+     "name": "Fathom",
+     "mentions": 7
+    },
+    {
+     "name": "Otter",
+     "mentions": 4
+    },
+    {
+     "name": "Grain",
+     "mentions": 2
+    },
+    {
+     "name": "tl;dv",
+     "mentions": 0
+    },
+    {
+     "name": "Read AI",
+     "mentions": 0
+    }
+   ],
+   "mentions": 55
+  },
+  {
+   "slug": "ai-dictation",
+   "name": "AI voice typing apps",
+   "h1": "AI voice typing (dictation) apps, compared",
+   "kw": "ai dictation",
+   "blurb": "Talk instead of type, in any app. The videos use these to prompt AI faster.",
+   "features": [
+    [
+     "mac",
+     "Mac"
+    ],
+    [
+     "windows",
+     "Windows"
+    ],
+    [
+     "phone",
+     "Phone"
+    ],
+    [
+     "offline",
+     "Works offline"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Wispr Flow",
+     "mentions": 23
+    },
+    {
+     "name": "OpenAI Whisper",
+     "mentions": 19
+    },
+    {
+     "name": "Glaido",
+     "mentions": 14
+    },
+    {
+     "name": "Superwhisper",
+     "mentions": 2
+    },
+    {
+     "name": "Willow",
+     "mentions": 0
+    }
+   ],
+   "mentions": 58
+  },
+  {
+   "slug": "database",
+   "name": "Spreadsheets and databases for automations",
+   "h1": "Spreadsheets and databases for AI automations, compared",
+   "kw": "airtable",
+   "blurb": "Where your automations read and write their data.",
+   "features": [
+    [
+     "api",
+     "Has an API"
+    ],
+    [
+     "ai",
+     "AI features"
+    ],
+    [
+     "forms",
+     "Forms"
+    ],
+    [
+     "selfhost",
+     "Self-host option"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Google Sheets",
+     "mentions": 186
+    },
+    {
+     "name": "Notion",
+     "mentions": 55
+    },
+    {
+     "name": "Airtable",
+     "mentions": 51
+    },
+    {
+     "name": "Microsoft Excel",
+     "mentions": 31
+    },
+    {
+     "name": "Supabase",
+     "mentions": 20
+    },
+    {
+     "name": "Postgres",
+     "mentions": 3
+    },
+    {
+     "name": "Baserow",
+     "mentions": 0
+    },
+    {
+     "name": "NocoDB",
+     "mentions": 0
+    }
+   ],
+   "mentions": 346
+  },
+  {
+   "slug": "project-management",
+   "name": "Project management tools",
+   "h1": "Project management tools with AI, compared",
+   "kw": "project management ai tools",
+   "blurb": "Tasks, boards and docs your automations can update.",
+   "features": [
+    [
+     "ai",
+     "AI features"
+    ],
+    [
+     "automation",
+     "Built-in automations"
+    ],
+    [
+     "docs",
+     "Docs"
+    ],
+    [
+     "api",
+     "Has an API"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "ClickUp",
+     "mentions": 16
+    },
+    {
+     "name": "Obsidian",
+     "mentions": 12
+    },
+    {
+     "name": "Trello",
+     "mentions": 6
+    },
+    {
+     "name": "Asana",
+     "mentions": 4
+    },
+    {
+     "name": "Linear",
+     "mentions": 2
+    },
+    {
+     "name": "Monday.com",
+     "mentions": 1
+    }
+   ],
+   "mentions": 41
+  },
+  {
+   "slug": "ai-model-api",
+   "name": "AI model APIs",
+   "h1": "AI model APIs and gateways, compared",
+   "kw": "llm api",
+   "blurb": "The APIs your automations call to think, write and see.",
+   "features": [
+    [
+     "many",
+     "Many models in one key"
+    ],
+    [
+     "images",
+     "Image / video models"
+    ],
+    [
+     "free",
+     "Free tier"
+    ],
+    [
+     "local",
+     "Runs on your computer"
+    ],
+    [
+     "openai",
+     "OpenAI-compatible"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Google AI Studio",
+     "mentions": 26
+    },
+    {
+     "name": "OpenRouter",
+     "mentions": 26
+    },
+    {
+     "name": "OpenAI API",
+     "mentions": 14
+    },
+    {
+     "name": "Ollama",
+     "mentions": 8
+    },
+    {
+     "name": "Anthropic API",
+     "mentions": 7
+    },
+    {
+     "name": "fal.ai",
+     "mentions": 6
+    },
+    {
+     "name": "Hugging Face",
+     "mentions": 5
+    },
+    {
+     "name": "Replicate",
+     "mentions": 4
+    },
+    {
+     "name": "Kie.ai",
+     "mentions": 4
+    },
+    {
+     "name": "Together AI",
+     "mentions": 2
+    },
+    {
+     "name": "LM Studio",
+     "mentions": 2
+    }
+   ],
+   "mentions": 104
+  },
+  {
+   "slug": "ai-agent-framework",
+   "name": "AI agent frameworks",
+   "h1": "AI agent frameworks for developers, compared",
+   "kw": "ai agent builder",
+   "blurb": "Code libraries for building your own agents.",
+   "features": [
+    [
+     "python",
+     "Python"
+    ],
+    [
+     "js",
+     "JavaScript"
+    ],
+    [
+     "multi",
+     "Multi-agent"
+    ],
+    [
+     "visual",
+     "Visual builder"
+    ],
+    [
+     "opensource",
+     "Open source"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "LangChain / LangGraph",
+     "mentions": 16
+    },
+    {
+     "name": "CrewAI",
+     "mentions": 4
+    },
+    {
+     "name": "AutoGen",
+     "mentions": 3
+    },
+    {
+     "name": "LlamaIndex",
+     "mentions": 3
+    },
+    {
+     "name": "Flowise",
+     "mentions": 2
+    },
+    {
+     "name": "Google ADK",
+     "mentions": 2
+    },
+    {
+     "name": "Agno",
+     "mentions": 2
+    },
+    {
+     "name": "OpenAI Agents SDK",
+     "mentions": 1
+    },
+    {
+     "name": "Claude Agent SDK",
+     "mentions": 1
+    }
+   ],
+   "mentions": 34
+  },
+  {
+   "slug": "vector-database",
+   "name": "Vector databases for RAG",
+   "h1": "Vector databases for RAG, compared",
+   "kw": "vector database",
+   "blurb": "Let your AI search your own documents.",
+   "features": [
+    [
+     "managed",
+     "Managed cloud"
+    ],
+    [
+     "selfhost",
+     "Self-host option"
+    ],
+    [
+     "free",
+     "Free tier"
+    ],
+    [
+     "hybrid",
+     "Keyword + vector search"
+    ],
+    [
+     "opensource",
+     "Open source"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Pinecone",
+     "mentions": 12
+    },
+    {
+     "name": "Chroma",
+     "mentions": 4
+    },
+    {
+     "name": "Supabase pgvector",
+     "mentions": 1
+    },
+    {
+     "name": "Qdrant",
+     "mentions": 1
+    },
+    {
+     "name": "Weaviate",
+     "mentions": 1
+    }
+   ],
+   "mentions": 19
+  },
+  {
+   "slug": "hosting",
+   "name": "Hosting for n8n and AI apps",
+   "h1": "Hosting for n8n and AI apps, compared",
+   "kw": "n8n hosting",
+   "blurb": "Where self-hosted automations and AI-built apps run.",
+   "features": [
+    [
+     "n8n",
+     "One-click n8n"
+    ],
+    [
+     "docker",
+     "Runs Docker"
+    ],
+    [
+     "static",
+     "Static sites"
+    ],
+    [
+     "free",
+     "Free tier"
+    ],
+    [
+     "db",
+     "Databases"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Hostinger VPS",
+     "mentions": 46
+    },
+    {
+     "name": "Google Cloud",
+     "mentions": 21
+    },
+    {
+     "name": "Vercel",
+     "mentions": 20
+    },
+    {
+     "name": "Railway",
+     "mentions": 10
+    },
+    {
+     "name": "AWS",
+     "mentions": 6
+    },
+    {
+     "name": "Netlify",
+     "mentions": 4
+    },
+    {
+     "name": "Render",
+     "mentions": 2
+    },
+    {
+     "name": "Coolify",
+     "mentions": 2
+    },
+    {
+     "name": "DigitalOcean",
+     "mentions": 2
+    },
+    {
+     "name": "Modal",
+     "mentions": 2
+    }
+   ],
+   "mentions": 115
+  },
+  {
+   "slug": "email-marketing",
+   "name": "Email marketing tools",
+   "h1": "Email marketing and automation tools, compared",
+   "kw": "email marketing and automation",
+   "blurb": "Newsletters, drip flows and store emails.",
+   "features": [
+    [
+     "flows",
+     "Automated flows"
+    ],
+    [
+     "sms",
+     "SMS"
+    ],
+    [
+     "ai",
+     "AI writing"
+    ],
+    [
+     "ecommerce",
+     "Store integrations"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Omnisend",
+     "mentions": 11
+    },
+    {
+     "name": "Mailchimp",
+     "mentions": 8
+    },
+    {
+     "name": "Klaviyo",
+     "mentions": 7
+    },
+    {
+     "name": "ActiveCampaign",
+     "mentions": 7
+    },
+    {
+     "name": "Customer.io",
+     "mentions": 3
+    },
+    {
+     "name": "beehiiv",
+     "mentions": 2
+    },
+    {
+     "name": "Resend",
+     "mentions": 2
+    },
+    {
+     "name": "SendGrid",
+     "mentions": 2
+    },
+    {
+     "name": "Kit",
+     "mentions": 1
+    }
+   ],
+   "mentions": 43
+  },
+  {
+   "slug": "scheduling-booking",
+   "name": "Booking and calendar tools",
+   "h1": "Booking and scheduling tools, compared",
+   "kw": "appointment scheduling software",
+   "blurb": "Let people book a time without the back-and-forth.",
+   "features": [
+    [
+     "payments",
+     "Take payments"
+    ],
+    [
+     "reminders",
+     "SMS reminders"
+    ],
+    [
+     "team",
+     "Team / round robin"
+    ],
+    [
+     "api",
+     "Has an API"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Google Calendar",
+     "mentions": 49
+    },
+    {
+     "name": "Calendly",
+     "mentions": 15
+    },
+    {
+     "name": "Cal.com",
+     "mentions": 15
+    },
+    {
+     "name": "Acuity",
+     "mentions": 0
+    },
+    {
+     "name": "TidyCal",
+     "mentions": 0
+    }
+   ],
+   "mentions": 79
+  },
+  {
+   "slug": "forms-esignature",
+   "name": "Forms and e-signature tools",
+   "h1": "Forms and e-signature tools, compared",
+   "kw": "form builder",
+   "blurb": "Collect info, quotes and signatures that start your automations.",
+   "features": [
+    [
+     "forms",
+     "Forms"
+    ],
+    [
+     "esign",
+     "E-signature"
+    ],
+    [
+     "payments",
+     "Payments"
+    ],
+    [
+     "webhooks",
+     "Webhooks"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Google Forms",
+     "mentions": 10
+    },
+    {
+     "name": "PandaDoc",
+     "mentions": 7
+    },
+    {
+     "name": "Typeform",
+     "mentions": 4
+    },
+    {
+     "name": "Tally",
+     "mentions": 4
+    },
+    {
+     "name": "DocuSign",
+     "mentions": 4
+    },
+    {
+     "name": "Jotform",
+     "mentions": 3
+    }
+   ],
+   "mentions": 32
+  },
+  {
+   "slug": "ecommerce",
+   "name": "Store builders and dropshipping tools",
+   "h1": "Store builders and dropshipping tools, compared",
+   "kw": "ai store builder",
+   "blurb": "Build a store and automate the product, order and supplier side.",
+   "features": [
+    [
+     "store",
+     "Builds the store"
+    ],
+    [
+     "suppliers",
+     "Supplier products"
+    ],
+    [
+     "autoorder",
+     "Auto-orders from suppliers"
+    ],
+    [
+     "ai",
+     "AI product pages"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Shopify",
+     "mentions": 75
+    },
+    {
+     "name": "AutoDS",
+     "mentions": 12
+    },
+    {
+     "name": "BuildYourStore.ai",
+     "mentions": 12
+    },
+    {
+     "name": "Zendrop",
+     "mentions": 8
+    },
+    {
+     "name": "Etsy",
+     "mentions": 4
+    },
+    {
+     "name": "TikTok Shop",
+     "mentions": 4
+    },
+    {
+     "name": "Printify",
+     "mentions": 3
+    },
+    {
+     "name": "WooCommerce",
+     "mentions": 2
+    }
+   ],
+   "mentions": 120
+  },
+  {
+   "slug": "accounting",
+   "name": "Accounting and bookkeeping tools",
+   "h1": "Accounting tools with AI, compared",
+   "kw": "ai bookkeeping",
+   "blurb": "Books, invoices and expenses your automations can feed.",
+   "features": [
+    [
+     "ai",
+     "AI categorizing"
+    ],
+    [
+     "invoices",
+     "Invoices"
+    ],
+    [
+     "payroll",
+     "Payroll"
+    ],
+    [
+     "api",
+     "Has an API"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "QuickBooks Online",
+     "mentions": 28
+    },
+    {
+     "name": "Xero",
+     "mentions": 4
+    },
+    {
+     "name": "Digits",
+     "mentions": 4
+    },
+    {
+     "name": "Ramp",
+     "mentions": 4
+    },
+    {
+     "name": "Zoho Books",
+     "mentions": 2
+    },
+    {
+     "name": "Wave",
+     "mentions": 2
+    }
+   ],
+   "mentions": 44
+  },
+  {
+   "slug": "youtube-research",
+   "name": "YouTube research tools",
+   "h1": "YouTube research tools, compared",
+   "kw": "youtube keyword tool",
+   "blurb": "Find video ideas, outliers and keywords before you film.",
+   "features": [
+    [
+     "keywords",
+     "Keyword research"
+    ],
+    [
+     "outliers",
+     "Outlier videos"
+    ],
+    [
+     "ai",
+     "AI titles / ideas"
+    ],
+    [
+     "extension",
+     "Browser extension"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "vidIQ",
+     "mentions": 31
+    },
+    {
+     "name": "Social Blade",
+     "mentions": 4
+    },
+    {
+     "name": "TubeBuddy",
+     "mentions": 2
+    },
+    {
+     "name": "TubeLab",
+     "mentions": 2
+    },
+    {
+     "name": "1of10",
+     "mentions": 1
+    },
+    {
+     "name": "Viewstats",
+     "mentions": 0
+    }
+   ],
+   "mentions": 40
+  },
+  {
+   "slug": "seo-ai-writing",
+   "name": "SEO and AI writing tools",
+   "h1": "SEO and AI writing tools, compared",
+   "kw": "ai writer",
+   "blurb": "Keyword research, blog posts and rank tracking.",
+   "features": [
+    [
+     "keywords",
+     "Keyword research"
+    ],
+    [
+     "writer",
+     "AI writer"
+    ],
+    [
+     "publish",
+     "Publishes to your site"
+    ],
+    [
+     "rank",
+     "Rank tracking"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Semrush",
+     "mentions": 12
+    },
+    {
+     "name": "Google Search Console",
+     "mentions": 8
+    },
+    {
+     "name": "GravityWrite",
+     "mentions": 6
+    },
+    {
+     "name": "Jasper",
+     "mentions": 6
+    },
+    {
+     "name": "Ahrefs",
+     "mentions": 5
+    },
+    {
+     "name": "Arvow",
+     "mentions": 5
+    },
+    {
+     "name": "Grammarly",
+     "mentions": 5
+    },
+    {
+     "name": "Copy.ai",
+     "mentions": 3
+    },
+    {
+     "name": "Surfer",
+     "mentions": 3
+    }
+   ],
+   "mentions": 53
+  },
+  {
+   "slug": "workspace-suite",
+   "name": "Email and office suites",
+   "h1": "Google Workspace vs Microsoft 365 vs Zoho, for AI automations",
+   "kw": "google workspace",
+   "blurb": "Email, docs and drive: the apps most automations start from.",
+   "features": [
+    [
+     "ai",
+     "AI built in"
+    ],
+    [
+     "email",
+     "Custom-domain email"
+    ],
+    [
+     "storage1tb",
+     "1 TB+ storage per user"
+    ],
+    [
+     "api",
+     "Automation API"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Google Workspace",
+     "mentions": 252
+    },
+    {
+     "name": "Microsoft 365",
+     "mentions": 38
+    },
+    {
+     "name": "Zoho Workplace",
+     "mentions": 0
+    },
+    {
+     "name": "Proton",
+     "mentions": 0
+    }
+   ],
+   "mentions": 290
+  },
+  {
+   "slug": "team-chat",
+   "name": "Team chat and messaging apps for bots",
+   "h1": "Slack, Telegram, WhatsApp and more for AI bots, compared",
+   "kw": "telegram bot",
+   "blurb": "Where your AI bots and alerts talk to you and your customers.",
+   "features": [
+    [
+     "bots",
+     "Bots allowed"
+    ],
+    [
+     "api",
+     "Free bot API"
+    ],
+    [
+     "customers",
+     "Talk to customers"
+    ],
+    [
+     "groups",
+     "Team channels"
+    ],
+    [
+     "free",
+     "Free tier"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Slack",
+     "mentions": 77
+    },
+    {
+     "name": "Telegram",
+     "mentions": 42
+    },
+    {
+     "name": "WhatsApp Business",
+     "mentions": 21
+    },
+    {
+     "name": "Microsoft Teams",
+     "mentions": 11
+    },
+    {
+     "name": "Discord",
+     "mentions": 6
+    },
+    {
+     "name": "Google Chat",
+     "mentions": 2
+    }
+   ],
+   "mentions": 159
+  },
+  {
+   "slug": "sell-online",
+   "name": "Payments, courses and community platforms",
+   "h1": "Stripe, Skool, Whop and more for selling online, compared",
+   "kw": "skool",
+   "blurb": "Take payments and sell courses, communities and digital products.",
+   "features": [
+    [
+     "courses",
+     "Courses"
+    ],
+    [
+     "community",
+     "Community"
+    ],
+    [
+     "digital",
+     "Digital downloads"
+    ],
+    [
+     "subscriptions",
+     "Subscriptions"
+    ],
+    [
+     "free",
+     "No monthly fee"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Stripe",
+     "mentions": 25
+    },
+    {
+     "name": "Skool",
+     "mentions": 25
+    },
+    {
+     "name": "Whop",
+     "mentions": 13
+    },
+    {
+     "name": "Gumroad",
+     "mentions": 4
+    },
+    {
+     "name": "Kajabi",
+     "mentions": 3
+    },
+    {
+     "name": "PayPal",
+     "mentions": 3
+    },
+    {
+     "name": "Stan Store",
+     "mentions": 2
+    },
+    {
+     "name": "Beacons",
+     "mentions": 2
+    }
+   ],
+   "mentions": 77
+  },
+  {
+   "slug": "freelance-marketplace",
+   "name": "Freelance marketplaces",
+   "h1": "Where to sell AI automation services: freelance marketplaces compared",
+   "kw": "upwork",
+   "blurb": "Where the videos say to find your first automation clients.",
+   "features": [
+    [
+     "fixed",
+     "Fixed-price gigs"
+    ],
+    [
+     "hourly",
+     "Hourly contracts"
+    ],
+    [
+     "protection",
+     "Payment protection"
+    ],
+    [
+     "ai",
+     "AI / automation category"
+    ],
+    [
+     "free",
+     "Free to join"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Upwork",
+     "mentions": 16
+    },
+    {
+     "name": "Fiverr",
+     "mentions": 12
+    },
+    {
+     "name": "Freelancer.com",
+     "mentions": 1
+    },
+    {
+     "name": "Contra",
+     "mentions": 0
+    },
+    {
+     "name": "Toptal",
+     "mentions": 0
+    }
+   ],
+   "mentions": 29
+  },
+  {
+   "slug": "stock-media",
+   "name": "Stock footage, photos and music",
+   "h1": "Stock footage, photo and music sites for automated videos, compared",
+   "kw": "stock footage",
+   "blurb": "Real clips, photos and tracks your automated videos can use.",
+   "features": [
+    [
+     "video",
+     "Video"
+    ],
+    [
+     "music",
+     "Music"
+    ],
+    [
+     "api",
+     "Has an API"
+    ],
+    [
+     "commercial",
+     "Commercial use"
+    ],
+    [
+     "free",
+     "Free"
+    ]
+   ],
+   "tools": [
+    {
+     "name": "Pexels",
+     "mentions": 8
+    },
+    {
+     "name": "Pixabay",
+     "mentions": 6
+    },
+    {
+     "name": "Storyblocks",
+     "mentions": 2
+    },
+    {
+     "name": "Epidemic Sound",
+     "mentions": 2
+    },
+    {
+     "name": "Artlist",
+     "mentions": 1
+    },
+    {
+     "name": "Unsplash",
+     "mentions": 1
+    },
+    {
+     "name": "Envato",
+     "mentions": 0
+    }
+   ],
+   "mentions": 20
+  },
+  {
+   "slug": "social-media-scheduler",
+   "name": "Social media schedulers",
+   "features": [],
+   "tools": [
+    {
+     "name": "Blotato",
+     "mentions": 30
+    },
+    {
+     "name": "Buffer",
+     "mentions": 13
+    },
+    {
+     "name": "Meta Business Suite",
+     "mentions": 8
+    },
+    {
+     "name": "Metricool",
+     "mentions": 6
+    },
+    {
+     "name": "Repurpose.io",
+     "mentions": 4
+    },
+    {
+     "name": "Post Planner",
+     "mentions": 3
+    },
+    {
+     "name": "Postiz",
+     "mentions": 2
+    },
+    {
+     "name": "Hootsuite",
+     "mentions": 1
+    },
+    {
+     "name": "Later",
+     "mentions": 1
+    },
+    {
+     "name": "Publer",
+     "mentions": 0
+    }
+   ],
+   "mentions": 68
+  }
+ ]
+}

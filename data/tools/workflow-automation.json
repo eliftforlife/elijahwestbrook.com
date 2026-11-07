@@ -1,0 +1,335 @@
+[
+ {
+  "name": "n8n",
+  "website": "https://n8n.io",
+  "pricing_url": "https://n8n.io/pricing/",
+  "checked": "2026-11-07",
+  "free_plan": false,
+  "free_plan_limits": "Free trial on the cloud version; free Community Edition if you host it yourself",
+  "start_usd": 20,
+  "small_business_plan": "Starter (cloud)",
+  "cost_small_business_usd": 20,
+  "cost_billed": "yearly",
+  "pricing_model": "usage",
+  "usage_note": "Priced by workflow executions: 2,500 a month on Starter, 10,000 on Pro",
+  "open_source": false,
+  "features": {
+   "ai": true,
+   "agents": true,
+   "selfhost": true,
+   "code": true,
+   "integrations500": true
+  },
+  "since": 2019,
+  "since_note": "First released publicly in 2019 (Wikipedia).",
+  "best_for": "Tinkerers who want to host it themselves",
+  "notes": "Page shows euro prices on annual billing only (EUR 20 Starter, EUR 50 Pro); entered here as 20 without conversion. Self-host is under n8n's fair-code license, not a standard open-source one. Business plan is EUR 667.",
+  "sources": [
+   "https://n8n.io/pricing/",
+   "https://en.wikipedia.org/wiki/N8n"
+  ],
+  "currency": "EUR"
+ },
+ {
+  "name": "Make",
+  "website": "https://www.make.com",
+  "pricing_url": "https://www.make.com/en/pricing",
+  "checked": "2026-11-07",
+  "free_plan": true,
+  "free_plan_limits": "1,000 credits a month, 1 MB data storage",
+  "start_usd": 9,
+  "small_business_plan": "Core",
+  "cost_small_business_usd": 9,
+  "cost_billed": "yearly",
+  "pricing_model": "credits",
+  "usage_note": "Each module action uses 1 credit; AI features can use more",
+  "open_source": false,
+  "features": {
+   "ai": true,
+   "agents": true,
+   "selfhost": false,
+   "code": true,
+   "integrations500": true
+  },
+  "since": 2016,
+  "since_note": "Integromat went live in 2016 (Wikipedia mirror, citing Czech Wikipedia); some databases list 2012 as a start year; renamed Make in 2022.",
+  "best_for": "Visual builders who want low per-run cost",
+  "notes": "Make's pricing page text did not show plan prices to us. Search results from make.com say Core is $9 a month on annual billing for 10,000 credits; one Make blog post says $12. Monthly price not confirmed.",
+  "sources": [
+   "https://www.make.com/en/pricing",
+   "https://www.make.com/compare/make-vs-n8n",
+   "https://cavac.at/cavacopedia/Make%20%28platform%29"
+  ]
+ },
+ {
+  "name": "Zapier",
+  "website": "https://zapier.com",
+  "pricing_url": "https://zapier.com/pricing",
+  "checked": "2026-11-07",
+  "free_plan": true,
+  "free_plan_limits": "100 tasks a month, two-step Zaps only, 15-minute polling",
+  "start_usd": 29.99,
+  "small_business_plan": "Pro (750 tasks)",
+  "cost_small_business_usd": 29.99,
+  "cost_billed": "monthly",
+  "pricing_model": "usage",
+  "usage_note": "Priced by tasks; Pro starts at 750 tasks a month",
+  "open_source": false,
+  "features": {
+   "ai": true,
+   "agents": true,
+   "selfhost": false,
+   "code": true,
+   "integrations500": true
+  },
+  "since": 2011,
+  "since_note": "Company founded 2011; platform launched 2012 through Y Combinator (Wikipedia).",
+  "best_for": "Non-technical people connecting many apps",
+  "notes": "Pro is $19.99 a month if billed yearly. Team starts at $103.50 monthly. Premium apps and longer code runtime are paid only. Zapier Agents have a separate allowance (400 activities free).",
+  "sources": [
+   "https://zapier.com/pricing",
+   "https://en.wikipedia.org/wiki/Zapier"
+  ]
+ },
+ {
+  "name": "Power Automate",
+  "website": "https://www.microsoft.com/power-platform/products/power-automate",
+  "pricing_url": "https://www.microsoft.com/en-us/power-platform/products/power-automate/pricing",
+  "checked": "2026-11-07",
+  "free_plan": false,
+  "free_plan_limits": "30-day free trial only on the pricing page",
+  "start_usd": 15,
+  "small_business_plan": "Premium (per user)",
+  "cost_small_business_usd": 15,
+  "cost_billed": "yearly",
+  "pricing_model": "per seat",
+  "usage_note": "",
+  "open_source": false,
+  "features": {
+   "ai": true,
+   "agents": true,
+   "selfhost": false,
+   "code": true,
+   "integrations500": true
+  },
+  "since": 2016,
+  "since_note": "Launched as Microsoft Flow, generally available November 2016; renamed Power Automate in 2019 (Wikipedia).",
+  "best_for": "Businesses already on Microsoft 365",
+  "notes": "$15 per user a month, paid yearly. Unattended desktop bots cost $150 per bot a month. Basic flows come with some Microsoft 365 plans (not priced here). Copilot Studio agents are billed separately by credits.",
+  "sources": [
+   "https://www.microsoft.com/en-us/power-platform/products/power-automate/pricing",
+   "https://en.wikipedia.org/wiki/Microsoft_Power_Automate"
+  ]
+ },
+ {
+  "name": "Gumloop",
+  "website": "https://www.gumloop.com",
+  "pricing_url": "https://www.gumloop.com/pricing",
+  "checked": "2026-11-07",
+  "free_plan": true,
+  "free_plan_limits": "About 2,000 credits a month, 1 seat, 1 active trigger",
+  "start_usd": 37,
+  "small_business_plan": "Solo",
+  "cost_small_business_usd": 37,
+  "cost_billed": "monthly",
+  "pricing_model": "credits",
+  "usage_note": "Solo includes 10,000+ credits a month",
+  "open_source": false,
+  "features": {
+   "ai": true,
+   "agents": true,
+   "selfhost": false,
+   "code": null,
+   "integrations500": null
+  },
+  "since": 2023,
+  "since_note": "Started April 2023 as AgentHub, renamed Gumloop in 2024 (BetaKit).",
+  "best_for": "AI-first workflows without code",
+  "notes": "Pricing page did not load as text; figures come from Gumloop's own blog posts and search snippets. Team plan is $244 a month for 10 seats and 60,000+ credits.",
+  "sources": [
+   "https://www.gumloop.com/pricing",
+   "https://www.gumloop.com/blog/introducing-the-solo-and-team-plans-on-gumloop",
+   "https://betakit.com/y-combinator-grad-gumloop-secures-3-1-million-in-seed-funding-to-grow-no-code-automation-tool/"
+  ]
+ },
+ {
+  "name": "Trigger.dev",
+  "website": "https://trigger.dev",
+  "pricing_url": "https://trigger.dev/pricing",
+  "checked": "2026-11-07",
+  "free_plan": true,
+  "free_plan_limits": "$5 of compute a month, 20 concurrent runs, 1 day of logs",
+  "start_usd": 10,
+  "small_business_plan": "Hobby",
+  "cost_small_business_usd": 10,
+  "cost_billed": "monthly",
+  "pricing_model": "usage",
+  "usage_note": "$0.25 per 10,000 runs plus compute billed per second",
+  "open_source": true,
+  "features": {
+   "ai": null,
+   "agents": null,
+   "selfhost": true,
+   "code": true,
+   "integrations500": false
+  },
+  "since": 2022,
+  "since_note": "Founded 2022, Y Combinator Winter 2023 batch (Y Combinator company page).",
+  "best_for": "Developers running background jobs in code",
+  "notes": "A code library for developers, not a drag-and-drop tool. Apache 2.0 license with a self-hosting guide. Hobby includes $10 of compute; Pro is $50 a month.",
+  "sources": [
+   "https://trigger.dev/pricing",
+   "https://www.ycombinator.com/companies/trigger-dev"
+  ]
+ },
+ {
+  "name": "Relevance AI",
+  "website": "https://relevanceai.com",
+  "pricing_url": "https://relevanceai.com/docs/get-started/pricing",
+  "checked": "2026-11-07",
+  "free_plan": false,
+  "free_plan_limits": "Free plan retired for new and existing accounts",
+  "start_usd": 29,
+  "small_business_plan": "Pro",
+  "cost_small_business_usd": 29,
+  "cost_billed": "monthly",
+  "pricing_model": "credits",
+  "usage_note": "Pro includes 2,500 actions a month plus vendor credits for AI models",
+  "open_source": false,
+  "features": {
+   "ai": true,
+   "agents": true,
+   "selfhost": false,
+   "code": true,
+   "integrations500": true
+  },
+  "since": 2020,
+  "since_note": "Company founded 2020 in Sydney (Business News Australia).",
+  "best_for": "Building AI agent teams for sales work",
+  "notes": "Pro is $19 a month on annual billing, $29 monthly. Team is $234 annual or $349 monthly. Docs conflict on vendor-credit amounts. The main pricing page only showed Enterprise (2,000+ integrations).",
+  "sources": [
+   "https://relevanceai.com/docs/get-started/pricing",
+   "https://relevanceai.com/pricing",
+   "https://www.businessnewsaustralia.com/articles/relevance-ai-raises--15m-in-series-a-amid-surge-in-clients-for-its-low-code-platform.html"
+  ]
+ },
+ {
+  "name": "IFTTT",
+  "website": "https://ifttt.com",
+  "pricing_url": "https://ifttt.com/plans",
+  "checked": "2026-11-07",
+  "free_plan": true,
+  "free_plan_limits": "1,000 credits a month, unlimited applets, hourly checks",
+  "start_usd": 2.09,
+  "small_business_plan": "Pro",
+  "cost_small_business_usd": 5.49,
+  "cost_billed": "yearly",
+  "pricing_model": "credits",
+  "usage_note": "Credits cover applet runs, AI steps and MCP use",
+  "open_source": false,
+  "features": {
+   "ai": true,
+   "agents": true,
+   "selfhost": false,
+   "code": null,
+   "integrations500": null
+  },
+  "since": 2011,
+  "since_note": "Company founded 2010; product officially launched 7 September 2011 (Wikipedia).",
+  "best_for": "Simple one-step home and app triggers",
+  "notes": "Prices shown are the monthly equivalent of yearly plans ($25.08 and $65.88 a year); a pure monthly price was not stated. Pro+ is $13.99 for 100,000 credits.",
+  "sources": [
+   "https://ifttt.com/plans",
+   "https://en.wikipedia.org/wiki/IFTTT"
+  ]
+ },
+ {
+  "name": "Bardeen",
+  "website": "https://www.bardeen.ai",
+  "pricing_url": "https://www.bardeen.ai/pricing",
+  "checked": "2026-11-07",
+  "free_plan": true,
+  "free_plan_limits": "100 credits",
+  "start_usd": 10,
+  "small_business_plan": "Premium",
+  "cost_small_business_usd": 50,
+  "cost_billed": "monthly",
+  "pricing_model": "credits",
+  "usage_note": "1 credit per scraped row; 3 credits per enriched row",
+  "open_source": false,
+  "features": {
+   "ai": true,
+   "agents": null,
+   "selfhost": false,
+   "code": null,
+   "integrations500": null
+  },
+  "since": 2022,
+  "since_note": "Company founded 2020; product launched out of stealth February 2022 (Business Wire).",
+  "best_for": "Scraping web data into sheets and CRMs",
+  "notes": "Basic is $10 a month for 100 credits; Premium $50 for 1,000 credits ($480 a year for 12,000). Unused credits expire each billing period. Page text was unclear; check before quoting.",
+  "sources": [
+   "https://www.bardeen.ai/pricing",
+   "https://www.businesswire.com/news/home/20220217005092/en/Bardeen.ai-Exits-Stealth-to-Simplify-Everyday-Workflows"
+  ]
+ },
+ {
+  "name": "Pipedream",
+  "website": "https://pipedream.com",
+  "pricing_url": "https://pipedream.com/pricing",
+  "checked": "2026-11-07",
+  "free_plan": true,
+  "free_plan_limits": "Development only: no production environment, no real external users",
+  "start_usd": 150,
+  "small_business_plan": "Startup",
+  "cost_small_business_usd": 150,
+  "cost_billed": "monthly",
+  "pricing_model": "credits",
+  "usage_note": "10,000 credits included; extra credits $0.012 each",
+  "open_source": false,
+  "features": {
+   "ai": true,
+   "agents": true,
+   "selfhost": false,
+   "code": true,
+   "integrations500": true
+  },
+  "since": null,
+  "since_note": "Not published.",
+  "best_for": "Developers who want code plus ready apps",
+  "notes": "Startup is $99 a month if billed yearly, $150 monthly. Page does not say the core product is open source; only an SDK and tool registry are on GitHub. Free plan cannot serve real users.",
+  "sources": [
+   "https://pipedream.com/pricing"
+  ]
+ },
+ {
+  "name": "Activepieces",
+  "website": "https://www.activepieces.com",
+  "pricing_url": "https://www.activepieces.com/pricing",
+  "checked": "2026-11-07",
+  "free_plan": true,
+  "free_plan_limits": "1,000 credits a month, up to 5 users, unlimited flows",
+  "start_usd": 20,
+  "small_business_plan": "Plus",
+  "cost_small_business_usd": 20,
+  "cost_billed": "monthly",
+  "pricing_model": "credits",
+  "usage_note": "Plus includes 10,000 credits; extra credits $0.007 each",
+  "open_source": true,
+  "features": {
+   "ai": true,
+   "agents": true,
+   "selfhost": true,
+   "code": true,
+   "integrations500": true
+  },
+  "since": 2022,
+  "since_note": "Founded 2022, Y Combinator S22 batch (Y Combinator company page).",
+  "best_for": "Open-source Zapier swap you can host",
+  "notes": "Page says the core is open source but does not name the license. It cites 770+ integrations. Team plan is $200 a month for 50,000 credits.",
+  "sources": [
+   "https://www.activepieces.com/pricing",
+   "https://www.ycombinator.com/companies/activepieces"
+  ]
+ }
+]

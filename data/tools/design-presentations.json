@@ -1,0 +1,247 @@
+[
+    {
+        "name": "Canva",
+        "website": "https://www.canva.com",
+        "pricing_url": "https://www.canva.com/pricing/",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "Not stated in sources read",
+        "start_usd": 18,
+        "small_business_plan": "Pro",
+        "cost_small_business_usd": 18,
+        "cost_billed": "monthly",
+        "pricing_model": "per seat",
+        "usage_note": "Pro is for one user",
+        "open_source": false,
+        "features": {
+            "templates": true,
+            "aidraft": true,
+            "brand": null,
+            "team": true,
+            "free": true
+        },
+        "since": 2013,
+        "since_note": "Platform released August 2013 (Wikipedia).",
+        "best_for": "Easy graphics and slides for non-designers",
+        "notes": "Pro $18 monthly or $12/mo yearly. Teams is no longer sold; Business is about $25 per person monthly ($20.83 yearly). Pricing page blocked, figures from Canva search results.",
+        "sources": [
+            "https://www.canva.com/pricing/",
+            "https://www.canva.com/help/about-canva-teams/",
+            "https://en.wikipedia.org/wiki/Canva"
+        ]
+    },
+    {
+        "name": "Gamma",
+        "website": "https://gamma.app",
+        "pricing_url": "https://gamma.app/pricing",
+        "checked": "2026-11-07",
+        "free_plan": null,
+        "free_plan_limits": "",
+        "start_usd": null,
+        "small_business_plan": "Plus",
+        "cost_small_business_usd": null,
+        "cost_billed": "monthly",
+        "pricing_model": "per seat",
+        "usage_note": "Credits: Plus 1,500 a month, Pro 4,000, Business 10,000 per member",
+        "open_source": false,
+        "features": {
+            "templates": null,
+            "aidraft": true,
+            "brand": null,
+            "team": true,
+            "free": null
+        },
+        "since": 2020,
+        "since_note": "Company founded 2020; product launch year not consistently published (AI Magazine and other profiles).",
+        "best_for": "AI-made slide decks and pages",
+        "notes": "Not stated: the pricing page returned 403 and no official price appeared in search. Only Business ($40/member yearly) was confirmed. Billing is per member.",
+        "sources": [
+            "https://help.gamma.app/en/articles/11594955-what-options-does-gamma-offer-for-business",
+            "https://help.gamma.app/en/articles/7834324-how-do-credits-work-in-gamma",
+            "https://aimagazine.com/news/gamma-ai-presentations-for-100m-users-us-100m-arr-and-prof"
+        ]
+    },
+    {
+        "name": "Adobe Photoshop",
+        "website": "https://www.adobe.com/products/photoshop.html",
+        "pricing_url": "https://www.adobe.com/products/photoshop/plans.html",
+        "checked": "2026-11-07",
+        "free_plan": null,
+        "free_plan_limits": "",
+        "start_usd": 22.99,
+        "small_business_plan": "Photoshop (individual)",
+        "cost_small_business_usd": 22.99,
+        "cost_billed": "monthly",
+        "pricing_model": "per seat",
+        "usage_note": "Annual plan billed monthly; page shows no month-to-month price",
+        "open_source": false,
+        "features": {
+            "templates": null,
+            "aidraft": true,
+            "brand": null,
+            "team": true,
+            "free": null
+        },
+        "since": 1990,
+        "since_note": "First released February 1990 (Wikipedia).",
+        "best_for": "Photo editing and compositing",
+        "notes": "Includes 25 generative credits a month. Teams license $37.99 per user. Firefly Pro $19.99 has Photoshop on web and mobile only.",
+        "sources": [
+            "https://www.adobe.com/products/photoshop/plans.html",
+            "https://en.wikipedia.org/wiki/Adobe_Photoshop"
+        ]
+    },
+    {
+        "name": "Figma",
+        "website": "https://www.figma.com",
+        "pricing_url": "https://www.figma.com/pricing/",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "Starter: unlimited drafts, up to 500 AI credits a month",
+        "start_usd": 20,
+        "small_business_plan": "Professional (Full seat)",
+        "cost_small_business_usd": 20,
+        "cost_billed": "monthly",
+        "pricing_model": "per seat",
+        "usage_note": "Full seat $16 billed yearly; Dev seat $12, Collab seat $3",
+        "open_source": false,
+        "features": {
+            "templates": true,
+            "aidraft": true,
+            "brand": null,
+            "team": true,
+            "free": true
+        },
+        "since": 2016,
+        "since_note": "First public release September 2016; company founded 2012 (Wikipedia).",
+        "best_for": "Interface design and team prototypes",
+        "notes": "Monthly $20 figure comes from a Figma forum reply, not the pricing page. Full seat includes Slides, Sites and Make.",
+        "sources": [
+            "https://www.figma.com/pricing/",
+            "https://forum.figma.com/report-a-problem-6/full-seat-offers-at-16-but-i-am-being-charged-20-57530",
+            "https://en.wikipedia.org/wiki/Figma"
+        ]
+    },
+    {
+        "name": "Adobe Lightroom",
+        "website": "https://www.adobe.com/products/photoshop-lightroom.html",
+        "pricing_url": "https://www.adobe.com/creativecloud/photography/compare-plans.html",
+        "checked": "2026-11-07",
+        "free_plan": null,
+        "free_plan_limits": "",
+        "start_usd": 11.99,
+        "small_business_plan": "Lightroom (1TB)",
+        "cost_small_business_usd": 11.99,
+        "cost_billed": "monthly",
+        "pricing_model": "per seat",
+        "usage_note": "Annual commitment, billed monthly; prepaid yearly $9.99/mo",
+        "open_source": false,
+        "features": {
+            "templates": null,
+            "aidraft": null,
+            "brand": null,
+            "team": null,
+            "free": null
+        },
+        "since": 2007,
+        "since_note": "Initial release February 2007 (Wikipedia).",
+        "best_for": "Editing and organizing photos",
+        "notes": "Lightroom price is from Adobe's Dec 2024 blog (US); not re-confirmed. Photography plan with Photoshop and Lightroom Classic is $19.99 on adobe.com now.",
+        "sources": [
+            "https://blog.adobe.com/en/publish/2024/12/15/all-new-photography-innovations-pricing-updates",
+            "https://www.adobe.com/products/photoshop/plans.html",
+            "https://en.wikipedia.org/wiki/Adobe_Lightroom"
+        ]
+    },
+    {
+        "name": "Miro",
+        "website": "https://miro.com",
+        "pricing_url": "https://miro.com/pricing/",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "Unlimited members, 3 editable boards, 10 AI credits a month",
+        "start_usd": 10,
+        "small_business_plan": "Starter",
+        "cost_small_business_usd": 10,
+        "cost_billed": "monthly",
+        "pricing_model": "per seat",
+        "usage_note": "Starter $8 per member billed yearly; Business $25 monthly or $20 yearly",
+        "open_source": false,
+        "features": {
+            "templates": null,
+            "aidraft": true,
+            "brand": null,
+            "team": true,
+            "free": true
+        },
+        "since": 2011,
+        "since_note": "Founded 2011 as RealtimeBoard, renamed Miro 2019 (Wikipedia).",
+        "best_for": "Whiteboards and workshops with a team",
+        "notes": "Billed per member, so cost rises with team size.",
+        "sources": [
+            "https://miro.com/pricing/",
+            "https://miro.com/starter-plan/",
+            "https://miro.com/business-plan/",
+            "https://en.wikipedia.org/wiki/Miro_(collaboration_platform)"
+        ]
+    },
+    {
+        "name": "Excalidraw",
+        "website": "https://excalidraw.com",
+        "pricing_url": "https://plus.excalidraw.com/pricing",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "Full editor, unlimited collaborators, 10 AI requests a day",
+        "start_usd": 6,
+        "small_business_plan": "Excalidraw+",
+        "cost_small_business_usd": 6,
+        "cost_billed": "monthly",
+        "pricing_model": "per seat",
+        "usage_note": "$6 a month per user; 14% off yearly",
+        "open_source": true,
+        "features": {
+            "templates": null,
+            "aidraft": true,
+            "brand": null,
+            "team": true,
+            "free": true
+        },
+        "since": 2020,
+        "since_note": "Created January 2020 (Wikipedia).",
+        "best_for": "Quick hand-drawn diagrams",
+        "notes": "The free whiteboard is open source (license not named on page); Excalidraw+ is the paid hosted version.",
+        "sources": [
+            "https://plus.excalidraw.com/pricing",
+            "https://en.wikipedia.org/wiki/Excalidraw"
+        ]
+    },
+    {
+        "name": "Pomelli",
+        "website": "https://labs.google/pomelli",
+        "pricing_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/pomelli/",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "Whole tool is free during beta",
+        "start_usd": 0,
+        "small_business_plan": "Free",
+        "cost_small_business_usd": 0,
+        "cost_billed": "monthly",
+        "pricing_model": "free",
+        "usage_note": "",
+        "open_source": false,
+        "features": {
+            "templates": null,
+            "aidraft": true,
+            "brand": true,
+            "team": null,
+            "free": true
+        },
+        "since": 2025,
+        "since_note": "Announced and launched October 2025 (Google blog).",
+        "best_for": "On-brand social posts from your website",
+        "notes": "Google Labs experiment: reads your website to build a Business DNA (colors, fonts, tone). Free for now; Google calls it an early experiment, so it may change.",
+        "sources": [
+            "https://blog.google/innovation-and-ai/models-and-research/google-labs/pomelli/"
+        ]
+    }
+]

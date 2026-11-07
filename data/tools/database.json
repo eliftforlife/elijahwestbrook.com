@@ -1,0 +1,251 @@
+[
+        {
+                "name": "Google Sheets",
+                "website": "https://workspace.google.com/products/sheets/",
+                "pricing_url": "https://workspace.google.com/pricing",
+                "checked": "2026-11-07",
+                "free_plan": true,
+                "free_plan_limits": "Free with a personal Google account",
+                "start_usd": 8.4,
+                "small_business_plan": "Workspace Business Starter",
+                "cost_small_business_usd": 8.4,
+                "cost_billed": "monthly",
+                "pricing_model": "per seat",
+                "usage_note": "",
+                "open_source": false,
+                "features": {
+                        "api": true,
+                        "ai": true,
+                        "forms": true,
+                        "selfhost": false,
+                        "free": true
+                },
+                "since": 2006,
+                "since_note": "Released March 2006 (Wikipedia).",
+                "best_for": "Simple shared tables every tool can reach",
+                "notes": "Priced Workspace Business Starter: $8.40 per user monthly, $7 on an annual plan. Sheets itself is free with a personal account. Feature flags (API, AI, Forms) not re-checked on a Google page.",
+                "sources": [
+                        "https://knowledge.workspace.google.com/admin/getting-started/editions/business-editions",
+                        "https://workspace.google.com/pricing",
+                        "https://en.wikipedia.org/wiki/Google_Sheets"
+                ]
+        },
+        {
+                "name": "Notion",
+                "website": "https://www.notion.com",
+                "pricing_url": "https://www.notion.com/pricing",
+                "checked": "2026-11-07",
+                "free_plan": true,
+                "free_plan_limits": "For individuals; a team can trial it up to a block limit",
+                "start_usd": 10,
+                "small_business_plan": "Plus",
+                "cost_small_business_usd": 10,
+                "cost_billed": "yearly",
+                "pricing_model": "per seat",
+                "usage_note": "",
+                "open_source": false,
+                "features": {
+                        "api": true,
+                        "ai": true,
+                        "forms": true,
+                        "selfhost": false,
+                        "free": true
+                },
+                "since": 2016,
+                "since_note": "Notion 1.0 launched August 2016; company founded 2013 (Wikipedia).",
+                "best_for": "Docs and light databases in one place",
+                "notes": "Plus $10 and Business $20 per member; Business is stated as paid annually, Plus billing term not stated. Business includes Notion AI credits (1,500 standard, 500 select a month). Feature flags not re-checked.",
+                "sources": [
+                        "https://www.notion.com/pricing",
+                        "https://www.notion.com/help/guides/is-notions-business-or-enterprise-plan-right-for-you",
+                        "https://en.wikipedia.org/wiki/Notion_(productivity_software)"
+                ]
+        },
+        {
+                "name": "Airtable",
+                "website": "https://airtable.com",
+                "pricing_url": "https://airtable.com/pricing",
+                "checked": "2026-11-07",
+                "free_plan": true,
+                "free_plan_limits": "1,000 records per base, 1,000 API calls a month per workspace",
+                "start_usd": 24,
+                "small_business_plan": "Team",
+                "cost_small_business_usd": 24,
+                "cost_billed": "monthly",
+                "pricing_model": "per seat",
+                "usage_note": "",
+                "open_source": false,
+                "features": {
+                        "api": true,
+                        "ai": true,
+                        "forms": true,
+                        "selfhost": false,
+                        "free": true
+                },
+                "since": 2012,
+                "since_note": "Company founded 2012 per Wikipedia infobox (its history text says 2013).",
+                "best_for": "Spreadsheet-style database with forms and views",
+                "notes": "Team is $24 monthly or $20 yearly per collaborator, 50,000 records per base, 100,000 API calls a month. Business $54 ($45 yearly). Who counts as a paid seat differs between pricing page and help article.",
+                "sources": [
+                        "https://support.airtable.com/articles/2277136852-airtable-plans-overview",
+                        "https://airtable.com/pricing",
+                        "https://en.wikipedia.org/wiki/Airtable"
+                ]
+        },
+        {
+                "name": "Microsoft Excel",
+                "website": "https://www.microsoft.com/en-us/microsoft-365/excel",
+                "pricing_url": "https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-plans-and-pricing",
+                "checked": "2026-11-07",
+                "free_plan": true,
+                "free_plan_limits": "Excel for the web: one person, 5 GB cloud storage",
+                "start_usd": 7,
+                "small_business_plan": "Microsoft 365 Business Basic",
+                "cost_small_business_usd": 7,
+                "cost_billed": "yearly",
+                "pricing_model": "per seat",
+                "usage_note": "",
+                "open_source": false,
+                "features": {
+                        "api": true,
+                        "ai": true,
+                        "forms": null,
+                        "selfhost": false,
+                        "free": true
+                },
+                "since": 1985,
+                "since_note": "First released September 1985 for Macintosh (Wikipedia).",
+                "best_for": "Spreadsheets for teams already on Microsoft",
+                "notes": "Priced Business Basic, which has web and mobile Excel: $7 per user paid yearly (rose from $6 on July 1, 2026), $8.40 monthly on an older page. Desktop Excel apps need a higher plan. Feature flags not re-checked.",
+                "sources": [
+                        "https://www.microsoft.com/en/microsoft-365/excel",
+                        "https://www.microsoft.com/en-us/licensing/news/2026-m365-packaging-pricing-updates",
+                        "https://en.wikipedia.org/wiki/Microsoft_Excel"
+                ]
+        },
+        {
+                "name": "Supabase",
+                "website": "https://supabase.com",
+                "pricing_url": "https://supabase.com/pricing",
+                "checked": "2026-11-07",
+                "free_plan": true,
+                "free_plan_limits": "500 MB database, 2 projects, paused after 1 week idle",
+                "start_usd": 25,
+                "small_business_plan": "Pro",
+                "cost_small_business_usd": 25,
+                "cost_billed": "monthly",
+                "pricing_model": "usage",
+                "usage_note": "$25 per project plus overage, e.g. $0.09 per GB egress",
+                "open_source": true,
+                "features": {
+                        "api": true,
+                        "ai": true,
+                        "forms": null,
+                        "selfhost": true,
+                        "free": true
+                },
+                "since": 2020,
+                "since_note": "Company founded 2020 (Y Combinator profile, Summer 2020 batch).",
+                "best_for": "Real Postgres database with a ready API",
+                "notes": "Pro includes $10 compute credit, 8 GB disk, 100,000 monthly users. Spend cap is on by default. It is a developer database, not a spreadsheet; no form builder.",
+                "sources": [
+                        "https://supabase.com/pricing",
+                        "https://supabase.com/kb/faqs/platform/database-only-cost",
+                        "https://www.ycombinator.com/companies/supabase"
+                ]
+        },
+        {
+                "name": "Postgres",
+                "website": "https://www.postgresql.org",
+                "pricing_url": "https://www.postgresql.org/about/licence/",
+                "checked": "2026-11-07",
+                "free_plan": true,
+                "free_plan_limits": "Whole product is free",
+                "start_usd": 0,
+                "small_business_plan": "Free (you host it)",
+                "cost_small_business_usd": 0,
+                "cost_billed": "monthly",
+                "pricing_model": "free",
+                "usage_note": "",
+                "open_source": true,
+                "features": {
+                        "api": null,
+                        "ai": null,
+                        "forms": false,
+                        "selfhost": true,
+                        "free": true
+                },
+                "since": 1996,
+                "since_note": "Renamed PostgreSQL in 1996 (Wikipedia); earlier Postgres95 announced 1995.",
+                "best_for": "Free, proven database you run yourself",
+                "notes": "Priced the software itself: no fee, even commercial use (PostgreSQL License). You pay for the server or a host. No built-in API or forms; add-ons like pgvector are separate.",
+                "sources": [
+                        "https://www.postgresql.org/about/licence/",
+                        "https://www.postgresql.org/docs/current/history.html",
+                        "https://www.postgresql.org/about/press/faq/",
+                        "https://en.wikipedia.org/wiki/PostgreSQL"
+                ]
+        },
+        {
+                "name": "Baserow",
+                "website": "https://baserow.io",
+                "pricing_url": "https://baserow.io/pricing",
+                "checked": "2026-11-07",
+                "free_plan": true,
+                "free_plan_limits": "Self-hosted free plan: no row or storage limits",
+                "start_usd": 12,
+                "small_business_plan": "Premium",
+                "cost_small_business_usd": 12,
+                "cost_billed": "monthly",
+                "pricing_model": "per seat",
+                "usage_note": "",
+                "open_source": true,
+                "features": {
+                        "api": true,
+                        "ai": null,
+                        "forms": true,
+                        "selfhost": true,
+                        "free": true
+                },
+                "since": 2019,
+                "since_note": "Founded 2019 (Seedtable); public launch coverage July 2022 (TechCrunch).",
+                "best_for": "Open-source Airtable alternative you can self-host",
+                "notes": "Premium $12 monthly or $10 yearly per user; Advanced $22 ($18). Prices are the self-hosted figures from search results of baserow.io. Cloud plan limits not checked.",
+                "sources": [
+                        "https://baserow.io/pricing",
+                        "https://baserow.io/user-docs/pricing-plans",
+                        "https://seedtable.com/startups/Baserow-P4M3MEZ"
+                ]
+        },
+        {
+                "name": "NocoDB",
+                "website": "https://nocodb.com",
+                "pricing_url": "https://nocodb.com/pricing",
+                "checked": "2026-11-07",
+                "free_plan": true,
+                "free_plan_limits": "Cloud free for up to 3 users; self-hosted Community Edition free",
+                "start_usd": 15,
+                "small_business_plan": "Plus",
+                "cost_small_business_usd": 15,
+                "cost_billed": "monthly",
+                "pricing_model": "per seat",
+                "usage_note": "",
+                "open_source": true,
+                "features": {
+                        "api": true,
+                        "ai": true,
+                        "forms": true,
+                        "selfhost": true,
+                        "free": true
+                },
+                "since": 2021,
+                "since_note": "Company founded and open-source release 2021 (BusinessWire).",
+                "best_for": "Self-hosted Airtable-style tables on any SQL database",
+                "notes": "Plus $15 monthly ($12 yearly) per seat; Business $30 ($24). Community Edition is called fair-code. AI uses a credit allowance. Paid self-hosted licenses exist; their price wasn't listed separately.",
+                "sources": [
+                        "https://nocodb.com/pricing",
+                        "https://nocodb.com/docs/product/account-settings/cloud-enterprise-edition/understanding-pricing",
+                        "https://www.businesswire.com/news/home/20221007005570/en/NocoDB-Raises-10.5M-to-Make-Building-Apps-On-Top-of-Live-Production-Data-as-Easy-as-Using-a-Spreadsheet"
+                ]
+        }
+]

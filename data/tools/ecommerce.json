@@ -1,0 +1,244 @@
+[
+    {
+        "name": "Shopify",
+        "website": "https://www.shopify.com",
+        "pricing_url": "https://www.shopify.com/pricing",
+        "checked": "2026-11-07",
+        "free_plan": false,
+        "free_plan_limits": "3-day free trial, then $1 a month for 3 months",
+        "start_usd": 39,
+        "small_business_plan": "Basic",
+        "cost_small_business_usd": 39,
+        "cost_billed": "monthly",
+        "pricing_model": "flat",
+        "usage_note": "Card fee on Basic: 2.9% + 30¢ per online sale; 2% extra if you use another payment provider",
+        "open_source": false,
+        "features": {
+            "store": true,
+            "suppliers": null,
+            "autoorder": null,
+            "ai": null,
+            "free": false
+        },
+        "since": 2006,
+        "since_note": "Platform released June 2006 (Wikipedia).",
+        "best_for": "Full online store with the biggest app ecosystem",
+        "notes": "Basic is $29 a month if billed yearly. Grow is $105 monthly, Advanced $399. Supplier and AI features come from add-on apps; not checked here.",
+        "sources": [
+            "https://www.shopify.com/pricing",
+            "https://en.wikipedia.org/wiki/Shopify"
+        ]
+    },
+    {
+        "name": "AutoDS",
+        "website": "https://www.autods.com",
+        "pricing_url": "https://www.autods.com/pricing/",
+        "checked": "2026-11-07",
+        "free_plan": false,
+        "free_plan_limits": "$1 trial",
+        "start_usd": 26.9,
+        "small_business_plan": "Starter",
+        "cost_small_business_usd": 39.9,
+        "cost_billed": "monthly",
+        "pricing_model": "flat",
+        "usage_note": "",
+        "open_source": false,
+        "features": {
+            "store": null,
+            "suppliers": true,
+            "autoorder": true,
+            "ai": null,
+            "free": false
+        },
+        "since": 2016,
+        "since_note": "Founded 2016 per most directories (CB Insights); PitchBook says 2018.",
+        "best_for": "Automating dropshipping orders and stock checks",
+        "notes": "Price depends on your sales channel (Shopify prices shown; Amazon costs more). Pricing page itself showed blank prices, so figures come from AutoDS blog and search snippets. Auto-ordering is a $9.90 add-on on that page.",
+        "sources": [
+            "https://www.autods.com/pricing/",
+            "https://www.autods.com/blog/subscription-costs-comparison-autods-cjdropshipping-zendrop/",
+            "https://www.cbinsights.com/company/autods"
+        ]
+    },
+    {
+        "name": "BuildYourStore.ai",
+        "website": "https://buildyourstore.ai",
+        "pricing_url": "https://buildyourstore.ai/",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "Store build is free; you pay Shopify separately",
+        "start_usd": 0,
+        "small_business_plan": "Free store build",
+        "cost_small_business_usd": 0,
+        "cost_billed": "monthly",
+        "pricing_model": "free",
+        "usage_note": "",
+        "open_source": false,
+        "features": {
+            "store": true,
+            "suppliers": true,
+            "autoorder": null,
+            "ai": true,
+            "free": true
+        },
+        "since": null,
+        "since_note": "Not published.",
+        "best_for": "A starter Shopify dropshipping store, built for you",
+        "notes": "Builds a Shopify store with 10 starter products and a free .store domain. You still need a paid Shopify plan (Basic is $39 a month). Page does not explain how suppliers connect.",
+        "sources": [
+            "https://buildyourstore.ai/"
+        ]
+    },
+    {
+        "name": "Zendrop",
+        "website": "https://zendrop.com",
+        "pricing_url": "https://zendrop.com/pricing",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "Limited access; no automated fulfillment",
+        "start_usd": 49,
+        "small_business_plan": "Pro",
+        "cost_small_business_usd": 49,
+        "cost_billed": "monthly",
+        "pricing_model": "flat",
+        "usage_note": "",
+        "open_source": false,
+        "features": {
+            "store": null,
+            "suppliers": true,
+            "autoorder": true,
+            "ai": null,
+            "free": true
+        },
+        "since": 2019,
+        "since_note": "Founded 2019 (CB Insights and Slashdot listings; not on its own site).",
+        "best_for": "Dropshipping with a built-in supplier catalog",
+        "notes": "Pro is $399 a year if billed yearly. Plus is $79 monthly, but the page lists the same features as Pro. Free plan page contradicts itself on custom branding.",
+        "sources": [
+            "https://zendrop.com/pricing",
+            "https://www.cbinsights.com/company/zendrop"
+        ]
+    },
+    {
+        "name": "Etsy",
+        "website": "https://www.etsy.com",
+        "pricing_url": "https://help.etsy.com/hc/en-us/articles/360035902374-Etsy-Fee-Basics",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "No monthly fee; you pay per listing and per sale",
+        "start_usd": null,
+        "small_business_plan": "Standard seller (fees only)",
+        "cost_small_business_usd": 0,
+        "cost_billed": "usage",
+        "pricing_model": "commission",
+        "usage_note": "$0.20 per listing + 6.5% per sale + 3% + 25¢ payment processing (US)",
+        "open_source": false,
+        "features": {
+            "store": true,
+            "suppliers": false,
+            "autoorder": false,
+            "ai": null,
+            "free": true
+        },
+        "since": 2005,
+        "since_note": "Founded June 2005 (Wikipedia).",
+        "best_for": "Selling handmade and print-on-demand items",
+        "notes": "$0 is the monthly plan price only. Fees come from search results of Etsy's help center; Etsy's own page was blocked. Rules require handmade, vintage or designed-by-you items.",
+        "sources": [
+            "https://help.etsy.com/hc/en-us/articles/360035902374-Etsy-Fee-Basics",
+            "https://www.etsy.com/legal/fees/",
+            "https://en.wikipedia.org/wiki/Etsy"
+        ]
+    },
+    {
+        "name": "TikTok Shop",
+        "website": "https://seller-us.tiktok.com",
+        "pricing_url": "https://seller-us.tiktok.com/university/essay?knowledge_id=5982454398175018&lang=en",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "No setup fee found; you pay a cut of each sale",
+        "start_usd": null,
+        "small_business_plan": "Standard seller (fees only)",
+        "cost_small_business_usd": 0,
+        "cost_billed": "usage",
+        "pricing_model": "commission",
+        "usage_note": "6% referral fee on most categories per sale",
+        "open_source": false,
+        "features": {
+            "store": null,
+            "suppliers": null,
+            "autoorder": null,
+            "ai": null,
+            "free": true
+        },
+        "since": 2022,
+        "since_note": "Beta in the UK and Southeast Asia from November 2022; US launch September 2023 (Wikipedia).",
+        "best_for": "Selling through TikTok videos and live streams",
+        "notes": "Fee comes from a 2024 policy page; TikTok can change it by email. No monthly fee found, but not confirmed on a current page. Check Seller Center before relying on it.",
+        "sources": [
+            "https://seller-us.tiktok.com/university/essay?knowledge_id=5982454398175018&lang=en",
+            "https://seller.tiktok.com/",
+            "https://en.wikipedia.org/wiki/TikTok_Shop"
+        ]
+    },
+    {
+        "name": "Printify",
+        "website": "https://printify.com",
+        "pricing_url": "https://printify.com/pricing/",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "5 stores, unlimited designs",
+        "start_usd": 39,
+        "small_business_plan": "Premium",
+        "cost_small_business_usd": 39,
+        "cost_billed": "monthly",
+        "pricing_model": "flat",
+        "usage_note": "You also pay per product made, set by the print provider",
+        "open_source": false,
+        "features": {
+            "store": false,
+            "suppliers": true,
+            "autoorder": null,
+            "ai": null,
+            "free": true
+        },
+        "since": 2015,
+        "since_note": "Established 2015 in Riga (Wikipedia).",
+        "best_for": "Print-on-demand shirts, mugs and posters",
+        "notes": "Premium is $24.99 a month if billed yearly and allows 10 stores. Connects to your store (Shopify, Etsy and others) rather than building one. Catalog is 2,000+ products.",
+        "sources": [
+            "https://printify.com/pricing/",
+            "https://en.wikipedia.org/wiki/Printify"
+        ]
+    },
+    {
+        "name": "WooCommerce",
+        "website": "https://woocommerce.com",
+        "pricing_url": "https://woocommerce.com/",
+        "checked": "2026-11-07",
+        "free_plan": true,
+        "free_plan_limits": "Plugin is free; hosting, domain and extensions cost extra",
+        "start_usd": 0,
+        "small_business_plan": "Free plugin",
+        "cost_small_business_usd": 0,
+        "cost_billed": "monthly",
+        "pricing_model": "free",
+        "usage_note": "",
+        "open_source": true,
+        "features": {
+            "store": true,
+            "suppliers": null,
+            "autoorder": null,
+            "ai": null,
+            "free": true
+        },
+        "since": 2011,
+        "since_note": "First released September 2011 (Wikipedia).",
+        "best_for": "Owning a store on your own WordPress site",
+        "notes": "The plugin is free but you need WordPress hosting, which costs money; the page gave no hosting or payment-fee prices. $0 is the software only.",
+        "sources": [
+            "https://woocommerce.com/",
+            "https://en.wikipedia.org/wiki/WooCommerce"
+        ]
+    }
+]

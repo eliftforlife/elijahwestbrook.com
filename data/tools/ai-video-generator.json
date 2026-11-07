@@ -1,0 +1,336 @@
+[
+        {
+                "name": "Higgsfield",
+                "website": "https://higgsfield.ai",
+                "pricing_url": "https://higgsfield.ai/pricing",
+                "checked": "2026-11-07",
+                "free_plan": true,
+                "free_plan_limits": "No monthly credits; a few models, no commercial use",
+                "start_usd": 15,
+                "small_business_plan": "Plus",
+                "cost_small_business_usd": 49,
+                "cost_billed": "monthly",
+                "pricing_model": "credits",
+                "usage_note": "Credits per clip depend on model, length and resolution",
+                "open_source": false,
+                "features": {
+                        "text": true,
+                        "image": true,
+                        "audio": null,
+                        "api": null,
+                        "free": true
+                },
+                "since": 2023,
+                "since_note": "Company founded 2023 (Wikipedia).",
+                "best_for": "Many video models under one subscription",
+                "notes": "Starter $15 (200 credits), Plus $49 (1,000), Ultra $129 (3,000) per Higgsfield's blog. Other sites list different prices and the pricing page text did not load, so confirm before buying.",
+                "sources": [
+                        "https://higgsfield.ai/blog/higgsfield-pricing-explained",
+                        "https://en.wikipedia.org/wiki/Higgsfield_AI"
+                ]
+        },
+        {
+                "name": "Seedance",
+                "website": "https://seed.bytedance.com/en/seedance",
+                "pricing_url": "https://dreamina.capcut.com",
+                "checked": "2026-11-07",
+                "free_plan": null,
+                "free_plan_limits": "",
+                "start_usd": null,
+                "small_business_plan": "Dreamina plan (not confirmed)",
+                "cost_small_business_usd": null,
+                "cost_billed": "monthly",
+                "pricing_model": "credits",
+                "usage_note": "API via BytePlus, priced per second of video",
+                "open_source": false,
+                "features": {
+                        "text": true,
+                        "image": true,
+                        "audio": null,
+                        "api": null,
+                        "free": null
+                },
+                "since": 2025,
+                "since_note": "First released June 2025 (Wikipedia).",
+                "best_for": "ByteDance video model, used via Dreamina",
+                "notes": "Not stated: no official price page could be read. Only third-party blogs give Dreamina prices ($18 to $84 a month) and they disagree. Seedance runs inside Dreamina and other apps.",
+                "sources": [
+                        "https://en.wikipedia.org/wiki/Seedance"
+                ]
+        },
+        {
+                "name": "Google Veo / Flow",
+                "website": "https://labs.google/flow",
+                "pricing_url": "https://one.google.com/about/google-ai-plans/",
+                "checked": "2026-11-07",
+                "free_plan": true,
+                "free_plan_limits": "50 Flow credits a day",
+                "start_usd": 19.99,
+                "small_business_plan": "Google AI Pro",
+                "cost_small_business_usd": 19.99,
+                "cost_billed": "monthly",
+                "pricing_model": "credits",
+                "usage_note": "Veo 3.1 Fast 20 credits a clip; Quality 100 credits",
+                "open_source": false,
+                "features": {
+                        "text": true,
+                        "image": true,
+                        "audio": true,
+                        "api": true,
+                        "free": true
+                },
+                "since": 2024,
+                "since_note": "Veo announced May 2024 at Google I/O; Flow followed in May 2025 (Wikipedia).",
+                "best_for": "Best-known clips with sound, inside Google",
+                "notes": "AI Pro gives 1,000 Flow credits a month; Ultra $99.99 gives 10,000. AI Plus price not listed. Current Veo API price not found; older posts said about $0.15 to $0.40 a second.",
+                "sources": [
+                        "https://one.google.com/about/google-ai-plans/",
+                        "https://support.google.com/flow/answer/16526234",
+                        "https://en.wikipedia.org/wiki/Veo_(text-to-video_model)"
+                ]
+        },
+        {
+                "name": "Kling",
+                "website": "https://kling.ai",
+                "pricing_url": "https://kling.ai/app/membership/membership-plan",
+                "checked": "2026-11-07",
+                "free_plan": null,
+                "free_plan_limits": "Subscribers get daily free credits; amount not stated",
+                "start_usd": 8.8,
+                "small_business_plan": "Pro",
+                "cost_small_business_usd": 32.56,
+                "cost_billed": "monthly",
+                "pricing_model": "credits",
+                "usage_note": "",
+                "open_source": false,
+                "features": {
+                        "text": true,
+                        "image": true,
+                        "audio": true,
+                        "api": true,
+                        "free": null
+                },
+                "since": 2024,
+                "since_note": "Kuaishou launched the first version in June 2024 (Wikipedia).",
+                "best_for": "Cheap entry price for good clips",
+                "notes": "Standard $6.99 first month then about $8.80 (660 credits); Pro $25.99 first month then $32.56 (3,000 credits). Premier figures conflict between snapshots. Prices read from search snippets of kling.ai.",
+                "sources": [
+                        "https://kling.ai/app/membership/membership-plan",
+                        "https://kling.ai/dev/pricing",
+                        "https://en.wikipedia.org/wiki/Kling_AI"
+                ]
+        },
+        {
+                "name": "OpenAI Sora",
+                "website": "https://openai.com/sora/",
+                "pricing_url": "https://openai.com/sora/",
+                "checked": "2026-11-07",
+                "free_plan": null,
+                "free_plan_limits": "",
+                "start_usd": null,
+                "small_business_plan": "None: discontinued",
+                "cost_small_business_usd": null,
+                "cost_billed": "monthly",
+                "pricing_model": "credits",
+                "usage_note": "",
+                "open_source": false,
+                "features": {
+                        "text": null,
+                        "image": null,
+                        "audio": null,
+                        "api": null,
+                        "free": null
+                },
+                "since": 2024,
+                "since_note": "Announced February 2024; public release December 2024 (Wikipedia).",
+                "best_for": "No longer available",
+                "notes": "Search results say OpenAI shut the Sora app on April 26, 2026 and the API was due to end Sept 24, 2026. Official page was blocked (403), so this is not confirmed on openai.com. Treat as discontinued.",
+                "sources": [
+                        "https://en.wikipedia.org/wiki/Sora_(text-to-video_model)"
+                ],
+                "status": "Shut down"
+        },
+        {
+                "name": "Runway",
+                "website": "https://runwayml.com",
+                "pricing_url": "https://runwayml.com/pricing",
+                "checked": "2026-11-07",
+                "free_plan": true,
+                "free_plan_limits": "125 credits once, no refill, watermark",
+                "start_usd": 15,
+                "small_business_plan": "Standard",
+                "cost_small_business_usd": 15,
+                "cost_billed": "monthly",
+                "pricing_model": "credits",
+                "usage_note": "Extra credits sold in packs of 1,000 or more",
+                "open_source": false,
+                "features": {
+                        "text": true,
+                        "image": true,
+                        "audio": null,
+                        "api": true,
+                        "free": true
+                },
+                "since": 2018,
+                "since_note": "Company founded 2018 (Wikipedia).",
+                "best_for": "Editing-friendly video tools for creators",
+                "notes": "Standard $15 ($12 yearly) 625 credits; Pro $35 ($28 yearly) 2,250; Max $95. Credits reset monthly and don't roll over on Standard and Pro. Unlimited plan is being moved to Max by Nov 30, 2026.",
+                "sources": [
+                        "https://help.runwayml.com/hc/en-us/articles/50404627334547-Free-plan-details",
+                        "https://help.runwayml.com/hc/en-us/articles/49191105352339-Standard-plan-details",
+                        "https://en.wikipedia.org/wiki/Runway_(company)"
+                ]
+        },
+        {
+                "name": "Invideo",
+                "website": "https://invideo.io",
+                "pricing_url": "https://invideo.io/pricing/",
+                "checked": "2026-11-07",
+                "free_plan": null,
+                "free_plan_limits": "",
+                "start_usd": null,
+                "small_business_plan": "Plus",
+                "cost_small_business_usd": null,
+                "cost_billed": "yearly",
+                "pricing_model": "credits",
+                "usage_note": "",
+                "open_source": false,
+                "features": {
+                        "text": true,
+                        "image": null,
+                        "audio": null,
+                        "api": null,
+                        "free": null
+                },
+                "since": 2017,
+                "since_note": "Company founded 2017 (CB Insights and other directories; no Wikipedia page).",
+                "best_for": "Text-to-video that assembles full videos",
+                "notes": "Not stated: Invideo's own pages disagree. Pricing page shows Plus $30/seat and Max $250/seat billed yearly; FAQ pages show Plus $20 and Max $100 a month. Page could not be opened directly.",
+                "sources": [
+                        "https://invideo.io/pricing/",
+                        "https://help.invideo.io/en/articles/11528140-invideo-plans-and-credits-everything-you-need-to-know",
+                        "https://www.cbinsights.com/company/invideo"
+                ]
+        },
+        {
+                "name": "Hailuo (MiniMax)",
+                "website": "https://hailuoai.video",
+                "pricing_url": "https://hailuoai.video/subscribe/modal",
+                "checked": "2026-11-07",
+                "free_plan": null,
+                "free_plan_limits": "",
+                "start_usd": null,
+                "small_business_plan": "Not confirmed",
+                "cost_small_business_usd": null,
+                "cost_billed": "monthly",
+                "pricing_model": "credits",
+                "usage_note": "",
+                "open_source": false,
+                "features": {
+                        "text": true,
+                        "image": true,
+                        "audio": null,
+                        "api": true,
+                        "free": null
+                },
+                "since": 2024,
+                "since_note": "MiniMax launched video-01 under Hailuo AI in September 2024 (Wikipedia).",
+                "best_for": "Low-cost clips from MiniMax",
+                "notes": "Not stated: Hailuo's own pages disagree. Terms page lists Standard $14.99, Pro $54.99, Master $119.99; a Hailuo blog says $9.99, $34.99, $79.99. MiniMax API sells video packages from $1,000.",
+                "sources": [
+                        "https://hailuoai.video/doc/payment-policy.html",
+                        "https://platform.minimax.io/docs/guides/pricing-video",
+                        "https://en.wikipedia.org/wiki/Hailuo_AI"
+                ]
+        },
+        {
+                "name": "Pictory",
+                "website": "https://pictory.ai",
+                "pricing_url": "https://pictory.ai/pricing/",
+                "checked": "2026-11-07",
+                "free_plan": null,
+                "free_plan_limits": "",
+                "start_usd": 29,
+                "small_business_plan": "Starter",
+                "cost_small_business_usd": 29,
+                "cost_billed": "monthly",
+                "pricing_model": "credits",
+                "usage_note": "",
+                "open_source": false,
+                "features": {
+                        "text": true,
+                        "image": null,
+                        "audio": null,
+                        "api": null,
+                        "free": null
+                },
+                "since": 2019,
+                "since_note": "Company founded 2019 (CB Insights and other directories; not on its own site).",
+                "best_for": "Turning scripts and blogs into stock-footage videos",
+                "notes": "Starter $29 monthly ($25 yearly) 24,000 credits; Professional $59 ($35); Teams $199 ($119). It builds videos from stock footage, not generated clips. Free trial details not confirmed.",
+                "sources": [
+                        "https://pictory.ai/pricing/",
+                        "https://www.cbinsights.com/company/pictory-1"
+                ]
+        },
+        {
+                "name": "Fliki",
+                "website": "https://fliki.ai",
+                "pricing_url": "https://fliki.ai/pricing",
+                "checked": "2026-11-07",
+                "free_plan": true,
+                "free_plan_limits": "About 3 minutes of 720p video a month, watermark",
+                "start_usd": 28,
+                "small_business_plan": "Standard",
+                "cost_small_business_usd": 28,
+                "cost_billed": "monthly",
+                "pricing_model": "credits",
+                "usage_note": "Standard 180 minutes a month; Premium 600",
+                "open_source": false,
+                "features": {
+                        "text": true,
+                        "image": null,
+                        "audio": true,
+                        "api": true,
+                        "free": true
+                },
+                "since": null,
+                "since_note": "Not published.",
+                "best_for": "Voiceover videos from text with AI voices",
+                "notes": "Fliki pages disagree on the free allowance (3 minutes vs 5 credits). Premium is $88 and adds API access. Yearly billing is about 25% off. Prices from Fliki's own blog and use-case pages, not the pricing page.",
+                "sources": [
+                        "https://fliki.ai/features/ai-video-generator",
+                        "https://fliki.ai/blog/best-sora-alternatives"
+                ]
+        },
+        {
+                "name": "Luma",
+                "website": "https://lumalabs.ai",
+                "pricing_url": "https://lumalabs.ai/learning-hub/dream-machine-support-pricing-information",
+                "checked": "2026-11-07",
+                "free_plan": true,
+                "free_plan_limits": "Images and draft-resolution video only",
+                "start_usd": 30,
+                "small_business_plan": "Plus",
+                "cost_small_business_usd": 30,
+                "cost_billed": "monthly",
+                "pricing_model": "credits",
+                "usage_note": "",
+                "open_source": false,
+                "features": {
+                        "text": true,
+                        "image": true,
+                        "audio": null,
+                        "api": null,
+                        "free": true
+                },
+                "since": 2024,
+                "since_note": "Dream Machine released to the public June 2024 (Wikipedia); company founded 2021.",
+                "best_for": "Realistic motion and camera control",
+                "notes": "Plus $30 (10,000 credits), Pro $90 (40,000), Ultra $300 (150,000). Yearly saves up to 20%. A Luma FAQ swaps the Plus/Pro labels, so tier names may differ. Pricing page itself did not load.",
+                "sources": [
+                        "https://lumalabs.ai/learning-hub/dream-machine-support-pricing-information",
+                        "https://en.wikipedia.org/wiki/Luma_AI"
+                ]
+        }
+]

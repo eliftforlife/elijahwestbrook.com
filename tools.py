@@ -19,6 +19,12 @@ CORE = ('instagram', 'tiktok', 'youtube_shorts', 'facebook', 'linkedin')
 WORKER = 'https://lemon-survey.elift08.workers.dev/suggest'
 money = lambda v: 'Free' if v == 0 else ('—' if v is None else (f'${v:,.0f}' if float(v).is_integer() else f'${v:,.2f}'))
 
+def SUG(ARROW, what='tool'):
+    return f'''<section class="tsug reveal" id="suggest"><div><h2>Did we miss a tool?</h2><p>Tell us and we’ll check its pricing and add it. Make {E(what)}? Request to add it, and we’ll list it on the same rules as everyone else.</p></div>
+<form id="sug" class="aform" novalidate><input name="tool" required maxlength="120" placeholder="Tool name"><input name="url" maxlength="300" placeholder="Website"><textarea name="note" rows="2" maxlength="1000" placeholder="Anything we should know? (optional)"></textarea>
+<input name="email" type="email" maxlength="200" placeholder="Your email, if you want a reply (optional)"><label class="chk"><input type="checkbox" name="maker"> I work on this tool</label><input name="hp" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button class="btn" type="submit">Send {ARROW}</button><p class="amsg" role="status"></p></form><p class="fine">Or email <a href="mailto:hello@elijahwestbrook.com?subject=Add%20a%20tool">hello@elijahwestbrook.com</a>.</p></section>'''
+
 def rows():
     out = []
     for t in S:
@@ -50,10 +56,7 @@ def build(page, ARROW, author, offer):
     table = f'''<div class="twrap"><table class="ttab" id="ttab"><thead><tr><th>#</th><th>Tool</th><th>Since</th><th>Cost for 5 accounts<small>per month</small></th><th class="adv">Starts at</th><th class="adv">Extra account</th>{head}<th class="adv"></th></tr></thead><tbody>{"".join(body)}</tbody></table></div>'''
     filters = '<div class="atabs" role="group" aria-label="Filter"><button class="on" data-f="">All tools</button><button data-f="core">Posts to all 5</button><button data-f="free">Has a free plan</button><button data-f="tiktok">Posts to TikTok</button><button data-f="youtube_shorts">Posts to YouTube Shorts</button><button data-f="pinterest">Pinterest</button><button data-f="bluesky">Bluesky</button></div>'
     sorts = '<div class="atabs sort" role="group" aria-label="Sort"><button class="on" data-s="rank">Best value</button><button data-s="cost">Cheapest</button><button data-s="all">Most platforms</button><button data-s="since">Longest running</button></div>'
-    suggest = f'''<section class="tsug reveal" id="suggest"><div><h2>Did we miss a tool?</h2><p>Tell us and we’ll check its pricing and add it. Make a scheduler? Request to add it, and we’ll list it on the same rules as everyone else.</p></div>
-<form id="sug" class="aform" novalidate><input name="tool" required maxlength="120" placeholder="Tool name"><input name="url" maxlength="300" placeholder="Website"><textarea name="note" rows="2" maxlength="1000" placeholder="Anything we should know? (optional)"></textarea>
-<input name="email" type="email" maxlength="200" placeholder="Your email, if you want a reply (optional)"><label class="chk"><input type="checkbox" name="maker"> I work on this tool</label><input name="hp" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-<button class="btn" type="submit">Send {ARROW}</button><p class="amsg" role="status"></p></form><p class="fine">Or email <a href="mailto:hello@elijahwestbrook.com?subject=Add%20a%20tool">hello@elijahwestbrook.com</a>.</p></section>'''
+    suggest = SUG(ARROW, 'a scheduler')
     faq = [
      ('What is the cheapest social media scheduler?', f'For one business posting to Instagram, TikTok, YouTube Shorts, Facebook and LinkedIn, the cheapest tool that covers all five was {best["name"]} at {money(best.get("cost_small_business_usd"))} a month when we checked on {checked}.' + (f' {", ".join(r["name"] for r in free_full[:3])} also have a free plan that covers all five.' if free_full else '')),
      ('Is there a free social media scheduler?', 'Yes, with limits. ' + '; '.join(f"{r['name']}: {r['free_plan_limits']}" for r in R if r.get('free_plan') and r.get('free_plan_limits') and r.get('start_usd')) + '. Meta Business Suite, YouTube Studio and TikTok also schedule their own platform for free.'),

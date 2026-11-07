@@ -42,7 +42,7 @@ def row(t, area, open_=False):
     ex = ''.join(f'<li><a href="https://www.youtube.com/watch?v={x["id"]}" rel="noopener">{E(x["title"])}</a><span>{E(x["channel"])} · {k(x["views"])} views</span></li>' for x in t['examples'])
     plats = ', '.join(f'{D["platforms"].get(p, p)} ({n})' for p, n in list(t['platforms'].items())[:6])
     det = (f'<div class="ad"><p><b>{t["n"]}</b> videos cover this. <b>{t["shown"]}</b> show it working on screen or report a real result.</p>'
-           + (f'<p><b>Tools used most:</b> {E(", ".join(t["tools"]))}</p>' if t['tools'] else '')
+           + (f'<p><b>Tools used most:</b> {__import__("toolcats").tool_links(t["tools"])}</p>' if t['tools'] else '')
            + (f'<p><b>Platforms:</b> {E(plats)}</p>' if plats and area == 'content' else '')
            + (f'<p><b>Videos that show it:</b></p><ul>{ex}</ul>' if ex else '')
            + (f'<p class="wflink"><a href="/workflows/{WF[t["id"]][0]}/">Free workflow: {E(WF[t["id"]][1])} →</a></p>' if t['id'] in WF else '') + '</div>')

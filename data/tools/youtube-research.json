@@ -1,0 +1,185 @@
+[
+  {
+    "name": "vidIQ",
+    "website": "https://vidiq.com",
+    "pricing_url": "https://vidiq.com/plans/",
+    "checked": "2026-11-07",
+    "free_plan": true,
+    "free_plan_limits": "Limited tools and 150 AI credits a month",
+    "start_usd": 19,
+    "small_business_plan": "Boost",
+    "cost_small_business_usd": 19,
+    "cost_billed": "monthly",
+    "pricing_model": "flat",
+    "usage_note": "",
+    "open_source": false,
+    "features": {
+      "keywords": true,
+      "outliers": true,
+      "ai": true,
+      "extension": true,
+      "free": true
+    },
+    "since": 2011,
+    "since_note": "Launched 1 July 2011 per Wikipedia; some other sources say 2012.",
+    "best_for": "Keywords and ideas while you edit",
+    "notes": "Boost is $199 a year. Max is $49 a month ($468 a year) with 6,000 AI credits.",
+    "sources": [
+      "https://vidiq.com/plans/",
+      "https://support.vidiq.com/en/articles/13928456-features-credits-by-plan",
+      "https://en.wikipedia.org/wiki/VidIQ"
+    ]
+  },
+  {
+    "name": "Social Blade",
+    "website": "https://socialblade.com",
+    "pricing_url": "https://socialblade.com/products/subscription/personal",
+    "checked": "2026-11-07",
+    "free_plan": true,
+    "free_plan_limits": "Public stats pages are free",
+    "start_usd": 5,
+    "small_business_plan": "Bronze",
+    "cost_small_business_usd": 5,
+    "cost_billed": "yearly",
+    "pricing_model": "flat",
+    "usage_note": "",
+    "open_source": false,
+    "features": {
+      "keywords": false,
+      "outliers": null,
+      "ai": null,
+      "extension": null,
+      "free": true
+    },
+    "since": 2008,
+    "since_note": "Founded 8 February 2008 as a Digg stats hobby project; YouTube stats added 2010 (Wikipedia).",
+    "best_for": "Tracking channel growth numbers",
+    "notes": "Bronze is $59.99 a year; Silver $149.99. Source page is old, so prices may have changed. Tracks stats, not video ideas.",
+    "sources": [
+      "https://socialblade.com/products/subscription/personal",
+      "https://en.wikipedia.org/wiki/Social_Blade"
+    ]
+  },
+  {
+    "name": "TubeBuddy",
+    "website": "https://www.tubebuddy.com",
+    "pricing_url": "https://www.tubebuddy.com/pricing",
+    "checked": "2026-11-07",
+    "free_plan": true,
+    "free_plan_limits": "Free plan with basic keyword, title and SEO tools",
+    "start_usd": 15,
+    "small_business_plan": "Pro",
+    "cost_small_business_usd": 15,
+    "cost_billed": "monthly",
+    "pricing_model": "flat",
+    "usage_note": "",
+    "open_source": false,
+    "features": {
+      "keywords": true,
+      "outliers": null,
+      "ai": true,
+      "extension": true,
+      "free": true
+    },
+    "since": 2014,
+    "since_note": "Founded 2014 per its 2020 acquisition announcement; other directories say 2013 or 2015.",
+    "best_for": "Browser tools inside YouTube Studio",
+    "notes": "Pro is $12 on yearly billing; Legend $32.99 monthly. Older official pages show lower prices, so the figure is not confirmed.",
+    "sources": [
+      "https://www.tubebuddy.com/blog/vidiq-vs-tubebuddy/",
+      "https://www.tubebuddy.com/free/",
+      "https://socaltech.com/ben_group_acquires_tubebuddy/s-0080554.html"
+    ]
+  },
+  {
+    "name": "TubeLab",
+    "website": "https://tubelab.net",
+    "pricing_url": "https://tubelab.net/docs/api/pricing",
+    "checked": "2026-11-07",
+    "free_plan": false,
+    "free_plan_limits": "No free trial; a separate Chrome extension is free",
+    "start_usd": 29,
+    "small_business_plan": "Monthly plan",
+    "cost_small_business_usd": 29,
+    "cost_billed": "monthly",
+    "pricing_model": "flat",
+    "usage_note": "",
+    "open_source": false,
+    "features": {
+      "keywords": null,
+      "outliers": true,
+      "ai": null,
+      "extension": true,
+      "free": false
+    },
+    "since": 2013,
+    "since_note": "Started as the YTRank rank checker; software directories list founded 2013 (SourceForge); the company does not state a launch year.",
+    "best_for": "Finding outlier videos",
+    "notes": "One plan: $29 monthly or $14.90 a month billed yearly. API calls use credits.",
+    "sources": [
+      "https://tubelab.net/docs/api/pricing",
+      "https://www.sourceforge.net/software/product/TubeLab",
+      "https://tubelab.net/blog/history"
+    ]
+  },
+  {
+    "name": "1of10",
+    "website": "https://1of10.com",
+    "pricing_url": "https://1of10.com/",
+    "checked": "2026-11-07",
+    "free_plan": true,
+    "free_plan_limits": "60 AI credits a month, top 5 outlier results",
+    "start_usd": 19,
+    "small_business_plan": "Basic",
+    "cost_small_business_usd": 19,
+    "cost_billed": "monthly",
+    "pricing_model": "credits",
+    "usage_note": "Basic: 150 credits a month",
+    "open_source": false,
+    "features": {
+      "keywords": null,
+      "outliers": true,
+      "ai": true,
+      "extension": true,
+      "free": true
+    },
+    "since": 2023,
+    "since_note": "Company founded 2023 (1of10 about page).",
+    "best_for": "Outlier ideas and titles",
+    "notes": "Pro is $89 a month. Its own pages show other prices ($29, $49), so the $19 figure is not confirmed.",
+    "sources": [
+      "https://1of10.com/blog/1of10-review/",
+      "https://1of10.com/about"
+    ]
+  },
+  {
+    "name": "Viewstats",
+    "website": "https://www.viewstats.com",
+    "pricing_url": "https://www.viewstats.com/pricing",
+    "checked": "2026-11-07",
+    "free_plan": null,
+    "free_plan_limits": "Not stated",
+    "start_usd": null,
+    "small_business_plan": "Pro",
+    "cost_small_business_usd": null,
+    "cost_billed": "monthly",
+    "pricing_model": "flat",
+    "usage_note": "",
+    "open_source": false,
+    "features": {
+      "keywords": null,
+      "outliers": null,
+      "ai": null,
+      "extension": null,
+      "free": null
+    },
+    "since": 2023,
+    "since_note": "Launched in beta December 2023 (Tubefilter).",
+    "best_for": "Channel stats and outliers",
+    "notes": "Pro price did not load (placeholder). Business starts at $249 a month. Not stated otherwise.",
+    "sources": [
+      "https://www.viewstats.com/pricing",
+      "https://tubefilter.com/2023/12/13/view-stats-analytics-statistics-mrbeast-jimmy-donaldson-chucky-appleby/"
+    ]
+  }
+]

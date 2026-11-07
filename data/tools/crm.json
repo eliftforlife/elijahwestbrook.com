@@ -1,0 +1,243 @@
+[
+        {
+                "name": "GoHighLevel",
+                "website": "https://www.gohighlevel.com",
+                "pricing_url": "https://www.gohighlevel.com/pricing",
+                "checked": "2026-11-07",
+                "free_plan": false,
+                "free_plan_limits": "14-day free trial",
+                "start_usd": 97,
+                "small_business_plan": "Starter",
+                "cost_small_business_usd": 97,
+                "cost_billed": "monthly",
+                "pricing_model": "flat",
+                "usage_note": "SMS, calls and some AI features billed by use",
+                "open_source": false,
+                "features": {
+                        "automation": true,
+                        "ai": true,
+                        "sms": true,
+                        "api": true,
+                        "free": false
+                },
+                "since": 2018,
+                "since_note": "HighLevel founded 2018 (company profiles; no Wikipedia page).",
+                "best_for": "Agencies reselling CRM and automation",
+                "notes": "Unlimited ($297) adds basic API. Founder ($497) adds more. AI Employee add-ons cost $50 to $97 per sub-account.",
+                "sources": [
+                        "https://www.gohighlevel.com/pricing",
+                        "https://www.clay.com/dossier/highlevel-ceo"
+                ]
+        },
+        {
+                "name": "HubSpot",
+                "website": "https://www.hubspot.com",
+                "pricing_url": "https://www.hubspot.com/pricing/crm",
+                "checked": "2026-11-07",
+                "free_plan": true,
+                "free_plan_limits": "Up to 2 users, 1,000 contacts, no calling",
+                "start_usd": 20,
+                "small_business_plan": "Starter",
+                "cost_small_business_usd": 20,
+                "cost_billed": "monthly",
+                "pricing_model": "per seat",
+                "usage_note": "",
+                "open_source": false,
+                "features": {
+                        "automation": true,
+                        "ai": true,
+                        "sms": true,
+                        "api": null,
+                        "free": true
+                },
+                "since": 2006,
+                "since_note": "Company founded June 2006 (Wikipedia).",
+                "best_for": "Small teams starting a CRM",
+                "notes": "List price $20 per seat; a limited-time $10 month-to-month offer was shown. Professional and Enterprise prices not on that page.",
+                "sources": [
+                        "https://www.hubspot.com/pricing/crm",
+                        "https://en.wikipedia.org/wiki/HubSpot"
+                ]
+        },
+        {
+                "name": "Salesforce",
+                "website": "https://www.salesforce.com",
+                "pricing_url": "https://www.salesforce.com/sales/pricing/",
+                "checked": "2026-11-07",
+                "free_plan": true,
+                "free_plan_limits": "Free Suite",
+                "start_usd": 25,
+                "small_business_plan": "Starter Suite",
+                "cost_small_business_usd": 25,
+                "cost_billed": "monthly",
+                "pricing_model": "per seat",
+                "usage_note": "",
+                "open_source": false,
+                "features": {
+                        "automation": null,
+                        "ai": true,
+                        "sms": null,
+                        "api": null,
+                        "free": true
+                },
+                "since": 1999,
+                "since_note": "Company founded March 1999 (Wikipedia).",
+                "best_for": "Teams that expect to grow big",
+                "notes": "Pro Suite $100 and up are billed yearly only. Agentforce for Sales is an extra from $125 per user.",
+                "sources": [
+                        "https://www.salesforce.com/sales/pricing/",
+                        "https://en.wikipedia.org/wiki/Salesforce"
+                ]
+        },
+        {
+                "name": "Pipedrive",
+                "website": "https://www.pipedrive.com",
+                "pricing_url": "https://www.pipedrive.com/en/pricing",
+                "checked": "2026-11-07",
+                "free_plan": false,
+                "free_plan_limits": "Free plan not listed",
+                "start_usd": 14,
+                "small_business_plan": "Growth",
+                "cost_small_business_usd": 39,
+                "cost_billed": "yearly",
+                "pricing_model": "per seat",
+                "usage_note": "",
+                "open_source": false,
+                "features": {
+                        "automation": null,
+                        "ai": null,
+                        "sms": null,
+                        "api": null,
+                        "free": false
+                },
+                "since": 2010,
+                "since_note": "Company established 2010 in Tallinn (Wikipedia).",
+                "best_for": "Sales pipelines for small teams",
+                "notes": "Lite $14, Growth $39, Premium $59, Ultimate $79, all billed yearly. Monthly price not confirmed. Seats are charged even if unassigned.",
+                "sources": [
+                        "https://www.pipedrive.com/en/pricing",
+                        "https://en.wikipedia.org/wiki/Pipedrive"
+                ]
+        },
+        {
+                "name": "Vendasta",
+                "website": "https://www.vendasta.com",
+                "pricing_url": "https://www.vendasta.com/pricing/",
+                "checked": "2026-11-07",
+                "free_plan": false,
+                "free_plan_limits": "Starter has a $0 fee but needs $99 a month of product spend",
+                "start_usd": 99,
+                "small_business_plan": "Starter",
+                "cost_small_business_usd": 99,
+                "cost_billed": "monthly",
+                "pricing_model": "usage",
+                "usage_note": "$99 a month minimum spend on products",
+                "open_source": false,
+                "features": {
+                        "automation": null,
+                        "ai": null,
+                        "sms": null,
+                        "api": null,
+                        "free": false
+                },
+                "since": 2008,
+                "since_note": "Company founded 2008 (Vendasta 15th-anniversary release, January 2023).",
+                "best_for": "Agencies selling to local businesses",
+                "notes": "Professional needs $499 and Premium $999 a month, on a 1-year contract. Extra seats cost $30 to $65 a month.",
+                "sources": [
+                        "https://www.vendasta.com/pricing/",
+                        "https://www.vendasta.com/?p=73880"
+                ]
+        },
+        {
+                "name": "Attio",
+                "website": "https://attio.com",
+                "pricing_url": "https://attio.com/pricing",
+                "checked": "2026-11-07",
+                "free_plan": true,
+                "free_plan_limits": "Up to 3 seats; 250 credits a month",
+                "start_usd": null,
+                "small_business_plan": "Plus",
+                "cost_small_business_usd": null,
+                "cost_billed": "monthly",
+                "pricing_model": "per seat",
+                "usage_note": "",
+                "open_source": false,
+                "features": {
+                        "automation": null,
+                        "ai": true,
+                        "sms": null,
+                        "api": null,
+                        "free": true
+                },
+                "since": 2019,
+                "since_note": "Company founded 2019 per most directories; sources differ (2017 to 2021), public launch 2022 (Dealroom).",
+                "best_for": "Flexible CRM for startups",
+                "notes": "Sources conflict on Plus ($29 to $44) and Pro ($69 to $99) per seat: not confirmed.",
+                "sources": [
+                        "https://attio.com/pricing",
+                        "https://app.dealroom.co/companies/attio"
+                ]
+        },
+        {
+                "name": "Zoho CRM",
+                "website": "https://www.zoho.com/crm/",
+                "pricing_url": "https://www.zoho.com/crm/zohocrm-pricing.html",
+                "checked": "2026-11-07",
+                "free_plan": true,
+                "free_plan_limits": "Up to 3 users; no workflows",
+                "start_usd": 14,
+                "small_business_plan": "Standard",
+                "cost_small_business_usd": 14,
+                "cost_billed": "yearly",
+                "pricing_model": "per seat",
+                "usage_note": "",
+                "open_source": false,
+                "features": {
+                        "automation": true,
+                        "ai": null,
+                        "sms": null,
+                        "api": null,
+                        "free": true
+                },
+                "since": 2005,
+                "since_note": "Zoho CRM released 2005 (Wikipedia); Zoho's own launch timeline lists Feb 2006.",
+                "best_for": "Cheap CRM with many add-ons",
+                "notes": "Standard $14, Professional $23, Enterprise $40, billed yearly. Monthly billing was $20 for Standard in an older sheet.",
+                "sources": [
+                        "https://www.zoho.com/crm/zohocrm-pricing.html",
+                        "https://www.zoho.com/sites/zweb/images/crm/zohocrm-edition-comparison-usd.pdf",
+                        "https://en.wikipedia.org/wiki/Zoho_CRM_(application)"
+                ]
+        },
+        {
+                "name": "Close",
+                "website": "https://www.close.com",
+                "pricing_url": "https://close.com/pricing",
+                "checked": "2026-11-07",
+                "free_plan": false,
+                "free_plan_limits": "Free plan not listed",
+                "start_usd": 19,
+                "small_business_plan": "Essentials",
+                "cost_small_business_usd": 49,
+                "cost_billed": "monthly",
+                "pricing_model": "per seat",
+                "usage_note": "",
+                "open_source": false,
+                "features": {
+                        "automation": true,
+                        "ai": true,
+                        "sms": true,
+                        "api": null,
+                        "free": false
+                },
+                "since": 2013,
+                "since_note": "Launched publicly January 2013 as Close.io (Stacksync origin story).",
+                "best_for": "Sales teams that call and text",
+                "notes": "Yearly rates: Solo $9, Essentials $35, Growth $99, Scale $139. Essentials has no calling features; Growth adds the Power Dialer.",
+                "sources": [
+                        "https://close.com/pricing",
+                        "https://www.stacksync.com/blog/the-seven-rejections-the-origin-story-of-close"
+                ]
+        }
+]

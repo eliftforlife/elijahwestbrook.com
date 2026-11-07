@@ -1,0 +1,155 @@
+[
+        {
+                "name": "Zendesk",
+                "website": "https://www.zendesk.com",
+                "pricing_url": "https://www.zendesk.com/pricing/",
+                "checked": "2026-11-07",
+                "free_plan": false,
+                "free_plan_limits": "",
+                "start_usd": 25,
+                "small_business_plan": "Suite Team",
+                "cost_small_business_usd": 69,
+                "cost_billed": "monthly",
+                "pricing_model": "per seat",
+                "usage_note": "5 automated resolutions per agent a month included, then $1.50 (committed) or $2.00 (pay as you go) each",
+                "open_source": false,
+                "features": {
+                        "aiagent": true,
+                        "email": true,
+                        "chat": true,
+                        "shopify": true,
+                        "free": false
+                },
+                "since": 2007,
+                "since_note": "Company founded 2007 (Wikipedia).",
+                "best_for": "Growing teams needing every support channel",
+                "notes": "Per agent a month. Support Team is $19 yearly / $25 monthly; Suite Team (adds AI agents and live chat) is $55 yearly / $69 monthly; Suite Professional $115 / $149.",
+                "sources": [
+                        "https://www.zendesk.com/pricing/",
+                        "https://en.wikipedia.org/wiki/Zendesk"
+                ]
+        },
+        {
+                "name": "Intercom",
+                "website": "https://www.intercom.com",
+                "pricing_url": "https://www.intercom.com/pricing",
+                "checked": "2026-11-07",
+                "free_plan": false,
+                "free_plan_limits": "14-day free trial, no card",
+                "start_usd": 29,
+                "small_business_plan": "Essential",
+                "cost_small_business_usd": 29,
+                "cost_billed": "yearly",
+                "pricing_model": "per seat",
+                "usage_note": "Fin AI agent: $0.99 per resolved conversation",
+                "open_source": false,
+                "features": {
+                        "aiagent": true,
+                        "email": true,
+                        "chat": true,
+                        "shopify": true,
+                        "free": false
+                },
+                "since": 2011,
+                "since_note": "Company founded 2011 (Wikipedia).",
+                "best_for": "Chat-first support with an AI agent",
+                "notes": "Essential $29, Advanced $85, Expert $132 per seat a month on annual billing. Fin costs add up fast: Intercom's own example shows about $3,760 a month for 5,000 conversations. Pricing page itself did not load; figures from Intercom's learning center.",
+                "sources": [
+                        "https://www.intercom.com/learning-center/best-help-desk-small-business",
+                        "https://www.intercom.com/pricing",
+                        "https://en.wikipedia.org/wiki/Intercom_(company)"
+                ]
+        },
+        {
+                "name": "Freshdesk",
+                "website": "https://www.freshworks.com/freshdesk/",
+                "pricing_url": "https://www.freshworks.com/freshdesk/pricing/",
+                "checked": "2026-11-07",
+                "free_plan": true,
+                "free_plan_limits": "Basic ticketing for up to 2 agents (terms vary by source)",
+                "start_usd": 19,
+                "small_business_plan": "Growth",
+                "cost_small_business_usd": 19,
+                "cost_billed": "yearly",
+                "pricing_model": "per seat",
+                "usage_note": "Freddy AI Agent: 500 sessions included, then $49 per 100",
+                "open_source": false,
+                "features": {
+                        "aiagent": true,
+                        "email": true,
+                        "chat": null,
+                        "shopify": true,
+                        "free": true
+                },
+                "since": 2010,
+                "since_note": "Freshdesk founded 2010 in Chennai (Wikipedia).",
+                "best_for": "Small teams wanting a cheap help desk",
+                "notes": "Per agent a month, billed yearly: Growth $19, Pro $55, Enterprise $89. Monthly prices not stated. Live chat is sold as Freshchat or Freshdesk Omni (from $29). Free plan terms unclear.",
+                "sources": [
+                        "https://www.freshworks.com/freshdesk/pricing/",
+                        "https://en.wikipedia.org/wiki/Freshworks"
+                ]
+        },
+        {
+                "name": "Gorgias",
+                "website": "https://www.gorgias.com",
+                "pricing_url": "https://www.gorgias.com/pricing",
+                "checked": "2026-11-07",
+                "free_plan": false,
+                "free_plan_limits": "",
+                "start_usd": 10,
+                "small_business_plan": "Basic (300 tickets)",
+                "cost_small_business_usd": 60,
+                "cost_billed": "monthly",
+                "pricing_model": "usage",
+                "usage_note": "Priced by tickets a month; extra tickets about $0.40 each; AI Agent about $0.90-$1 per resolution (sources differ)",
+                "open_source": false,
+                "features": {
+                        "aiagent": true,
+                        "email": true,
+                        "chat": true,
+                        "shopify": true,
+                        "free": false
+                },
+                "since": 2015,
+                "since_note": "Founded in Paris in 2015 (Gorgias about page); helpdesk product came later.",
+                "best_for": "Online stores, mostly Shopify",
+                "notes": "Starter $10 (50 tickets), Basic $60 (300), Pro $360 (2,000), Advanced $900 (5,000), from Gorgias blog. Pricing page itself did not load. AI Agent price is stated inconsistently across Gorgias posts.",
+                "sources": [
+                        "https://www.gorgias.com/blog/gorgias-plan",
+                        "https://www.gorgias.com/blog/ai-agent-pricing",
+                        "https://www.gorgias.com/about-us"
+                ]
+        },
+        {
+                "name": "Help Scout",
+                "website": "https://www.helpscout.com",
+                "pricing_url": "https://www.helpscout.com/pricing/",
+                "checked": "2026-11-07",
+                "free_plan": null,
+                "free_plan_limits": "Not clear: search results mention a free plan, user limit unclear",
+                "start_usd": 25,
+                "small_business_plan": "Standard",
+                "cost_small_business_usd": 25,
+                "cost_billed": "yearly",
+                "pricing_model": "per seat",
+                "usage_note": "",
+                "open_source": false,
+                "features": {
+                        "aiagent": true,
+                        "email": true,
+                        "chat": true,
+                        "shopify": null,
+                        "free": null
+                },
+                "since": 2011,
+                "since_note": "Founded April 2011 (Wikipedia).",
+                "best_for": "Small teams wanting a simple shared inbox",
+                "notes": "Per user a month: Standard $25, Plus $45, Pro $75, listed as paid annually; monthly price not stated. 15-day trial. Free plan details not stated clearly. Pricing page did not load directly.",
+                "sources": [
+                        "https://www.helpscout.com/pricing/",
+                        "https://docs.helpscout.com/article/596-billing-and-plans-guide",
+                        "https://en.wikipedia.org/wiki/Help_Scout"
+                ]
+        }
+]

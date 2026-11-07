@@ -1,0 +1,156 @@
+[
+  {
+    "name": "Upwork",
+    "website": "https://www.upwork.com",
+    "pricing_url": "https://www.upwork.com/resources/is-upwork-free",
+    "checked": "2026-11-07",
+    "free_plan": true,
+    "free_plan_limits": "Free to join; fees come out of earnings",
+    "start_usd": 0,
+    "small_business_plan": "Free (Basic) freelancer account",
+    "cost_small_business_usd": 0,
+    "cost_billed": "usage",
+    "pricing_model": "commission",
+    "usage_note": "Freelancer fee 0% to 15% of earnings; client pays 5% plus $0.99 to $14.99 per contract",
+    "open_source": false,
+    "features": {
+      "fixed": true,
+      "hourly": true,
+      "protection": null,
+      "ai": null,
+      "free": true
+    },
+    "since": 2015,
+    "since_note": "Renamed Upwork in 2015 after the 2013 Elance-oDesk merger (Wikipedia).",
+    "best_for": "Finding hourly or fixed-price clients",
+    "notes": "Freelancer Plus is $19.99 a month with 0% fees on direct contracts. Fee set per contract. Fixed and hourly come from Upwork fee pages; protection and AI category not confirmed.",
+    "sources": [
+      "https://www.upwork.com/resources/is-upwork-free",
+      "https://www.upwork.com/pricing/client",
+      "https://en.wikipedia.org/wiki/Upwork"
+    ]
+  },
+  {
+    "name": "Fiverr",
+    "website": "https://www.fiverr.com",
+    "pricing_url": "https://www.fiverr.com",
+    "checked": "2026-11-07",
+    "free_plan": null,
+    "free_plan_limits": "Not stated",
+    "start_usd": 0,
+    "small_business_plan": "Free seller account",
+    "cost_small_business_usd": 0,
+    "cost_billed": "usage",
+    "pricing_model": "commission",
+    "usage_note": "Fiverr keeps 20% of each sale",
+    "open_source": false,
+    "features": {
+      "fixed": true,
+      "hourly": null,
+      "protection": null,
+      "ai": null,
+      "free": null
+    },
+    "since": 2010,
+    "since_note": "Launched February 2010 (Wikipedia).",
+    "best_for": "Selling set-price service packages",
+    "notes": "Seller gets 80% per Fiverr help text. Buyer fees differed across Fiverr pages (about 5.5% plus small-order fee). Cost to join not confirmed on a pricing page.",
+    "sources": [
+      "https://community.fiverr.com/public/forum/boards/ask-the-community-xsm/posts/344192-what-is-fiverrs-fees-policy",
+      "https://www.fiverr.com/resources/guides/business/fiverr-vs-upwork",
+      "https://en.wikipedia.org/wiki/Fiverr"
+    ]
+  },
+  {
+    "name": "Freelancer.com",
+    "website": "https://www.freelancer.com",
+    "pricing_url": "https://www.freelancer.com/feesandcharges",
+    "checked": "2026-11-07",
+    "free_plan": true,
+    "free_plan_limits": "Free account; paid memberships add bids and lower fees",
+    "start_usd": 4.99,
+    "small_business_plan": "Free account",
+    "cost_small_business_usd": 0,
+    "cost_billed": "usage",
+    "pricing_model": "commission",
+    "usage_note": "Freelancer fee 10% (fixed: or $5 minimum); employer fee 3% or $3 minimum",
+    "open_source": false,
+    "features": {
+      "fixed": true,
+      "hourly": true,
+      "protection": null,
+      "ai": null,
+      "free": true
+    },
+    "since": 2009,
+    "since_note": "Founded and launched 2009 (Wikipedia).",
+    "best_for": "Bidding on lots of small projects",
+    "notes": "Paid membership prices: Basic $4.99, Professional $49, Premier $99 a month (search snippet, may be dated). Enterprise projects carry 15%.",
+    "sources": [
+      "https://www.freelancer.com/feesandcharges",
+      "https://en.wikipedia.org/wiki/Freelancer.com"
+    ]
+  },
+  {
+    "name": "Contra",
+    "website": "https://contra.com",
+    "pricing_url": "https://contra.com/pro",
+    "checked": "2026-11-07",
+    "free_plan": true,
+    "free_plan_limits": "Always-free tier; platform fee on payments",
+    "start_usd": 29,
+    "small_business_plan": "Pro",
+    "cost_small_business_usd": 29,
+    "cost_billed": "monthly",
+    "pricing_model": "flat",
+    "usage_note": "Free tier: $15 per payment of $1 to $499, $29 at $500+; $0 on Pro",
+    "open_source": false,
+    "features": {
+      "fixed": null,
+      "hourly": null,
+      "protection": null,
+      "ai": null,
+      "free": true
+    },
+    "since": 2021,
+    "since_note": "Public launch February 2021 (Contra anniversary post, TechCrunch coverage); directories list founding 2019.",
+    "best_for": "Portfolio plus commission-free client work",
+    "notes": "Pro is $29 monthly or $199 yearly per Contra pages, which disagreed on details. Contra says it takes no commission. Clients pay about $19 per contract (another page said $29).",
+    "sources": [
+      "https://contra.com/pro",
+      "https://help.contra.com/en/articles/9322934-fees-overview",
+      "https://contra.com/blog/celebrating-contra-s-3-year-anniversary"
+    ]
+  },
+  {
+    "name": "Toptal",
+    "website": "https://www.toptal.com",
+    "pricing_url": "https://www.toptal.com/freelance-jobs/faq",
+    "checked": "2026-11-07",
+    "free_plan": null,
+    "free_plan_limits": "Not stated",
+    "start_usd": null,
+    "small_business_plan": "Not stated",
+    "cost_small_business_usd": null,
+    "cost_billed": "usage",
+    "pricing_model": null,
+    "usage_note": "",
+    "open_source": false,
+    "features": {
+      "fixed": null,
+      "hourly": true,
+      "protection": null,
+      "ai": null,
+      "free": null
+    },
+    "since": 2010,
+    "since_note": "Founded 2010 (Wikipedia).",
+    "best_for": "Experienced freelancers who pass screening",
+    "notes": "Not stated: whether joining is free. Search results say Toptal takes no cut from the rate you set and accepts under 3% of applicants after a multi-stage screen. Hiring side has its own fees.",
+    "sources": [
+      "https://www.toptal.com/freelance-jobs/faq",
+      "https://www.toptal.com/top-3-percent",
+      "https://en.wikipedia.org/wiki/Toptal"
+    ]
+  }
+]
