@@ -5,7 +5,7 @@ const pw = require('C:/Users/elift/Desktop/Eliftforlife youtube/14 failed busine
 const T = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.webp': 'image/webp', '.png': 'image/png' };
 const srv = http.createServer((q, r) => { let p = decodeURIComponent(q.url.split('?')[0]); if (p.endsWith('/')) p += 'index.html'; const root = path.resolve('docs'); const f = path.resolve(root, '.' + p);
   if (!f.startsWith(root + path.sep)) { r.writeHead(403); return r.end(); }
-  if (!fs.existsSync(f)) { r.writeHead(404); return r.end(); } r.writeHead(200, { 'content-type': T[path.extname(f)] || 'application/octet-stream' }); r.end(fs.readFileSync(f)); }).listen(8817, '127.0.0.1');
+  if (!fs.existsSync(f) || !fs.statSync(f).isFile()) { r.writeHead(404); return r.end(); } r.writeHead(200, { 'content-type': T[path.extname(f)] || 'application/octet-stream' }); r.end(fs.readFileSync(f)); }).listen(8817, '127.0.0.1');
 const [u, sel, out, w] = process.argv.slice(2);
 const b = await pw.chromium.launch(); const p = await b.newPage({ viewport: { width: +(w || 1366), height: 900 } });
 await p.goto('http://localhost:8817' + u); await p.evaluate(() => document.querySelectorAll('.reveal').forEach(e => e.classList.add('in'))); await p.waitForTimeout(600);

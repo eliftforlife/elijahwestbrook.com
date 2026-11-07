@@ -7,7 +7,7 @@ const pages = process.argv.slice(3).length ? process.argv.slice(3) : ['/', '/ai-
 const T = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.png': 'image/png', '.webp': 'image/webp', '.svg': 'image/svg+xml' };
 const srv = http.createServer((q, r) => { let p = decodeURIComponent(q.url.split('?')[0]); if (p.endsWith('/')) p += 'index.html'; const root = path.resolve('docs'); const f = path.resolve(root, '.' + p);
   if (!f.startsWith(root + path.sep)) { r.writeHead(403); return r.end(); }
-  if (!fs.existsSync(f)) { r.writeHead(404); return r.end(); } r.writeHead(200, { 'content-type': T[path.extname(f)] || 'application/octet-stream' }); r.end(fs.readFileSync(f)); }).listen(8815, '127.0.0.1');
+  if (!fs.existsSync(f) || !fs.statSync(f).isFile()) { r.writeHead(404); return r.end(); } r.writeHead(200, { 'content-type': T[path.extname(f)] || 'application/octet-stream' }); r.end(fs.readFileSync(f)); }).listen(8815, '127.0.0.1');
 const b = await pw.chromium.launch(); const errs = [];
 for (const [name, vp] of [['desk', { width: 1366, height: 900 }], ['phone', { width: 390, height: 844 }]]) {
   const p = await b.newPage({ viewport: vp });
