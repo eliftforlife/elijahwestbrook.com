@@ -4,11 +4,11 @@ import json, os, html
 import art as ART, timeline as TL
 E = lambda s: html.escape(str(s), quote=True)
 D = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', 'automation.json'), encoding='utf-8'))
-VERD = {'auto': ('AI runs it', 'v-auto'), 'assist': ('AI drafts, you check', 'v-assist'), 'human': ('Keep it human', 'v-human'), 'rare': ('Almost nobody automates it', 'v-rare')}
+VERD = {'auto': ('AI runs it', 'v-auto'), 'assist': ('AI drafts, you check', 'v-assist'), 'human': ('Keep it human', 'v-human'), 'rare': ('Too few videos to tell', 'v-rare')}
 SLUG = {'content': 'content-and-social-media', 'ads': 'ads', 'sales': 'sales-and-leads', 'support': 'customer-service', 'web': 'website-and-seo', 'ops': 'operations-and-admin',
         'finance': 'money-and-finance', 'people': 'hiring-and-team', 'legal': 'legal', 'delivery': 'doing-the-work', 'strategy': 'running-the-business'}
 # Elijah 11-07: "get help from human professionals" -> quick application -> he reviews and quotes (Claude can draft the quote).
-OFFER = dict(title='Get help from human professionals', text='Tell us what eats your time. A real person reads every application and replies with a plan and a price.',
+OFFER = dict(title='Need human help?', text='Tell us what eats your time. A real person replies with a plan and a price.',
              cta='Apply in 2 minutes', url='/automate/')
 WORKER = 'https://lemon-survey.elift08.workers.dev/apply'   # stores applications in D1 (table applications); see lemonindex-site/worker/survey_worker.js
 # Search titles from the 11-07 Keyword Planner pull (0 HQ/Research/Keywords/ai_keywords.csv): each page leads with its biggest phrase.
@@ -46,14 +46,18 @@ def row(t, area, open_=False):
            + (f'<p><b>Platforms:</b> {E(plats)}</p>' if plats and area == 'content' else '')
            + (f'<p><b>Videos that show it:</b></p><ul>{ex}</ul>' if ex else '')
            + (f'<p class="wflink"><a href="/workflows/{WF[t["id"]][0]}/">Free workflow: {E(WF[t["id"]][1])} →</a></p>' if t['id'] in WF else '') + '</div>')
-    return (f'<details class="ar {cls}" data-area="{area}" data-n="{t["n"]}" data-full="{t["pfull"]}" data-auto="{t["pfull"] + t["passist"] / 2:.0f}"{" open" if open_ else ""}>'
+    if t['n'] < 10: cls += ' few'
+    return (f'<details class="ar {cls}" data-area="{area}" data-n="{t["n"]}" data-full="{t["pfull"]}" data-auto="{(t["pfull"] + t["passist"] / 2) if t["n"] >= 10 else -1:.0f}"{" open" if open_ else ""}>'
             f'<summary><span class="an">{E(t["name"])}<small class="vt">{lab} · {t["n"]} videos</small></span>{bar(t)}<span class="ac">{t["pfull"]}%<small>alone</small></span></summary>{det}</details>')
 
 LEGEND = '<p class="alegend"><span><i class="f"></i>AI alone</span><span><i class="a"></i>AI + a person checks</span><span><i class="h"></i>Keep human</span></p>'
 
 def offer(arrow=''):
     if not OFFER: return ''
-    return f'<section class="aoffer reveal"><img class="aoffer-me" src="/assets/elijah-help.webp" alt="Elijah Westbrook" width="96" height="96" loading="lazy"><div><h2>{E(OFFER["title"])}</h2><p>{E(OFFER["text"])}</p></div><a class="btn red" href="{OFFER["url"]}" rel="noopener">{E(OFFER["cta"])} {arrow}</a></section>'
+    return (f'<section class="aoffer2 reveal"><div class="ao-who"><img src="/assets/elijah-help.webp" alt="Elijah Westbrook" width="120" height="120" loading="lazy"><div><b>Elijah Westbrook</b><span>Reads every application</span></div></div>'
+            f'<div class="ao-main"><h2>{E(OFFER["title"])}</h2><p>{E(OFFER["text"])}</p>'
+            '<ul><li>A real person reads it, not a bot</li><li>You get a plan and a price, no sales call needed</li><li>Rather do it yourself? The workflows are free</li></ul>'
+            f'<a class="ao-btn" href="{OFFER["url"]}">{E(OFFER["cta"])} {arrow}</a></div></section>')
 
 def build(page, ARROW, author):
     areas = D['areas']; tasks = [t for a in areas for t in a['tasks']]
@@ -101,7 +105,7 @@ def build(page, ARROW, author):
 <h1>{E(TITLES[a["id"]][1])}</h1>
 <p class="lede1">AI runs <b>{na} of {len(ts)}</b> {E(a["name"].lower())} tasks on its own, from {a["n"]:,} videos.</p>
 <div class="aphoto">{ART.art(a["id"], a["tasks"], "art big")}</div></section>
-<section class="achart tight">{LEGEND}<div class="arows">{"".join(row(t, a["id"]) for t in sorted(ts, key=lambda t: -(t["pfull"] + t["passist"] / 2)))}</div></section>
+<section class="achart tight">{LEGEND}<div class="arows">{"".join(row(t, a["id"]) for t in sorted(ts, key=lambda t: (t["n"] < 10, -(t["pfull"] + t["passist"] / 2))))}</div></section>
 {plat}{offer(ARROW)}
 <nav class="pn"><a class="reveal" href="/ai-automation/"><small>← All tasks</small><b>Every business task, ranked</b></a><a class="reveal" href="/ai-automation/{SLUG[nxt["id"]]}/"><small>Next →</small><b>{E(nxt["name"])}</b></a></nav>
 {author()}</main>'''
@@ -120,14 +124,17 @@ def apply_page(page, ARROW):
              'Recruiting', 'Retail store', 'Freelancer', 'Nonprofit', 'Therapy', 'Pet business', 'Something else']
     areas = [a['name'] for a in D['areas'] if a['id'] not in ('delivery', 'strategy')] + ['Something else']
     opts = ''.join(f'<option>{E(t)}</option>' for t in types)
+    best = lambda a: max(a['tasks'], key=lambda t: (t['verdict'] == 'auto', t['pfull'] if t['n'] >= 10 else -1))
+    AREA_STATS = json.dumps({a['name']: dict(auto=sum(t['verdict'] == 'auto' for t in a['tasks']), total=len(a['tasks']), top=best(a)['name'], top_pct=best(a)['pfull'],
+                                            wf=next((w for w in [WF.get(t['id']) for t in sorted(a['tasks'], key=lambda t: -t['pfull'])] if w), None)) for a in D['areas']}, ensure_ascii=False)
     body = f'''<main class="study aistudy apply">
 <section class="shero"><p class="crumbs"><a href="/">Home</a> <span>/</span> <a href="/ai-automation/">AI automation</a></p>
-<h1>Get help from human professionals</h1><p class="lead">Answer a few questions about your business. A real person reads every application and replies with what to automate first, how, and what it costs. No call needed to get a price.</p></section>
+<h1>Need human help?</h1><p class="lead">Answer a few quick questions. A real person replies with what to automate first, how, and what it costs.</p></section>
 <form id="apply" class="aform" novalidate>
 <fieldset><legend>1. What kind of business is it?</legend><select name="type" required><option value="">Pick one</option>{opts}</select>
 <input name="business" placeholder="Business name (optional)" maxlength="120"><input name="site" placeholder="Website or Instagram (optional)" maxlength="200"></fieldset>
 <fieldset><legend>2. How many people work there?</legend><div class="opts">{ch("size", ["Just me", "2-5", "6-20", "21-50", "51+"])}</div></fieldset>
-<fieldset><legend>3. Where does your time go? Pick all that apply.</legend><div class="opts">{ch("areas", areas, "checkbox")}</div></fieldset>
+<fieldset><legend>3. Where does your time go? Pick all that apply.</legend><div class="opts">{ch("areas", areas, "checkbox")}</div><div class="pitch" id="pitch" aria-live="polite"></div></fieldset>
 <fieldset><legend>4. What is the one job you most want off your plate?</legend><textarea name="task" rows="4" maxlength="2000" required placeholder="For example: answering the same booking questions by text every night, or posting to Instagram and TikTok every day."></textarea></fieldset>
 <fieldset><legend>5. What tools do you use now?</legend><input name="tools" maxlength="400" placeholder="For example: Gmail, Square, GoHighLevel, Google Sheets (optional)"></fieldset>
 <fieldset><legend>6. Hours a week that job takes</legend><div class="opts">{ch("hours", ["Under 5", "5-10", "10-20", "20+", "Not sure"])}</div></fieldset>
@@ -135,9 +142,10 @@ def apply_page(page, ARROW):
 <fieldset><legend>8. When do you want it running?</legend><div class="opts">{ch("when", ["As soon as possible", "This month", "In the next 3 months", "Just exploring"])}</div></fieldset>
 <fieldset><legend>9. Where should we send the plan?</legend><input name="name" required maxlength="100" placeholder="Your name" autocomplete="name"><input name="email" type="email" required maxlength="200" placeholder="Email" autocomplete="email">
 <input name="phone" maxlength="40" placeholder="Phone (optional)" autocomplete="tel"><input name="hp" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true"></fieldset>
+<div class="next"><b>What happens next</b><ol><li>A real person reads your answers.</li><li>You get a plan: what to automate first, the tools, and what it saves you.</li><li>You get a price. No sales call needed. If it’s not worth automating, we’ll tell you.</li></ol></div>
 <p class="fine">We only use this to reply about your business. It is never shared or sold. Email <a href="mailto:hello@elijahwestbrook.com">hello@elijahwestbrook.com</a> any time to have it deleted.</p>
 <button class="btn red" type="submit">Send it {ARROW}</button><p class="amsg" role="status"></p></form>
-<script src="/assets/apply.js?v=1" defer></script></main>'''
+<script>window.AREA_STATS = {AREA_STATS};</script><script src="/assets/apply.js?v=2" defer></script></main>'''
     page('/automate/', 'Get Help Automating Your Business | Elijah Westbrook', 'Tell us what eats your time. A real person reads every application and replies with what to automate first, how, and what it costs.', body, 'website', None, 'AI automation', 'aipage')
     return ['/automate/']
 

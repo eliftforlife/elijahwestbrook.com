@@ -325,3 +325,43 @@ details.method > summary h2 { display: inline; } details.method > summary::after
 .tllist li.rules .ty { color: #8f8f8f; }
 @media (max-width: 720px) { .tllist li { grid-template-columns: 44px minmax(0, 1fr); } .tllist .tw { grid-column: 2; } .tllist .tn { display: none; } }
 .ttab td.since { font-family: var(--wide); font-variation-settings: "wdth" 112; color: #d4d4d4; font-size: 13px; }
+
+/* 11-07: color makes the bars readable (green = AI alone, amber = AI + a person checks, gray stripes = keep human) */
+:root { --gA: #22c55e; --yA: #f59e0b; }
+.f { background: var(--gA) !important; } .a { background: var(--yA) !important; } .h { background: repeating-linear-gradient(135deg, #4b4b4b 0 2px, #151515 2px 5px) !important; }
+.alegend i.f { background: var(--gA) !important; } .alegend i.a { background: var(--yA) !important; }
+.ab i.a { opacity: .85; }
+.ac { color: var(--gA) !important; } .ac small { color: #8f8f8f !important; }
+.v-auto .vt { color: var(--gA) !important; }
+.ar.few { opacity: .45; } .ar.few .ac { color: #8f8f8f !important; }
+.ar.few .vt::after { content: ""; }
+.tli { stroke: var(--gA) !important; } .tlr { stroke: var(--yA) !important; } .tlm circle { stroke: var(--gA) !important; }
+.alegend i.h2 { background: rgba(255,255,255,.18) !important; }
+.timeline .alegend i.f { background: var(--gA) !important; } .timeline .alegend i.a { background: var(--yA) !important; }
+/* help box v2 */
+.aoffer2 { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 0; margin: 56px 0; background: #fff; color: #000; }
+.home > .aoffer2 { max-width: 1224px; margin: 64px auto 0; }
+.ao-who { background: #f2f2f0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 32px 20px; text-align: center; }
+.ao-who img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 4px #fff; }
+.ao-who b { display: block; font-family: var(--wide); font-variation-settings: "wdth" 112; text-transform: uppercase; font-size: 13px; letter-spacing: .06em; }
+.ao-who span { display: block; font-size: 13px; color: #555; margin-top: 2px; }
+.ao-main { padding: 40px 44px; }
+.ao-main h2 { color: #000; font-size: clamp(24px, 3vw, 38px); line-height: 1.02; }
+.ao-main p { color: #444; margin: 12px 0 16px; max-width: 52ch; }
+.ao-main ul { list-style: none; padding: 0; margin: 0 0 24px; display: grid; gap: 8px; }
+.ao-main li { position: relative; padding-left: 28px; color: #111; font-size: 15px; }
+.ao-main li::before { content: ""; position: absolute; left: 0; top: .2em; width: 18px; height: 18px; border-radius: 50%; background: var(--gA); box-shadow: inset 0 0 0 5px #dcfce7; }
+.ao-btn { display: inline-flex; align-items: center; gap: 12px; background: #000; color: #fff !important; text-decoration: none !important; padding: 15px 18px 15px 24px; border-radius: 999px; font-family: var(--wide); font-variation-settings: "wdth" 112; text-transform: uppercase; font-size: 13px; letter-spacing: .07em; font-weight: 600; }
+.ao-btn .arr { border-color: #fff; } .ao-btn:hover { background: #222; } .ao-btn:hover .arr { background: #fff; color: #000; }
+@media (max-width: 720px) {
+  .aoffer2 { grid-template-columns: minmax(0, 1fr); } .home > .aoffer2 { margin: 40px 16px 0; }
+  .ao-who { flex-direction: row; justify-content: flex-start; text-align: left; padding: 18px 20px; } .ao-who img { width: 64px; height: 64px; }
+  .ao-main { padding: 24px 20px 28px; }
+}
+
+/* 11-07: pitch inside the application */
+.pitch p { margin: 10px 0 0; padding: 12px 14px; background: #0d1a10; border-left: 3px solid var(--gA); color: #d4d4d4; font-size: 14.5px; line-height: 1.5; }
+.pitch b { color: #fff; }
+.next { background: #0d0d0d; padding: 18px 20px; } .next b { display: block; color: #fff; font-family: var(--wide); font-variation-settings: "wdth" 112; text-transform: uppercase; font-size: 12px; letter-spacing: .08em; margin-bottom: 8px; }
+.next ol { margin: 0; padding-left: 20px; color: #d4d4d4; font-size: 15px; } .next li { margin: 4px 0; }
+.gh-ribbon { font-size: 13px !important; }

@@ -46,7 +46,7 @@ def footer():
     soc = ''.join(f'<a class="soc" href="{u}" rel="noopener" aria-label="{n}" style="--b:{c}">{svg(i)}<span>{n}</span></a>' for n, u, i, c in SOCIALS)
     studies = ''.join(f'<a href="/studies/{s["slug"]}/">{E(short_title(s))}</a>' for s in STUDIES[:6])
     return f'''<footer class="foot">
-<section class="cta reveal"><div><h2>Get help from human professionals.</h2><p>Tell us what eats your time. A real person reads every application and replies with a plan and a price.</p></div>
+<section class="cta reveal"><div><h2>Need human help?</h2><p>Tell us what eats your time. A real person replies with a plan and a price.</p></div>
 <a class="btn red" href="/automate/">Apply in 2 minutes {ARROW}</a></section>
 <div class="cols">
 <div class="me"><a class="brand" href="/"><img src="/assets/me-128.webp" alt="" width="40" height="40" loading="lazy"><span>{SITE['name']}</span></a>
@@ -82,7 +82,7 @@ def page(path, title, desc, body, kind='website', ld=None, active='', cls=''):
 {lds}
 </head>
 <body class="{cls}">
-<a class="gh-ribbon" href="/automate/">Want AI to run part of your business? Get help from a real person. <span>Apply ›</span></a>
+<a class="gh-ribbon" href="/automate/">Need human help? <span>Apply ›</span></a>
 {header(active)}
 {body}
 {footer()}

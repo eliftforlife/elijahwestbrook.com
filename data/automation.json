@@ -1013,8 +1013,8 @@
      ],
      "platforms": {
       "youtube": 54,
-      "tiktok": 52,
       "instagram": 52,
+      "tiktok": 52,
       "youtube-shorts": 38,
       "facebook": 10,
       "linkedin": 7,
@@ -1091,8 +1091,8 @@
      ],
      "platforms": {
       "youtube": 78,
-      "tiktok": 50,
       "instagram": 50,
+      "tiktok": 50,
       "youtube-shorts": 32,
       "facebook": 14,
       "linkedin": 7,
@@ -1900,9 +1900,9 @@
       "blog": 56,
       "google-business": 5,
       "instagram": 4,
-      "facebook": 3,
-      "linkedin": 3,
       "x": 3,
+      "linkedin": 3,
+      "facebook": 3,
       "email": 3,
       "youtube": 3,
       "tiktok": 1
@@ -1978,8 +1978,8 @@
      "platforms": {
       "email": 42,
       "tiktok": 1,
-      "linkedin": 1,
       "x": 1,
+      "linkedin": 1,
       "blog": 1
      },
      "types": [
@@ -2043,7 +2043,7 @@
      "pfull": 25,
      "passist": 75,
      "phuman": 0,
-     "verdict": "assist",
+     "verdict": "rare",
      "tools": [
       "Claude",
       "ChatGPT / OpenAI",
@@ -2073,7 +2073,7 @@
        2
       ],
       [
-       "Dental and medical practices",
+       "Schools, courses and tutors",
        2
       ]
      ],
@@ -2120,15 +2120,15 @@
      "tools": [
       "ChatGPT / OpenAI",
       "Perplexity",
-      "Claude",
-      "Gemini"
+      "Gemini",
+      "Claude"
      ],
      "platforms": {
       "instagram": 2,
       "linkedin": 1,
       "x": 1,
-      "youtube": 1,
-      "tiktok": 1
+      "tiktok": 1,
+      "youtube": 1
      },
      "types": [
       [
@@ -2593,11 +2593,11 @@
        15
       ],
       [
-       "Creators and YouTubers",
+       "E-commerce stores",
        10
       ],
       [
-       "E-commerce stores",
+       "Creators and YouTubers",
        10
       ],
       [
@@ -2969,16 +2969,16 @@
      "pfull": 14,
      "passist": 29,
      "phuman": 57,
-     "verdict": "human",
+     "verdict": "rare",
      "tools": [
       "GoHighLevel",
       "ChatGPT / OpenAI",
-      "Clay",
-      "Claude"
+      "Claude",
+      "Clay"
      ],
      "platforms": {
-      "instagram": 2,
       "facebook": 2,
+      "instagram": 2,
       "email": 2,
       "linkedin": 1,
       "x": 1,
@@ -3046,8 +3046,8 @@
       "x": 3,
       "youtube": 2,
       "linkedin": 2,
-      "instagram": 2,
       "facebook": 2,
+      "instagram": 2,
       "podcast": 1,
       "tiktok": 1
      },
@@ -3202,8 +3202,8 @@
       "google-business": 25,
       "instagram": 16,
       "facebook": 12,
-      "x": 9,
       "youtube": 9,
+      "x": 9,
       "tiktok": 4,
       "linkedin": 4,
       "youtube-shorts": 1
@@ -3284,8 +3284,8 @@
       "linkedin": 2,
       "youtube": 2,
       "google-business": 1,
-      "tiktok": 1,
-      "youtube-shorts": 1
+      "youtube-shorts": 1,
+      "tiktok": 1
      },
      "types": [
       [
@@ -3505,9 +3505,9 @@
       "Make"
      ],
      "platforms": {
+      "x": 2,
       "google-business": 2,
       "email": 2,
-      "x": 2,
       "linkedin": 2,
       "youtube": 2,
       "podcast": 1
@@ -3573,7 +3573,7 @@
      "pfull": 80,
      "passist": 0,
      "phuman": 20,
-     "verdict": "auto",
+     "verdict": "rare",
      "tools": [
       "Claude",
       "Perplexity"
@@ -3588,19 +3588,19 @@
        2
       ],
       [
-       "Real estate agents",
-       1
-      ],
-      [
-       "Coaches and consultants",
-       1
-      ],
-      [
        "Law firms",
        1
       ],
       [
+       "Insurance and mortgage",
+       1
+      ],
+      [
        "Retail stores",
+       1
+      ],
+      [
+       "Coaches and consultants",
        1
       ]
      ],
@@ -3875,8 +3875,8 @@
      "verdict": "auto",
      "tools": [
       "Google Sheets",
-      "Make",
       "ChatGPT / OpenAI",
+      "Make",
       "Gmail"
      ],
      "platforms": {
@@ -3972,11 +3972,11 @@
        4
       ],
       [
-       "Dental and medical practices",
+       "Law firms",
        3
       ],
       [
-       "Law firms",
+       "Dental and medical practices",
        3
       ]
      ],
@@ -4030,12 +4030,12 @@
       "email": 12,
       "google-business": 7,
       "x": 6,
-      "instagram": 3,
       "facebook": 3,
+      "instagram": 3,
       "linkedin": 2,
-      "tiktok": 1,
       "youtube-shorts": 1,
       "youtube": 1,
+      "tiktok": 1,
       "threads": 1
      },
      "types": [
@@ -4179,18 +4179,18 @@
      "verdict": "auto",
      "tools": [
       "ChatGPT / OpenAI",
-      "Claude",
       "Gemini",
+      "Claude",
       "GoHighLevel"
      ],
      "platforms": {
       "google-business": 9,
       "facebook": 2,
       "email": 2,
+      "youtube": 1,
       "x": 1,
-      "tiktok": 1,
       "instagram": 1,
-      "youtube": 1
+      "tiktok": 1
      },
      "types": [
       [
@@ -4206,7 +4206,7 @@
        5
       ],
       [
-       "Real estate agents",
+       "Salons, med spas and beauty",
        3
       ],
       [
@@ -4264,9 +4264,9 @@
       "google-business": 10,
       "youtube": 2,
       "linkedin": 1,
-      "tiktok": 1,
+      "facebook": 1,
       "instagram": 1,
-      "facebook": 1
+      "tiktok": 1
      },
      "types": [
       [
@@ -4274,19 +4274,19 @@
        7
       ],
       [
-       "Dental and medical practices",
-       3
-      ],
-      [
        "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
        3
       ],
       [
-       "Coaches and consultants",
+       "Dental and medical practices",
        3
       ],
       [
        "Salons, med spas and beauty",
+       3
+      ],
+      [
+       "Coaches and consultants",
        3
       ]
      ],
@@ -4343,19 +4343,19 @@
        2
       ],
       [
-       "Gyms and fitness",
-       1
-      ],
-      [
-       "Dental and medical practices",
-       1
-      ],
-      [
-       "SaaS and tech startups",
+       "Law firms",
        1
       ],
       [
        "E-commerce stores",
+       1
+      ],
+      [
+       "Gyms and fitness",
+       1
+      ],
+      [
+       "Car dealers and auto repair",
        1
       ]
      ],
@@ -4535,8 +4535,8 @@
       "google-business": 11,
       "youtube": 4,
       "facebook": 1,
-      "instagram": 1,
-      "tiktok": 1
+      "tiktok": 1,
+      "instagram": 1
      },
      "types": [
       [
@@ -4607,10 +4607,10 @@
       "Perplexity"
      ],
      "platforms": {
-      "blog": 15,
       "google-business": 15,
-      "youtube": 2,
+      "blog": 15,
       "tiktok": 2,
+      "youtube": 2,
       "x": 1,
       "instagram": 1
      },
@@ -4688,8 +4688,8 @@
       "instagram": 9,
       "facebook": 8,
       "email": 6,
-      "tiktok": 6,
       "x": 6,
+      "tiktok": 6,
       "blog": 5,
       "linkedin": 5,
       "youtube-shorts": 3,
@@ -4927,10 +4927,10 @@
       "google-business": 22,
       "email": 17,
       "x": 3,
-      "youtube": 3,
       "linkedin": 3,
-      "instagram": 1,
-      "facebook": 1
+      "youtube": 3,
+      "facebook": 1,
+      "instagram": 1
      },
      "types": [
       [
@@ -5010,9 +5010,9 @@
       "linkedin": 3,
       "x": 3,
       "facebook": 2,
-      "podcast": 1,
       "pinterest": 1,
       "reddit": 1,
+      "podcast": 1,
       "threads": 1
      },
      "types": [
@@ -5167,13 +5167,13 @@
       "google-business": 4,
       "youtube": 3,
       "podcast": 1,
-      "linkedin": 1,
-      "tiktok": 1,
-      "x": 1,
       "pinterest": 1,
-      "youtube-shorts": 1,
+      "linkedin": 1,
+      "facebook": 1,
+      "x": 1,
       "instagram": 1,
-      "facebook": 1
+      "youtube-shorts": 1,
+      "tiktok": 1
      },
      "types": [
       [
@@ -5249,9 +5249,9 @@
       "x": 1,
       "google-business": 1,
       "email": 1,
+      "tiktok": 1,
       "instagram": 1,
-      "youtube-shorts": 1,
-      "tiktok": 1
+      "youtube-shorts": 1
      },
      "types": [
       [
@@ -5324,8 +5324,8 @@
      "platforms": {
       "google-business": 2,
       "linkedin": 1,
-      "instagram": 1,
-      "x": 1
+      "x": 1,
+      "instagram": 1
      },
      "types": [
       [
@@ -5400,8 +5400,8 @@
       "google-business": 20,
       "youtube": 16,
       "blog": 7,
-      "x": 5,
       "facebook": 5,
+      "x": 5,
       "instagram": 5,
       "tiktok": 4,
       "linkedin": 4,
@@ -5699,7 +5699,7 @@
      "pfull": 100,
      "passist": 0,
      "phuman": 0,
-     "verdict": "auto",
+     "verdict": "rare",
      "tools": [
       "Gmail",
       "Claude",
@@ -5869,8 +5869,8 @@
       "blog": 2,
       "email": 2,
       "google-business": 2,
-      "x": 2,
       "facebook": 2,
+      "x": 2,
       "pinterest": 1
      },
      "types": [
@@ -5954,11 +5954,11 @@
      },
      "types": [
       [
-       "Freelancers and photographers",
+       "Marketing agencies",
        6
       ],
       [
-       "Marketing agencies",
+       "Freelancers and photographers",
        6
       ],
       [
@@ -6016,22 +6016,14 @@
      "verdict": "rare",
      "tools": [
       "ChatGPT / OpenAI",
-      "Claude",
+      "Notion",
       "Gemini",
-      "Notion"
+      "Claude"
      ],
      "platforms": {},
      "types": [
       [
-       "Gyms and fitness",
-       1
-      ],
-      [
-       "Dental and medical practices",
-       1
-      ],
-      [
-       "SaaS and tech startups",
+       "Law firms",
        1
       ],
       [
@@ -6039,7 +6031,15 @@
        1
       ],
       [
-       "Coaches and consultants",
+       "Gyms and fitness",
+       1
+      ],
+      [
+       "Car dealers and auto repair",
+       1
+      ],
+      [
+       "Accounting and bookkeeping",
        1
       ]
      ],
@@ -6072,8 +6072,8 @@
      "phuman": 0,
      "verdict": "assist",
      "tools": [
-      "QuickBooks",
       "ChatGPT / OpenAI",
+      "QuickBooks",
       "Claude",
       "Google Sheets"
      ],
@@ -6146,8 +6146,8 @@
      "verdict": "rare",
      "tools": [
       "ChatGPT / OpenAI",
-      "n8n",
       "Google Sheets",
+      "n8n",
       "Lovable"
      ],
      "platforms": {},
@@ -6213,11 +6213,11 @@
        2
       ],
       [
-       "SaaS and tech startups",
+       "E-commerce stores",
        1
       ],
       [
-       "E-commerce stores",
+       "SaaS and tech startups",
        1
       ]
      ],
@@ -6333,11 +6333,11 @@
      "platforms": {},
      "types": [
       [
-       "Accounting and bookkeeping",
+       "SaaS and tech startups",
        1
       ],
       [
-       "SaaS and tech startups",
+       "Accounting and bookkeeping",
        1
       ],
       [
@@ -6446,9 +6446,9 @@
      "verdict": "rare",
      "tools": [
       "ChatGPT / OpenAI",
-      "Gmail",
       "HeyGen",
-      "Notion"
+      "Notion",
+      "Gmail"
      ],
      "platforms": {},
      "types": [
@@ -6503,7 +6503,7 @@
      "pfull": 0,
      "passist": 50,
      "phuman": 50,
-     "verdict": "human",
+     "verdict": "rare",
      "tools": [
       "Claude",
       "ChatGPT / OpenAI",
@@ -6519,15 +6519,15 @@
        2
       ],
       [
+       "E-commerce stores",
+       1
+      ],
+      [
        "Restaurants",
        1
       ],
       [
        "SaaS and tech startups",
-       1
-      ],
-      [
-       "E-commerce stores",
        1
       ],
       [
@@ -6647,11 +6647,11 @@
        1
       ],
       [
-       "Coaches and consultants",
+       "Freelancers and photographers",
        1
       ],
       [
-       "Freelancers and photographers",
+       "Coaches and consultants",
        1
       ],
       [
@@ -6688,8 +6688,8 @@
       "Gemini"
      ],
      "platforms": {
-      "youtube": 1,
       "podcast": 1,
+      "youtube": 1,
       "youtube-shorts": 1
      },
      "types": [
@@ -6739,8 +6739,8 @@
      "phuman": 0,
      "verdict": "assist",
      "tools": [
-      "Claude",
       "ChatGPT / OpenAI",
+      "Claude",
       "Make",
       "Gmail"
      ],
@@ -6765,7 +6765,7 @@
        2
       ],
       [
-       "Schools, courses and tutors",
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
        1
       ]
      ],
@@ -6814,7 +6814,7 @@
      "pfull": 0,
      "passist": 67,
      "phuman": 33,
-     "verdict": "assist",
+     "verdict": "rare",
      "tools": [
       "ChatGPT / OpenAI",
       "Claude",
@@ -6910,7 +6910,7 @@
      "pfull": 38,
      "passist": 50,
      "phuman": 12,
-     "verdict": "assist",
+     "verdict": "rare",
      "tools": [
       "ChatGPT / OpenAI",
       "Slack",
@@ -6918,10 +6918,10 @@
       "Claude"
      ],
      "platforms": {
-      "instagram": 1,
+      "tiktok": 1,
       "google-business": 1,
-      "email": 1,
-      "tiktok": 1
+      "instagram": 1,
+      "email": 1
      },
      "types": [
       [
@@ -6929,7 +6929,7 @@
        3
       ],
       [
-       "Creators and YouTubers",
+       "Freelancers and photographers",
        2
       ],
       [
@@ -6937,11 +6937,11 @@
        2
       ],
       [
-       "Freelancers and photographers",
+       "Creators and YouTubers",
        2
       ],
       [
-       "Gyms and fitness",
+       "Travel agents",
        1
       ]
      ],
@@ -6978,12 +6978,12 @@
      "pfull": 0,
      "passist": 100,
      "phuman": 0,
-     "verdict": "assist",
+     "verdict": "rare",
      "tools": [
       "ChatGPT / OpenAI",
       "Claude",
-      "Microsoft Copilot / Power Automate",
-      "Gemini"
+      "Gemini",
+      "Microsoft Copilot / Power Automate"
      ],
      "platforms": {},
      "types": [
@@ -6996,15 +6996,15 @@
        2
       ],
       [
+       "E-commerce stores",
+       1
+      ],
+      [
        "Gyms and fitness",
        1
       ],
       [
-       "Dental and medical practices",
-       1
-      ],
-      [
-       "SaaS and tech startups",
+       "Car dealers and auto repair",
        1
       ]
      ],
@@ -7069,11 +7069,11 @@
        6
       ],
       [
-       "Freelancers and photographers",
+       "Creators and YouTubers",
        3
       ],
       [
-       "Creators and YouTubers",
+       "Freelancers and photographers",
        3
       ]
      ],
@@ -7121,15 +7121,11 @@
      "platforms": {},
      "types": [
       [
-       "Real estate agents",
-       1
-      ],
-      [
-       "Coaches and consultants",
-       1
-      ],
-      [
        "Law firms",
+       1
+      ],
+      [
+       "Insurance and mortgage",
        1
       ],
       [
@@ -7137,7 +7133,11 @@
        1
       ],
       [
-       "Insurance and mortgage",
+       "Coaches and consultants",
+       1
+      ],
+      [
+       "Real estate agents",
        1
       ]
      ],
@@ -7193,7 +7193,7 @@
        1
       ],
       [
-       "Dental and medical practices",
+       "Car dealers and auto repair",
        1
       ]
      ],
@@ -7245,8 +7245,8 @@
      ],
      "platforms": {
       "youtube": 2,
-      "blog": 1,
       "google-business": 1,
+      "blog": 1,
       "email": 1
      },
      "types": [
@@ -7400,8 +7400,8 @@
       "youtube-shorts": 11,
       "blog": 10,
       "threads": 4,
-      "podcast": 3,
       "reddit": 3,
+      "podcast": 3,
       "pinterest": 1
      },
      "types": [
@@ -7473,9 +7473,9 @@
       "n8n"
      ],
      "platforms": {
+      "tiktok": 1,
       "youtube": 1,
-      "instagram": 1,
-      "tiktok": 1
+      "instagram": 1
      },
      "types": [
       [
@@ -7487,15 +7487,15 @@
        3
       ],
       [
+       "Contractors and construction",
+       2
+      ],
+      [
        "Dental and medical practices",
        2
       ],
       [
        "SaaS and tech startups",
-       2
-      ],
-      [
-       "Creators and YouTubers",
        2
       ]
      ],
@@ -7537,12 +7537,12 @@
       "ChatGPT / OpenAI",
       "Claude",
       "Gemini",
-      "Microsoft Copilot / Power Automate"
+      "n8n"
      ],
      "platforms": {
+      "x": 1,
       "linkedin": 1,
-      "email": 1,
-      "x": 1
+      "email": 1
      },
      "types": [
       [
@@ -7550,11 +7550,11 @@
        5
       ],
       [
-       "Coaches and consultants",
+       "Retail stores",
        3
       ],
       [
-       "Retail stores",
+       "Coaches and consultants",
        3
       ],
       [
@@ -7596,8 +7596,8 @@
      "phuman": 53,
      "verdict": "human",
      "tools": [
-      "Claude",
       "ChatGPT / OpenAI",
+      "Claude",
       "Microsoft Copilot / Power Automate",
       "Make"
      ],
@@ -7665,8 +7665,8 @@
      "phuman": 0,
      "verdict": "rare",
      "tools": [
-      "Claude",
-      "ChatGPT / OpenAI"
+      "ChatGPT / OpenAI",
+      "Claude"
      ],
      "platforms": {},
      "types": [],
@@ -7694,9 +7694,9 @@
      "verdict": "rare",
      "tools": [
       "ChatGPT / OpenAI",
-      "Twilio",
+      "Retell AI",
       "Claude",
-      "Retell AI"
+      "Twilio"
      ],
      "platforms": {},
      "types": [
@@ -7705,7 +7705,11 @@
        1
       ],
       [
-       "Gyms and fitness",
+       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
+       1
+      ],
+      [
+       "Law firms",
        1
       ],
       [
@@ -7713,11 +7717,7 @@
        1
       ],
       [
-       "Home services (HVAC, plumbing, roofing, cleaning, landscaping)",
-       1
-      ],
-      [
-       "Real estate agents",
+       "Gyms and fitness",
        1
       ]
      ],
