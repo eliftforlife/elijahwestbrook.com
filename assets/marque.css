@@ -240,3 +240,9 @@ p a, .answer a, .sec a { color: #fff; text-decoration-color: #fff; text-decorati
 .chk { display: flex; gap: 10px; align-items: center; color: #d4d4d4; font-size: 15px; }
 @media (max-width: 720px) { .tsug { grid-template-columns: minmax(0, 1fr); padding: 24px; } }
 .ttab td.y, .ttab td.n, .ttab td.u { font-size: 17px; line-height: 1; }
+/* 11-07: platform marks people can read at a glance (Elijah: "make the dots clearer, green") */
+.ttab i.dot, .tlegend i.dot { display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 0 3px rgba(34, 197, 94, .18); vertical-align: middle; }
+.ttab i.no, .tlegend i.no { font-style: normal; color: #4a4a4a; font-size: 16px; }
+.ttab i.unk, .tlegend i.unk { font-style: normal; display: inline-grid; place-items: center; width: 18px; height: 18px; border-radius: 50%; border: 1.5px solid #eab308; color: #eab308; font-size: 11px; font-weight: 700; }
+.ttab tbody tr:hover i.dot { box-shadow: 0 0 0 4px rgba(34, 197, 94, .3); }
+.tlegend span { display: inline-flex; align-items: center; gap: 8px; margin-right: 20px; }
